@@ -1,0 +1,44 @@
+[799489.759172] rdmsrbmk: Initializing kernel module...
+[799489.764825] rdmskbmk: Successfully created thread on node 0, thread 0.
+[799489.764847] Printing sizes:
+[799489.764848] sizeof int: 4
+[799489.764849] sizeof long: 8
+[799489.764850] sizeof long long 8
+[799489.764851] sizeof unsigned int: 4
+[799489.764851] sizeof unsigned long: 8
+[799489.764852] sizeof unsigned long long 8
+[799489.764854] rdmsrbmk: run_wrmsr_test(mode 51): 0x38d=0x0000000000000033: iter 1 diff = 504
+[799489.764857] rdmsrbmk: run_wrmsr_test(mode 4390972): 0x186=0x000000000043003c: iter 1 diff = 560
+[799489.764859] rdmsrbmk: run_rdmsr_test: 0x186=0x000000000043003c: iter 1 diff = 332
+[799489.764860] rdmsrbmk: run_rdpmc_test: 0x0=0x0000005433622d71: iter 1 diff = 150
+[799489.764862] rdmsrbmk: run_rdmsr_test: 0xc1=0x00000054336233e2: iter 1 diff = 296
+[799489.764863] rdmsrbmk: run_rdmsr_test: 0x30a=0x00000008a22533f3: iter 1 diff = 294
+[799489.764870] general protection fault: 0000 [#464] SMP
+[799489.764871] Modules linked in: testmsr(OE+) veth nls_utf8 hfsplus hfs vfat fat isofs ipt_MASQUERADE nf_nat_masquerade_ipv4 xt_addrtype br_netfilter overlay ip6t_rpfilter ip6t_REJECT nf_reject_ipv6 xt_conntrack ip_set nfnetlink ebtable_nat ebtable_broute bridge stp llc ip6table_nat nf_conntrack_ipv6 nf_defrag_ipv6 nf_nat_ipv6 ip6table_mangle ip6table_raw ip6table_security iptable_nat nf_conntrack_ipv4 nf_defrag_ipv4 nf_nat_ipv4 nf_nat nf_conntrack iptable_mangle iptable_raw iptable_security ebtable_filter ebtables ip6table_filter ip6_tables sunrpc intel_rapl x86_pkg_temp_thermal intel_powerclamp coretemp btrfs kvm_intel kvm irqbypass crct10dif_pclmul crc32_pclmul ghash_clmulni_intel intel_cstate xor intel_uncore zstd_compress ipmi_ssif tpm_crb snd_hda_codec_realtek snd_hda_codec_generic snd_hda_intel
+[799489.764911]  snd_hda_codec snd_hda_core snd_hwdep snd_seq snd_seq_device snd_pcm raid6_pq intel_rapl_perf snd_timer iTCO_wdt zstd_decompress snd ipmi_si iTCO_vendor_support xxhash ioatdma soundcore i2c_i801 lpc_ich ipmi_devintf shpchp tpm_tis dca ipmi_msghandler tpm_tis_core nfit tpm acpi_pad acpi_power_meter xfs libcrc32c mgag200 i40e e1000e i2c_algo_bit drm_kms_helper ttm ptp drm crc32c_intel pps_core wmi [last unloaded: testmsr]
+[799489.764940] CPU: 0 PID: 170176 Comm: run_test Tainted: G      D    OE   4.14.10-300.fc27.x86_64 #1
+[799489.764941] Hardware name: Intel Corporation PURLEY/PURLEY, BIOS PLYXCRB1.86B.0536.D02.1805221403 05/22/2018
+[799489.764943] task: ffff8efe11354c80 task.stack: ffffb3ce8d67c000
+[799489.764948] RIP: 0010:rdpmc_ser_bmk.constprop.1+0x10/0x50 [testmsr]
+[799489.764949] RSP: 0018:ffffb3ce8d67ff08 EFLAGS: 00010246
+[799489.764951] RAX: 0000000099e0df02 RBX: ffff8efe62ef5480 RCX: 0000000000000009
+[799489.764953] RDX: 00000000001d2a77 RSI: 0000000099e0df02 RDI: 0000000000000009
+[799489.764954] RBP: ffff8efaa5082c00 R08: 0000000000000000 R09: 0000000000000045
+[799489.764955] R10: 000000000043003c R11: 00000000000e0590 R12: ffffb3ce8d3dfbe8
+[799489.764957] R13: ffff8efe11354c80 R14: 0000000000000000 R15: ffffffffc09b60e0
+[799489.764958] FS:  0000000000000000(0000) GS:ffff8efe7c400000(0000) knlGS:0000000000000000
+[799489.764960] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[799489.764961] CR2: 00007fe7cfb23080 CR3: 00000018aee09002 CR4: 00000000007606f0
+[799489.764962] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+[799489.764964] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+[799489.764965] PKRU: 55555554
+[799489.764965] Call Trace:
+[799489.764970]  run_test+0xce/0xd5 [testmsr]
+[799489.764973]  kthread+0x118/0x130
+[799489.764976]  ? kthread_park+0x60/0x60
+[799489.764982]  ret_from_fork+0x1f/0x30
+[799489.764984] Code: 49 89 c1 41 b8 01 00 00 00 4c 89 d6 48 c7 c7 28 70 9b c0 e8 6e ab 74 f0 31 c0 c3 0f 1f 44 00 00 0f 31 0f ae e8 48 89 c6 48 89 f9 <0f> 33 48 89 d1 49 89 c0 0f ae e8 0f 31 48 c1 e1 20 48 29 f0 89 
+[799489.765025] RIP: rdpmc_ser_bmk.constprop.1+0x10/0x50 [testmsr] RSP: ffffb3ce8d67ff08
+[799489.765027] ---[ end trace b43384f1bd6540ab ]---
+[799490.158121] rdmskbmk: Kernel says we are allowde to run on CPU: 0.
+[799490.165131] rdmsrbmk: Kernel module init completed.

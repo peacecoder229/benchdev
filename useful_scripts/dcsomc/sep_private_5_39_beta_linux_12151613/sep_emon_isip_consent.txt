@@ -1,0 +1,25 @@
+Intel(R) Software Improvement Program (ISIP)
+
+To improve our software and customer experience, Intel would like to collect
+technical information ("Information") about your operating environment and
+software usage to include:
+
+   (1) General hardware information (CPU/graphics/memory information, etc.)
+   (2) Operating system information (OS used, version, etc.)
+   (3) Software tool usage (features used, error information, etc.)
+
+Intel will collect this Information through the use of Google Analytics.
+Google Analytics will aggregate the Information with that of other users
+and present the aggregated results to Intel without any personal identifiers.
+Information collected by Google will be retained by Google under its own data
+collection policies (https://support.google.com/analytics/answer/6004245?hl=en)
+
+Information that cannot be linked to an identifiable person may be retained
+by Intel as long as it is necessary to support the software.
+
+You may revoke your consent at any time by using --revoke-isip-consent option of the tool.
+
+For more details, please refer to this article:
+(https://software.intel.com/en-us/articles/software-improvement-program)
+
+I consent to the collection of my Information (yes/no)

@@ -1,0 +1,51 @@
+_HP_LLC_MAX
+_HP_LLC_MEAN
+_HP_LLC_MIN
+_HP_MB_MAX
+_HP_MB_MEAN
+_HP_MB_MIN
+_LP_LLC_MAX
+_LP_LLC_MEAN
+_LP_LLC_MIN
+_LP_MB_MAX
+_LP_MB_MEAN
+_LP_MB_MIN
+hp_instance
+lp_instance
+hp_llc
+lp_llc
+hp_workload
+lp_workload
+hp_mba
+lp_mba
+score
+socket_IDI_MISC.WB_UPGRADE
+hp_core_MEM_LOAD_RETIRED.L3_HIT
+hp_core_MEM_LOAD_L3_HIT_RETIRED.XSNP_HIT
+hp_core_IDI_MISC.WB_UPGRADE
+hp_core_IDI_MISC.WB_DOWNGRADE
+hp_core_MEM_LOAD_L3_HIT_RETIRED.XSNP_HITM
+lp_core_metric_L2 misses trigger SFBINV exclusive forward line
+lp_core_metric_L2 misses trigger SFBINV mod line
+hp_core_xnps_hit_to_miss
+hp_core_MEM_LOAD_L3_HIT_RETIRED.XSNP_MISS
+lp_core_MEM_LOAD_L3_HIT_RETIRED.XSNP_HITM
+lp_core_MEM_LOAD_L3_HIT_RETIRED.XSNP_HIT
+system_metric_L3_hit_rate_pct
+lp_core_metric_L2 % of L2 evictions that are NOT allocated into L3
+system_metric_CHA % cyles Fast asserted
+lp_core_MEM_LOAD_L3_HIT_RETIRED.XSNP_MISS
+hp_core_metric_L2 misses trigger SFBINV exclusive forward line
+hp_core_metric_L2 misses trigger SFBINV mod line
+hp_core_metric_L2 % of L2 evictions that are NOT allocated into L3
+system_metric_memory bandwidth total (MB/sec)
+hp_core_metric_L2_hit_rate_pct
+hp_core_metric_L3_hit_rate_pct
+lp_core_metric_L2_hit_rate_pct
+lp_core_metric_L3_hit_rate_pct
+system_UNC_M_RPQ_OCCUPANCY
+system_UNC_M_RPQ_INSERTS
+system_UNC_M_WPQ_INSERTS
+system_UNC_M_WPQ_OCCUPANCY
+system_metric_memory WPQ write latency (ns)
+system_metric_memory RPQ read latency (cycle)

@@ -1,0 +1,42 @@
+#!/bin/bash
+set -e
+totally_loaded_sep_kernel_drivers="$(lsmod | grep sepint | wc -l)"
+set -o pipefail
+
+EMONDIR="/opt/intel/sep"
+if [ ! -z $1 ]; then 
+    EMONDIR=$1
+fi
+
+if [ ! -d "$EMONDIR" ]; then
+    echo "ERROR: Looks like emon not installed or not installed on the default path on this system.."
+    echo "ERROR: If you have emon installed in custom path please pass as first argument to this script"
+    exit
+fi
+
+if [ ! -d "$EMONDIR" ]; then
+    echo "ERROR: Invalid emon dir, please provide path to emon binary"
+    exit
+else
+    SEPSRC="$EMONDIR/sepdk/src"
+    if [ ! -d "$EMONDIR" ]; then
+        echo "ERROR: Looks like emon not installed on the given path.."
+        exit
+    fi
+fi    
+
+if [ -d "$SEPSRC" ]; then
+    echo "Reloading the driver...."
+    pushd $SEPSRC && ./rmmod-sep && ./insmod-sep
+    popd
+else
+    echo "ERROR: Looks like the given emon path doesn't contain $SEPSRC directory"
+    echo "ERROR: If you have emon installed in custom path please pass as first argument to this script"
+    exit
+fi
+
+totally_loaded_sep_kernel_drivers=$(lsmod | grep sepint | wc -l)
+if [ $totally_loaded_sep_kernel_drivers != "2" ]; then
+    echo "Looks like sepint & socperf driver not loaded....Try loading them manually..."
+    exit
+fi

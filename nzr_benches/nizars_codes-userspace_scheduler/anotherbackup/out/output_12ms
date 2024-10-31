@@ -1,0 +1,642 @@
+112
+503
+the server IP is =  127.0.0.1 .
+the core start is 0 and core end is 49 .
+Server#0(0-49) is listening on port#47001
+numThreads: 50 test for 660TopK value: 2 seconds
+
+TCPServer Waiting for client on port 47001
+Server#1(28-77) is listening on port#47002
+numThreads: 50 test for 660TopK value: 2 seconds
+
+TCPServer Waiting for client on port 47002
+set client to y_client.sh 20 47001 127.0.0.1 /91-111/ 1 500 20000  2
+Client1 launched without corepin, will request to Server on port  47002
+Client2 launched without corepin, will request to Server on port  47001
+Client3 launched without corepin, will request to Server on port  47002
+Client4 launched without corepin, will request to Server on port  47001
+Client5 launched without corepin, will request to Server on port  47002
+Client6 launched without corepin, will request to Server on port  47001
+Client7 launched without corepin, will request to Server on port  47002
+Client8 launched without corepin, will request to Server on port  47001
+Client Number: 1 is on 
+Client9 launched without corepin, will request to Server on port  47002
+Client Number: 2 is on 
+Client10 launched without corepin, will request to Server on port  47001
+Client Number: 3 is on 
+Client11 launched without corepin, will request to Server on port  47002
+Client Number: 4 is on 
+Client12 launched without corepin, will request to Server on port  47001
+Client Number: 5 is on 
+Client13 launched without corepin, will request to Server on port  47002
+Client Number: 6 is on 
+Client14 launched without corepin, will request to Server on port  47001
+Client Number: 7 is on 
+Client Number: 8 is on 
+Client15 launched without corepin, will request to Server on port  47002
+Client16 launched without corepin, will request to Server on port  47001
+Client Number: 9 is on 
+Client17 launched without corepin, will request to Server on port  47002
+Client Number: 10 is on 
+Client18 launched without corepin, will request to Server on port  47001
+Client Number: 11 is on 
+Client19 launched without corepin, will request to Server on port  47002
+Client Number: 12 is on 
+Client20 launched without corepin, will request to Server on port  47001
+Client Number: 13 is on 
+Client Number: 14 is on 
+Client Number: 15 is on 
+Client Number: 16 is on 
+Client Number: 17 is on 
+Client Number: 18 is on 
+Client Number: 19 is on 
+Client Number: 20 is on 
+Client#11 got connected to server at socket6
+Client#6 got connected to server at socket6
+Client#13 got connected to server at socket6
+Client#18 got connected to server at socket6
+Client#5 got connected to server at socket6
+Client#4 got connected to server at socket6
+Client#8 got connected to server at socket6
+Client#3 got connected to server at socket6
+Client#16 got connected to server at socket6
+Client#12 got connected to server at socket6
+Client#9 got connected to server at socket6
+Client#17 got connected to server at socket6
+Client#20 got connected to server at socket6
+Client#19 got connected to server at socket6
+Client#15 got connected to server at socket6
+Client#2 got connected to server at socket6
+Client#7 got connected to server at socket6
+Client#1 got connected to server at socket6
+Client#14 got connected to server at socket6
+Client#10 got connected to server at socket6
+Accepted connection on descriptor 257 (host=127.0.0.1, port=41054)
+Accepted connection on descriptor 258 (host=127.0.0.1, port=41058)
+Accepted connection on descriptor 259 (host=127.0.0.1, port=41062)
+Accepted connection on descriptor 260 (host=127.0.0.1, port=41068)
+Accepted connection on descriptor 261 (host=127.0.0.1, port=41074)
+Accepted connection on descriptor 262 (host=127.0.0.1, port=41076)
+Accepted connection on descriptor 263 (host=127.0.0.1, port=41080)
+Accepted connection on descriptor 264 (host=127.0.0.1, port=41082)
+Accepted connection on descriptor 265 (host=127.0.0.1, port=41086)
+Accepted connection on descriptor 266 (host=127.0.0.1, port=41088)
+6765.16
+Accepted connection on descriptor 257 (host=127.0.0.1, port=36918)
+Accepted connection on descriptor 258 (host=127.0.0.1, port=36922)
+Accepted connection on descriptor 259 (host=127.0.0.1, port=36926)
+Accepted connection on descriptor 260 (host=127.0.0.1, port=36928)
+Accepted connection on descriptor 261 (host=127.0.0.1, port=36932)
+Accepted connection on descriptor 262 (host=127.0.0.1, port=36934)
+Accepted connection on descriptor 263 (host=127.0.0.1, port=36940)
+Accepted connection on descriptor 264 (host=127.0.0.1, port=36946)
+Accepted connection on descriptor 265 (host=127.0.0.1, port=36952)
+Accepted connection on descriptor 266 (host=127.0.0.1, port=36954)
+6294.23
+3386.25
+3375.87
+1897.54
+1951.39
+1350.52
+1428.72
+1107.13
+1142.05
+1127.88
+1159.72
+1140.16
+1199
+1181.58
+1222.01
+1197.06
+1246.25
+1183.15
+1210.64
+1221.81
+1271.15
+1260.42
+1282.2
+1119.69
+1157.63
+1074.95
+1130.4
+1092.63
+1107.84
+1068.02
+1091.14
+1013.84
+1043.73
+1038.24
+1023.18
+1038.39
+1061.61
+1035.17
+1073
+1083.3
+1113.01
+1217.81
+1234.75
+1319.45
+1315.4
+1376.26
+1381.52
+1417.73
+1436.99
+1501.4
+1508.71
+1448.95
+1412.19
+1253.17
+1273.83
+1038.53
+1019.86
+1044.71
+1033.96
+1100.06
+1098.56
+1217.03
+1249.63
+1210.87
+1221.17
+1242.03
+1252.78
+1214.8
+1252.59
+1326.39
+1325.51
+1394.89
+1334.17
+1327.5
+1304.76
+1301.38
+1258.91
+1168.94
+1191.16
+1200.37
+1195.82
+1205.84
+1241.77
+1297.97
+1333.32
+1370.94
+1434.05
+1395.38
+1470.67
+1322.63
+1297.85
+1246.61
+1260.8
+1162.1
+1156.13
+1116.64
+1124.44
+1156.16
+1151.44
+1070.74
+1013.37
+1058.2
+1064.06
+956.649
+1006.18
+1045.62
+1058.63
+1092
+1152.5
+1224.51
+1265.05
+1307.34
+1340.29
+1306.84
+1345.81
+1334.87
+1363.64
+1291.96
+1312.58
+1277.13
+1323.69
+1285.52
+1301.41
+1360.64
+1369.23
+1393.5
+1423.88
+1357.11
+1362.23
+1345.57
+1383.35
+1448.27
+1470.82
+1123.01
+1211.66
+1174.78
+1191.56
+1087.62
+1107.42
+1167.14
+1283.76
+1366.11
+1438.89
+1506.3
+1633.98
+1516.73
+1583.78
+1489.88
+1491.98
+1166.06
+1253.58
+1037.93
+1082.05
+992.45
+1016.75
+1065.94
+1120.03
+1233.33
+1277.26
+1401.03
+1425.23
+1241.46
+1251.17
+1263.71
+1306.57
+1242.86
+1284.74
+1350.46
+1420.41
+1439.7
+1452.18
+1286.72
+1343.14
+1269.54
+1337.83
+1284.17
+1351.4
+1262.73
+1243.06
+1279.89
+1253.11
+1243.09
+1259.01
+1353.08
+1399.86
+1330.35
+1310.86
+1212.97
+1234.26
+1150.15
+1115.35
+1119.53
+1187.12
+1279.41
+1320.01
+1291.53
+1348.79
+1342.67
+1378.7
+1333.84
+1319.72
+1359.38
+1392.08
+1468.69
+1479.12
+1429.36
+1332.81
+1311.74
+1377.99
+1268.57
+1274.68
+1293.23
+1280.65
+1244.42
+1240.4
+1170.39
+1195.32
+1234.01
+1234.76
+1251.19
+1357.37
+1328.59
+1410.16
+1347.34
+1496.12
+1465.96
+1547.41
+1388.3
+1447.3
+1453.52
+1447.01
+1387.14
+1373.4
+1286.16
+1298.45
+1312.47
+1360.38
+1206.9
+1274.69
+1296.81
+1351.26
+1330.71
+1357.13
+1268.05
+1266.03
+1255.12
+1266.33
+1223.82
+1281.1
+1365.03
+1440.51
+1470.59
+1490.13
+1427.34
+1515.93
+1330.9
+1360.58
+1203.52
+1286.92
+1363.17
+1448.99
+1378.68
+1410.78
+1368.23
+1414.81
+1421.97
+1262.65
+1217.11
+1230.88
+1293.29
+1277.47
+1201.21
+1251.04
+1363.13
+1338.36
+1344.16
+1377.4
+1361.55
+1441.52
+1256.31
+1212.64
+1229.1
+1226.36
+1208.36
+1254.47
+1318.04
+1393.46
+1392.51
+1348.4
+1284.16
+1285.52
+1286.25
+1312.3
+1292.16
+1320.65
+1287.22
+1271.19
+1245.62
+1226.77
+1100.41
+1117.82
+1169.78
+1201.72
+1274.65
+1266.48
+1463.46
+1531.83
+1521.65
+1566.12
+1442.47
+1409.74
+1357.95
+1320.58
+1222.16
+1275.12
+1243.31
+1265.97
+1183.78
+1236.43
+1242.65
+1269.26
+1222.81
+1244.16
+1285.3
+1306.33
+1271.31
+1222.42
+1232.83
+1270.65
+1281
+1271.59
+1294.36
+1342.42
+1367.91
+1382.89
+1436.92
+1490.23
+1518.7
+1561.55
+1499.69
+1567.26
+1500.92
+1506.1
+1374.41
+1383.72
+1373.25
+1396.6
+1423.15
+1514.8
+1483.69
+1504.21
+1352.72
+1354.36
+1322.58
+1315.95
+1222.17
+1207.06
+1349.99
+1397.52
+1409.85
+1438.58
+1496.51
+1560.75
+1595.34
+1567.98
+1498.86
+1505.26
+1478.62
+1520.8
+1398.37
+1384.75
+1291.5
+1361.57
+1264.76
+1309.38
+1201.82
+1227.58
+1146.15
+1197.53
+1119.71
+1139.85
+1156.34
+1165.33
+1170.81
+1195.31
+990.968
+1043.31
+1030.49
+1080.14
+1112.35
+1173.96
+1425.65
+1487.74
+1536.75
+1536.73
+1453.67
+1474.74
+1393.37
+1423.23
+1348.09
+1380.55
+1386.3
+1333
+1311.7
+1332.81
+1359.68
+1376.44
+1234.05
+1238.87
+1252.27
+1280.48
+1223.11
+1238.85
+1160
+1211.43
+1176.12
+1199.6
+1216.34
+1253.46
+1154.8
+1157.77
+1133.03
+1129.95
+1088.42
+1073.28
+1177.76
+1276.51
+1261.43
+1289.86
+1373.95
+1376.18
+1302.72
+1348.72
+1379.09
+1463.27
+1466.7
+1503.69
+1492.53
+1572.65
+1480.61
+1572.14
+1334.36
+1351.28
+1213.05
+1210.53
+1204.9
+1191.62
+1222.6
+1261.36
+1335.08
+1358.2
+1326.87
+1326.5
+1257.76
+1333.09
+1294.71
+1342.3
+1316.76
+1360.56
+1495.55
+1434.95
+1261.44
+1317.48
+1213.7
+1252.98
+1224.58
+1241.93
+1228.04
+1202.61
+1258.58
+1250.73
+1264.6
+1329.01
+1496.98
+1570.52
+1503.89
+1563.08
+1433.95
+1484.01
+1413.87
+1433.72
+1359.42
+1343.54
+1396.42
+1358.39
+1260.16
+1234.92
+1201.69
+1185.79
+1192.97
+1203.65
+1220.02
+1257.89
+1262.95
+1279.35
+1265.52
+1296.2
+1304.6
+1326.49
+1367.75
+client16 complete
+client5 complete
+client12 complete
+client6 complete
+client8 complete
+client11 complete
+client13 complete
+client9 complete
+client3 complete
+client18 complete
+client19 complete
+client4 complete
+client15 complete
+client17 complete
+client20 complete
+client2 complete
+client7 complete
+client14 complete
+client1 complete
+client10 complete
+fully read packets from client:#16 is  14538 while partially is: 0 the percentage of complete : 1
+1390.1
+fully read packets from client:#5 is  14342 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#12 is  14507 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#6 is  14314 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#8 is  14285 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#11 is  14283 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#13 is  14317 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#9 is  14471 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#3 is  14458 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#18 is  14485 while partially is: 0 the percentage of complete : 1
+Bad FD or con reset or pipe closed
+Bad FD or con reset or pipe closed
+connection closed from Server side
+connection closed from Server side
+fully read packets from client:#19 is  14278 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#4 is  14440 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#15 is  14330 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#17 is  14391 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#20 is  14346 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#2 is  14051 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#7 is  14051 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#14 is  13879 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#1 is  13644 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#10 is  13964 while partially is: 0 the percentage of complete : 1
+client start 1 and end 21 Experiment Done. Combining log now....
+client_21_done
+finished all clients

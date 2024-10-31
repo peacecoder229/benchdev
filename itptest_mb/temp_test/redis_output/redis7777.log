@@ -1,0 +1,117 @@
+[RUN #1] Preparing benchmark client...
+[RUN #1] Launching threads now...
+[RUN #1 1%,   0 secs] 10 threads:      601860 ops,  602051 (avg:  602051) ops/sec, 592.53MB/sec (avg: 592.53MB/sec),  4.96 (avg:  4.96) msec latency[RUN #1 1%,   1 secs] 10 threads:     1152150 ops,  550233 (avg:  576137) ops/sec, 547.61MB/sec (avg: 570.06MB/sec),  5.42 (avg:  5.18) msec latency[RUN #1 2%,   2 secs] 10 threads:     1674060 ops,  521805 (avg:  558022) ops/sec, 519.53MB/sec (avg: 553.22MB/sec),  5.75 (avg:  5.36) msec latency[RUN #1 2%,   4 secs] 10 threads:     2163210 ops,  488978 (avg:  540757) ops/sec, 486.92MB/sec (avg: 536.64MB/sec),  6.10 (avg:  5.53) msec latency[RUN #1 3%,   5 secs] 10 threads:     2648280 ops,  485007 (avg:  529606) ops/sec, 483.03MB/sec (avg: 525.91MB/sec),  6.17 (avg:  5.65) msec latency[RUN #1 3%,   6 secs] 10 threads:     3120210 ops,  471810 (avg:  519972) ops/sec, 469.88MB/sec (avg: 516.57MB/sec),  6.34 (avg:  5.75) msec latency[RUN #1 4%,   7 secs] 10 threads:     3602310 ops,  482057 (avg:  514556) ops/sec, 480.11MB/sec (avg: 511.37MB/sec),  6.23 (avg:  5.81) msec latency[RUN #1 4%,   8 secs] 10 threads:     4075110 ops,  472747 (avg:  509330) ops/sec, 470.82MB/sec (avg: 506.30MB/sec),  6.31 (avg:  5.87) msec latency[RUN #1 5%,   9 secs] 10 threads:     4553730 ops,  478560 (avg:  505911) ops/sec, 476.65MB/sec (avg: 503.00MB/sec),  6.26 (avg:  5.91) msec latency[RUN #1 6%,  10 secs] 10 threads:     5029110 ops,  475200 (avg:  502839) ops/sec, 473.29MB/sec (avg: 500.03MB/sec),  6.30 (avg:  5.95) msec latency[RUN #1 6%,  11 secs] 10 threads:     5499180 ops,  469997 (avg:  499853) ops/sec, 468.12MB/sec (avg: 497.13MB/sec),  6.37 (avg:  5.99) msec latency[RUN #1 7%,  12 secs] 10 threads:     5968020 ops,  468568 (avg:  497245) ops/sec, 466.70MB/sec (avg: 494.59MB/sec),  6.38 (avg:  6.02) msec latency[RUN #1 7%,  13 secs] 10 threads:     6441180 ops,  473104 (avg:  495388) ops/sec, 471.23MB/sec (avg: 492.80MB/sec),  6.33 (avg:  6.04) msec latency[RUN #1 8%,  14 secs] 10 threads:     6918030 ops,  476777 (avg:  494059) ops/sec, 474.88MB/sec (avg: 491.52MB/sec),  6.26 (avg:  6.05) msec latency[RUN #1 8%,  15 secs] 10 threads:     7380420 ops,  462334 (avg:  491944) ops/sec, 460.49MB/sec (avg: 489.45MB/sec),  6.47 (avg:  6.08) msec latency[RUN #1 9%,  16 secs] 10 threads:     7849890 ops,  469410 (avg:  490536) ops/sec, 467.56MB/sec (avg: 488.08MB/sec),  6.39 (avg:  6.10) msec latencyconnection dropped.
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+[RUN #1 9%,  17 secs]  0 threads:     8105430 ops,  469410 (avg:  476709) ops/sec, 467.56MB/sec (avg: 474.34MB/sec),  6.39 (avg:  6.11) msec latency
+
+10        Threads
+10        Connections per thread
+180       Seconds
+
+
+ALL STATS
+========================================================================
+Type        Ops/sec     Hits/sec   Misses/sec      Latency       KB/sec
+------------------------------------------------------------------------
+Sets           0.00          ---          ---      6.09900         0.00
+Gets           0.00         0.00         0.00      6.09900         0.00
+Waits          0.00          ---          ---      0.00000          ---
+Totals         0.00         0.00         0.00      6.09900         0.00

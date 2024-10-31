@@ -1,0 +1,134 @@
+2018-03-08 20:39:16,115 - INFO - HWP Resource set, HWP:25
+2018-03-08 20:39:16,130 - INFO - HWP Resource set, HWP:25
+2018-03-08 20:39:21,392 - INFO - Production workload: SPECjbb20151520570360.7 launched and registered with INFO:Run 1: 18-03-09_043921
+2018-03-08 20:39:26,937 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:39:32,738 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:39:38,533 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:39:44,322 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:39:45,054 - INFO - Production workload: SPECjbb20151520570384.36 launched and registered with INFO:Run 1: 18-03-09_043945
+2018-03-08 20:39:50,123 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:39:55,924 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:01,720 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:07,515 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:13,319 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:19,126 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:24,932 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:30,733 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:36,536 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:42,341 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:48,151 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:53,959 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:40:59,767 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:41:17,170 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:41:51,964 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:41:57,765 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:41:58,177 - INFO - Best effort workload: stream1520570517.77 launched and registered with INFO:0b938bf29fb03d1c68d8a59e3397df099fa988820240333a07354c87c9e58361
+2018-03-08 20:42:09,019 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:42:09,383 - INFO - Best effort workload: stream1520570529.02 launched and registered with INFO:daf688fc1e8753547ba40d1d9a2bcf4a84c2347a1ccf274af394f0199cf67e78
+2018-03-08 20:42:20,290 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:42:20,687 - INFO - Best effort workload: stream1520570540.29 launched and registered with INFO:c02bba9b3932694c481d3051c5d38f106725fa9b8dc7431f7d30c72431b04874
+2018-03-08 20:42:31,616 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:42:31,999 - INFO - Best effort workload: stream1520570551.62 launched and registered with INFO:0f4f7041cd4ecc24ef75641421e0c9773fd9c6bb3231235360d6de3df62da30c
+2018-03-08 20:42:43,009 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:42:43,379 - INFO - Best effort workload: stream1520570563.01 launched and registered with INFO:7cf77457d444336cd1dcb87b04cbce55afee92981035a035eee2e1527380b16d
+2018-03-08 20:42:54,389 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:42:54,804 - INFO - Best effort workload: stream1520570574.39 launched and registered with INFO:e18ef9f97b69c272f862f06836e27844fc9d0b94f0de5a226afc23ba2bb4ff53
+2018-03-08 20:43:05,850 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:43:06,220 - INFO - Best effort workload: stream1520570585.85 launched and registered with INFO:347e636f1fb5ce0c12a7a634007c9e46b0993c5bd1f26641d03bfb6704349468
+2018-03-08 20:43:17,288 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:43:17,659 - INFO - Best effort workload: stream1520570597.29 launched and registered with INFO:671d3c0444132069c72575685342045e33dc96e9f35e11cefd6dca6a4f11471a
+2018-03-08 20:43:28,742 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:43:29,141 - INFO - Best effort workload: stream1520570608.74 launched and registered with INFO:120577e398b8112be6f0bef5a9730a3565960b9d1ca6ff6919f90e0cd63f632a
+2018-03-08 20:43:40,278 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:43:40,658 - INFO - Best effort workload: stream1520570620.28 launched and registered with INFO:72cb23755304a65559eb4b3877531916ffa7928df62d1b54d414a43cd284092d
+2018-03-08 20:43:51,828 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:43:52,225 - INFO - Best effort workload: stream1520570631.83 launched and registered with INFO:44e879f48173de265f08a44ce18f1f5c7a138a99cb5b653dcdb7379918a8ff60
+2018-03-08 20:44:03,440 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:44:03,844 - INFO - Best effort workload: stream1520570643.44 launched and registered with INFO:66e7e54211470759627bea072554f830fe3820df1c1f163813b2bd27f99fb301
+2018-03-08 20:44:15,130 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:44:15,569 - INFO - Best effort workload: stream1520570655.13 launched and registered with INFO:1dd532594416e945972bd09da6a885095276daf0fd011314d51be0678d5d074e
+2018-03-08 20:44:26,905 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:44:27,356 - INFO - Best effort workload: stream1520570666.91 launched and registered with INFO:d075db7348830546c802748c1cfa03034a1e73fa8c976f4dcfe8f88abcb9fe09
+2018-03-08 20:44:38,776 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:44:39,209 - INFO - Best effort workload: stream1520570678.78 launched and registered with INFO:8ec1a6b2d65ecc2bb70ae3071c91d8245ff2d1254623783b382672b6cf66ce66
+2018-03-08 20:44:50,710 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:44:51,180 - INFO - Best effort workload: stream1520570690.71 launched and registered with INFO:5835a31548b3f23b901d9bb5b723e257691ee34a404710347f845f4ff182e03b
+2018-03-08 20:45:02,692 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:45:03,154 - INFO - Best effort workload: stream1520570702.69 launched and registered with INFO:dc11585b3af7093a5457a1068598551bd60d5100dc957473a52afe41ad5b5e42
+2018-03-08 20:45:14,688 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:45:15,144 - INFO - Best effort workload: stream1520570714.69 launched and registered with INFO:3ffa3ef2e3fb3040750e50076df63e16b29f8c072ffc864d94bf20abf2bd8a7f
+2018-03-08 20:45:26,745 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:45:27,264 - INFO - Best effort workload: stream1520570726.75 launched and registered with INFO:9a56d01f012cbc711e07eb594b274860c622b8a4c4c3052a6faba33ec6e5514c
+2018-03-08 20:45:38,880 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:45:39,351 - INFO - Best effort workload: stream1520570738.88 launched and registered with INFO:89a850befdeb763087ec83bd37d3ea409d5ddef268e0ff449a88fcd996595535
+2018-03-08 20:45:57,674 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:46:04,402 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:46:04,863 - INFO - Best effort workload: stream1520570764.4 launched and registered with INFO:72b24ef20d12097195686c7bbcea3a0dbed835ff0615ad1a46a91ce078010343
+2018-03-08 20:46:16,606 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:46:17,088 - INFO - Best effort workload: stream1520570776.61 launched and registered with INFO:2d8677fd5d397f4a198c77344b1ec64fefd766cf27439f0c5b456decb7cb180b
+2018-03-08 20:46:28,827 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:46:30,013 - INFO - Best effort workload: stream1520570788.83 launched and registered with INFO:2beb236e8cb803570626de10c8b8200350a94fb11a647c3872d445da8441c677
+2018-03-08 20:46:41,920 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:46:42,421 - INFO - Best effort workload: stream1520570801.92 launched and registered with INFO:9cf0f434182f6d32e0560df474864d50b5265d564e1469462fa095d74f9fd454
+2018-03-08 20:46:54,414 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:46:55,820 - INFO - Best effort workload: stream1520570814.42 launched and registered with INFO:8114448fca82844784f199cf5f72af6b247d35069c5d7840aa4a75dbd8593b56
+2018-03-08 20:47:14,493 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:47:14,970 - INFO - Best effort workload: stream1520570834.5 launched and registered with INFO:d0151d5c661ab32daa4b1aa6acebf37da2ad5d6b4b62f12cdd15e2c160a0ad0f
+2018-03-08 20:47:33,881 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:47:40,864 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:47:42,171 - INFO - Best effort workload: stream1520570860.87 launched and registered with INFO:49b9cd10e8ae9829ee494d2af03ebf089b3910ea1068c10ca9837b7caa611969
+2018-03-08 20:47:54,791 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-08 20:47:55,282 - INFO - Best effort workload: stream1520570874.79 launched and registered with INFO:f32112912d0c1d637354bb6ec05b305991aa92ca0ac30379077c504c047d6c1e
+2018-03-08 20:48:14,108 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:48:27,808 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:48:41,580 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:48:48,536 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:48:55,453 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:49:09,612 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:49:30,667 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:49:37,516 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:49:51,261 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:50:04,954 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:50:11,773 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:50:18,678 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:50:25,562 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:50:39,473 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:50:46,519 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:50:53,516 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:51:00,480 - INFO - Cannot get performance SLI (Service Level Indicator).
+2018-03-08 20:51:28,583 - INFO - HWP Resource set, HWP:25
+2018-03-08 20:51:28,606 - INFO - HWP Resource set, HWP:25
+2018-03-08 20:51:42,639 - INFO - Production workload: SPECjbb20151520571099.44 launched and registered with INFO:Run 1: 18-03-09_045142
+2018-03-08 20:54:48,740 - INFO - HWP Resource set, HWP:25
+2018-03-08 20:54:48,755 - INFO - HWP Resource set, HWP:25
+2018-03-08 20:54:52,494 - INFO - Production workload: SPECjbb20151520571291.84 launched and registered with INFO:Run 1: 18-03-09_045452
+2018-03-08 20:56:52,450 - INFO - HWP Resource set, HWP:25
+2018-03-08 20:56:52,467 - INFO - HWP Resource set, HWP:25
+2018-03-08 20:56:59,415 - INFO - Production workload: SPECjbb20151520571418.64 launched and registered with INFO:Run 1: 18-03-09_045659
+2018-03-08 21:01:14,404 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:01:14,421 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:01:20,020 - INFO - Production workload: SPECjbb20151520571679.21 launched and registered with INFO:Run 1: 18-03-09_050120
+2018-03-08 21:02:23,952 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:02:23,968 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:02:31,599 - INFO - Production workload: SPECjbb20151520571750.52 launched and registered with INFO:Run 1: 18-03-09_050231
+2018-03-08 21:04:45,024 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:04:45,037 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:04:54,167 - INFO - Production workload: SPECjbb20151520571893.51 launched and registered with INFO:Run 1: 18-03-09_050454
+2018-03-08 21:06:31,586 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:06:31,602 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:06:37,558 - INFO - Production workload: SPECjbb20151520571996.76 launched and registered with INFO:Run 1: 18-03-09_050637
+2018-03-08 21:08:08,745 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:08:08,760 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:08:14,849 - INFO - Production workload: SPECjbb20151520572094.2 launched and registered with INFO:Run 1: 18-03-09_050814
+2018-03-08 21:12:51,683 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:12:51,700 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:13:02,451 - INFO - Production workload: SPECjbb20151520572381.67 launched and registered with INFO:Run 1: 18-03-09_051302
+2018-03-08 21:14:24,982 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:14:24,998 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:14:30,836 - INFO - Production workload: SPECjbb20151520572470.05 launched and registered with INFO:Run 1: 18-03-09_051430
+2018-03-08 21:16:08,190 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:16:08,206 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:16:13,565 - INFO - Production workload: SPECjbb20151520572572.46 launched and registered with INFO:Run 1: 18-03-09_051613
+2018-03-08 21:17:40,697 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:17:40,713 - INFO - HWP Resource set, HWP:25
+2018-03-08 21:17:46,186 - INFO - Production workload: SPECjbb20151520572665.16 launched and registered with INFO:Run 1: 18-03-09_051746

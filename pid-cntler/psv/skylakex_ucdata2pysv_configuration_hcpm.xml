@@ -1,0 +1,1217 @@
+<?xml version="1.0" ?>
+<!-- This XML provides a format to customize the PCU and VCU data domains per project. The main purpose is to provide a register.field type feel for variables. -->
+<!-- It is also being used to define the PCU PMA and FCM subcomponents. Currently, no IO registers, PMA CRs or FCM CRs are modified.                            -->
+<!-- NOTE: The _parseDbg() function will use this file only if the XML <ucdata> "project" attribute == ucData2PySvXml._GLOBAL_PROJECT.                          -->
+<!--                                                                                                                                                            -->
+<!-- Adding Fields to Variables -->
+<!-- To add fields to a variable use the <list> tag to define a group of fields, the list "key" attribute should be unique, and is used to match the <list>     -->
+<!-- of fields to a specified variable located within the pcudata and vcudata sections. Define each field using the <field> tag.                                -->
+<!-- Fields REQUIRE these 6 attributes: upper_bit, lower_bit, attribute, default_value value, name, description.                                                 -->
+<!-- The <variable> tag is used to define changes/ modifications to data variables. The "name" attribute should exactly match the targeted data variable.name.  -->
+<!-- The <variable> "listkey" attribute should match the desired <list> "key" attribute. If a match is found the <list> will be added to the variable.          -->
+<!--                                                                                                                                                            -->
+<!-- Renaming data variables -->
+<!-- The <variable> "name" attribute should exactly match the targeted data variable.name. Define a new variable name using the "rename" attribute.             -->
+<!-- When renaming data variables the "action" attribute should contain "replace" if it is desired to omit the target (original) variable from the component.   -->
+<!--                                                                                                                                                            -->
+<!-- Creating new variables based off an existing variable -->
+<!-- The <variable> "name" attribute should exactly match the targeted data variable.name. First, define a new variable name using the "rename" attribute.      -->
+<!-- Add standard attributes as necessary. Available attributes currently supported [name, size, offset, bitsoffset, description].                               -->
+
+<root project= "skylakex" numcores="28" numthreads="56">
+    <pcudata>
+        <subcomponents>
+            <!-- pma -->
+            <pma name="pma_"         sliceid="0x0"  logicalid="0x0"  instance="28"/>
+            <pma name="pma_iio"      sliceid="0x40" logicalid="0x40" instance="6"/>
+            <pma name="pma_kti01"    sliceid="0x46" logicalid="0x46" instance="1"/>
+            <pma name="pma_kti2"     sliceid="0x47" logicalid="0x47" instance="1"/>
+            <pma name="pma_mc"       sliceid="0x4b" logicalid="0x4b" instance="2"/>
+            <pma name="pma_m2pci"    sliceid="0x60" logicalid="0x60" instance="5"/>
+            <pma name="pma_m3kti"    sliceid="0x65" logicalid="0x65" instance="2"/>
+            <pma name="pma_m2mem"    sliceid="0x6a" logicalid="0x6a" instance="2"/>
+            <!-- fivr -->
+            <fcm name="fcm_"         sliceid="0x0"  logicalid ="0x0" instance="28"/>
+            <fcm name="fcm_clm"      sliceid="0x1c" logicalid ="0x1c" instance="2"/>
+            <fcm name="fcm_vccpq"    sliceid="0x1e 0x20" logicalid ="0x1e 0x20" instance="2"/>
+            <fcm name="fcm_vccp"     sliceid="0x1f 0x21" logicalid ="0x1f 0x21" instance="2"/>
+            <!--boot_fivr-->
+            <boot_fcm name="fcm_sfr" sliceid="1" logicalid="0x41" instance="1"/>
+            <!-- ffc - fivr frequency control-->
+            <ffc name="fcm_ffc" sliceid="2" logicalid="0x42" instance="1"/>
+            <!-- svid vrm bus0 definitions -->
+            <vrm name="vrm_vccin"  svidbus="0" address="0" index="0" instance="1"/>
+            <vrm name="vrm_vccsa"  svidbus="0" address="1" index="2" instance="1"/>
+            <vrm name="vrm_vccio"  svidbus="0" address="2" index="1" instance="1"/>
+            <vrm name="vrm_vccmcp" svidbus="0" address="3" index="3" instance="1"/>
+            <!-- svid vrm bus1 definitions -->
+            <vrm name="vrm_ddr" svidbus="1" address="0x0 0x2" index="0x6 0x7" instance="2"/>
+            <vrm name="vrm_vcciomcp" svidbus="1" address="0x4" index="0x4" instance="1"/>
+            <vrm name="vrm_v1p8mcp"  svidbus="1" address="0x5" index="0x5" instance="1"/>
+        </subcomponents>
+
+        <!-- Customize Data -->
+        <fieldlists>
+            <!--    <field  upper_bit="0" lower_bit="0" attribute="" default_value="0" name="" description="" **kwargs/> -->
+            <list listkey="pkgc_target_vector_fields"> <!--pkgc_data.fasm-->
+                <field  upper_bit="0"  lower_bit="0"  attribute="read_write" default_value="0" name="pkgc_target_allow_pkgc" description="allow pkg c-states."/>
+                <field  upper_bit="1"  lower_bit="1"  attribute="read_write" default_value="0" name="pkgc_target_allow_ring_off" description="allow kill ring pll,enter PC3"/>
+                <!--Pkg-C7 Enables-->
+                <field  upper_bit="2"  lower_bit="2"  attribute="read_write" default_value="0" name="pkgc_target_allow_iio_l1_entry"  description="allow IIO L1 during PkgC states"/>
+                <field  upper_bit="3"  lower_bit="3"  attribute="read_write" default_value="0" name="pkgc_target_llc_fully_close_requested" description="request to fully flush the LLC - not POR for SKX"/>
+                <field  upper_bit="4"  lower_bit="4"  attribute="read_write" default_value="0" name="pkgc_target_allow_llc_fully_close" description="allow to fully flush the LLC - not POR for SKX"/>
+                <!--SVID/VR/FIVR Enables-->
+                <field  upper_bit="5"  lower_bit="5"  attribute="read_write" default_value="0" name="pkgc_target_allow_vid_decay"   description="allow using VID decay in PC3"/>
+                <field  upper_bit="6"  lower_bit="6"  attribute="read_write" default_value="0" name="pkgc_target_allow_mbvr_retention_vid"   description="allow MBVR retention VID, in PC3"/>
+                <field  upper_bit="7"  lower_bit="7"  attribute="read_write" default_value="0" name="pkgc_target_allow_sa_vr_retention_vid"  description="allow VccSA VR to be at retention voltage."/>
+                <field  upper_bit="8"  lower_bit="8"  attribute="read_write" default_value="0" name="pkgc_target_allow_misc_vr_retention_vid" description="allow VccIO VR to be at retention voltage."/>
+                <field  upper_bit="9"  lower_bit="9"  attribute="read_write" default_value="0" name="pkgc_target_allow_ring_retention"  description="allow ring to be at retention voltage."/>
+                <field  upper_bit="10" lower_bit="10" attribute="read_write" default_value="0" name="pkgc_target_allow_mc0_fivr_retention" description="allow MC0 FIVR retention voltage."/>
+                <field  upper_bit="11" lower_bit="11" attribute="read_write" default_value="0" name="pkgc_target_allow_mc1_fivr_retention" description="allow MC1 FIVR retention voltage."/>
+                <!--IIO Enables-->
+                <field  upper_bit="12" lower_bit="12" attribute="read_write" default_value="0" name="pkgc_target_allow_iio0_pll_gate" description="allow IIO bundle 0 clock gate in pc3."/>
+                <field  upper_bit="13" lower_bit="13" attribute="read_write" default_value="0" name="pkgc_target_allow_iio1_pll_gate" description="allow IIO bundle 1 clock gate in pc3."/>
+                <field  upper_bit="14" lower_bit="14" attribute="read_write" default_value="0" name="pkgc_target_allow_iio2_pll_gate" description="allow IIO bundle 2 clock gate in pc3."/>
+                <field  upper_bit="15" lower_bit="15" attribute="read_write" default_value="0" name="pkgc_target_allow_iio0_pll_off" description="allow IIO bundle 0 clock off in pc3."/>
+                <field  upper_bit="16" lower_bit="16" attribute="read_write" default_value="0" name="pkgc_target_allow_iio1_pll_off" description="allow IIO bundle 1 clock off in pc3."/>
+                <field  upper_bit="17" lower_bit="17" attribute="read_write" default_value="0" name="pkgc_target_allow_iio2_pll_off" description="allow IIO bundle 2 clock off in pc3."/>
+                <field  upper_bit="18" lower_bit="18" attribute="read_write" default_value="0" name="reserved_18" description="reserved for future use."/>
+                <!--KTI Enables-->
+                <field  upper_bit="19" lower_bit="19" attribute="read_write" default_value="0" name="pkgc_target_allow_kti_l1_entry" description="allow KTI L1 in PC2"/>
+                <field  upper_bit="20" lower_bit="20" attribute="read_write" default_value="0" name="pkgc_target_allow_kti01_pll_gate" description="allow KTI01 clock gate in pc3."/>
+                <field  upper_bit="21" lower_bit="21" attribute="read_write" default_value="0" name="pkgc_target_allow_kti2_pll_gate" description="allow KTI2 clock gate in pc3."/>
+                <field  upper_bit="22" lower_bit="22" attribute="read_write" default_value="0" name="pkgc_target_allow_kti01_pll_off" description="allow KTI01 clock off in pc3."/>
+                <field  upper_bit="23" lower_bit="23" attribute="read_write" default_value="0" name="pkgc_target_allow_kti2_pll_off" description="allow KTI2 clock off in pc3."/>
+                <field  upper_bit="24" lower_bit="24" attribute="read_write" default_value="0" name="reserved_24" description="reserved for future use."/>
+                <!--MC Enables-->
+                <field  upper_bit="25" lower_bit="25" attribute="read_write" default_value="0" name="pkgc_target_allow_mc0_force_sr" description="allow MC0 force SR"/>
+                <field  upper_bit="26" lower_bit="26" attribute="read_write" default_value="0" name="pkgc_target_allow_mc1_force_sr" description="allow MC1 force SR"/>
+                <field  upper_bit="27" lower_bit="27" attribute="read_write" default_value="0" name="pkgc_target_allow_mc0_pll_gate" description="allow MC0 clock gate in pc3."/>
+                <field  upper_bit="28" lower_bit="28" attribute="read_write" default_value="0" name="pkgc_target_allow_mc1_pll_gate" description="allow MC1 clock gate in pc3."/>
+                <field  upper_bit="29" lower_bit="29" attribute="read_write" default_value="0" name="pkgc_target_allow_mc0_pll_off" description="allow MC0 clock off in pc3."/>
+                <field  upper_bit="30" lower_bit="30" attribute="read_write" default_value="0" name="pkgc_target_allow_mc1_pll_off" description="allow MC1 clock off in pc3."/>
+                <!--Uniphy Control-->
+                <field  upper_bit="31" lower_bit="29" attribute="read_write" default_value="0" name="pkgc_target_allow_uniphy_off" description="allow uniphy to be turned off during clock-gating in pc3"/>
+            </list>
+            <list listkey="tt1_config_state"> <!--interface_pmlink_defs.finc-->
+                <field  upper_bit="7" lower_bit="0" attribute="read_write" default_value="0" name="on_time" description="TT1 clk on time."/>
+                <field  upper_bit="15" lower_bit="8" attribute="read_write" default_value="0" name="off_time" description="TT1 clk off time."/>
+                <field  upper_bit="16" lower_bit="16" attribute="read_write" default_value="0" name="throttle_enabled" description="If set, we are in TT1 throttle mode [0=disabled, 1=enabled]."/>
+            </list>
+            
+            <list listkey="hcpm_utilization">
+                <Field name="utilization" upper_bit="12" lower_bit="0" attribute="read_write" default_value="0x0" description="hwpm utilization" precision="U13.1.12"/>
+            </list>
+            
+            <list listkey="io_pkgc_bit_indicators">
+                <Field name="cbo_c7_fsm_complete" upper_bit="31" lower_bit="24" attribute="read_write" default_value="0x0" description="set on completion of a cbo c7 fsm. there is a bit per cbo for upto 8 cbos. hardware does not implement all." />
+                <Field name="cbo_c7_fsm_error" upper_bit="19" lower_bit="19" attribute="read_write" default_value="0x0" description="set on completion of the cbo c7 fsm if an uncorrectable data error occurs in any of the slices." />
+                <Field name="pkgc1e_exit" upper_bit="18" lower_bit="18" attribute="read_write" default_value="0x0" description="when set this bit indicates that not all cores are in sleeps states c1e, c3, or c6. this bit is used to trigger an exit from the pkg-c1e sleep state." />
+                <Field name="pkgc1e_request" upper_bit="17" lower_bit="17" attribute="read_write" default_value="0x0" description="when set this bit indicates that all cores are in sleeps states c1e, c3, or c6. this bit is used to trigger a transition to the pkg-c1e sleep state." />
+                <Field name="sa_units_pkgc_entry_complete" upper_bit="16" lower_bit="16" attribute="read_write" default_value="0x0" description="this bit is the indication that all sa pmas have completed their actions in pkgc entry flow" />
+                <Field name="sa_units_pkgc_unwind_complete" upper_bit="15" lower_bit="15" attribute="read_write" default_value="0x0" description="this bit is the indication that all sa pmas unwinded their actions in pkgc after break event" />
+                <Field name="hw_wakeup" upper_bit="14" lower_bit="14" attribute="read_write" default_value="0x0" description="this bit is the indication from hw to break the socket to pc2." />
+                <Field name="c7b_fsm_complete" upper_bit="13" lower_bit="13" attribute="read_write" default_value="0x0" description="set on completion of c7b save/restore fsm." />
+                <Field name="c7a_fsm_complete" upper_bit="12" lower_bit="12" attribute="read_write" default_value="0x0" description="set on completion of c7a save/restore fsm." />
+                <Field name="dmi_ext_req" upper_bit="11" lower_bit="11" attribute="read_write" default_value="0x0" description="set on any change in io_pkgc_dmi_ext. happens when pch does a cr-write to it." />
+                <Field name="dmi_pmdmd" upper_bit="10" lower_bit="10" attribute="read_write" default_value="0x0" description="set on any change in io_pkgc_dmi_req (low/high) caused by pch sending a pm_dmd" />
+                <Field name="dmi_pmrsp" upper_bit="9" lower_bit="9" attribute="read_write" default_value="0x0" description="set on any change in io_pkgc_dmi_req (low/high) caused by pch sending a pm_rsp" />
+            </list>
+            <list listkey="io_pkgc_dmi_kti_status">
+                <Field name="unused" upper_bit="31" lower_bit="12" attribute="read_write" default_value="0x0" description="not implemented" />
+                <Field name="c_go_valid" upper_bit="11" lower_bit="11" attribute="read_write" default_value="0x0" description="bit indicates that there is a pmreq.c.go that has arrived for the slave fsm; if set along with bit 0, then it indicates that the go and rsp latency payloads have been merged in the payload register" />
+                <Field name="c_rsp_valid" upper_bit="10" lower_bit="10" attribute="read_write" default_value="0x0" description="bit indicates that there is a pmreq.c.rsp that has arrived for the slave fsm" />
+                <Field name="pch_c_go_valid" upper_bit="9" lower_bit="9" attribute="read_write" default_value="0x0" description="bit indicates that there is a pm_dmd pending from the pch" />
+                <Field name="pch_c_rsp_valid" upper_bit="8" lower_bit="8" attribute="read_write" default_value="0x0" description="bit indicates that there is a pm_rsp pending from the pch" />
+                <Field name="skt_c_req_valid" upper_bit="7" lower_bit="0" attribute="read_write" default_value="0x0" description="one bit per socket indicates that there is a pmreq.c.req that has arrived from slave in the corresponding socket for the master fsm" />
+            </list>
+            <list listkey="io_pkgs_kti_req_bit_indicators">
+                <Field name="unused" upper_bit="31" lower_bit="9" attribute="read_write" default_value="0x0" description="not implemented" />
+                <Field name="phase" upper_bit="8" lower_bit="8" attribute="read_write" default_value="0x0" description="pba bit 7 indicates phase 1 or 2 for pmreq command" />
+                <Field name="reset_warn" upper_bit="7" lower_bit="7" attribute="read_write" default_value="0x0" description="switch from s1.reset_warn to reset_warn state" />
+                <Field name="go_s5" upper_bit="6" lower_bit="6" attribute="read_write" default_value="0x0" description="switch from s1.tmp to s5" />
+                <Field name="go_s4" upper_bit="5" lower_bit="5" attribute="read_write" default_value="0x0" description="switch from s1.tmp to s4" />
+                <Field name="go_s3" upper_bit="4" lower_bit="4" attribute="read_write" default_value="0x0" description="switch from s1.tmp to s3" />
+                <Field name="go_s1_rw" upper_bit="3" lower_bit="3" attribute="read_write" default_value="0x0" description="switch from s0 to s1.reset_warn" />
+                <Field name="go_s1_final" upper_bit="2" lower_bit="2" attribute="read_write" default_value="0x0" description="switch from s0 to s1.final" />
+                <Field name="go_s1_tmp" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description="switch from s0 to s1.tmp" />
+                <Field name="go_s0" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description="switch from s1 to s0" />
+            </list>
+            <list listkey="io_pkgs_pch_bit_indicators">
+                <Field name="iio_wr_flush_done" upper_bit="8" lower_bit="8" attribute="read_write" default_value="0x0" description="indication of wb flush complete from iio" />
+                <Field name="reset_warn" upper_bit="7" lower_bit="7" attribute="read_write" default_value="0x0" description="switch from s1.reset_warn to reset_warn state" />
+                <Field name="go_s5" upper_bit="6" lower_bit="6" attribute="read_write" default_value="0x0" description="switch from s1.tmp to s5" />
+                <Field name="go_s4" upper_bit="5" lower_bit="5" attribute="read_write" default_value="0x0" description="switch from s1.tmp to s4" />
+                <Field name="go_s3" upper_bit="4" lower_bit="4" attribute="read_write" default_value="0x0" description="switch from s1.tmp to s3" />
+                <Field name="go_s1_rw" upper_bit="3" lower_bit="3" attribute="read_write" default_value="0x0" description="switch from s0 to s1.reset_warn" />
+                <Field name="go_s1_final" upper_bit="2" lower_bit="2" attribute="read_write" default_value="0x0" description="switch from s0 to s1.final" />
+                <Field name="go_s1_tmp" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description="switch from s0 to s1.tmp" />
+                <Field name="go_s0" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description="switch from s1 to s0" />
+            </list>
+            <list listkey="io_fastpath_pkgs">
+                <Field name="reserved" upper_bit="31" lower_bit="12" attribute="read_write" default_value="0x0" description="reserved" />
+                <Field name="io_pkgs_bit_indicators" upper_bit="11" lower_bit="11" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_bit_indicators" />
+                <Field name="io_pkgs_status_bit_indicators" upper_bit="10" lower_bit="10" attribute="read_write" default_value="0x0" description="set on any hw-initiated change inio_pkgs_status_bit_indicators" />
+                <Field name="io_pkgs_kti_rsp_bit_indicators_7" upper_bit="9" lower_bit="9" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_kti_bit_indicators" />
+                <Field name="io_pkgs_kti_rsp_bit_indicators_6" upper_bit="8" lower_bit="8" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_kti_bit_indicators" />
+                <Field name="io_pkgs_kti_rsp_bit_indicators_5" upper_bit="7" lower_bit="7" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_kti_bit_indicators" />
+                <Field name="io_pkgs_kti_rsp_bit_indicators_4" upper_bit="6" lower_bit="6" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_kti_bit_indicators" />
+                <Field name="io_pkgs_kti_rsp_bit_indicators_3" upper_bit="5" lower_bit="5" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_kti_bit_indicators" />
+                <Field name="io_pkgs_kti_rsp_bit_indicators_2" upper_bit="4" lower_bit="4" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_kti_bit_indicators" />
+                <Field name="io_pkgs_kti_rsp_bit_indicators_1" upper_bit="3" lower_bit="3" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_kti_bit_indicators" />
+                <Field name="io_pkgs_kti_rsp_bit_indicators_0" upper_bit="2" lower_bit="2" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_kti_bit_indicators" />
+                <Field name="io_pkgs_pch_bit_indicators" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_pch_bit_indicators" />
+                <Field name="io_pkgs_kti_req_bit_indicators" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description="set on any hw-initiated change in io_pkgs_pch_bit_indicators" />
+            </list>
+            <list listkey="global_bios_mbx_pcu_misc_config">
+                <Field  name="mct_disable" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0"  description="When set, disables multi-core turbo."/>
+                <Field  name="pl2_safety_net_enable" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0"  description="When set, enables the power limit safety net."/>
+                <Field  name="reserved_2_7" upper_bit="7" lower_bit="2" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="aps_rocket_disable" upper_bit="8" lower_bit="8" attribute="read_write" default_value="0"  description="When set, disables the rocketing mechanism in the HWP p-state selection pcode algorithm"/>
+                <Field  name="core_scalability_disable" upper_bit="9" lower_bit="9" attribute="read_write" default_value="0"  description="When set, disables the use of scalability in HWP pcode power efficiency algorithms"/>
+                <Field  name="ppo_budget_disable" upper_bit="10" lower_bit="10" attribute="read_write" default_value="0"  description="When set, disables the core parameter based per core power budgeting"/>
+                <Field  name="reserved_11_18" upper_bit="18" lower_bit="11" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="disable_pcode_rcomp_per_mc" upper_bit="20" lower_bit="19" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="legacy_avx_turbo_ratio_limit_mode_enable" upper_bit="21" lower_bit="21" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="iio_dynamic_l1_dis" upper_bit="22" lower_bit="22" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="disable_pmax_circuit" upper_bit="23" lower_bit="23" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="reserved_24_25" upper_bit="25" lower_bit="24" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="e2e_parity_enable" upper_bit="26" lower_bit="26" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="pcie_dram_hotplug_disable" upper_bit="27" lower_bit="27" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="ufs_disable" upper_bit="28" lower_bit="28" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="reserved_29" upper_bit="29" lower_bit="29" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="spd" upper_bit="30" lower_bit="30" attribute="read_write" default_value="0"  description=""/>
+                <Field  name="reserved_31" upper_bit="31" lower_bit="31" attribute="read_write" default_value="0"  description=""/>
+            </list>
+            <list listkey="dfx_peci_interface">
+                <Field name="run_busy" upper_bit="31" lower_bit="31" attribute="read_write" default_value="0x0" description="run busy bit for the dfx mailbox" />
+                <Field name="param2" upper_bit="23" lower_bit="16" attribute="read_write" default_value="0x0" description="Command for the peci dfx mailbox" />
+                <Field name="param1" upper_bit="15" lower_bit="8" attribute="read_write" default_value="0x0" description="Command for the peci dfx mailbox" />
+                <Field name="command" upper_bit="7" lower_bit="0" attribute="read_write" default_value="0x0" description="Command for the peci dfx mailbox" />
+            </list>
+            <list listkey="dfx_inband_peci_interface">
+                <Field name="run_busy" upper_bit="31" lower_bit="31" attribute="read_write" default_value="0x0" description="run busy bit for the dfx mailbox" />
+                <Field name="param2" upper_bit="23" lower_bit="16" attribute="read_write" default_value="0x0" description="param2 for the peci dfx mailbox" />
+                <Field name="host_id" upper_bit="15" lower_bit="8" attribute="read_write" default_value="0x0" description="host id for dfx mailbox" />
+                <Field name="command" upper_bit="7" lower_bit="0" attribute="read_write" default_value="0x0" description="Command for the peci dfx mailbox" />
+            </list>
+            <list listkey="dfx_peci_parameters">
+                <Field name="param3" upper_bit="31" lower_bit="24" attribute="read_write" default_value="0x0" description='\n        the third parameters of the command.\n        this is used by commands which are unsupported yet. parameter is defined to support hw - hw will write\n        the parameter here, and pcode is the one that will disqualified the command with "illegal" cc.\n        ' />
+                <Field name="param2" upper_bit="23" lower_bit="8" attribute="read_write" default_value="0x0" description='\n        the second parameters of the command.\n        in case of read_pcs/write_pcs command, this would be the parameter for the specific pcs index (sliceid/pp/...).\n        in case of rdiacoremsr, this would be the msr id.\n        the content is kept for peci use until run_busy is cleared.\n        ' />
+                <Field name="param1" upper_bit="7" lower_bit="0" attribute="read_write" default_value="0x0" description='\n        the first parameter of the command.\n        in case of a read_pcs/write_pcs command, this would be the pcs index.\n        in case of rdiacoremsr, this would be the threadid/sa/...\nthe content is kept for peci use until run_busy is cleared.\n        ' />
+            </list>
+
+            <list listkey="io_fastpath_thermal">
+                <Field name="unused" upper_bit="31" lower_bit="2" attribute="read_write" default_value="0x0" description="not implemented" />
+                <Field name="pmax_event" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description="set on a pmax event" />
+                <Field name="prochot_event" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description="set on a prochot event that is not pmax"/>
+            </list>
+
+            <list listkey="dfx_workpoint_clip_flags_decode">
+                <Field name="clipped_pkg_edp" upper_bit="5" lower_bit="5" attribute="read_write" default_value="0x0" description='At least one core clipped due to package EDP limits' />
+                <Field name="clipped_pbm" upper_bit="4" lower_bit="4" attribute="read_write" default_value="0x0" description='At least one core clipped due to per-core PBM limit' />
+                <Field name="clipped_core_iccmax" upper_bit="3" lower_bit="3" attribute="read_write" default_value="0x0" description='At least one core clipped due to per-core ICCMAX limit' />
+                <Field name="clipped_avx512" upper_bit="2" lower_bit="2" attribute="read_write" default_value="0x0" description='At least one core clipped due to AVX level 2 turbo ratio limits' />
+                <Field name="clipped_avx256" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description='At least one core clipped due to AVX level 1 turbo ratio limits' />
+                <Field name="clipped_sse" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description='At least one core clipped due to AVX level 0 turbo ratio limits' />
+            </list>
+            <list listkey="global_incomplete_reset_tasks_decode">
+                <Field name="" upper_bit="7" lower_bit="7" attribute="read_write" default_value="0x0" description='mark that phase-1 and phase-2 still on-going; good for asserts.' />
+                <Field name="first_edp_calcs" upper_bit="3" lower_bit="3" attribute="read_write" default_value="0x0" description='still need to do the first edp table calculation.' />
+                <Field name="bios_done" upper_bit="2" lower_bit="2" attribute="read_write" default_value="0x0" description='still waiting for BIOS DONE signal.' />
+                <Field name="mrc_done" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description='till waiting for MRC done from BIOS, after which the MC lock bits need to be checked before acking MRC done.' />
+                <Field name="mc_reset" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description="still need to lock iMC and de-assert it's reset." />
+            </list>
+
+
+            <list listkey="reset_bypasses_2">
+                <Field name="reset_item_bist" upper_bit="20" lower_bit="20" attribute="read_write" default_value="0x0" description=" skip the inner part inside the LLC. That is, a subset of RESET_ITEM_0_LLC_RESET." />
+                <Field name="reset_item_lock_mc_pll" upper_bit="19" lower_bit="19" attribute="read_write" default_value="0x0" description="RESET_ITEM_LOCK_MC_PLL                 0x53" />
+                <Field name="reset_item_lock_pcie_pll" upper_bit="18" lower_bit="18" attribute="read_write" default_value="0x0" description="RESET_ITEM_LOCK_PCIE_PLL               0x52" />
+                <Field name="reset_item_lock_qpi_pll" upper_bit="17" lower_bit="17" attribute="read_write" default_value="0x0" description="RESET_ITEM_LOCK_QPI_PLL                0x51" />
+                <Field name="reset_item_prepare_for_loop" upper_bit="6" lower_bit="6" attribute="read_write" default_value="0x0" description="RESET_ITEM_PREPARE_FOR_LOOP            0x46" />
+                <Field name="reset_item_special_init_pcode_vars_p2" upper_bit="5" lower_bit="5" attribute="read_write" default_value="0x0" description="RESET_ITEM_SPECIAL_INIT_PCODE_VARS_P2  0x45" />
+                <Field name="reset_item_special_sbft_mode" upper_bit="4" lower_bit="4" attribute="read_write" default_value="0x0" description="RESET_ITEM_SPECIAL_SBFT_MODE           0x44" />
+                <Field name="reset_item_start_ia_cores" upper_bit="3" lower_bit="3" attribute="read_write" default_value="0x0" description=" wake cores." />
+                <Field name="reset_item_fivr_core_startup" upper_bit="2" lower_bit="2" attribute="read_write" default_value="0x0" description="RESET_ITEM_FIVR_CORE_STARTUP           0x42" />
+                <Field name="reset_item_fivr_initialize_table_pointers" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description="RESET_ITEM_FIVR_INITIALIZE_TABLE_POINTERS  0x41" />
+                <Field name="reset_item_core_startup_patch_point" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description="RESET_ITEM_CORE_STARTUP_PATCH_POINT    0x40" />
+            </list>
+            <list listkey="reset_bypasses_1">
+                <Field name="reset_item_patch_in_fuse_uncore_cr" upper_bit="31" lower_bit="31" attribute="read_write" default_value="0x0" description="RESET_ITEM_PATCH_IN_FUSE_UNCORE_CR     0x3F" />
+                <Field name="reset_item_kti_complete_config" upper_bit="30" lower_bit="30" attribute="read_write" default_value="0x0" description="RESET_ITEM_KTI_COMPLETE_CONFIG         0x3E" />
+                <Field name="reset_item_devhide_update" upper_bit="29" lower_bit="29" attribute="read_write" default_value="0x0" description="RESET_ITEM_DEVHIDE_UPDATE              0x3D" />
+                <Field name="reset_item_llc_reset" upper_bit="28" lower_bit="28" attribute="read_write" default_value="0x0" description=" LLC reset." />
+                <Field name="reset_item_wakeup_vcu" upper_bit="27" lower_bit="27" attribute="read_write" default_value="0x0" description="RESET_ITEM_WAKEUP_VCU                  0x3B" />
+                <Field name="reset_item_ssku_cpu_off_check" upper_bit="26" lower_bit="26" attribute="read_write" default_value="0x0" description="RESET_ITEM_SSKU_CPU_OFF_CHECK          0x3A" />
+                <Field name="reset_item_pma_credit_release" upper_bit="25" lower_bit="25" attribute="read_write" default_value="0x0" description="RESET_ITEM_PMA_CREDIT_RELEASE          0x39" />
+                <Field name="reset_item_mesh_programming" upper_bit="24" lower_bit="24" attribute="read_write" default_value="0x0" description=" program mesh routing info" />
+                <Field name="reset_item_distribute_resolved_cpu" upper_bit="23" lower_bit="23" attribute="read_write" default_value="0x0" description=" distribute resolved stuff to whoever needs." />
+                <Field name="reset_item_bulk_fuse_distribution_p2_all_resets" upper_bit="22" lower_bit="22" attribute="read_write" default_value="0x0" description="RESET_ITEM_BULK_FUSE_DISTRIBUTION_P2_ALL_RESETS    0x36" />
+                <Field name="reset_item_fusedt_p1_p2_non_hvm_resets" upper_bit="21" lower_bit="21" attribute="read_write" default_value="0x0" description=" Phase2 Fuse distribution on all Non-HVM resets over the message channel.  (Looks like HSW [client] did this in
+                 both Phase 1 and Phase 2.)" />
+                <Field name="reset_item_dmi_handshake" upper_bit="20" lower_bit="20" attribute="read_write" default_value="0x0" description="RESET_ITEM_DMI_HANDSHAKE               0x34" />
+                <Field name="reset_item_kti_initiate_config" upper_bit="19" lower_bit="19" attribute="read_write" default_value="0x0" description="RESET_ITEM_KTI_INITIATE_CONFIG         0x33" />
+                <Field name="reset_item_cbo_sad_and_rt_init" upper_bit="18" lower_bit="18" attribute="read_write" default_value="0x0" description="RESET_ITEM_CBO_SAD_AND_RT_INIT         0x32" />
+                <Field name="reset_item_start_dmi_link_training" upper_bit="17" lower_bit="17" attribute="read_write" default_value="0x0" description="RESET_ITEM_START_DMI_LINK_TRAINING     0x31" />
+                <Field name="reset_item_fuse_dist_pre_uniphy_bringup" upper_bit="16" lower_bit="16" attribute="read_write" default_value="0x0" description=" Msgchnl fuse dist for fuses that configure DMI/KTI bringup" />
+                <Field name="reset_item_small_array_init" upper_bit="15" lower_bit="15" attribute="read_write" default_value="0x0" description="RESET_ITEM_SMALL_ARRAY_INIT            0x2F" />
+                <Field name="reset_item_update_crid" upper_bit="14" lower_bit="14" attribute="read_write" default_value="0x0" description="RESET_ITEM_UPDATE_CRID                 0x2E" />
+                <Field name="reset_item_configure_message_channel" upper_bit="13" lower_bit="13" attribute="read_write" default_value="0x0" description="RESET_ITEM_CONFIGURE_MESSAGE_CHANNEL   0x2D" />
+                <Field name="reset_item_resolve_cpu" upper_bit="12" lower_bit="12" attribute="read_write" default_value="0x0" description="RESET_ITEM_RESOLVE_CPU                 0x2C" />
+                <Field name="reset_item_turn_on_the_ring" upper_bit="11" lower_bit="11" attribute="read_write" default_value="0x0" description="RESET_ITEM_TURN_ON_THE_RING            0x2B" />
+                <Field name="reset_item_deassert_ring_reset" upper_bit="10" lower_bit="10" attribute="read_write" default_value="0x0" description=" deassert ring reset." />
+                <Field name="reset_item_program_ring_bgf" upper_bit="9" lower_bit="9" attribute="read_write" default_value="0x0" description="RESET_ITEM_PROGRAM_RING_BGF            0x29" />
+                <Field name="reset_item_post_start_phase2" upper_bit="8" lower_bit="8" attribute="read_write" default_value="0x0" description="RESET_ITEM_POST_START_PHASE2           0x28" />
+                <Field name="reset_item_end_phase1_suicide" upper_bit="7" lower_bit="7" attribute="read_write" default_value="0x0" description=" suicide, and wait to be woken on xxRESET (rest of bits irrelevant)." />
+                <Field name="reset_item_mark_phase1_complete" upper_bit="6" lower_bit="6" attribute="read_write" default_value="0x0" description="RESET_ITEM_MARK_PHASE1_COMPLETE        0x26" />
+                <Field name="reset_item_assert_pwrgoods" upper_bit="5" lower_bit="5" attribute="read_write" default_value="0x0" description="RESET_ITEM_ASSERT_PWRGOODS             0x25" />
+                <Field name="reset_item_lock_ring_plls" upper_bit="4" lower_bit="4" attribute="read_write" default_value="0x0" description="RESET_ITEM_LOCK_RING_PLLS              0x24" />
+                <Field name="reset_item_lock_sa_plls" upper_bit="3" lower_bit="3" attribute="read_write" default_value="0x0" description="RESET_ITEM_LOCK_SA_PLLS                0x23" />
+                <Field name="reset_item_sample_initial_ratios" upper_bit="2" lower_bit="2" attribute="read_write" default_value="0x0" description="RESET_ITEM_SAMPLE_INITIAL_RATIOS       0x22" />
+                <Field name="reset_item_update_config_to_tap" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description="RESET_ITEM_UPDATE_CONFIG_TO_TAP        0x21" />
+                <Field name="reset_item_enable_pma_virtualsignals" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description="RESET_ITEM_ENABLE_PMA_VIRTUALSIGNALS   0x20" />
+            </list>
+            <list listkey="reset_bypasses_0">
+                <Field name="reset_item_fuselink_download_point_2" upper_bit="31" lower_bit="31" attribute="read_write" default_value="0x0" description="RESET_ITEM_FUSELINK_DOWNLOAD_POINT_2   0x1F" />
+                <Field name="reset_item_assert_fusepwrgood" upper_bit="30" lower_bit="30" attribute="read_write" default_value="0x0" description="RESET_ITEM_ASSERT_FUSEPWRGOOD          0x1E" />
+                <Field name="reset_item_ramp_uncore_fivr" upper_bit="29" lower_bit="29" attribute="read_write" default_value="0x0" description="RESET_ITEM_RAMP_UNCORE_FIVR            0x1D" />
+                <Field name="reset_item_init_uncore_fivr" upper_bit="28" lower_bit="28" attribute="read_write" default_value="0x0" description="RESET_ITEM_INIT_UNCORE_FIVR            0x1C" />
+                <Field name="reset_item_sample_fivr_disable" upper_bit="27" lower_bit="27" attribute="read_write" default_value="0x0" description="RESET_ITEM_SAMPLE_FIVR_DISABLE         0x1B" />
+                <Field name="reset_item_fivr_build_ratio_to_v" upper_bit="26" lower_bit="26" attribute="read_write" default_value="0x0" description=" routine to build to the ratio -> voltage lookup tables for FIVR." />
+                <Field name="reset_item_distribute_pma_poc" upper_bit="25" lower_bit="25" attribute="read_write" default_value="0x0" description="RESET_ITEM_DISTRIBUTE_PMA_POC          0x19" />
+                <Field name="reset_item_fuselink_download_point_1" upper_bit="24" lower_bit="24" attribute="read_write" default_value="0x0" description="RESET_ITEM_FUSELINK_DOWNLOAD_POINT_1   0x18" />
+                <Field name="reset_item_distribute_internal_slice_fuses" upper_bit="23" lower_bit="23" attribute="read_write" default_value="0x0" description="RESET_ITEM_DISTRIBUTE_INTERNAL_SLICE_FUSES 0x17" />
+                <Field name="reset_item_configure_pma_ids" upper_bit="22" lower_bit="22" attribute="read_write" default_value="0x0" description="RESET_ITEM_CONFIGURE_PMA_IDS           0x16" />
+                <Field name="reset_item_resolve_topology" upper_bit="21" lower_bit="21" attribute="read_write" default_value="0x0" description="RESET_ITEM_RESOLVE_TOPOLOGY            0x15" />
+                <Field name="reset_item_deassert_pmareset" upper_bit="20" lower_bit="20" attribute="read_write" default_value="0x0" description="RESET_ITEM_DEASSERT_PMARESET           0x14" />
+                <Field name="reset_item_svid_ramp" upper_bit="19" lower_bit="19" attribute="read_write" default_value="0x0" description="RESET_ITEM_SVID_RAMP                   0x13" />
+                <Field name="reset_item_peci_reset" upper_bit="18" lower_bit="18" attribute="read_write" default_value="0x0" description=" reset peci." />
+                <Field name="reset_item_svid_reset_isolation" upper_bit="17" lower_bit="17" attribute="read_write" default_value="0x0" description="RESET_ITEM_SVID_RESET_ISOLATION        0x11" />
+                <Field name="reset_item_pmax_calibration" upper_bit="16" lower_bit="16" attribute="read_write" default_value="0x0" description="RESET_ITEM_PMAX_CALIBRATION            0x10" />
+                <Field name="reset_item_svid_reset" upper_bit="15" lower_bit="15" attribute="read_write" default_value="0x0" description=" reset svid and ramping of svid." />
+                <Field name="reset_item_svid_config" upper_bit="14" lower_bit="14" attribute="read_write" default_value="0x0" description="RESET_ITEM_SVID_CONFIG                  0xE" />
+                <Field name="reset_item_determine_bootcfg" upper_bit="13" lower_bit="13" attribute="read_write" default_value="0x0" description="RESET_ITEM_DETERMINE_BOOTCFG            0xD" />
+                <Field name="reset_item_distribute_internal_fuses" upper_bit="12" lower_bit="12" attribute="read_write" default_value="0x0" description=" if set will skip the distribution of fuses to the pcode variables." />
+                <Field name="reset_item_download_all_fuses" upper_bit="11" lower_bit="11" attribute="read_write" default_value="0x0" description=" if set, it means that instead of pcode reading the fuse CRs, CTE will inject fuses directly into PCU RAM." />
+                <Field name="reset_item_assert_pmapwrgd" upper_bit="10" lower_bit="10" attribute="read_write" default_value="0x0" description="RESET_ITEM_ASSERT_PMAPWRGD              0xA" />
+                <Field name="reset_item_patch_in_fuse_pcu" upper_bit="9" lower_bit="9" attribute="read_write" default_value="0x0" description="RESET_ITEM_PATCH_IN_FUSE_PCU              9" />
+                <Field name="reset_item_deassert_pcu_reset" upper_bit="8" lower_bit="8" attribute="read_write" default_value="0x0" description="RESET_ITEM_DEASSERT_PCU_RESET             8" />
+                <Field name="reset_item_special_init_pcode_vars_p1" upper_bit="7" lower_bit="7" attribute="read_write" default_value="0x0" description="RESET_ITEM_SPECIAL_INIT_PCODE_VARS_P1     7" />
+                <Field name="reset_item_obtain_reset_items" upper_bit="6" lower_bit="6" attribute="read_write" default_value="0x0" description="RESET_ITEM_OBTAIN_RESET_ITEMS             6" />
+                <Field name="reset_item_early_patch_point" upper_bit="5" lower_bit="5" attribute="read_write" default_value="0x0" description="RESET_ITEM_EARLY_PATCH_POINT              5" />
+                <Field name="reset_item_data_rom_decompression" upper_bit="4" lower_bit="4" attribute="read_write" default_value="0x0" description=" wipes most data memory, and then do decompression. CTE can bypass." />
+                <Field name="reset_item_clear_persistent_memory" upper_bit="3" lower_bit="3" attribute="read_write" default_value="0x0" description=" clears the persistent part of the memory; few bytes at top; for cold reset only." />
+                <Field name="reset_item_warm_reset_preamble" upper_bit="2" lower_bit="2" attribute="read_write" default_value="0x0" description="RESET_ITEM_WARM_RESET_PREAMBLE            2" />
+                <Field name="reset_item_phase2_reset" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description=" if cleared, skip over the entire phase-2. good for fw reset." />
+                <Field name="reset_item_phase1_reset" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description=" if cleared, skip over the entire phase-1." />
+            </list>
+
+            <!-- Precision stuff  -->
+            <list listkey="register_26_6_time">
+                <Field name="time" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="Time in micro seconds" precision="U32.26.6" units="uS"/>
+            </list>
+            <list listkey="register_voltage">
+                <Field name="voltage" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="Voltage" precision="S16.3.13" units="V"/>
+            </list>
+            <list listkey="register_current">
+                <Field name="amps" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="Current" precision="U16.8.8" units="A"/>
+            </list>
+            <list listkey="register_wattage">
+                <Field name="watts" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="Wattage" precision="U16.9.7" units="W"/>
+            </list>
+            <list listkey="register_wattage_12_3">
+                <Field name="watts" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="Wattage" precision="U16.12.3" units="W"/>
+            </list>
+            <list listkey="register_wattage_word">
+                <Field name="watts" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="Wattage" precision="U31.11.20" units="W"/>
+            </list>
+            <list listkey="register_hwp_pcode">
+                <Field name="pstate" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="Pstate value in 100MHz increments" precision="U16.8.8" units="f"/>
+            </list>
+            <list listkey="register_pstate">
+                <Field name="pstate" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="Pstate value in 100MHz increments" precision="U8.8.0" units="f"/>
+            </list>
+            <list listkey="register_capacitance">
+                <Field name="capacitance" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="capacitance" precision="U16.6.10" units="nF"/>
+            </list>
+            <list listkey="itd_slope">
+                <Field name="slope" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="slope" precision="U13.0.13" units=""/>
+            </list>
+            <list listkey="vf_slope">
+                <Field name="slope" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="slope" precision="U32.3.29" units=""/>
+            </list>
+            <list listkey="register_8_8">
+                <Field name="data" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="data" precision="U16.8.8" units=""/>
+            </list>
+            <list listkey="register_0_8">
+                <Field name="data" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="data" precision="U8.0.8" units=""/>
+            </list>
+            <list listkey="register_16_16">
+                <Field name="data" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="data" precision="U32.16.16" units=""/>
+            </list>
+            <list listkey="register_raw_temp">
+                <Field name="temperature" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="temperature" precision="U8.8.0" units="C"/>
+            </list>
+            <list listkey="register_temp">
+                <Field name="temperature" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="temperature" precision="U32.24.8" units="C"/>
+            </list>
+            <list listkey="register_exp">
+                <Field name="exp" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="exp" precision="U16.4.12" units=""/>
+            </list>
+            <list listkey="register_energy">
+                <Field name="joules" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="energy in joules" precision="U31.5.27" units="J"/>
+            </list>
+            <list listkey="register_energy_18_14">
+                <Field name="joules" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="energy in joules" precision="U32.18.14" units="J"/>
+            </list>
+            <list listkey="register_energy_11_20">
+                <Field name="joules" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="energy in joules" precision="U32.11.20" units="J"/>
+            </list>
+            <list listkey="register_energy_uj">
+                <Field name="uJoules" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="energy in micro joules" precision="U31.31.0" units="uJ"/>
+            </list>
+            <list listkey="register_energy_uj_word">
+                <Field name="uJoules" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="energy in micro joules" precision="U32.20.12" units="uJ"/>
+            </list>
+            <list listkey="register_time_5_20">
+                <Field name="seconds" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="time in seconds" precision="U32.5.20" units="s"/>
+            </list>
+            <list listkey="eet_stall_ratio">
+                <Field name="eet_stall_ratio" upper_bit="16" lower_bit="0" attribute="read_write" default_value="0x0" description="eet_stall_ratio" precision="U16.4.12" units=""/>
+            </list>
+            <list listkey="cfs_0">
+                <Field name="edp_c_dyn_cfs_0" upper_bit="16" lower_bit="0" attribute="read_write" default_value="0x0" description="" precision="U16.8.8" units="1/Volts"/>
+            </list>
+            <list listkey="cfs_1">
+                <Field name="edp_c_dyn_cfs_1" upper_bit="16" lower_bit="0" attribute="read_write" default_value="0x0" description="" precision="U16.3.13" units=""/>
+            </list>
+            <list listkey="cdyn_ratio">
+                <Field name="cdyn_ratio" upper_bit="16" lower_bit="0" attribute="read_write" default_value="0x0" description="" precision="U8.2.6" units=""/>
+            </list>
+            <list listkey="cdyn_voltage">
+                <Field name="cdyn_voltage" upper_bit="16" lower_bit="0" attribute="read_write" default_value="0x0" description="" precision="U8.0.8" units="v"/>
+            </list>
+            <list listkey="register_pbm_budget">
+                <Field name="budget" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="" precision="S32.11.20" units="W"/>
+            </list>
+            <list listkey="register_pbm_discount">
+                <Field name="scalar" upper_bit="31" lower_bit="0" attribute="read_write" default_value="0x0" description="PL2 limit is multiplied by this scalar to make room for PL2 safety net" precision="U32.0.32" units=""/>
+            </list>
+            <list listkey="register_pbm_cfg">
+                <Field name="pbm_cfg_vector_lock_bit" upper_bit="31" lower_bit="31" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_lock_bit " />
+                <Field name="pbm_cfg_vector_tau_y" upper_bit="24" lower_bit="19" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_tau_y : time constant (tau), in yyyyyxx format (1.xxGB_CORE0_ODOMETER_STATE" />
+                <Field name="pbm_cfg_vector_tau_x" upper_bit="18" lower_bit="17" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_tau_x : time constant (tau), in yyyyyxx format (1.xxGB_CORE0_ODOMETER_STATE" />
+                <Field name="pbm_cfg_vector_clamping" upper_bit="16" lower_bit="16" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_clamping : clamping; 0 means only turbo range; 1 means working on entire range till min_ratio."/>
+                <Field name="pbm_cfg_vector_enable" upper_bit="15" lower_bit="15" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_enable : enable bit; 0 means this instance does not affect p-state (disabled); 1 means enabled."/>
+                <Field name="pbm_cfg_vector_pwr_lim" upper_bit="14" lower_bit="0" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_pwr_lim : Power Limit, in U15.12.3 format" precision="U15.12.3" units="W"/>
+            </list>
+            <list listkey="register_sampled_pbm_cfg">
+                <Field name="pbm_cfg_vector_lock_bit" upper_bit="31" lower_bit="31" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_lock_bit " />
+                <Field name="pbm_cfg_vector_tau_x" upper_bit="24" lower_bit="23" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_tau_x : time constant (tau), in xxyyyyy format (1.xxGB_CORE0_ODOMETER_STATE" />
+                <Field name="pbm_cfg_vector_tau_y" upper_bit="22" lower_bit="17" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_tau_y : time constant (tau), in xxyyyyy format (1.xxGB_CORE0_ODOMETER_STATE" />
+                <Field name="pbm_cfg_vector_clamping" upper_bit="16" lower_bit="16" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_clamping : clamping; 0 means only turbo range; 1 means working on entire range till min_ratio."/>
+                <Field name="pbm_cfg_vector_enable" upper_bit="15" lower_bit="15" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_enable : enable bit; 0 means this instance does not affect p-state (disabled); 1 means enabled."/>
+                <Field name="pbm_cfg_vector_pwr_lim" upper_bit="14" lower_bit="0" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_pwr_lim : Power Limit, in U15.12.3 format" precision="U15.12.3" units="W"/>
+            </list>
+            <list listkey="register_saved_tau">
+                <Field name="pbm_cfg_vector_tau_y" upper_bit="6" lower_bit="2" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_tau_y : time constant (tau), in yyyyyxx format (1.xxGB_CORE0_ODOMETER_STATE" />
+                <Field name="pbm_cfg_vector_tau_x" upper_bit="1" lower_bit="0" attribute="read_write" default_value="0x0" description="pbm_cfg_vector_tau_x : time constant (tau), in yyyyyxx format (1.xxGB_CORE0_ODOMETER_STATE" />
+            </list>
+            <list listkey="bulkcr_dispatcher_states">
+                <field name="bulkcr_dispatcher_state_off" upper_bit="5" lower_bit="5" attribute="read_write" default_value="0x0" description="bulkcr_dispatcher_state_quiesced" />
+                <field name="bulkcr_dispatcher_state_quiesced" upper_bit="4" lower_bit="4" attribute="read_write" default_value="0x0" description="bulkcr_dispatcher_state_quiesced" />
+                <field name="bulkcr_dispatcher_state_wait_flows_complete" upper_bit="3" lower_bit="3" attribute="read_write" default_value="0x0" description="bulkcr_dispatcher_state_wait_flows_complete" />
+                <field name="bulkcr_dispatcher_state_wait_bulk_cr_fsm" upper_bit="2" lower_bit="2" attribute="read_write" default_value="0x0" description="bulkcr_dispatcher_state_wait_bulk_cr_fsm" />
+                <field name="bulkcr_dispatcher_state_wait_pkg" upper_bit="1" lower_bit="1" attribute="read_write" default_value="0x0" description="bulkcr_dispatcher_state_wait_pkg" />
+                <field name="bulkcr_dispatcher_state_idle" upper_bit="0" lower_bit="0" attribute="read_write" default_value="0x0" description="bulkcr_dispatcher_state_idle" />    
+            </list>
+            <!--    <field  upper_bit="0" lower_bit="0" attribute="read_write" default_value="0" name="" description=""/> -->
+        </fieldlists>        
+
+        <!-- Add fields to pcudata variables -->
+        <variable name="pkgc_target_static_enables" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_current_limit_req_mask" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_limit_mask_c0_1" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_limit_mask_c2" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_limit_mask_c36" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_limit_mask_c36_no_ret" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_limit_mask_c7" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_limit_mask_c7s" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_pc3_sa_pm_target_actions" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_pc3_sa_pm_working_actions" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_target_mode_cc3" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_target_mode_cc6" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_target_mode_cc7" listkey="pkgc_target_vector_fields"/>
+        <variable name="pkgc_target_vector" listkey="pkgc_target_vector_fields"/>
+        <variable name="tm1_configuration_state" instance= "28" listkey="tt1_config_state"/>
+        <variable name="pkgc_bit_indicators_latch" listkey="io_pkgc_bit_indicators"/>
+        <variable name="pkgc_dmi_kti_indicators_latch" listkey="io_pkgc_dmi_kti_status"/>
+        <variable name="pkgs_bit_indicators_latch" listkey="io_pkgs_kti_req_bit_indicators"/>
+        <variable name="pkgs_master_pch_bit_indicators_latch" listkey="io_pkgs_pch_bit_indicators"/>
+        <variable name="pkgs_master_fp_bits_latch" listkey="io_fastpath_pkgs"/>
+        <variable name="global_bios_mbx_pcu_misc_config" listkey="global_bios_mbx_pcu_misc_config"/>
+        <variable name="pkgs_master_last_pch_go_request" listkey="io_pkgs_pch_bit_indicators"/>
+        <variable name="pkgs_last_go_request" listkey="io_pkgs_kti_req_bit_indicators"/>
+        <variable name="thermal_fp_bits_latch" listkey="io_fastpath_thermal"/>
+        <variable name="dfx_peci_mailbox_interface" listkey="dfx_peci_interface"/>
+        <variable name="dfx_peci_mailbox_parameters" listkey="dfx_peci_parameters"/>
+        <variable name="dfx_inband_peci_mailbox_interface" listkey="dfx_inband_peci_interface"/>
+        <variable name="dfx_inband_peci_mailbox_parameters" listkey="dfx_peci_parameters"/>
+        <variable name="dfx_workpoint_clip_flags" listkey="dfx_workpoint_clip_flags_decode"/>
+        <variable name="global_incomplete_reset_tasks" listkey="global_incomplete_reset_tasks_decode"/>
+        <variable name="bulkcr_dispatcher_config_mask" listkey="bulkcr_dispatcher_states"/>
+
+
+        <!-- Precision Stuff -->
+
+        <!-- Time registers -->
+        <variable name="pkgc_ring_pll_lock_time_plus_vid_response_and_bias_time_usec"  listkey="register_26_6_time"/>
+        <variable name="pkgc_master_latency"  listkey="register_26_6_time"/>
+        <variable name="pkgc_master_latency_copy"  listkey="register_26_6_time"/>
+        <!-- end Time registers -->
+
+        <!--  voltage registers -->
+        <variable name="gvfsm_target_slice_voltage" instance= "core" listkey="register_voltage"/>
+        <variable name="global_gvfsm_current_slice_voltage" instance= "core" listkey="register_voltage"/>
+        <variable name="global_gvfsm_request_slice_voltage" instance= "core" listkey="register_voltage"/>
+        <variable name="pmeter_slice_agg_max_voltage" instance= "core" listkey="register_voltage"/>
+
+
+        <variable name="fused_sa_vr_itd_cutoff_v"  listkey="register_voltage"/>
+        <variable name="fused_sa_itd_cutoff_v"  listkey="register_voltage"/>
+        <variable name="fused_ia_itd_cutoff_v"  instance="3" start="0" listkey="register_voltage"/>
+        <variable name="fused_ring_itd_cutoff_v" instance="3" start="0"  listkey="register_voltage"/>
+        <variable name="sa_itd_max_delta_v"  listkey="register_voltage"/>
+        <variable name="last_sa_vr_itd_computed_v"  listkey="register_voltage"/>
+        <variable name="last_sa_vr_itd_issued_v"  listkey="register_voltage"/>
+        <variable name="last_sa_fivr_issued_v" instance="6" start="0" listkey="register_voltage"/>
+        <variable name="last_sa_fivr_itd_computed_v" instance="6" start="0" listkey="register_voltage"/>
+        <variable name="fused_reference_voltage"  listkey="register_voltage"/>
+
+        <variable name="fused_retention_voltage" instance="7" start="0"  listkey="register_voltage"/>
+        <variable name="fivr_non_boot_active_voltage" instance="6" start="0"  listkey="register_voltage"/>
+
+        <!-- end Voltage registers -->
+
+        <!-- Amp registers -->
+        <variable name="fused_pkg_min_iccmax"  listkey="register_current"/>
+        <variable name="fused_pkg_icc_max" listkey="register_current"/>
+        <variable name="resolved_pkg_icc_max" listkey="register_current"/>
+        <variable name="peci_cfg_pkg_icc_max" listkey="register_current"/>
+        <variable name="fused_ia_leakage_reference_current" instance="core" listkey="register_current"/>
+        <variable name="fused_ring_leakage_reference_current"  listkey="register_current"/>
+        <variable name="global_gvfsm_request_icc_for_ps" instance="core" listkey="register_current"/>
+
+        <!-- end Amp registers -->
+
+        <!-- Watt registers -->
+        <variable name="svid_vr_imon_vr0_power" listkey="register_wattage"/>
+        <variable name="svid_vr_imon_vr1_power" listkey="register_wattage"/>
+        <variable name="svid_vr_imon_vr2_power" listkey="register_wattage"/>
+        <variable name="svid_vr_imon_vr3_power" listkey="register_wattage"/>
+        <variable name="svid_vr_imon_vr4_power" listkey="register_wattage"/>
+        <variable name="svid_vr_imon_vr5_power" listkey="register_wattage"/>
+        <variable name="svid_vr_imon_vr6_power" listkey="register_wattage"/>
+        <variable name="svid_vr_imon_vr7_power" listkey="register_wattage"/>
+        <variable name="svid_vr_imon_vr8_power" listkey="register_wattage"/>
+        <variable name="svid_vr_imon_vr9_power" listkey="register_wattage"/>
+        <variable name="fused_other_power_max"  listkey="register_wattage"/>
+        <variable name="resolved_pkg_power_max"  listkey="register_wattage"/>
+        <variable name="edp_ia_power_residual"  listkey="register_wattage"/>
+        <variable name="edp_ia_gt_ring_power_budget"  listkey="register_wattage"/>
+        <variable name="edp_ia_c3_lkg_power" instance="core" listkey="register_wattage"/>
+        <variable name="edp_ia_c0_pwr_table" instance="core" listkey="register_wattage"/>
+
+
+        <variable name="fused_tdp_power_of_sku"  listkey="register_wattage_12_3"/>
+        <variable name="fused_tdp_offset_of_sku"  listkey="register_wattage_12_3"/>
+        <variable name="fused_min_power_of_sku"  listkey="register_wattage_12_3"/>
+        <variable name="fused_max_short_power_limit"  listkey="register_wattage_12_3"/>
+
+        <variable name="global_pmeter_consumed_power_pkg_pl1"  listkey="register_wattage_word"/>
+        <variable name="global_pmeter_consumed_power_pkg_pl2"  listkey="register_wattage_word"/>
+        <variable name="pmeter_svid_measured_cpu_total_power"  listkey="register_wattage_word"/>
+        <variable name="fused_mcp_fixed_power"  listkey="register_wattage"/>
+        <variable name="resolved_fixed_extra_power"  listkey="register_wattage_word"/>
+        <variable name="pmeter_cpu_total_power"  listkey="register_wattage_word"/>
+        <variable name="pmeter_vddq_total_power"  listkey="register_wattage_word"/>
+        <variable name="pmeter_pkg_pwr_dfx_override"  listkey="register_wattage_word"/>
+
+        <variable name="fast_rapl_svid_measured_cpu_total_power"  listkey="register_wattage_word"/>
+        <variable name="fast_rapl_cpu_total_power"  listkey="register_wattage_word"/>
+
+
+        <variable name="psafe_in_power_format"  listkey="register_wattage_word"/>
+
+
+        <!-- end Watt registers -->
+
+        <!-- energy svid_vr_imon_vr0_total_energy-->
+        <variable name="fast_rapl_svid_cpu_total_delta_energy"  listkey="register_energy_uj"/>
+        <variable name="pmeter_svid_cpu_total_delta_energy"  listkey="register_energy_uj"/>
+        <variable name="svid_vr_imon_vr0_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="svid_vr_imon_vr1_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="svid_vr_imon_vr2_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="svid_vr_imon_vr3_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="svid_vr_imon_vr4_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="svid_vr_imon_vr5_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="svid_vr_imon_vr6_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="svid_vr_imon_vr7_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="svid_vr_imon_vr8_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="svid_vr_imon_vr9_total_energy"  listkey="register_energy_11_20"/>
+        <variable name="pmeter_vddq_total_delta_energy"  listkey="register_energy_uj_word"/>
+        <variable name="pmeter_vddq_active_energy_per_channel_imc0" instance="3" start="0" listkey="register_energy_uj_word"/>
+        <variable name="pmeter_vddq_active_energy_per_channel_imc1" instance="3" start="0" listkey="register_energy_uj_word"/>
+        <variable name="pmeter_vddq_active_energy_totals" instance="2" start="0" listkey="register_energy_uj_word"/>
+        <variable name="pmeter_vddq_idle_energy_per_channel_imc0" instance="3" start="0" listkey="register_energy_uj_word"/>
+        <variable name="pmeter_vddq_idle_energy_per_channel_imc1" instance="3" start="0" listkey="register_energy_uj_word"/>
+        <variable name="pmeter_vddq_idle_energy_totals" instance="2" start="0" listkey="register_energy_uj_word"/>
+        <variable name="global_pmeter_package_acc_energy" listkey="register_energy_18_14"/>
+        <variable name="io_package_energy_status" listkey="register_energy_18_14"/>
+        <!--<register name="io_package_energy_status">  <field name="None" precision="U32.18.14" untis="J"/> </register>-->
+        <!-- end energy -->
+
+        <!-- time -->
+        <variable name="global_pmeter_time_delta_in_sec"  listkey="register_time_5_20"/>
+        <!-- end time -->
+
+        <!-- HWP pcode formatted registers -->
+        <variable name="hwpm_thread_pstate_request" instance= "thread" listkey="register_hwp_pcode"/>
+        <variable name="hwpm_thread_pstate_target" instance= "thread" listkey="register_hwp_pcode"/>
+        <variable name="core_auto_p_target" instance= "core" listkey="register_hwp_pcode"/>
+        <variable name="hcpm_util_ave"  instance= "thread" listkey="hcpm_utilization"/>
+        <variable name="hcpm_util"  instance= "thread" listkey="hcpm_utilization"/>
+        <!-- end HWP pcode formatted registers -->
+
+        <!-- pstate registers -->
+        <variable name="pbm_pid_struct_ia_msr_min"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_ia_msr_max"  listkey="register_pstate"/>
+        <!-- end pstate registers -->
+
+        <!-- slopes -->
+        <variable name="fused_ia_itd_slope" instance="3" start="0" listkey="itd_slope"/>
+        <variable name="fused_ring_itd_slope" instance="3" start="0" listkey="itd_slope"/>
+        <variable name="fused_sa_itd_slope" instance="3" start="0" listkey="itd_slope"/>
+        <!-- end slopes -->
+
+        <!-- exp -->
+        <variable name="edp_exp_table" instance="24" start="0" listkey="register_exp"/>
+        <!-- end exp -->
+
+        <!-- temperatures -->
+        <variable name="edp_ia_reference_temperature"  listkey="register_raw_temp"/>
+        <variable name="edp_ring_reference_temperature"  listkey="register_raw_temp"/>
+        <variable name="ia_itd_temp_gb"  listkey="register_temp"/>
+
+        <!-- end temperatures -->
+
+
+        <!-- vf tables -->
+        <variable name="vf_desc_struct_iacore0_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore1_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore2_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore3_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore4_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore5_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore6_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore7_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore8_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore9_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore10_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore11_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore12_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore13_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore14_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore15_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore16_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore17_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore18_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore19_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore20_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore21_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore22_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore23_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore24_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore25_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore26_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore27_vf_voltage_sse" instance= "6" start="0" listkey="register_voltage"/>
+
+        <variable name="vf_desc_struct_iacore0_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore1_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore2_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore3_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore4_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore5_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore6_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore7_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore8_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore9_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore10_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore11_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore12_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore13_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore14_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore15_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore16_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore17_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore18_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore19_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore20_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore21_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore22_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore23_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore24_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore25_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore26_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore27_vf_voltage_avx2" instance= "6" start="0" listkey="register_voltage"/>
+
+        <variable name="vf_desc_struct_iacore0_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore1_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore2_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore3_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore4_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore5_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore6_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore7_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore8_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore9_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore10_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore11_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore12_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore13_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore14_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore15_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore16_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore17_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore18_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore19_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore20_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore21_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore22_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore23_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore24_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore25_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore26_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_desc_struct_iacore27_vf_voltage_avx3" instance= "6" start="0" listkey="register_voltage"/>
+
+        <!-- vf table slopes -->
+        <variable name="vf_desc_struct_iacore0_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore1_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore2_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore3_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore4_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore5_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore6_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore7_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore8_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore9_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore10_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore11_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore12_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore13_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore14_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore15_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore16_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore17_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore18_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore19_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore20_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore21_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore22_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore23_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore24_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore25_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore26_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore27_vf_slope_sse" instance= "6" start="0" listkey="vf_slope"/>
+
+        <variable name="vf_desc_struct_iacore0_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore1_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore2_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore3_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore4_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore5_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore6_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore7_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore8_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore9_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore10_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore11_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore12_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore13_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore14_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore15_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore16_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore17_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore18_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore19_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore20_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore21_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore22_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore23_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore24_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore25_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore26_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore27_vf_slope_avx2" instance= "6" start="0" listkey="vf_slope"/>
+
+        <variable name="vf_desc_struct_iacore0_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore1_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore2_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore3_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore4_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore5_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore6_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore7_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore8_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore9_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore10_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore11_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore12_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore13_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore14_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore15_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore16_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore17_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore18_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore19_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore20_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore21_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore22_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore23_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore24_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore25_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore26_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+        <variable name="vf_desc_struct_iacore27_vf_slope_avx3" instance= "6" start="0" listkey="vf_slope"/>
+
+        <variable name="vf_table_struct_ia0_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia1_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia2_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia3_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia4_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia5_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia6_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia7_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia8_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia9_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia10_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia11_sse_voltage" instance= "6" start="0" listkey="register_voltage"/>
+
+        <variable name="vf_table_struct_ia0_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia1_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia2_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia3_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia4_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia5_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia6_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia7_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia8_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia9_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia10_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia11_avx2_voltage" instance= "6" start="0" listkey="register_voltage"/>
+
+        <variable name="vf_table_struct_ia0_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia1_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia2_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia3_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia4_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia5_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia6_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia7_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia8_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia9_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia10_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+        <variable name="vf_table_struct_ia11_avx3_voltage" instance= "6" start="0" listkey="register_voltage"/>
+
+        <variable name="ia_edp_pwr_table_per_iccp_0" instance= "1176" start="0" listkey="register_wattage"/>
+        <variable name="ia_edp_pwr_table_per_iccp_1" instance= "1176" start="0" listkey="register_wattage"/>
+        <variable name="ia_edp_pwr_table_per_iccp_2" instance= "1176" start="0" listkey="register_wattage"/>
+
+        <variable name="ia_edp_icc_table_per_iccp_0" instance= "1176" start="0" listkey="register_current"/>
+        <variable name="ia_edp_icc_table_per_iccp_1" instance= "1176" start="0" listkey="register_current"/>
+        <variable name="ia_edp_icc_table_per_iccp_2" instance= "1176" start="0" listkey="register_current"/>
+
+
+        <variable name="edp_ring_icc_table" instance= "74" start="0" listkey="register_current"/>
+        <variable name="edp_ring_pwr_table" instance= "74" start="0" listkey="register_wattage"/>
+        <variable name="ring_vf_table" instance= "74" start="0" listkey="register_voltage"/>
+        <variable name="ring_vf_itd_corrected_table" instance= "74" start="0" listkey="register_voltage"/>
+        <!-- end of vf tables -->
+
+        <!-- cdyn  -->
+        <variable name="fused_ia_cdyn_max"  listkey="register_capacitance"/>
+        <variable name="fused_ia_core_cdyn_max" instance="core" start="0" listkey="register_capacitance"/>
+        <variable name="fused_ring_cdyn_max"  listkey="register_capacitance"/>
+        <variable name="fused_c_dyn_v_correction"  listkey="cdyn_voltage"/>
+        <variable name="fused_ia_fma_cdyn_extra_cost"  listkey="register_0_8"/>
+
+        <!-- end cdyn -->
+
+        <!-- reset bypasses -->
+        <variable name="io_reset_bypasses_0" rename="io_reset_bypasses_0" listkey ="reset_bypasses_0"/>
+        <variable name="io_reset_bypasses_1" rename="io_reset_bypasses_1" listkey ="reset_bypasses_1"/>
+        <variable name="io_reset_bypasses_2" rename="io_reset_bypasses_2" listkey ="reset_bypasses_2"/>
+
+        <!-- end reset bypasses -->
+        <!-- rapl pbms -->
+        <variable name="pbm_resolved_cfg_0"  rename="pbm_resolved_cfg_ia_msr" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_1"  rename="pbm_resolved_cfg_ia_mmiopcs" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_2"  rename="pbm_resolved_cfg_gt_msr" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_3"  rename="pbm_resolved_cfg_gt_mmiopcs" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_4"  rename="pbm_resolved_cfg_pkg_pl1_msr" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_5"  rename="pbm_resolved_cfg_pkg_pl1_mmiopcs" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_6"  rename="pbm_resolved_cfg_pkg_pl2_msr" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_7"  rename="pbm_resolved_cfg_pkg_pl2_mmiopcs" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_8"  rename="pbm_resolved_cfg_ddr_pl1_msr" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_9"  rename="pbm_resolved_cfg_ddr_pl1_mmiopcs" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_10"  rename="pbm_resolved_cfg_ddr_pl2_msr" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_11"  rename="pbm_resolved_cfg_ddr_pl2_mmiopcs" listkey="register_pbm_cfg"/>
+        
+        
+        <variable name="pbm_resolved_cfg_unbiased_pl2_mmio" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_unbiased_pl2_msr" listkey="register_pbm_cfg"/>
+        <variable name="pbm_resolved_cfg_pl2safetynet" listkey="register_pbm_cfg"/>
+        
+        <variable name="pbm_sampled_cfg_mmio_0"  rename="pbm_sampled_cfg_ia_mmio" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_mmio_1"  rename="pbm_sampled_cfg_gt_mmio" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_mmio_2"  rename="pbm_sampled_cfg_pkg_pl1_mmio" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_mmio_3"  rename="pbm_sampled_cfg_pkg_pl2_mmio" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_mmio_4"  rename="pbm_sampled_cfg_ddr_pl1_mmio" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_mmio_5"  rename="pbm_sampled_cfg_ddr_pl2_mmio" listkey="register_sampled_pbm_cfg"/>
+
+        <variable name="pbm_sampled_cfg_msr_0"  rename="pbm_sampled_cfg_ia_msr" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_msr_1"  rename="pbm_sampled_cfg_gt_msr" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_msr_2"  rename="pbm_sampled_cfg_pkg_pl1_msr" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_msr_3"  rename="pbm_sampled_cfg_pkg_pl2_msr" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_msr_4"  rename="pbm_sampled_cfg_ddr_pl1_msr" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_msr_5"  rename="pbm_sampled_cfg_ddr_pl2_msr" listkey="register_sampled_pbm_cfg"/>
+        
+        <variable name="pbm_sampled_cfg_pcs_0"  rename="pbm_sampled_cfg_ia_pcs" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_pcs_1"  rename="pbm_sampled_cfg_gt_pcs" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_pcs_2"  rename="pbm_sampled_cfg_pkg_pl1_pcs" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_pcs_3"  rename="pbm_sampled_cfg_pkg_pl2_pcs" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_pcs_4"  rename="pbm_sampled_cfg_ddr_pl1_pcs" listkey="register_sampled_pbm_cfg"/>
+        <variable name="pbm_sampled_cfg_pcs_5"  rename="pbm_sampled_cfg_ddr_pl2_pcs" listkey="register_sampled_pbm_cfg"/>
+        
+        <variable name="global_pcs_pbm_package_rapl_limit_1" listkey="register_pbm_cfg"/>
+        <variable name="global_pcs_pbm_package_rapl_limit_2" listkey="register_pbm_cfg"/>
+        
+        <variable name="pbm_pl2_discount" listkey="register_pbm_discount"/>
+        
+        <variable name="pbm_saved_tau_0"  rename="pbm_saved_tau_ia_msr" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_1"  rename="pbm_saved_tau_ia_mmiopcs" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_2"  rename="pbm_saved_tau_gt_msr" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_3"  rename="pbm_saved_tau_gt_mmiopcs" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_4"  rename="pbm_saved_tau_pkg_pl1_msr" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_5"  rename="pbm_saved_tau_pkg_pl1_mmiopcs" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_6"  rename="pbm_saved_tau_pkg_pl2_msr" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_7"  rename="pbm_saved_tau_pkg_pl2_mmiopcs" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_8"  rename="pbm_saved_tau_ddr_pl1_msr" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_9"  rename="pbm_saved_tau_ddr_pl1_mmiopcs" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_10"  rename="pbm_saved_tau_ddr_pl2_msr" listkey="register_saved_tau"/>
+        <variable name="pbm_saved_tau_11"  rename="pbm_saved_tau_ddr_pl2_mmiopcs" listkey="register_saved_tau"/>
+        
+        <variable name="pbm_instance_budget_0"  rename="pbm_instance_budget_ia_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_1"  rename="pbm_instance_budget_ia_mmiopcs" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_2"  rename="pbm_instance_budget_gt_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_3"  rename="pbm_instance_budget_gt_mmiopcs" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_4"  rename="pbm_instance_budget_pkg_pl1_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_5"  rename="pbm_instance_budget_pkg_pl1_mmiopcs" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_6"  rename="pbm_instance_budget_pkg_pl2_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_7"  rename="pbm_instance_budget_pkg_pl2_mmiopcs" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_8"  rename="pbm_instance_budget_ddr_pl1_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_9"  rename="pbm_instance_budget_ddr_pl1_mmiopcs" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_10"  rename="pbm_instance_budget_ddr_pl2_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_11"  rename="pbm_instance_budget_ddr_pl2_mmiopcs" listkey="register_pbm_budget"/>
+        
+        <variable name="pbm_instance_budget_delta_0"  rename="pbm_instance_budget_delta_ia_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_delta_1"  rename="pbm_instance_budget_delta_ia_mmiopcs" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_delta_2"  rename="pbm_instance_budget_delta_gt_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_delta_3"  rename="pbm_instance_budget_delta_gt_mmiopcs" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_delta_4"  rename="pbm_instance_budget_delta_pkg_pl1_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_delta_5"  rename="pbm_instance_budget_delta_pkg_pl1_mmiopcs" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_delta_6"  rename="pbm_instance_budget_delta_pkg_pl2_msr" listkey="register_pbm_budget"/>
+        <variable name="pbm_instance_budget_delta_7"  rename="pbm_instance_budget_delta_pkg_pl2_mmiopcs" listkey="register_pbm_budget"/>
+
+        <variable name="pbm_pid_ratio_limit_0"  rename="pbm_pid_ratio_limit_ia_msr" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_1"  rename="pbm_pid_ratio_limit_ia_mmiopcs" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_2"  rename="pbm_pid_ratio_limit_gt_msr" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_3"  rename="pbm_pid_ratio_limit_gt_mmiopcs" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_4"  rename="pbm_pid_ratio_limit_pkg_pl1_msr_ia" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_5"  rename="pbm_pid_ratio_limit_pkg_pl1_msr_gt" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_6"  rename="pbm_pid_ratio_limit_pkg_pl1_msr_clr" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_7"  rename="pbm_pid_ratio_limit_pkg_pl1_mmiopcs_ia" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_8"  rename="pbm_pid_ratio_limit_pkg_pl1_mmiopcs_gt" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_9"  rename="pbm_pid_ratio_limit_pkg_pl1_mmiopcs_clr" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_10"  rename="pbm_pid_ratio_limit_pkg_pl2_msr_ia" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_11"  rename="pbm_pid_ratio_limit_pkg_pl2_msr_gt" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_12"  rename="pbm_pid_ratio_limit_pkg_pl2_msr_clr" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_13"  rename="pbm_pid_ratio_limit_pkg_pl2_mmiopcs_ia" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_14"  rename="pbm_pid_ratio_limit_pkg_pl2_mmiopcs_gt" listkey="register_8_8"/>
+        <variable name="pbm_pid_ratio_limit_15"  rename="pbm_pid_ratio_limit_pkg_pl2_mmiopcs_clr" listkey="register_8_8"/>
+
+        <variable name="pbm_pid_struct_ia_msr_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_ia_msr_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_ia_msr_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_ia_msr_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_ia_msr_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_ia_msr_min"  listkey="register_pstate"/>
+
+        <variable name="pbm_pid_struct_ia_mmiopcs_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_ia_mmiopcs_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_ia_mmiopcs_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_ia_mmiopcs_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_ia_mmiopcs_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_ia_mmiopcs_min"  listkey="register_pstate"/>
+
+
+        <variable name="pbm_pid_struct_pkg_pl1_msr_ia_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_ia_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_ia_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_ia_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_ia_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_ia_min"  listkey="register_pstate"/>
+
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_ia_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_ia_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_ia_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_ia_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_ia_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_ia_min"  listkey="register_pstate"/>
+
+        <variable name="pbm_pid_struct_pkg_pl1_msr_clr_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_clr_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_clr_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_clr_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_clr_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_pkg_pl1_msr_clr_min"  listkey="register_pstate"/>
+
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_clr_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_clr_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_clr_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_clr_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_clr_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_pkg_pl1_mmiopcs_clr_min"  listkey="register_pstate"/>
+
+        <variable name="pbm_pid_struct_pkg_pl2_msr_ia_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_ia_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_ia_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_ia_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_ia_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_ia_min"  listkey="register_pstate"/>
+
+        <variable name="pbm_pid_struct_pkg_pl2_msr_clr_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_clr_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_clr_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_clr_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_clr_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_pkg_pl2_msr_clr_min"  listkey="register_pstate"/>
+
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_ia_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_ia_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_ia_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_ia_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_ia_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_ia_min"  listkey="register_pstate"/>
+
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_clr_integral_accum"  listkey="register_16_16"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_clr_kp"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_clr_ki"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_clr_kd"  listkey="register_8_8"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_clr_max"  listkey="register_pstate"/>
+        <variable name="pbm_pid_struct_pkg_pl2_mmiopcs_clr_min"  listkey="register_pstate"/>
+
+        <!-- end rapl pbms -->
+        
+        <!--  catch all -->
+        <variable name="eet_stall_ratio_threshold_table_" instance= "14" listkey="eet_stall_ratio"/>
+        <variable name="edp_c_dyn_cfs_0"  listkey="cfs_0"/>
+        <variable name="edp_c_dyn_cfs_1"  listkey="cfs_1"/>
+        <variable name="fused_cdyn_ratio" instance= "5" start="0" listkey="cdyn_ratio"/>
+
+        <!-- end of catch all -->
+
+
+        <!-- end precision regs -->
+
+        <!-- Create Registers -->
+        <!-- slave ea0 -->
+        <variable name="dfx_timer_struct_00_0"  rename="dfx_timer_pkgc_slave_pmreq_ea0_latency_last_time" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_00_4"  rename="dfx_timer_pkgc_slave_pmreq_ea0_latency_last_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_00_8"  rename="dfx_timer_pkgc_slave_pmreq_ea0_latency_min_elapsed"  replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_00_12" rename="dfx_timer_pkgc_slave_pmreq_ea0_latency_max_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_00_16" rename="dfx_timer_pkgc_slave_pmreq_ea0_latency_sum_elapsed_lo" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_00_20" rename="dfx_timer_pkgc_slave_pmreq_ea0_latency_sum_elapsed_hi" replace="False"><regaddr size="2" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_00_22" rename="dfx_timer_pkgc_slave_pmreq_ea0_latency_num_runs" replace="False"><regaddr size="2" bitsoffset="0"/></variable>
+        <!-- slave ea1 -->
+        <variable name="dfx_timer_struct_01_0"  rename="dfx_timer_pkgc_slave_pmreq_ea1_latency_last_time" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_01_4"  rename="dfx_timer_pkgc_slave_pmreq_ea1_latency_last_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_01_8"  rename="dfx_timer_pkgc_slave_pmreq_ea1_latency_min_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_01_12" rename="dfx_timer_pkgc_slave_pmreq_ea1_latency_max_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_01_16" rename="dfx_timer_pkgc_slave_pmreq_ea1_latency_sum_elapsed_lo" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_01_20" rename="dfx_timer_pkgc_slave_pmreq_ea1_latency_sum_elapsed_hi" replace="False"><regaddr size="2" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_01_22" rename="dfx_timer_pkgc_slave_pmreq_ea1_latency_num_runs" replace="False"><regaddr size="2" bitsoffset="0"/></variable>
+        <!-- master ea0 -->
+        <variable name="dfx_timer_struct_02_0"  rename="dfx_timer_pkgc_master_pmreq_ea0_latency_last_time" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_02_4"  rename="dfx_timer_pkgc_master_pmreq_ea0_latency_last_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_02_8"  rename="dfx_timer_pkgc_master_pmreq_ea0_latency_min_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_02_12" rename="dfx_timer_pkgc_master_pmreq_ea0_latency_max_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_02_16" rename="dfx_timer_pkgc_master_pmreq_ea0_latency_sum_elapsed_lo" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_02_20" rename="dfx_timer_pkgc_master_pmreq_ea0_latency_sum_elapsed_hi" replace="False"><regaddr size="2" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_02_22" rename="dfx_timer_pkgc_master_pmreq_ea0_latency_num_runs" replace="False"><regaddr size="2" bitsoffset="0"/></variable>
+        <!-- master ea1 -->
+        <variable name="dfx_timer_struct_03_0"  rename="dfx_timer_pkgc_master_pmreq_ea1_latency_last_time" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_03_4"  rename="dfx_timer_pkgc_master_pmreq_ea1_latency_last_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_03_8"  rename="dfx_timer_pkgc_master_pmreq_ea1_latency_min_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_03_12" rename="dfx_timer_pkgc_master_pmreq_ea1_latency_max_elapsed" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_03_16" rename="dfx_timer_pkgc_master_pmreq_ea1_latency_sum_elapsed_lo" replace="False"><regaddr size="4" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_03_20" rename="dfx_timer_pkgc_master_pmreq_ea1_latency_sum_elapsed_hi" replace="False"><regaddr size="2" bitsoffset="0"/></variable>
+        <variable name="dfx_timer_struct_03_22" rename="dfx_timer_pkgc_master_pmreq_ea1_latency_num_runs" replace="False"><regaddr size="2" bitsoffset="0"/></variable>
+
+        <!-- Rename Registers -->
+        <!-- DFX Counters -->
+        <variable name="dfx_counter_array_0" rename="dfx_counter_pkgc_m_pmreq_skt_0"/>
+        <variable name="dfx_counter_array_1" rename="dfx_counter_pkgc_m_pmreq_skt_1"/>
+        <variable name="dfx_counter_array_2" rename="dfx_counter_pkgc_m_pmreq_skt_2"/>
+        <variable name="dfx_counter_array_3" rename="dfx_counter_pkgc_m_pmreq_skt_3"/>
+        <variable name="dfx_counter_array_4" rename="dfx_counter_pkgc_m_pmreq_skt_4"/>
+        <variable name="dfx_counter_array_5" rename="dfx_counter_pkgc_m_pmreq_skt_5"/>
+        <variable name="dfx_counter_array_6" rename="dfx_counter_pkgc_m_pmreq_skt_6"/>
+        <variable name="dfx_counter_array_7" rename="dfx_counter_pkgc_m_pmreq_skt_7"/>
+        <variable name="dfx_counter_array_8" rename="dfx_counter_pkgc_m_pch_ea0"/>
+        <variable name="dfx_counter_array_9" rename="dfx_counter_pkgc_m_pch_ea1"/>
+        <variable name="dfx_counter_array_10" rename="dfx_counter_pkgc_m_gc3_enter"/>
+        <variable name="dfx_counter_array_11" rename="dfx_counter_pkgc_m_gc3_exit"/>
+        <variable name="dfx_counter_array_12" rename="dfx_counter_pkgc_s_action_pop_down_triggered"/>
+        <variable name="dfx_counter_array_13" rename="dfx_counter_pkgc_s_action_qpi_l1"/>
+        <variable name="dfx_counter_array_14" rename="dfx_counter_pkgc_s_action_ring_off"/>
+        <variable name="dfx_counter_array_15" rename="dfx_counter_pkgc_s_action_mc0_pll_off"/>
+        <variable name="dfx_counter_array_16" rename="dfx_counter_pkgc_s_action_mc1_pll_off"/>
+        <variable name="dfx_counter_array_17" rename="dfx_counter_pkgc_s_action_mc0_clk_gate"/>
+        <variable name="dfx_counter_array_18" rename="dfx_counter_pkgc_s_action_mc1_clk_gate"/>
+        <variable name="dfx_counter_array_20" rename="dfx_counter_pkgc_s_action_vid_retention"/>
+        <variable name="dfx_counter_array_21" rename="dfx_counter_pkgc_s_action_vccsa_vid_retention"/>
+        <variable name="dfx_counter_array_22" rename="dfx_counter_pkgc_s_action_mc0_fivr_retention"/>
+        <variable name="dfx_counter_array_23" rename="dfx_counter_pkgc_s_action_mc1_fivr_retention"/>
+        <variable name="dfx_counter_array_24" rename="dfx_counter_pkgc_s_action_iio0_pll_off"/>
+        <variable name="dfx_counter_array_25" rename="dfx_counter_pkgc_s_action_iio1_pll_off"/>
+        <variable name="dfx_counter_array_26" rename="dfx_counter_pkgc_s_action_iio2_pll_off"/>
+        <variable name="dfx_counter_array_27" rename="dfx_counter_pkgc_s_action_iio0_clk_gate"/>
+        <variable name="dfx_counter_array_28" rename="dfx_counter_pkgc_s_action_iio1_clk_gate"/>
+        <variable name="dfx_counter_array_29" rename="dfx_counter_pkgc_s_action_iio2_clk_gate"/>
+        <variable name="dfx_counter_array_30" rename="dfx_counter_pkgc_s_action_kti01_pll_off"/>
+        <variable name="dfx_counter_array_31" rename="dfx_counter_pkgc_s_action_kti2_pll_off"/>
+        <variable name="dfx_counter_array_32" rename="dfx_counter_pkgc_s_action_kti01_clk_gate"/>
+        <variable name="dfx_counter_array_33" rename="dfx_counter_pkgc_s_action_kti2_clk_gate"/>
+        <variable name="dfx_counter_array_34" rename="dfx_counter_pkgc_s_break_pc3"/>
+        <variable name="dfx_counter_array_35" rename="dfx_counter_pkgc_s_action_hw_abort"/>
+        <variable name="dfx_counter_array_36" rename="dfx_counter_pkgc_s_action_sa_pm_entry_complete"/>
+        <variable name="dfx_counter_array_37" rename="dfx_counter_pkgc_s_action_svid_entry_complete"/>
+        <variable name="dfx_counter_array_38" rename="dfx_counter_ratio_change_p0"/>
+        <variable name="dfx_counter_array_39" rename="dfx_counter_ratio_change_p0_p1"/>
+        <variable name="dfx_counter_array_40" rename="dfx_counter_ratio_change_p1"/>
+        <variable name="dfx_counter_array_41" rename="dfx_counter_ratio_change_p1_pn"/>
+        <variable name="dfx_counter_array_42" rename="dfx_counter_ratio_change_pn"/>
+        <variable name="dfx_counter_array_43" rename="dfx_counter_clipping_cause_ext_prochot"/>
+        <variable name="dfx_counter_array_44" rename="dfx_counter_clipping_cause_emttm"/>
+        <variable name="dfx_counter_array_45" rename="dfx_counter_clipping_cause_pbm"/>
+        <variable name="dfx_counter_array_46" rename="dfx_counter_clipping_cause_pcs"/>
+        <variable name="dfx_counter_array_47" rename="dfx_counter_clipping_cause_gt_driver"/>
+        <variable name="dfx_counter_array_48" rename="dfx_counter_clipping_cause_oos"/>
+        <variable name="dfx_counter_array_49" rename="dfx_counter_clipping_cause_hot_vr"/>
+        <variable name="dfx_counter_array_50" rename="dfx_counter_clipping_cause_slow_reserved"/>
+        <variable name="dfx_counter_array_51" rename="dfx_counter_clipping_cause_edp"/>
+        <variable name="dfx_counter_array_52" rename="dfx_counter_clipping_cause_fast_reserved"/>
+        <variable name="dfx_counter_array_53" rename="dfx_counter_maint_task_pkg_wakeup"/>
+        <variable name="dfx_counter_array_54" rename="dfx_counter_ufs_up_ring_traffic"/>
+        <variable name="dfx_counter_array_55" rename="dfx_counter_ufs_up_stall_cycles"/>
+        <variable name="dfx_counter_array_56" rename="dfx_counter_ufs_up_c0_residency"/>
+        <variable name="dfx_counter_array_57" rename="dfx_counter_ufs_down"/>
+        <variable name="dfx_counter_array_58" rename="dfx_counter_ufs_io_p_limit"/>
+        <variable name="dfx_counter_array_59" rename="dfx_counter_ufs_perf_p_limit"/>
+        <variable name="dfx_counter_array_60" rename="dfx_counter_ufs_ring_gv_transitions"/>
+        <variable name="dfx_counter_array" rename="dfx_counter_clipping_cause_eet" instance="28" start="61"/>
+        <variable name="dfx_counter_array" rename="dfx_counter_core_cc6_enter" instance="28" start="89"/>
+        <variable name="dfx_counter_array" rename="dfx_counter_core_cc3_enter" instance="28" start="117"/>
+        <variable name="dfx_counter_array_145" rename="dfx_counter_pkgc_break_event_cause_0"/>
+        <variable name="dfx_counter_array_146" rename="dfx_counter_pkgc_break_event_cause_1_hw_wake"/>
+        <variable name="dfx_counter_array_147" rename="dfx_counter_pkgc_break_event_cause_2_os_req"/>
+        <variable name="dfx_counter_array_148" rename="dfx_counter_pkgc_break_event_cause_3_pcode_needs_ring"/>
+        <variable name="dfx_counter_array_149" rename="dfx_counter_pkgc_break_event_cause_4_sb_slow"/>
+        <variable name="dfx_counter_array_150" rename="dfx_counter_pkgc_break_event_cause_5_sb_fast"/>
+        <variable name="dfx_counter_array_151" rename="dfx_counter_pkgc_break_event_cause_6_sb_nosnoop"/>
+        <variable name="dfx_counter_array_152" rename="dfx_counter_pkgc_break_event_cause_7_pkgc_vec"/>
+        <variable name="dfx_counter_array_153" rename="dfx_counter_pkgc_break_event_cause_8"/>
+        <variable name="dfx_counter_array_154" rename="dfx_counter_pkgc_break_event_cause_9_arat_prewake"/>
+        <variable name="dfx_counter_array_155" rename="dfx_counter_pkgc_break_event_cause_10"/>
+        <variable name="dfx_counter_array_156" rename="dfx_counter_pkgc_break_event_cause_11"/>
+        <variable name="dfx_counter_array_157" rename="dfx_counter_pkgc_break_event_cause_12"/>
+        <variable name="dfx_counter_array_158" rename="dfx_counter_pkgc_break_event_cause_13"/>
+        <variable name="dfx_counter_array_159" rename="dfx_counter_pkgc_break_event_cause_14"/>
+        <variable name="dfx_counter_array_160" rename="dfx_counter_pkgc_break_event_cause_15_qet"/>
+        <variable name="dfx_counter_array_161" rename="dfx_counter_pkgc_break_event_cause_16"/>
+        <variable name="dfx_counter_array_162" rename="dfx_counter_pkgc_break_event_cause_17_kti_not_l1"/>
+        <variable name="dfx_counter_array_163" rename="dfx_counter_pkgc_break_event_cause_18_iio_not_l1"/>
+        <variable name="dfx_counter_array_164" rename="dfx_counter_pkgc_break_event_cause_19"/>
+        <variable name="dfx_counter_array_165" rename="dfx_counter_pkgc_break_event_cause_20"/>
+        <variable name="dfx_counter_array_166" rename="dfx_counter_pkgc_break_event_cause_21"/>
+        <variable name="dfx_counter_array_167" rename="dfx_counter_pkgc_break_event_cause_22_pkgs"/>
+        <variable name="dfx_counter_array_168" rename="dfx_counter_pkgc_break_event_cause_23"/>
+        <variable name="dfx_counter_array_169" rename="dfx_counter_pkgc_break_event_cause_24"/>
+
+        <variable name="dfx_wp_core_ratio_clip_mask_0" rename="dfx_wp_core_ratio_clip_mask_sse"/>
+        <variable name="dfx_wp_core_ratio_clip_mask_1" rename="dfx_wp_core_ratio_clip_mask_avx256"/>
+        <variable name="dfx_wp_core_ratio_clip_mask_2" rename="dfx_wp_core_ratio_clip_mask_avx512"/>
+        <variable name="dfx_wp_core_ratio_clip_mask_3" rename="dfx_wp_core_ratio_clip_mask_core_iccmax"/>
+        <variable name="dfx_wp_core_ratio_clip_mask_4" rename="dfx_wp_core_ratio_clip_mask_pbm"/>
+        <variable name="dfx_wp_core_ratio_clip_mask_5" rename="dfx_wp_core_ratio_clip_mask_pkg_edp"/>
+
+        <variable name="dfx_ufs_debug_lip_counter_0" rename="dfx_ufs_debug_lip_counter_previous_ufs_check_pass"/>
+        <variable name="dfx_ufs_debug_lip_counter_1" rename="dfx_ufs_debug_lip_counter_epb_perf_pass"/>
+        <variable name="dfx_ufs_debug_lip_counter_2" rename="dfx_ufs_debug_lip_counter_core_rapl_limit_pass"/>
+        <variable name="dfx_ufs_debug_lip_counter_3" rename="dfx_ufs_debug_lip_counter_core_at_p1_pass"/>
+        <variable name="dfx_ufs_debug_lip_counter_4" rename="dfx_ufs_debug_lip_counter_rapl_budget_pass"/>
+
+
+        <!-- Not Available for logregisters -->
+        <register name="io_fastpath_pkgs"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_core_p"> <regaddr available="False"/><field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_core_t"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_core_ucode"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_timers"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_pkgc"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_global"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_pstate_req"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_slice_c"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_thread_p_0"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_thread_p_1"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_thread_t_0"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_thread_t_1"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_thermal"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_fastpath_pcode_events"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_kti_rsp_bit_indicators_0"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_kti_rsp_bit_indicators_1"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_kti_rsp_bit_indicators_2"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_kti_rsp_bit_indicators_3"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_kti_rsp_bit_indicators_4"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_kti_rsp_bit_indicators_5"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_kti_rsp_bit_indicators_6"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_kti_rsp_bit_indicators_7"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgc_bit_indicators"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgc_queue_empty_indicators"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgc_full_empty_indicators"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_pch_bit_indicators"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_status_bit_indicators"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_kti_req_bit_indicators"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_pkgs_bit_indicators"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_misc_bit_indicators"> <regaddr available="False"/> <field name="None" attribute="read_once_clear"/> </register>
+        <register name="io_lip" remove="True"/>
+        <register name="io_tap_adr_ip_0" rename="io_lip" replace="False"/>
+        <!-- register name="debug_current_ip" rename="io_lip" replace="False"/ -->
+
+
+    </pcudata>
+    <vcudata>
+        <!-- Placeholder -->
+    </vcudata>
+
+</root>

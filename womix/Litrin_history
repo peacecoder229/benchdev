@@ -1,0 +1,1000 @@
+  168  ls
+  169  rm -rf oneDNN/
+  170  ls
+  171  rm -rf py36-venv/
+  172  ls
+  173  pwd
+  174  ls
+  175  du -sh *
+  176  cd ..
+  177  ls
+  178  cd tf_oneDnn_AMXkernels_Tatyana_v1
+  179  ls
+  180  cd ..
+  181  ls
+  182  cd whl_IntelTF2.3_OnDNN_master/
+  183  ls
+  184  pwd
+  185  ip r
+  186  ls
+  187  cd ..
+  188  ls
+  189  cd tf_oneDnn_AMXkernels_Tatyana_v1/
+  190  ls
+  191  rm -rf tensorflow
+  192  rm -rf oneDNN
+  193  ls
+  194  pwd
+  195  cd ..
+  196  ls
+  197  du -sh tf_oneDnn_AMXkernels_Tatyana*
+  198  ls
+  199  du -sh tf_oneDnn_*
+  200  cd tf_oneDnn_AMXkernels_Tatyana
+  201  du -sh build_dir/
+  202  ls
+  203  cd ..
+  204  ls
+  205  zip tf_oneDnn_AMXkernels_Tatyana 
+  206  yum install zip
+  207  ls
+  208  zip tf_oneDnn_AMXkernels_Tatyana.zip tf_oneDnn_AMXkernels_Tatyana 
+  209  ls
+  210  du -sh tf_oneDnn_AMXkernels_Tatyana.zip
+  211  rm -rf tf_oneDnn_AMXkernels_Tatyana.zip
+  212  ls
+  213  cd tf_oneDnn_AMXkernels_Tatyana
+  214  ls
+  215  cd build_dir/
+  216  ls
+  217  pwd
+  218  hostnamectl set-hostname --static JF5300-B11A224T
+  219  hostnamectl set-hostname JF5300-B11A224T
+  220  hostnamectl set-hostname --static JF5300-B11A224T
+  221  exit
+  222  cat /etc/os-release 
+  223  cat /etc/machine-id 
+  224  rm /etc/machine-id 
+  225  systemd-machine-id-setup 
+  226  cat /etc/machine-id 
+  227  ls /sys/class/net
+  228  cd /etc/sysconfig/network-scripts/
+  229  ls
+  230  cat ifcfg-enp1s0 
+  231  cd
+  232  cat /etc/hosts
+  233  reboot
+  234  cd dcso_sysd/
+  235  vi systeminfo.xml 
+  236  cat systeminfo.xml 
+  237  reboot
+  238  ip r
+  239  exit
+  240  ping 10.242.51.254
+  241  exit
+  242  dir
+  243  cd dcso_sysd/
+  244  vi dcso_sysd.py 
+  245  lscpu
+  246  yum install cpuid
+  247  cpuid
+  248  cpuid > /tmp/cpuid
+  249  vi /tmp/cpuid 
+  250  yum install pqos
+  251  yum install intel-cmt-cat
+  252  yum install msr-utils
+  253  yum install msr
+  254  sudo modprobe msr
+  255  pqos -m llc
+  256  pqos -m "llc"
+  257  pqos -m
+  258  pqos 
+  259  exit
+  260  lscpu
+  261  ip r
+  262  exit
+  263  htop
+  264  yum install htop
+  265  htop
+  266  pwd
+  267  df -h
+  268  tmux new -s mem
+  269  tmux ls
+  270  tmux a -t mem
+  271  tmux ls
+  272  tmux a -t mem
+  273  htop
+  274  uname -r
+  275  cat /etc/redhat-release 
+  276  :q
+  277  tmux ls
+  278  tmux a -t mem
+  279  tmux ls
+  280  tmux a -t mem
+  281  tmux ls
+  282  tmux a -t mem
+  283  cat /etc/redhat-release 
+  284  uname -r
+  285  lsblk
+  286  who
+  287  uname -r
+  288  pwd
+  289  cd redis_memcachd_memtier_benchmark/
+  290  git remote -v
+  291  pwd
+  292  pwd
+  293  df -h
+  294  lscpu
+  295  cat /etc/environment 
+  296  uname -r
+  297  cat /etc/redhat-release 
+  298  pwd
+  299  yum install memcached
+  300  ip r
+  301  pwd
+  302  memcached --help
+  303  pwd
+  304  cd 
+  305  pwd
+  306  ls
+  307  pwd
+  308  git clone   https://gitlab.devtools.intel.com/rdas/redis_memcachd_memtier_benchmark.git
+  309  cd redis_memcachd_memtier_benchmark/
+  310  ls
+  311  git branch -a
+  312  git checkout rm64
+  313  git branch -a
+  314  git branch icx36
+  315  git checkout icx36 
+  316  git branch -a
+  317  pwd
+  318  vim mc_sweep.sh 
+  319  lscpu
+  320  vim mc_sweep.sh 
+  321  cd memtier_benchmark-master/
+  322  cd ..
+  323  vim install_memtier.sh 
+  324  yum install python3
+  325  pip3 install pandas
+  326  yum install libevent-devel
+  327  yum install  build-essential autoconf automake libpcre3-dev 
+  328  yum install openssl openssl-devel
+  329  cd memtier_benchmark-master/
+  330  ls
+  331  autoreconf -ivf
+  332  ./configure 
+  333  yum install libpcre3-dev
+  334  yum search libpcre3
+  335  yum search pcre3
+  336  yum install pcre-devel --nogpgcheck
+  337  ./configure 
+  338  make
+  339  make install
+  340  memtier_benchmark -h
+  341  ldd memtier_benchmark
+  342  ldd memcached
+  343  ldd /usr/bin/memcached
+  344  pwd
+  345  cd ..
+  346  ./mc_sweep.sh 0-17 drc_res 3
+  347  vim drc_res/memc_run_sweep.txt 
+  348  ./mc_sweep.sh 0-29 drc_res 5
+  349  pwd
+  350  git branch -a
+  351  git pull
+  352  git branch -a
+  353  git pull origin rm24
+  354  git branch -a
+  355  git status 
+  356  clear
+  357  git status 
+  358  git diff 
+  359  vim .gitignore 
+  360  git status 
+  361  git diff 
+  362  git add -A
+  363  git commit -m "Committing core changes to icx36"
+  364  git config --global user.email "ripan.das@intel.com"
+  365  git config --global user.name "Ripan Das"
+  366  git commit -m "Committing core changes to icx36"
+  367  git status 
+  368  git branch -a
+  369  git pull
+  370  git branch -a
+  371  git pull origin rm24
+  372  git branch -a
+  373  git status 
+  374  vim .gitignore 
+  375  vim mc_sweep.sh 
+  376  git status 
+  377  vim core_scale/cpustat.py 
+  378  vim amd_memcached_core_scale.sh
+  379  git add -A
+  380  git commit -m "Changing ICX branch with numa"
+  381  for i in {5..18}; do ./mc_sweep.sh 0-${i} drc_res 1; done
+  382  vim drc_res/memc_run_sweep.txt 
+  383  cd core_scale/
+  384  ls -ltr
+  385  vim inst0_con16_d512.txt 
+  386  vim ip127.0.0.1prt9001cc51.txt 
+  387  pwd
+  388  ls -ltr
+  389  cd ..
+  390  history
+  391  ./mc_sweep.sh 0-6 drc_res 1
+  392  vim drc_res/memc_run_sweep.txt 
+  393  for i in "23" "27" "31"; do ./mc_sweep.sh 0-${i} drc_res 2; done
+  394  cd core_scale/
+  395  ls -ltr
+  396  ls ip127.0.0.1prt9001*
+  397  ls ip127.0.0.1prt9001* | wc -l
+  398  vim ip127.0.0.1prt9001cc46.txt 
+  399  cd ..
+  400  vim drc_res/memc_run_sweep.txt 
+  401  rdmsr 0x610
+  402  hwloc-ls
+  403  yum install hwloc
+  404  hwloc-ls
+  405  hwloc-ls | less
+  406  pwd
+  407  for i in "3" "2" "4"; do ./mc_sweep.sh 0-35 drc_res $i; done
+  408  vim drc_res/memc_run_sweep.txt 
+  409  vim mc_sweep.sh 
+  410  vim amd_memcached_core_scale.sh
+  411  export runnuma=yes
+  412  vim amd_memcached_core_scale.sh
+  413  for i in "3" "2" "5"; do ./mc_sweep.sh 0-29 drc_res $i; done
+  414  vim drc_res/memc_run_sweep.txt 
+  415  vim amd_memcached_core_scale.sh
+  416  history 
+  417  vim drc_res/memc_run_sweep.txt 
+  418  for i in {5..18}; do ./mc_sweep.sh 0-${i} drc_res 1; done
+  419  vim drc_res/memc_run_sweep.txt 
+  420  service irqbalance status
+  421  vim drc_res/memc_run_sweep.txt 
+  422  export runnuma=no
+  423  vim drc_res/memc_run_sweep.txt 
+  424  history
+  425   for i in "3" "2" "5"; do ./mc_sweep.sh 0-29 drc_res $i; done
+  426  vim drc_res/memc_run_sweep.txt 
+  427  pwd
+  428  history
+  429  ls
+  430  pwd
+  431  tmux new -s mem
+  432  tmux ls
+  433  tmux a -t mem
+  434  tmux ls
+  435  tmux a -t mem
+  436  who
+  437  top -d 1
+  438  ls
+  439  podman images
+  440  podman ps
+  441  htop
+  442  cd redis_memcachd_memtier_benchmark/drc_res/
+  443  ls -ltr
+  444  cat memc_run_sweep.txt 
+  445  pwd
+  446  tmux a -t mem
+  447  cat redis_memcachd_memtier_benchmark/drc_res/instance_run_sweep.txt 
+  448  turbostat -c 0-23 --hide IRQ,SMI,POLL,C1,C1E,C6,PkgWatt,RAMWatt,PKG_%,RAM_%
+  449  turbostat -c 0-15 --hide IRQ,SMI,POLL,C1,C1E,C6,PkgWatt,RAMWatt,PKG_%,RAM_%
+  450  tmux ls
+  451  tmux a -t mem
+  452  cd redis_memcachd_memtier_benchmark/drc_res/
+  453  ls
+  454  ls -ltr
+  455  vim memc_run_sweep.txt 
+  456  ls -ltr
+  457  vim old_memc_run_sweep.txt 
+  458  vim d1024_run.txt 
+  459  ls -ltr
+  460  vim memc_run_sweep.txt 
+  461  pwd
+  462  ls -ltr
+  463  tmux ls
+  464  tmux a -t mem
+  465  tmux ls
+  466  tmux a -t mem
+  467  cd redis_memcachd_memtier_benchmark/
+  468  git branch -a
+  469  git status 
+  470  git add -A
+  471  git commit -m "latest ICX 38"
+  472  git push origin icx36:icx36
+  473  cd redis_memcachd_memtier_benchmark/
+  474  cat drc_res/d1k_instance_run_sweep.txt 
+  475  tmux ls
+  476  tmux a -t mem
+  477  tmux ls
+  478  pwd
+  479  cd redis_memcachd_memtier_benchmark/
+  480  git status
+  481  git branch -a
+  482  git add -A
+  483  git commit -m "adding run script to do 1024B memcached runs"
+  484  git push origin icx36:icx36
+  485  ip r
+  486  tmux ls
+  487  htop
+  488  who
+  489  tmux a -t mem
+  490  cd redis_memcachd_memtier_benchmark/
+  491  vim mc_sweep.sh 
+  492  vim amd_memcached_core_scale.sh
+  493  pwd
+  494  netstat -tlpn
+  495  netstat -tlpn | grep redis
+  496  htop
+  497  ps aux | grep memtier_benchmark
+  498  pwd
+  499  cd redis_memcachd_memtier_benchmark/
+  500  ls -ltr
+  501  cd core_scale/
+  502  ls -ltr
+  503  vim log_err_9001.txt 
+  504  tmux ls
+  505  tmux a -t mem
+  506  pwd
+  507  yum install ipython3
+  508  pwd
+  509  cd redis_memcachd_memtier_benchmark/
+  510  vim amd_memcached_core_scale.sh
+  511  vim mc_sweep.sh 
+  512  vim amd_memcached_core_scale.sh
+  513  vim /root/redis_memcachd_memtier_benchmark/core_scale/memtier_client_server_modules.py
+  514  htop
+  515  vim amd_memcached_core_scale.sh
+  516  pwd
+  517  vim mc_or_redis_sweep.sh 
+  518  htop
+  519  netstat -tlpn
+  520  pkill -9 redis-server
+  521  vim mc_or_redis_sweep.sh 
+  522  htop
+  523  ps aux | grep metier
+  524  ps aux | grep memtier
+  525  vim mc_or_redis_sweep.sh 
+  526  htop
+  527  cd core_scale/
+  528  ls -ltr
+  529  prttag="900*"
+  530  grep "Totals" ip127.0.0.1prt${prttag} | awk '{print $1 " " $2}'
+  531  vim ip127.0.0.1prt9014cc38.txt 
+  532  cd ..
+  533  cd core_scale/
+  534  pwd
+  535  cd ..
+  536  vim amd_memcached_core_scale.sh
+  537  vim mc_or_redis_sweep.sh 
+  538  vim mc_sweep.sh 
+  539  vim mc_or_redis_sweep.sh 
+  540  tmux ls
+  541  tmux a -t mem
+  542  htop
+  543  exit
+  544  tmux ls
+  545  tmux a -t mem
+  546  htop
+  547  ps aux | grep nginx
+  548  tmux ls
+  549  tmux a -t mem
+  550  htop
+  551  sysctl --help
+  552  sysctl -a
+  553  sysctl -a | grep tcp
+  554  sysctl -a | grep sox
+  555  sysctl -a | grep somax
+  556  tmux ls
+  557  tmux a -t mem
+  558  tmux ls
+  559  tmux a -t mem
+  560  lsblk
+  561  hdparm --help
+  562  hdparm -h
+  563  hdparm -I 
+  564  hdparm -I  /dev/sda
+  565  hdparm -I  /dev/sda | less
+  566  ls
+  567  pwd
+  568  git clone https://gitlab.devtools.intel.com/dea-cce-se/womix.git && cd womix && git checkout HWDRC_ICX_postsi
+  569  cd .. && git clone https://gitlab.devtools.intel.com/longcui/hwdrc_postsi.git
+  570  mv hwdrc_postsi womix/
+  571  cd womix/
+  572  ls
+  573  sh install.sh 
+  574  ls
+  575  cd sy
+  576  cd ~/dcso_sysd/
+  577  ./run.sh 
+  578  exit
+  579  who
+  580  date
+  581  who
+  582  cd dcso_sysd/
+  583  git pull
+  584  ./run.sh 
+  585  exit
+  586  cd nginx_and_wrk/
+  587  cd wrk/
+  588  ./appstatdata.py 1
+  589  vim appstatdata.py 
+  590  ls -ltr
+  591  vim data_sum_nginx.txt 
+  592  vim run_ng_wrk_cases.sh 
+  593  mv data_sum_nginx.txt data_sum_nginx.txt.backup
+  594  pwd
+  595  vim run_ng_wrk_cases.sh 
+  596  ./run_ng_wrk_cases.sh 18 256B
+  597  ls -ltr
+  598  sysctl -h
+  599  sysctl -a
+  600  sysctl -a | grep file
+  601  sysctl -a | grep fd
+  602  ulimit -h
+  603  ulimit --help
+  604  ulimit -a
+  605  ulimit -n 65536
+  606  ulimit -a
+  607  ls -ltr
+  608  vim data_sum_nginx.txt
+  609  ./run_ng_wrk_cases.sh 18 256B
+  610  df -h
+  611  ls -ltr
+  612  cd nginx_and_wrk/
+  613  ls -ltr
+  614  cd wrk/
+  615  ls -ltr
+  616  vim run_ng_wrk_cases.sh 
+  617  pwd
+  618  cd ..
+  619  ls -ltr
+  620  cd wrk/
+  621  ls -ltr
+  622  vim run_ng_wrk_cases.sh 
+  623  ls -ltr
+  624  lscpu
+  625  ls -ltr
+  626  vim run_ng_wrk_cases.sh 
+  627  history | grep run_ng_wrk_cases.sh
+  628  vim data_sum_nginx.txt 
+  629  vim run_ng_wrk_cases.sh 
+  630  vim data_sum_nginx.txt 
+  631  vim appstatdata.py 
+  632  ./appstatdata.py 1
+  633  ./wrk --help
+  634  vim run_ng_wrk_cases.sh 
+  635  vim /root/nginx_and_wrk/amruta_cdn/nginx_tmp.conf 
+  636  tmux ls
+  637  tmux new -s nginx
+  638  tmux ls
+  639  tmux a -t nginx
+  640  tmux ls
+  641  tmux a -t nginx
+  642  cd dcso_sysd/
+  643  ls
+  644  git pull
+  645  timedatectl 
+  646  timedatectl set-time "2021-01-21 09:18:00"
+  647  git pull
+  648  bash setup_dcso_sysd.sh update
+  649  exit
+  650  ls
+  651  pip install ssa -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  652  ssa_driver_setup install
+  653  pip install ssa -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  654  ssa_driver_setup install
+  655  ssa_driver_setup uninstall
+  656  ssa_driver_setup install
+  657  pip install ssa -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  658  ssa_driver_setup install
+  659  cd /usr/local/lib/python3.6/site-packages
+  660  ls
+  661  cd drivers
+  662  ls
+  663  cd linux/
+  664  ls
+  665  cd x64/
+  666  ls
+  667  ls
+  668  cd ..
+  669  ls
+  670  cd ..
+  671  ls
+  672  python hwapi.py 
+  673  python3 hwapi.py 
+  674  cd x64/
+  675  ssa_driver_setup 
+  676  ssa_driver_setup -h
+  677  ssa_driver_setup install 
+  678  pip uninstall ssa
+  679  pip install ssa -i https://intelpypi.pdx.intel.com/pythonsv-orange/staging
+  680  pip install ssa -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  681  exit
+  682  pip install ssa -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  683  ssa_driver_setup install 
+  684  top
+  685  exit
+  686  ssa_driver_setup install 
+  687  history | grep appstat
+  688  history | grep appstatdata
+  689  tmux ls
+  690  ip r
+  691  cd /home/
+  692  ls
+  693  cd PythonSV/
+  694  ls
+  695  cd ..
+  696  rm -rf PythonSV/
+  697  ls
+  698  cd /home/
+  699  ls
+  700  cd PythonSV/
+  701  ls
+  702  clear
+  703  ls
+  704  cd /home/
+  705  ls
+  706  rm -rf PythonSV/
+  707  ls
+  708  scp root@10.239.91.219:/home/PythonSV  /home/
+  709  scp root@10.239.91.219:home/PythonSV  /home/
+  710  scp -r root@10.239.91.219:/home/PythonSV  /home/
+  711  rm -rf PythonSV/
+  712  ls
+  713  rm -rf PythonSV/
+  714  cd /home/
+  715  ls
+  716  cd PythonSV/
+  717  ls
+  718  cd ..
+  719  ls
+  720  cd PythonSV/
+  721  ls
+  722  cd ..
+  723  rm -rf PythonSV/
+  724  ls
+  725  cd PythonSV/
+  726  ls
+  727  cd icelakex/
+  728  vim requires_svos.txt 
+  729  cd /etc/
+  730  ls
+  731  cd yum.repos.d/
+  732  ls
+  733  cd ..
+  734  cat yum.conf 
+  735  cd /home/PythonSV/icelakex/
+  736  pip install client
+  737  pip3.6 install client
+  738  ls
+  739  pip install -r requires_svos.txt -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  740  pip install client
+  741  export http_proxy=http://child-prc.intel.com:913
+  742  export https_proxy=https://child-prc.intel.com:913
+  743  export ftp_proxy=ftp://child-prc.intel.com:913
+  744  pip install client
+  745  vim /etc/yum.conf 
+  746  pip install client
+  747  date
+  748  ]date -s 20210128
+  749  date
+  750  pip install client
+  751  cd ..
+  752  ls
+  753  cd /home/
+  754  ls
+  755  cd PythonSV/
+  756  ls
+  757  date
+  758  date -s 20210128
+  759  date -s 09:13:00
+  760  cd icelakex/
+  761  ls
+  762  pip install client
+  763  export http_proxy=http://child-prc.intel.com:913
+  764  export https_proxy=https://child-prc.intel.com:913
+  765  export ftp_proxy=ftp://child-prc.intel.com:913
+  766  pip install client
+  767  cat /etc/yum.conf 
+  768  yum install ipmitool
+  769  cd /home/
+  770  ls
+  771  cd PythonSV/
+  772  ls
+  773  cd icelakex/
+  774  ls
+  775  export http_proxy=http://child-prc.intel.com:913
+  776  export https_proxy=https://child-prc.intel.com:913
+  777  export ftp_proxy=ftp://child-prc.intel.com:913
+  778  pip install client
+  779  python3 -m pip install --upgrade pip
+  780  pip3.6 install client
+  781  yum install ipmitool
+  782  vim /etc/yum.conf 
+  783  yum install ipmitool
+  784  pip install client
+  785  python3 -m pip install --upgrade pip
+  786  python3 -m pip3 install --upgrade pip3
+  787  python3 -m pip3 install --upgrade pip
+  788  pip install --upgrade pip
+  789  export ftp_proxy=ftp://child-prc.intel.com:913
+  790  export https_proxy=https://child-prc.intel.com:913
+  791  export http_proxy=http://child-prc.intel.com:913
+  792  pip3.6 install client
+  793  pip3 install client
+  794  pip install client -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+  795  /usr/bin/python3 -m pip install --upgrade pip
+  796  /usr/bin/python3 -m pip install --upgrade pip -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+  797  pip install client -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+  798  pip install -r requires_svos.txt -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  799  pip install -r requires_pysv.txt -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  800  cd ..
+  801  cd __install__/
+  802  python3 installpath.py 
+  803  python3 install_update_tools.py 
+  804  cd ../icelakex/
+  805  python update_tools.py 
+  806  python3 update_tools.py 
+  807  pip install ssa -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  808  /usr/bin/python3 -m pip install --upgrade pip -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+  809  pip install ssa -i https://intelpypi.pdx.intel.com/pythonsv/staging
+  810  ssa_driver_setup install
+  811  python3 starticx.py 
+  812  ls
+  813  python
+  814  python3
+  815  ls
+  816  cd pydev
+  817  ls
+  818  cd py36-venv/
+  819  ls
+  820  cd venv36/
+  821  ls
+  822  cd /opt/
+  823  ls
+  824  cd intel/
+  825  ls
+  826  cd 
+  827  ls
+  828  cd wrk/
+  829  ls
+  830  cd ../intel/
+  831  ls
+  832  ..
+  833  cd ..
+  834  ls
+  835  cd 
+  836  ls
+  837  python3
+  838  python2
+  839  ls
+  840  cd dcso_sysd/
+  841  ls
+  842  cd 
+  843  ls
+  844  cd /home/
+  845  ls
+  846  cd PythonSV/
+  847  ls
+  848  cd icelakex/
+  849  ls
+  850  python starticx.py 
+  851  python3 starticx.py 
+  852  cd /root/nginx_and_wrk/amruta_cdn/
+  853  ls
+  854  vim gen_html.sh 
+  855  scp gen_html.sh root@10.54.43.124:/pnpdata/2020-f-stack-muktadir/nginx_exp/
+  856  history | grep gen_html
+  857  cd /root/nginx_and_wrk/amruta_cdn/
+  858  ls
+  859  vim index.html 
+  860  scp index.html root@10.54.43.124:/pnpdata/2020-f-stack-muktadir/nginx_exp/
+  861  VERSION=$(cat /etc/os-release | grep 'VERSION_ID' | cut -d "=" -f 2) && echo $VERSION
+  862  exit
+  863  ip r
+  864  ls ltr
+  865  ls
+  866  ls -ltr
+  867  cd wrk/
+  868  ls
+  869  cd ..
+  870  cd nginx_and_wrk/
+  871  ls -ltr
+  872  cd wrk/
+  873  ls
+  874  ls -ltr
+  875  lscpu
+  876  ls -ltr
+  877  history | grep apps
+  878  vim appstatdata.py 
+  879  ls -ltr
+  880  vim run_ng_wrk_cases.sh 
+  881  vim data_sum_nginx.txt
+  882  vim run_ng_wrk_cases.sh 
+  883  history | grep run
+  884  ./run_ng_wrk_cases.sh 18 1K
+  885  ./run_ng_wrk_cases.sh 18 1KB
+  886  ulimit -h
+  887  ulimit --h
+  888  ulimit --help
+  889  ulimit -n 65536
+  890  ./run_ng_wrk_cases.sh 18 1KB
+  891  ls -ltr
+  892  vim data_sum_nginx.txt
+  893  ./run_ng_wrk_cases.sh 18 256B
+  894  cat /etc/environment 
+  895  server="proxy-iind.intel.com"
+  896  newline="http_proxy=http://${server}:911"
+  897  searchstring="http_proxy"
+  898  linenum="$(cat '/etc/environment' | grep -n ${searchstring} | grep -Eo '^[^:]+')"
+  899  safenewline="$(printf \"${newline}\" | sed -e 's/[\/&]/\\&/g')"
+  900  echo $linenum 
+  901  cat '/etc/environment' | grep -n ${searchstring}
+  902  cp /etc/environment /tmp/benvironment
+  903  server="proxy-iind.intel.com"
+  904  #
+  905  # Setup global environment variables
+  906  #
+  907  function AddProxyLine() {     newline=$1;     searchstring=$2     linenum="$(cat '/etc/environment' | grep -n ${searchstring} | grep -Eo '^[^:]+')";     if [ "$?" -eq 0 ]; then         for linenumber in $linenum;          do              safenewline="$(printf \"${newline}\" | sed -e 's/[\/&]/\\&/g')"             sed -i "${linenumber}s/.*/${safenewline}/" /etc/environment;         done ;     else         bash -c "echo '${newline}' >> /etc/environment";     fi; }
+  908  AddProxyLine "http_proxy=http://${server}:911" "http_proxy"
+  909  vim /etc/environment 
+  910  function AddProxyLine() {     newline=$1;     searchstring=$2     linenum="$(cat '/etc/environment' | grep -n ${searchstring} | grep -Eo '^[^:]+')";     if [ "$?" -eq 0 ]; then         for linenumber in $linenum;          do              safenewline="$(printf "${newline}" | sed -e 's/[\/&]/\\&/g')"             sed -i "${linenumber}s/.*/${safenewline}/" /etc/environment;         done ;     else         bash -c "echo '${newline}' >> /etc/environment";     fi; }
+  911  AddProxyLine "http_proxy=http://${server}:911" "http_proxy"
+  912  vim /etc/environment 
+  913  clear
+  914  cd /tmp/
+  915  vim test.sh
+  916  bash test.sh 
+  917  vim test.sh
+  918  bash test.sh 
+  919  clear
+  920  ll
+  921  rm -rf benvironment 
+  922  cat /etc/environment 
+  923  q!
+  924  exit
+  925  ls
+  926  cd nginx_and_wrk/
+  927  ls
+  928  dc wrk/
+  929  cd wrk/
+  930  ls -ltr
+  931  vim appstatdata.py 
+  932  scp appstatdata.py run_ng_wrk_cases.sh data_sum_nginx.txt root@10.242.51.127:/root/epoll_test/
+  933  vim run_ng_wrk_cases.sh 
+  934  tmux ls
+  935  ls *.swp
+  936  ls -a
+  937  rm -f .run_ng_wrk_cases.sh.swp
+  938  vim run_ng_wrk_cases.sh 
+  939  ip r
+  940  lscpu
+  941  exit
+  942  pwd
+  943  lscpu
+  944  ip
+  945  ip r
+  946  pwd
+  947  cd redis_memcachd_memtier_benchmark/
+  948  pwd
+  949  ls -ltr
+  950  vim  mc_or_redis_sweep.sh 
+  951  grep -rl mc_or_redis_sweep.sh *
+  952  vim comp_runs.sh 
+  953  pwd
+  954  vim mc_or_redis_sweep.sh 
+  955  vim amd_memcached_core_scale.sh
+  956  redis-server --help
+  957  vim comp_runs.sh 
+  958  cd drc_re
+  959  cd drc_res/
+  960  ls -ltr
+  961  vim  memcachedd1k_instance_run_sweep.txt 
+  962  cd ..
+  963  pwd
+  964  vim mc_or_redis_sweep.sh 
+  965  vim comp_runs.sh 
+  966  pwd
+  967  pwd
+  968  tmux ls
+  969  ls
+  970  cd redis_memcachd_memtier_benchmark/
+  971  ls -ltr
+  972  vim comp_runs.sh 
+  973  vim run_icx_cases.sh 
+  974  cd core_scale/
+  975  ls
+  976  cd ..
+  977  ls -ltr
+  978  cd drc_re
+  979  cd drc_res/
+  980  ls
+  981  ls ltr
+  982  ls -ltr
+  983  vim memcachedd1k_instance_run_sweep.txt 
+  984  vim redisd1k_instance_run_sweep.txt 
+  985  ifconfig
+  986  cd /root/redis_memcachd_memtier_benchmark
+  987  ls
+  988  vim comp_runs.sh
+  989  cd redis_memcachd_memtier_benchmark/
+  990  ls
+  991  vim comp_runs.sh 
+  992  fg
+  993  rm -m .comp_runs.sh.swp 
+  994  rm -f .comp_runs.sh.swp 
+  995  vim comp_runs.sh 
+  996  vim mc_or_redis_sweep.sh 
+  997  rm -f .mc_or_redis_sweep.sh.swp 
+  998  vim mc_or_redis_sweep.sh 
+  999  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11
+ 1000  pwd
+ 1001  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11
+ 1002  dmidecode -t memory
+ 1003  dmidecode  | grep Configured 
+ 1004  dmidecode  | grep "Configured Memory Speed"
+ 1005  dmidecode  | grep 'Configured Memory Speed:' | grep -v Unknown | head -n 1 | awk '{ print $4 }'
+ 1006  pwd
+ 1007  ls -ltr
+ 1008  vim icx_memory.cpp 
+ 1009  make
+ 1010  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11
+ 1011  ./icx_memory.x -i 10 -t 0x0A -cs 0 -ce 11
+ 1012  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11
+ 1013  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11
+ 1014  ./icx_memory.x -i 1 -t 0x0A -cs 0 -ce 11
+ 1015  ./icx_memory.x -i 2000 -t 0x0A -cs 0 -ce 11
+ 1016  ./icx_memory.x -i 4000 -t 0x0A -cs 0 -ce 11
+ 1017  ./icx_memory.x -i 10 -t 0x0A -cs 0 -ce 11
+ 1018  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11
+ 1019  vim icx_memory.cpp 
+ 1020  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11 -n 2
+ 1021  ./icx_memory.x -i 10 -t 0x0A -cs 0 -ce 11 -n 2
+ 1022  ./icx_memory.x -i 1 -t 0x0A -cs 0 -ce 11 -n 2
+ 1023  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11 -n 2
+ 1024  ./icx_memory.x -i 2000 -t 0x0A -cs 0 -ce 11 -n 2
+ 1025  ./icx_memory.x -i 4000 -t 0x0A -cs 0 -ce 11 -n 2
+ 1026  ./icx_memory.x -i 40 -t 0x0A -cs 0 -ce 11 -n 2
+ 1027  ./icx_memory.x -i 10 -t 0x0A -cs 0 -ce 11 -n 2
+ 1028  vim icx_memory.cpp 
+ 1029  ./icx_memory.x -i 1 -t 0x0A -cs 0 -ce 11 -n 2
+ 1030  ./icx_memory.x -i 10 -t 0x0A -cs 0 -ce 11 -n 2
+ 1031  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11 -n 2
+ 1032  git log
+ 1033  git branch -a
+ 1034  ip r
+ 1035  pwd
+ 1036  clear
+ 1037  pwd
+ 1038  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11 -n 2
+ 1039  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11 -n 1
+ 1040  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11 -n 1
+ 1041  ls
+ 1042  git status
+ 1043  git diff icx_memory.cpp
+ 1044  ls *.cpp
+ 1045  vim sut.cpp 
+ 1046  vim uncore.cpp 
+ 1047  vim cores.cpp 
+ 1048  vim icx_memory.cpp 
+ 1049  make
+ 1050  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11 -n 1
+ 1051  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11 -n 1
+ 1052  ./icx_memory.x -i 10 -t 0x0A -cs 0 -ce 11 -n 1
+ 1053  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11 -n 1
+ 1054  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11 -n 1
+ 1055  ./icx_memory.x -i 10000 -t 0x0A -cs 0 -ce 11 -n 1
+ 1056  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11 -n 1
+ 1057  vim icx_memory.cpp 
+ 1058  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11 -n 1
+ 1059  ./icx_memory.x -i 10 -t 0x0A -cs 0 -ce 11 -n 1
+ 1060  ./icx_memory.x -i 100 -t 0x0A -cs 0 -ce 11 -n 1
+ 1061  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11 -n 1
+ 1062  ./icx_memory.x -i 1 -t 0x0A -cs 0 -ce 11 -n 1
+ 1063  git diff
+ 1064  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11 -n 1::q:
+ 1065  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11 -n 1
+ 1066  history
+ 1067  vim icx_memory.cpp 
+ 1068  ./icx_memory.x -i 1000 -t 0 -cs 0 -ce 11 -n 1
+ 1069  ./icx_memory.x -i 1 -t 0 -cs 0 -ce 11 -n 1
+ 1070  ./icx_memory.x -i 10 -t 0 -cs 0 -ce 11 -n 1
+ 1071  ./icx_memory.x -i 1000 -t 0 -cs 0 -ce 11 -n 1
+ 1072  ./icx_memory.x -i 2000 -t 0 -cs 0 -ce 11 -n 1
+ 1073  ./icx_memory.x -i 1 -t 0 -cs 0 -ce 11 -n 1
+ 1074  ./icx_memory.x -i 1000 -t 0 -cs 0 -ce 11 -n 1
+ 1075  ./icx_memory.x -i 1000 -t 0x0A -cs 0 -ce 11 -n 1
+ 1076  ./icx_memory.x -i 1000 -t 0xAA -cs 0 -ce 11 -n 1
+ 1077  pwd
+ 1078  cd ..
+ 1079  cd 
+ 1080  pwd
+ 1081  cd womix/
+ 1082  ls
+ 1083  ls -ltr
+ 1084  vim quatro_mlc.sh 
+ 1085  vim hook/emon.inc.sh 
+ 1086  vim tool/emon-conf/clx
+ 1087  vim tool/emon-conf/clx/events.txt 
+ 1088  pwd
+ 1089  cd tool/emon-conf/clx/events.txt
+ 1090  cd tool/emon-conf/clx/
+ 1091  ls
+ 1092  cp events.txt events_orig.txt
+ 1093  vim events.txt 
+ 1094  pwd
+ 1095  ls
+ 1096  pwd
+ 1097  cd ..
+ 1098  pwd
+ 1099  cd ..
+ 1100  pwd
+ 1101  ls
+ 1102  cd ..
+ 1103  pwd
+ 1104  ls
+ 1105  ip r
+ 1106  pwd
+ 1107  ls -ltr
+ 1108  chmos +x install.sh 
+ 1109  chmod +x install.sh 
+ 1110  docker images
+ 1111  history | grep stress
+ 1112  ls
+ 1113  ./install.sh 
+ 1114  ls
+ 1115  cd hook/
+ 1116  ls
+ 1117  cd 
+ 1118  ls
+ 1119  mkdir emon
+ 1120  cd emon/
+ 1121  ls
+ 1122  tar vjxf ../sep_private_5_24_linux_0219170677e3a80.tar.bz2 
+ 1123  ls
+ 1124  cd sep_private_5_24_linux_0219170677e3a80/
+ 1125  ls
+ 1126  ./sep-installer.sh 
+ 1127  ls
+ 1128  cd ..
+ 1129  ls
+ 1130  cd sep_private_5_24_linux_0219170677e3a80/
+ 1131  ls
+ 1132  ./sep-installer.sh 
+ 1133  dnf install libelf-devel
+ 1134  dnf install elfutils-libelf-devel".
+ 1135  dnf install elfutils-libelf-devel
+ 1136  ./sep-installer.sh 
+ 1137  cat /tmp/log_sep_installer_03182021
+ 1138  cat /tmp/log_sep_installer_03182021/sep_installer_03182021.223002.log 
+ 1139  ls
+ 1140  cd /opt/intel/
+ 1141  ls
+ 1142  cd sep
+ 1143  ls
+ 1144  cd sepdk/
+ 1145  ls
+ 1146  cd src/
+ 1147  ls
+ 1148  ./insmod-sep 
+ 1149  ./build-driver 
+ 1150  ./insmod-sep 
+ 1151  lscpu
+ 1152  cd ..
+ 1153  ls
+ 1154  cd ..
+ 1155  ls
+ 1156  source sep_vars.sh 
+ 1157  emon 
+ 1158   emon -l5 -t0.5 -C "CPU_CLK_UNHALTED.REF_TSC,INST_RETIRED.ANY"
+ 1159   emon -l5 -t0.5 -C 
+ 1160  cd 
+ 1161  cd womix/
+ 1162  ls
+ 1163  pwd
+ 1164  ls
+ 1165  cat mlc_benchmark-mlc_benchmark_colocation.sh 
+ 1166  history
+ 1167  history > Litrin_history

@@ -1,0 +1,31 @@
+2018-03-13 15:02:52,003 - INFO - HWP Resource set, HWP:25
+2018-03-13 15:02:52,018 - INFO - HWP Resource set, HWP:25
+2018-03-13 15:04:02,604 - INFO - Production workload: SPECjbb20151520978641.79 launched and registered with INFO:Run 1: 18-03-13_220402
+2018-03-13 15:05:23,339 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:05:23,775 - INFO - Best effort workload: stream1520978723.34 launched and registered with INFO:1dc07656bf5824208996d824ed4cc174befb8d5282b58d2e680e4cf27f0b300d
+2018-03-13 15:05:34,656 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:05:35,153 - INFO - Best effort workload: stream1520978734.66 launched and registered with INFO:90093bb07078fe6ef3d5d235cf7f65715774050c99cbda1330b4ed508a81055d
+2018-03-13 15:05:46,072 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:05:46,585 - INFO - Best effort workload: stream1520978746.07 launched and registered with INFO:05ee336d8efe4c56de8e112a6464e10445766322b575a54b0359da3efa8fc34e
+2018-03-13 15:05:57,535 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:05:58,073 - INFO - Best effort workload: stream1520978757.54 launched and registered with INFO:00ad73a3b5135508772da2bc58146c5cebd269216ce18a03ae249f7913fada6d
+2018-03-13 15:06:09,007 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:06:09,473 - INFO - Best effort workload: stream1520978769.01 launched and registered with INFO:257a8dea1858c16b24a702ac7c8fcd072e5ebff75011dd61d4c3b5967e80c818
+2018-03-13 15:06:20,449 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:06:20,914 - INFO - Best effort workload: stream1520978780.45 launched and registered with INFO:d51b3123f87e9b214b4f5b31e858e33d3d985b9cd4bbfc284b283a3e84098f35
+2018-03-13 15:06:31,923 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:06:32,379 - INFO - Best effort workload: stream1520978791.92 launched and registered with INFO:40dc54190aa52043d37d08737e28536e464c7a1805f8cb31ead848c259284b74
+2018-03-13 15:06:43,414 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:06:43,885 - INFO - Best effort workload: stream1520978803.42 launched and registered with INFO:6b59c7628af1036a3a65c2bb30a51c1140de31487402701fcebe9415d3053b5a
+2018-03-13 15:06:55,014 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:06:55,528 - INFO - Best effort workload: stream1520978815.02 launched and registered with INFO:8a3a029e1080c12f3f4f6f2f644bd0377231406ce405356128e0e03d76b5ce4d
+2018-03-13 15:07:06,665 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:07:07,141 - INFO - Best effort workload: stream1520978826.67 launched and registered with INFO:98f21c0772eb0c450bf6fc04d5679f687548c8a2d387ff1b1bdd18a8e00bb367
+2018-03-13 15:07:18,307 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:07:18,819 - INFO - Best effort workload: stream1520978838.31 launched and registered with INFO:cb7756d1fef6175c17707b48d265241e0d4add71b168eb2d2740c3f7a4082c7b
+2018-03-13 15:07:29,995 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:07:30,635 - INFO - Best effort workload: stream1520978850.0 launched and registered with INFO:be7f9eafde9d8b7cf453932ec12417245e5bb0e1cba98471b6f80f5327ed8070
+2018-03-13 15:07:41,916 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:07:42,436 - INFO - Best effort workload: stream1520978861.92 launched and registered with INFO:155c03aa7b828e1630d13cfc428e446e1de9d06a2256db1202037470e00e9a4f
+2018-03-13 15:07:53,755 - INFO - [Controller Recommendation]Send message to workload service to spawn more workloads from job launch queue
+2018-03-13 15:07:54,278 - INFO - Best effort workload: stream1520978873.76 launched and registered with INFO:80a1afe4e872bd34c6aa067e593feb543afe0c1d51170552a0e64face09f0545

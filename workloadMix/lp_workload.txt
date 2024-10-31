@@ -1,0 +1,5 @@
+specjbb
+bwaves
+widedeep
+perlbench
+povray

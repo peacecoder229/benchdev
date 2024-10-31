@@ -1,0 +1,7 @@
+Attached devices:
+Host: scsi0 Channel: 00 Id: 00 Lun: 00
+  Vendor: ATA      Model: INTEL SSDSC2KG96 Rev: 0132
+  Type:   Direct-Access                    ANSI  SCSI revision: 05
+Host: scsi8 Channel: 00 Id: 00 Lun: 00
+  Vendor: KVM      Model: vmDisk-CD        Rev: 0.01
+  Type:   CD-ROM                           ANSI  SCSI revision: 00

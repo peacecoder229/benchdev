@@ -1,0 +1,1 @@
+cmd_/pnpdata/rdpmc_git/RDPMC_TEST/rdmsrbmk.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /pnpdata/rdpmc_git/RDPMC_TEST/rdmsrbmk.ko /pnpdata/rdpmc_git/RDPMC_TEST/rdmsrbmk.o /pnpdata/rdpmc_git/RDPMC_TEST/rdmsrbmk.mod.o ;  true

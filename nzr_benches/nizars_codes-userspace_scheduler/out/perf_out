@@ -1,0 +1,23 @@
+# started on Wed Mar  6 14:54:06 2019
+
+#           time             counts unit events
+     1.001772810    150,819,112,836      CPU_CLK_UNHALTED.REF_TSC                                    
+     1.001772810    150,808,812,026      tsc                                                         
+     2.002760753    150,905,003,076      CPU_CLK_UNHALTED.REF_TSC                                    
+     2.002760753    150,904,064,198      tsc                                                         
+     3.003762832    150,921,032,328      CPU_CLK_UNHALTED.REF_TSC                                    
+     3.003762832    150,921,075,946      tsc                                                         
+     4.004749308    150,944,112,792      CPU_CLK_UNHALTED.REF_TSC                                    
+     4.004749308    150,943,570,148      tsc                                                         
+     5.005740883    150,904,728,324      CPU_CLK_UNHALTED.REF_TSC                                    
+     5.005740883    150,904,567,510      tsc                                                         
+     6.006733237    150,891,890,796      CPU_CLK_UNHALTED.REF_TSC                                    
+     6.006733237    150,891,425,158      tsc                                                         
+     7.007749989    150,885,745,380      CPU_CLK_UNHALTED.REF_TSC                                    
+     7.007749989    150,887,059,038      tsc                                                         
+     8.008756310    150,870,831,660      CPU_CLK_UNHALTED.REF_TSC                                    
+     8.008756310    150,872,134,838      tsc                                                         
+     9.009748220    150,930,722,088      CPU_CLK_UNHALTED.REF_TSC                                    
+     9.009748220    150,930,342,776      tsc                                                         
+     9.537740126     79,591,014,612      CPU_CLK_UNHALTED.REF_TSC                                    
+     9.537740126     79,589,853,522      tsc                                                         

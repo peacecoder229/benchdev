@@ -1,0 +1,180 @@
+runspec v6674 started at Sat Jul 30 11:22:54 2016 on ""
+runspec is: /SPECcpu/bin/runspec
+runspec: runspec --define default-platform-flags --iterations=1 --loose --nobuild --rate 16 -c /SPECcpu/config/cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.cfg --define smt --define cores=8 --define physicalfirst --define no-numa --define THP_enabled -T base -o text mcf
+toolset: linux-suse10-amd64
+
+Locating benchmarks...found 31 benchmarks in 6 benchsets.
+Reading config file '/SPECcpu/config/cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.cfg'
+Running "specperl /SPECcpu/config/sysinfo.rev6914" to gather system information.
+Read 64 total lines from the sysinfo program.
+Read 63 usable lines from the sysinfo program.
+
+
+WARNING: Your config file sets some fields that are also set by sysinfo:
+  hw_cpu_name, hw_disk, hw_nchips, prepared_by, sw_file, sw_os001, sw_state
+To avoid this warning in the future, see
+  http://www.spec.org/cpu2006/Docs/config.html#sysinfo
+
+
+
+Retrieving flags file (Intel-ic16.0-official-linux64.xml)...
+Retrieving flags file (Default-Platform-Flags.xml)...
+Verbosity = 5
+Action    = validate
+Tune      = base
+Ext       = cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+Size      = ref
+Machine   = default
+benchmarks= 429.mcf
+outputs   = text
+username  = root
+
+Environment settings:
+KMP_AFFINITY = "granularity=fine,compact,1,0"
+LD_LIBRARY_PATH = "/SPECcpu/libs/32:/SPECcpu/libs/64:/SPECcpu/sh"
+OMP_NUM_THREADS = "8"
+
+Benchmarks selected: 429.mcf
+Compiling Binaries
+
+------------------------------------------------------------------------
+  Up to date 429.mcf base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default
+
+
+Setting Up Run Directories
+  Setting up 429.mcf ref base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default: existing (run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015)
+
+-----------------------------------
+Running Benchmarks
+
+-----------------------------------
+  Running 429.mcf ref base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default (16 copies)
+Commands to run:
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014
+    -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015
+    -o inp.out -e inp.err ../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in (timed)
+Specinvoke: /SPECcpu/bin/specinvoke -d /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
+Issuing command '/SPECcpu/bin/specinvoke -d /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q'
+Start command: Sat Jul 30 11:22:56 2016 (1469877776)
+Stop command: Sat Jul 30 11:29:01 2016 (1469878141)
+Elapsed time for command: 00:06:05 (365)
+Workload elapsed time (7:1) = 353.711889 seconds
+Workload elapsed time (1:1) = 354.013462 seconds
+Workload elapsed time (0:1) = 354.623462 seconds
+Workload elapsed time (14:1) = 354.952552 seconds
+Workload elapsed time (6:1) = 355.080216 seconds
+Workload elapsed time (11:1) = 355.619427 seconds
+Workload elapsed time (10:1) = 355.780116 seconds
+Workload elapsed time (12:1) = 355.869813 seconds
+Workload elapsed time (13:1) = 355.908187 seconds
+Workload elapsed time (2:1) = 356.024806 seconds
+Workload elapsed time (9:1) = 356.118446 seconds
+Workload elapsed time (4:1) = 356.221738 seconds
+Workload elapsed time (8:1) = 356.428415 seconds
+Workload elapsed time (15:1) = 356.618303 seconds
+Workload elapsed time (3:1) = 356.704679 seconds
+Workload elapsed time (5:1) = 356.706772 seconds
+Copy 0 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:51 2016.  Total elapsed time: 354.623462
+Copy 1 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:50 2016.  Total elapsed time: 354.013462
+Copy 2 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:52 2016.  Total elapsed time: 356.024806
+Copy 3 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:53 2016.  Total elapsed time: 356.704679
+Copy 4 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:52 2016.  Total elapsed time: 356.221738
+Copy 5 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:53 2016.  Total elapsed time: 356.706772
+Copy 6 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:51 2016.  Total elapsed time: 355.080216
+Copy 7 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:50 2016.  Total elapsed time: 353.711889
+Copy 8 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:52 2016.  Total elapsed time: 356.428415
+Copy 9 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:52 2016.  Total elapsed time: 356.118446
+Copy 10 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:52 2016.  Total elapsed time: 355.780116
+Copy 11 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:52 2016.  Total elapsed time: 355.619427
+Copy 12 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:52 2016.  Total elapsed time: 355.869813
+Copy 13 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:52 2016.  Total elapsed time: 355.908187
+Copy 14 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:51 2016.  Total elapsed time: 354.952552
+Copy 15 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:28:53 2016.  Total elapsed time: 356.618303
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015'
+comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+Specinvoke: /SPECcpu/bin/specinvoke -E -d /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -c 16 -e compare.err -o compare.stdout -f compare.cmd
+Issuing command '/SPECcpu/bin/specinvoke -E -d /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -c 16 -e compare.err -o compare.stdout -f compare.cmd'
+Start command: Sat Jul 30 11:29:01 2016 (1469878141)
+Stop command: Sat Jul 30 11:29:02 2016 (1469878142)
+Elapsed time for command: 00:00:01 (1)
+Benchmark Times:
+  Start:    Sat Jul 30 11:22:56 2016 (1469877776)
+  Stop:     Sat Jul 30 11:29:01 2016 (1469878141)
+  Elapsed:  00:06:05 (365)
+  Reported: 356 707104000 356.707104
+ Success 429.mcf base ref ratio=409.08, runtime=356.707104, power=0.00w, temp=0.00 deg, humidity=0.00%
+Success: 1x429.mcf
+Producing Raw Reports
+mach: default
+  ext: cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+    size: ref
+      set: int
+        format: raw -> /SPECcpu/result/CINT2006.002.ref.rsf
+Parsing flags for 429.mcf base: done
+Doing flag reduction: done
+        format: ASCII -> /SPECcpu/result/CINT2006.002.ref.txt
+      set: fp
+
+The log for this run is in /SPECcpu/result/CPU2006.002.log
+
+runspec finished at Sat Jul 30 11:29:03 2016; 369 total seconds elapsed

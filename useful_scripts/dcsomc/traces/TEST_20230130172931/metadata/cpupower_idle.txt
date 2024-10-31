@@ -1,0 +1,27 @@
+CPUidle driver: intel_idle
+CPUidle governor: menu
+analyzing CPU 0:
+
+Number of idle states: 4
+Available idle states: POLL C1 C1E C6
+POLL:
+Flags/Description: CPUIDLE CORE POLL IDLE
+Latency: 0
+Usage: 532845
+Duration: 21593659
+C1:
+Flags/Description: MWAIT 0x00
+Latency: 1
+Usage: 2578415
+Duration: 48290457
+C1E:
+Flags/Description: MWAIT 0x01
+Latency: 2
+Usage: 57446012
+Duration: 1974184242
+C6:
+Flags/Description: MWAIT 0x20
+Latency: 190
+Usage: 38353264
+Duration: 886019542820
+

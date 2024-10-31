@@ -1,0 +1,117 @@
+[RUN #1] Preparing benchmark client...
+[RUN #1] Launching threads now...
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+connect: connection failed: Connection refused
+[RUN #1 0%,   0 secs]  6 threads:      620430 ops,       0 (avg: 1193270) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.50) msec latency[RUN #1 1%,   1 secs]  6 threads:     1242720 ops,       0 (avg: 1194939) ops/sec, 0.00KB/sec (avg: 1.16GB/sec),  0.00 (avg:  2.50) msec latency[RUN #1 1%,   1 secs]  6 threads:     1845750 ops,       0 (avg: 1183148) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.52) msec latency[RUN #1 1%,   2 secs]  6 threads:     2477130 ops,       0 (avg: 1190881) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.51) msec latency[RUN #1 1%,   2 secs]  6 threads:     3105420 ops,       0 (avg: 1194335) ops/sec, 0.00KB/sec (avg: 1.16GB/sec),  0.00 (avg:  2.50) msec latency[RUN #1 2%,   3 secs]  6 threads:     3725730 ops,       0 (avg: 1194078) ops/sec, 0.00KB/sec (avg: 1.16GB/sec),  0.00 (avg:  2.50) msec latency[RUN #1 2%,   3 secs]  6 threads:     4322340 ops,       0 (avg: 1187383) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.51) msec latency[RUN #1 2%,   4 secs]  6 threads:     4919490 ops,       0 (avg: 1182492) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.53) msec latency[RUN #1 3%,   4 secs]  6 threads:     5526300 ops,       0 (avg: 1180752) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.53) msec latency[RUN #1 3%,   5 secs]  6 threads:     6148581 ops,       0 (avg: 1182336) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.53) msec latency[RUN #1 3%,   5 secs]  6 threads:     6745080 ops,       0 (avg: 1179125) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.53) msec latency[RUN #1 3%,   6 secs]  6 threads:     7349415 ops,       0 (avg: 1177704) ops/sec, 0.00KB/sec (avg: 1.14GB/sec),  0.00 (avg:  2.54) msec latency[RUN #1 4%,   6 secs]  6 threads:     7980180 ops,       0 (avg: 1180411) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.53) msec latency[RUN #1 4%,   7 secs]  6 threads:     8590920 ops,       0 (avg: 1179981) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.53) msec latency[RUN #1 4%,   7 secs]  6 threads:     9220059 ops,       0 (avg: 1181967) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.53) msec latency[RUN #1 5%,   8 secs]  6 threads:     9820260 ops,       0 (avg: 1180227) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.53) msec latency[RUN #1 5%,   8 secs]  6 threads:    10445640 ops,       0 (avg: 1181538) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.53) msec latency[RUN #1 5%,   9 secs]  6 threads:    11077080 ops,       0 (avg: 1183352) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.52) msec latency[RUN #1 5%,   9 secs]  6 threads:    11705790 ops,       0 (avg: 1184699) ops/sec, 0.00KB/sec (avg: 1.15GB/sec),  0.00 (avg:  2.52) msec latencyread error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+read error: Connection reset by peer
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+connection dropped.
+read error: Connection reset by peer
+connection dropped.
+[RUN #1 6%,  10 secs]  0 threads:    12111240 ops,       0 (avg: 1164446) ops/sec, 0.00KB/sec (avg: 1.13GB/sec),  0.00 (avg:  2.52) msec latency
+
+10        Threads
+10        Connections per thread
+180       Seconds
+
+
+ALL STATS
+========================================================================
+Type        Ops/sec     Hits/sec   Misses/sec      Latency       KB/sec
+------------------------------------------------------------------------
+Sets           0.00          ---          ---      2.52000         0.00
+Gets           0.00         0.00         0.00      2.52000         0.00
+Waits          0.00          ---          ---      0.00000          ---
+Totals         0.00         0.00         0.00      2.52000         0.00

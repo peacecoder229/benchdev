@@ -1,0 +1,2518 @@
+[853598.328789] rdctr: Initializing kernel module...
+[853598.334125] rdctr: Successfully created thread on node 0, thread 0.
+[853598.334928] Printing sizes:
+[853598.334929] sizeof int: 4
+[853598.334929] sizeof long: 8
+[853598.334929] sizeof long long 8
+[853598.334930] sizeof unsigned int: 4
+[853598.334930] sizeof unsigned long: 8
+[853598.334930] sizeof unsigned long long 8
+[853598.334930] Printing sizes:
+[853598.334931] sizeof int: 4
+[853598.334931] sizeof long: 8
+[853598.334931] sizeof long long 8
+[853598.334932] sizeof unsigned int: 4
+[853598.334932] sizeof unsigned long: 8
+[853598.334932] sizeof unsigned long long 8
+[853598.334934] iter: 0
+[853598.334934] ctr: tsc iter 0 diff = 90
+[853598.334935] Unhalted Core Cycles: 0x0 iter 0 diff = 93
+[853598.334935] Instruction Retired: 0x1 iter 0 diff = 18
+[853598.334936] LLC Misses: 0x2 iter 0 diff = 0
+[853598.334936] iter: 1
+[853598.334937] ctr: tsc iter 1 diff = 84
+[853598.334937] Unhalted Core Cycles: 0x0 iter 1 diff = 83
+[853598.334937] Instruction Retired: 0x1 iter 1 diff = 18
+[853598.334938] LLC Misses: 0x2 iter 1 diff = 2
+[853598.334938] iter: 2
+[853598.334939] ctr: tsc iter 2 diff = 82
+[853598.334939] Unhalted Core Cycles: 0x0 iter 2 diff = 84
+[853598.334939] Instruction Retired: 0x1 iter 2 diff = 18
+[853598.334940] LLC Misses: 0x2 iter 2 diff = 0
+[853598.334940] iter: 3
+[853598.334940] ctr: tsc iter 3 diff = 82
+[853598.334941] Unhalted Core Cycles: 0x0 iter 3 diff = 82
+[853598.334941] Instruction Retired: 0x1 iter 3 diff = 18
+[853598.334942] LLC Misses: 0x2 iter 3 diff = 0
+[853598.334942] iter: 4
+[853598.334942] ctr: tsc iter 4 diff = 86
+[853598.334943] Unhalted Core Cycles: 0x0 iter 4 diff = 99
+[853598.334943] Instruction Retired: 0x1 iter 4 diff = 18
+[853598.334944] LLC Misses: 0x2 iter 4 diff = 1
+[853598.334944] iter: 5
+[853598.334944] ctr: tsc iter 5 diff = 84
+[853598.334945] Unhalted Core Cycles: 0x0 iter 5 diff = 88
+[853598.334945] Instruction Retired: 0x1 iter 5 diff = 18
+[853598.334945] LLC Misses: 0x2 iter 5 diff = 0
+[853598.334946] iter: 6
+[853598.334946] ctr: tsc iter 6 diff = 82
+[853598.334946] Unhalted Core Cycles: 0x0 iter 6 diff = 84
+[853598.334947] Instruction Retired: 0x1 iter 6 diff = 18
+[853598.334947] LLC Misses: 0x2 iter 6 diff = 0
+[853598.334947] iter: 7
+[853598.334948] ctr: tsc iter 7 diff = 86
+[853598.334948] Unhalted Core Cycles: 0x0 iter 7 diff = 89
+[853598.334949] Instruction Retired: 0x1 iter 7 diff = 18
+[853598.334949] LLC Misses: 0x2 iter 7 diff = 1
+[853598.334949] iter: 8
+[853598.334950] ctr: tsc iter 8 diff = 84
+[853598.334950] Unhalted Core Cycles: 0x0 iter 8 diff = 85
+[853598.334951] Instruction Retired: 0x1 iter 8 diff = 18
+[853598.334951] LLC Misses: 0x2 iter 8 diff = 0
+[853598.334951] iter: 9
+[853598.334952] ctr: tsc iter 9 diff = 96
+[853598.334952] Unhalted Core Cycles: 0x0 iter 9 diff = 89
+[853598.334952] Instruction Retired: 0x1 iter 9 diff = 18
+[853598.334953] LLC Misses: 0x2 iter 9 diff = 0
+[853598.334953] iter: 10
+[853598.334954] ctr: tsc iter 10 diff = 96
+[853598.334954] Unhalted Core Cycles: 0x0 iter 10 diff = 102
+[853598.334955] Instruction Retired: 0x1 iter 10 diff = 20
+[853598.334956] LLC Misses: 0x2 iter 10 diff = 0
+[853598.334956] iter: 11
+[853598.334956] ctr: tsc iter 11 diff = 92
+[853598.334957] Unhalted Core Cycles: 0x0 iter 11 diff = 91
+[853598.334957] Instruction Retired: 0x1 iter 11 diff = 18
+[853598.334958] LLC Misses: 0x2 iter 11 diff = 0
+[853598.334958] iter: 12
+[853598.334959] ctr: tsc iter 12 diff = 80
+[853598.334959] Unhalted Core Cycles: 0x0 iter 12 diff = 84
+[853598.334959] Instruction Retired: 0x1 iter 12 diff = 18
+[853598.334960] LLC Misses: 0x2 iter 12 diff = 0
+[853598.334960] iter: 13
+[853598.334961] ctr: tsc iter 13 diff = 96
+[853598.334961] Unhalted Core Cycles: 0x0 iter 13 diff = 113
+[853598.334962] Instruction Retired: 0x1 iter 13 diff = 18
+[853598.334962] LLC Misses: 0x2 iter 13 diff = 0
+[853598.334962] iter: 14
+[853598.334963] ctr: tsc iter 14 diff = 90
+[853598.334963] Unhalted Core Cycles: 0x0 iter 14 diff = 91
+[853598.334964] Instruction Retired: 0x1 iter 14 diff = 18
+[853598.334964] LLC Misses: 0x2 iter 14 diff = 0
+[853598.334964] iter: 15
+[853598.334965] ctr: tsc iter 15 diff = 104
+[853598.334966] Unhalted Core Cycles: 0x0 iter 15 diff = 122
+[853598.334966] Instruction Retired: 0x1 iter 15 diff = 22
+[853598.334966] LLC Misses: 0x2 iter 15 diff = 1
+[853598.334967] iter: 16
+[853598.334967] ctr: tsc iter 16 diff = 98
+[853598.334967] Unhalted Core Cycles: 0x0 iter 16 diff = 95
+[853598.334968] Instruction Retired: 0x1 iter 16 diff = 18
+[853598.334968] LLC Misses: 0x2 iter 16 diff = 1
+[853598.334969] iter: 17
+[853598.334969] ctr: tsc iter 17 diff = 96
+[853598.334970] Unhalted Core Cycles: 0x0 iter 17 diff = 99
+[853598.334970] Instruction Retired: 0x1 iter 17 diff = 18
+[853598.334970] LLC Misses: 0x2 iter 17 diff = 0
+[853598.334971] iter: 18
+[853598.334971] ctr: tsc iter 18 diff = 86
+[853598.334972] Unhalted Core Cycles: 0x0 iter 18 diff = 90
+[853598.334972] Instruction Retired: 0x1 iter 18 diff = 18
+[853598.334972] LLC Misses: 0x2 iter 18 diff = 0
+[853598.334973] iter: 19
+[853598.334973] ctr: tsc iter 19 diff = 84
+[853598.334974] Unhalted Core Cycles: 0x0 iter 19 diff = 84
+[853598.334974] Instruction Retired: 0x1 iter 19 diff = 18
+[853598.334974] LLC Misses: 0x2 iter 19 diff = 0
+[853598.334975] iter: 20
+[853598.334975] ctr: tsc iter 20 diff = 110
+[853598.334976] Unhalted Core Cycles: 0x0 iter 20 diff = 126
+[853598.334976] Instruction Retired: 0x1 iter 20 diff = 17
+[853598.334977] LLC Misses: 0x2 iter 20 diff = 0
+[853598.334977] iter: 21
+[853598.334977] ctr: tsc iter 21 diff = 84
+[853598.334978] Unhalted Core Cycles: 0x0 iter 21 diff = 87
+[853598.334978] Instruction Retired: 0x1 iter 21 diff = 18
+[853598.334979] LLC Misses: 0x2 iter 21 diff = 0
+[853598.334979] iter: 22
+[853598.334979] ctr: tsc iter 22 diff = 82
+[853598.334980] Unhalted Core Cycles: 0x0 iter 22 diff = 84
+[853598.334980] Instruction Retired: 0x1 iter 22 diff = 18
+[853598.334980] LLC Misses: 0x2 iter 22 diff = 0
+[853598.334981] iter: 23
+[853598.334981] ctr: tsc iter 23 diff = 88
+[853598.334982] Unhalted Core Cycles: 0x0 iter 23 diff = 90
+[853598.334982] Instruction Retired: 0x1 iter 23 diff = 18
+[853598.334983] LLC Misses: 0x2 iter 23 diff = 0
+[853598.334983] iter: 24
+[853598.334983] ctr: tsc iter 24 diff = 98
+[853598.334984] Unhalted Core Cycles: 0x0 iter 24 diff = 108
+[853598.334984] Instruction Retired: 0x1 iter 24 diff = 18
+[853598.334985] LLC Misses: 0x2 iter 24 diff = 0
+[853598.334985] iter: 25
+[853598.334985] ctr: tsc iter 25 diff = 116
+[853598.334986] Unhalted Core Cycles: 0x0 iter 25 diff = 132
+[853598.334986] Instruction Retired: 0x1 iter 25 diff = 17
+[853598.334987] LLC Misses: 0x2 iter 25 diff = 0
+[853598.334987] iter: 26
+[853598.334988] ctr: tsc iter 26 diff = 82
+[853598.334988] Unhalted Core Cycles: 0x0 iter 26 diff = 85
+[853598.334988] Instruction Retired: 0x1 iter 26 diff = 18
+[853598.334989] LLC Misses: 0x2 iter 26 diff = 0
+[853598.334989] iter: 27
+[853598.334990] ctr: tsc iter 27 diff = 82
+[853598.334990] Unhalted Core Cycles: 0x0 iter 27 diff = 84
+[853598.334990] Instruction Retired: 0x1 iter 27 diff = 18
+[853598.334991] LLC Misses: 0x2 iter 27 diff = 0
+[853598.334991] iter: 28
+[853598.334992] ctr: tsc iter 28 diff = 92
+[853598.334992] Unhalted Core Cycles: 0x0 iter 28 diff = 95
+[853598.334992] Instruction Retired: 0x1 iter 28 diff = 15
+[853598.334993] LLC Misses: 0x2 iter 28 diff = 0
+[853598.334993] iter: 29
+[853598.334994] ctr: tsc iter 29 diff = 94
+[853598.334994] Unhalted Core Cycles: 0x0 iter 29 diff = 106
+[853598.334995] Instruction Retired: 0x1 iter 29 diff = 15
+[853598.334995] LLC Misses: 0x2 iter 29 diff = 0
+[853598.334995] iter: 30
+[853598.334996] ctr: tsc iter 30 diff = 80
+[853598.334996] Unhalted Core Cycles: 0x0 iter 30 diff = 87
+[853598.334996] Instruction Retired: 0x1 iter 30 diff = 18
+[853598.334997] LLC Misses: 0x2 iter 30 diff = 0
+[853598.334997] iter: 31
+[853598.334998] ctr: tsc iter 31 diff = 90
+[853598.334998] Unhalted Core Cycles: 0x0 iter 31 diff = 96
+[853598.334999] Instruction Retired: 0x1 iter 31 diff = 22
+[853598.334999] LLC Misses: 0x2 iter 31 diff = 0
+[853598.334999] iter: 32
+[853598.335000] ctr: tsc iter 32 diff = 98
+[853598.335000] Unhalted Core Cycles: 0x0 iter 32 diff = 105
+[853598.335001] Instruction Retired: 0x1 iter 32 diff = 13
+[853598.335001] LLC Misses: 0x2 iter 32 diff = 0
+[853598.335001] iter: 33
+[853598.335002] ctr: tsc iter 33 diff = 86
+[853598.335002] Unhalted Core Cycles: 0x0 iter 33 diff = 88
+[853598.335003] Instruction Retired: 0x1 iter 33 diff = 18
+[853598.335003] LLC Misses: 0x2 iter 33 diff = 0
+[853598.335003] iter: 34
+[853598.335004] ctr: tsc iter 34 diff = 84
+[853598.335004] Unhalted Core Cycles: 0x0 iter 34 diff = 85
+[853598.335005] Instruction Retired: 0x1 iter 34 diff = 18
+[853598.335005] LLC Misses: 0x2 iter 34 diff = 0
+[853598.335005] iter: 35
+[853598.335006] ctr: tsc iter 35 diff = 84
+[853598.335006] Unhalted Core Cycles: 0x0 iter 35 diff = 88
+[853598.335006] Instruction Retired: 0x1 iter 35 diff = 18
+[853598.335007] LLC Misses: 0x2 iter 35 diff = 0
+[853598.335007] iter: 36
+[853598.335007] ctr: tsc iter 36 diff = 92
+[853598.335008] Unhalted Core Cycles: 0x0 iter 36 diff = 94
+[853598.335008] Instruction Retired: 0x1 iter 36 diff = 18
+[853598.335009] LLC Misses: 0x2 iter 36 diff = 1
+[853598.335009] iter: 37
+[853598.335010] ctr: tsc iter 37 diff = 88
+[853598.335010] Unhalted Core Cycles: 0x0 iter 37 diff = 90
+[853598.335011] Instruction Retired: 0x1 iter 37 diff = 18
+[853598.335011] LLC Misses: 0x2 iter 37 diff = 0
+[853598.335011] iter: 38
+[853598.335012] ctr: tsc iter 38 diff = 88
+[853598.335012] Unhalted Core Cycles: 0x0 iter 38 diff = 95
+[853598.335013] Instruction Retired: 0x1 iter 38 diff = 18
+[853598.335013] LLC Misses: 0x2 iter 38 diff = 1
+[853598.335013] iter: 39
+[853598.335014] ctr: tsc iter 39 diff = 88
+[853598.335014] Unhalted Core Cycles: 0x0 iter 39 diff = 94
+[853598.335015] Instruction Retired: 0x1 iter 39 diff = 18
+[853598.335015] LLC Misses: 0x2 iter 39 diff = 0
+[853598.335015] iter: 40
+[853598.335016] ctr: tsc iter 40 diff = 118
+[853598.335016] Unhalted Core Cycles: 0x0 iter 40 diff = 131
+[853598.335017] Instruction Retired: 0x1 iter 40 diff = 17
+[853598.335017] LLC Misses: 0x2 iter 40 diff = 0
+[853598.335018] iter: 41
+[853598.335018] ctr: tsc iter 41 diff = 86
+[853598.335018] Unhalted Core Cycles: 0x0 iter 41 diff = 112
+[853598.335019] Instruction Retired: 0x1 iter 41 diff = 18
+[853598.335019] LLC Misses: 0x2 iter 41 diff = 0
+[853598.335020] iter: 42
+[853598.335020] ctr: tsc iter 42 diff = 126
+[853598.335021] Unhalted Core Cycles: 0x0 iter 42 diff = 143
+[853598.335021] Instruction Retired: 0x1 iter 42 diff = 17
+[853598.335022] LLC Misses: 0x2 iter 42 diff = 0
+[853598.335022] iter: 43
+[853598.335022] ctr: tsc iter 43 diff = 88
+[853598.335023] Unhalted Core Cycles: 0x0 iter 43 diff = 92
+[853598.335023] Instruction Retired: 0x1 iter 43 diff = 18
+[853598.335024] LLC Misses: 0x2 iter 43 diff = 0
+[853598.335024] iter: 44
+[853598.335025] ctr: tsc iter 44 diff = 136
+[853598.335025] Unhalted Core Cycles: 0x0 iter 44 diff = 168
+[853598.335026] Instruction Retired: 0x1 iter 44 diff = 17
+[853598.335026] LLC Misses: 0x2 iter 44 diff = 0
+[853598.335027] iter: 45
+[853598.335027] ctr: tsc iter 45 diff = 94
+[853598.335027] Unhalted Core Cycles: 0x0 iter 45 diff = 107
+[853598.335028] Instruction Retired: 0x1 iter 45 diff = 15
+[853598.335028] LLC Misses: 0x2 iter 45 diff = 0
+[853598.335029] iter: 46
+[853598.335029] ctr: tsc iter 46 diff = 100
+[853598.335029] Unhalted Core Cycles: 0x0 iter 46 diff = 101
+[853598.335030] Instruction Retired: 0x1 iter 46 diff = 22
+[853598.335030] LLC Misses: 0x2 iter 46 diff = 0
+[853598.335031] iter: 47
+[853598.335031] ctr: tsc iter 47 diff = 118
+[853598.335032] Unhalted Core Cycles: 0x0 iter 47 diff = 136
+[853598.335032] Instruction Retired: 0x1 iter 47 diff = 17
+[853598.335033] LLC Misses: 0x2 iter 47 diff = 0
+[853598.335033] iter: 48
+[853598.335034] ctr: tsc iter 48 diff = 92
+[853598.335034] Unhalted Core Cycles: 0x0 iter 48 diff = 111
+[853598.335035] Instruction Retired: 0x1 iter 48 diff = 18
+[853598.335035] LLC Misses: 0x2 iter 48 diff = 0
+[853598.335035] iter: 49
+[853598.335036] ctr: tsc iter 49 diff = 118
+[853598.335037] Unhalted Core Cycles: 0x0 iter 49 diff = 133
+[853598.335037] Instruction Retired: 0x1 iter 49 diff = 17
+[853598.335038] LLC Misses: 0x2 iter 49 diff = 2
+[853598.335038] iter: 50
+[853598.335038] ctr: tsc iter 50 diff = 128
+[853598.335039] Unhalted Core Cycles: 0x0 iter 50 diff = 157
+[853598.335039] Instruction Retired: 0x1 iter 50 diff = 17
+[853598.335040] LLC Misses: 0x2 iter 50 diff = 0
+[853598.335040] iter: 51
+[853598.335041] ctr: tsc iter 51 diff = 92
+[853598.335041] Unhalted Core Cycles: 0x0 iter 51 diff = 108
+[853598.335042] Instruction Retired: 0x1 iter 51 diff = 15
+[853598.335042] LLC Misses: 0x2 iter 51 diff = 0
+[853598.335043] iter: 52
+[853598.335043] ctr: tsc iter 52 diff = 104
+[853598.335044] Unhalted Core Cycles: 0x0 iter 52 diff = 122
+[853598.335044] Instruction Retired: 0x1 iter 52 diff = 14
+[853598.335045] LLC Misses: 0x2 iter 52 diff = 0
+[853598.335045] iter: 53
+[853598.335045] ctr: tsc iter 53 diff = 88
+[853598.335046] Unhalted Core Cycles: 0x0 iter 53 diff = 95
+[853598.335047] Instruction Retired: 0x1 iter 53 diff = 18
+[853598.335047] LLC Misses: 0x2 iter 53 diff = 0
+[853598.335047] iter: 54
+[853598.335048] ctr: tsc iter 54 diff = 92
+[853598.335048] Unhalted Core Cycles: 0x0 iter 54 diff = 105
+[853598.335049] Instruction Retired: 0x1 iter 54 diff = 13
+[853598.335049] LLC Misses: 0x2 iter 54 diff = 0
+[853598.335050] iter: 55
+[853598.335050] ctr: tsc iter 55 diff = 98
+[853598.335051] Unhalted Core Cycles: 0x0 iter 55 diff = 105
+[853598.335051] Instruction Retired: 0x1 iter 55 diff = 18
+[853598.335052] LLC Misses: 0x2 iter 55 diff = 1
+[853598.335052] iter: 56
+[853598.335052] ctr: tsc iter 56 diff = 98
+[853598.335053] Unhalted Core Cycles: 0x0 iter 56 diff = 109
+[853598.335053] Instruction Retired: 0x1 iter 56 diff = 18
+[853598.335054] LLC Misses: 0x2 iter 56 diff = 0
+[853598.335054] iter: 57
+[853598.335054] ctr: tsc iter 57 diff = 88
+[853598.335055] Unhalted Core Cycles: 0x0 iter 57 diff = 92
+[853598.335055] Instruction Retired: 0x1 iter 57 diff = 18
+[853598.335056] LLC Misses: 0x2 iter 57 diff = 1
+[853598.335056] iter: 58
+[853598.335056] ctr: tsc iter 58 diff = 84
+[853598.335057] Unhalted Core Cycles: 0x0 iter 58 diff = 89
+[853598.335057] Instruction Retired: 0x1 iter 58 diff = 20
+[853598.335058] LLC Misses: 0x2 iter 58 diff = 0
+[853598.335058] iter: 59
+[853598.335059] ctr: tsc iter 59 diff = 82
+[853598.335059] Unhalted Core Cycles: 0x0 iter 59 diff = 84
+[853598.335060] Instruction Retired: 0x1 iter 59 diff = 18
+[853598.335060] LLC Misses: 0x2 iter 59 diff = 0
+[853598.335060] iter: 60
+[853598.335061] ctr: tsc iter 60 diff = 102
+[853598.335061] Unhalted Core Cycles: 0x0 iter 60 diff = 108
+[853598.335062] Instruction Retired: 0x1 iter 60 diff = 13
+[853598.335063] LLC Misses: 0x2 iter 60 diff = 0
+[853598.335063] iter: 61
+[853598.335063] ctr: tsc iter 61 diff = 100
+[853598.335064] Unhalted Core Cycles: 0x0 iter 61 diff = 102
+[853598.335065] Instruction Retired: 0x1 iter 61 diff = 18
+[853598.335065] LLC Misses: 0x2 iter 61 diff = 0
+[853598.335065] iter: 62
+[853598.335066] ctr: tsc iter 62 diff = 100
+[853598.335067] Unhalted Core Cycles: 0x0 iter 62 diff = 102
+[853598.335067] Instruction Retired: 0x1 iter 62 diff = 22
+[853598.335068] LLC Misses: 0x2 iter 62 diff = 0
+[853598.335068] iter: 63
+[853598.335069] ctr: tsc iter 63 diff = 100
+[853598.335069] Unhalted Core Cycles: 0x0 iter 63 diff = 101
+[853598.335070] Instruction Retired: 0x1 iter 63 diff = 18
+[853598.335070] LLC Misses: 0x2 iter 63 diff = 0
+[853598.335070] iter: 64
+[853598.335071] ctr: tsc iter 64 diff = 98
+[853598.335071] Unhalted Core Cycles: 0x0 iter 64 diff = 96
+[853598.335072] Instruction Retired: 0x1 iter 64 diff = 18
+[853598.335072] LLC Misses: 0x2 iter 64 diff = 0
+[853598.335073] iter: 65
+[853598.335073] ctr: tsc iter 65 diff = 94
+[853598.335074] Unhalted Core Cycles: 0x0 iter 65 diff = 100
+[853598.335074] Instruction Retired: 0x1 iter 65 diff = 17
+[853598.335075] LLC Misses: 0x2 iter 65 diff = 0
+[853598.335075] iter: 66
+[853598.335076] ctr: tsc iter 66 diff = 102
+[853598.335076] Unhalted Core Cycles: 0x0 iter 66 diff = 103
+[853598.335077] Instruction Retired: 0x1 iter 66 diff = 18
+[853598.335077] LLC Misses: 0x2 iter 66 diff = 0
+[853598.335078] iter: 67
+[853598.335078] ctr: tsc iter 67 diff = 94
+[853598.335079] Unhalted Core Cycles: 0x0 iter 67 diff = 92
+[853598.335079] Instruction Retired: 0x1 iter 67 diff = 18
+[853598.335080] LLC Misses: 0x2 iter 67 diff = 0
+[853598.335080] iter: 68
+[853598.335081] ctr: tsc iter 68 diff = 106
+[853598.335081] Unhalted Core Cycles: 0x0 iter 68 diff = 107
+[853598.335082] Instruction Retired: 0x1 iter 68 diff = 15
+[853598.335082] LLC Misses: 0x2 iter 68 diff = 0
+[853598.335083] iter: 69
+[853598.335083] ctr: tsc iter 69 diff = 92
+[853598.335084] Unhalted Core Cycles: 0x0 iter 69 diff = 98
+[853598.335084] Instruction Retired: 0x1 iter 69 diff = 18
+[853598.335085] LLC Misses: 0x2 iter 69 diff = 0
+[853598.335085] iter: 70
+[853598.335086] ctr: tsc iter 70 diff = 94
+[853598.335086] Unhalted Core Cycles: 0x0 iter 70 diff = 93
+[853598.335087] Instruction Retired: 0x1 iter 70 diff = 22
+[853598.335087] LLC Misses: 0x2 iter 70 diff = 0
+[853598.335088] iter: 71
+[853598.335088] ctr: tsc iter 71 diff = 90
+[853598.335089] Unhalted Core Cycles: 0x0 iter 71 diff = 108
+[853598.335089] Instruction Retired: 0x1 iter 71 diff = 18
+[853598.335090] LLC Misses: 0x2 iter 71 diff = 0
+[853598.335090] iter: 72
+[853598.335091] ctr: tsc iter 72 diff = 102
+[853598.335091] Unhalted Core Cycles: 0x0 iter 72 diff = 104
+[853598.335092] Instruction Retired: 0x1 iter 72 diff = 18
+[853598.335092] LLC Misses: 0x2 iter 72 diff = 0
+[853598.335093] iter: 73
+[853598.335093] ctr: tsc iter 73 diff = 98
+[853598.335094] Unhalted Core Cycles: 0x0 iter 73 diff = 109
+[853598.335094] Instruction Retired: 0x1 iter 73 diff = 13
+[853598.335095] LLC Misses: 0x2 iter 73 diff = 0
+[853598.335095] iter: 74
+[853598.335096] ctr: tsc iter 74 diff = 110
+[853598.335096] Unhalted Core Cycles: 0x0 iter 74 diff = 110
+[853598.335097] Instruction Retired: 0x1 iter 74 diff = 22
+[853598.335098] LLC Misses: 0x2 iter 74 diff = 0
+[853598.335098] iter: 75
+[853598.335099] ctr: tsc iter 75 diff = 94
+[853598.335099] Unhalted Core Cycles: 0x0 iter 75 diff = 100
+[853598.335100] Instruction Retired: 0x1 iter 75 diff = 18
+[853598.335100] LLC Misses: 0x2 iter 75 diff = 1
+[853598.335101] iter: 76
+[853598.335101] ctr: tsc iter 76 diff = 102
+[853598.335102] Unhalted Core Cycles: 0x0 iter 76 diff = 102
+[853598.335102] Instruction Retired: 0x1 iter 76 diff = 15
+[853598.335103] LLC Misses: 0x2 iter 76 diff = 0
+[853598.335103] iter: 77
+[853598.335104] ctr: tsc iter 77 diff = 100
+[853598.335104] Unhalted Core Cycles: 0x0 iter 77 diff = 105
+[853598.335105] Instruction Retired: 0x1 iter 77 diff = 18
+[853598.335105] LLC Misses: 0x2 iter 77 diff = 0
+[853598.335106] iter: 78
+[853598.335106] ctr: tsc iter 78 diff = 106
+[853598.335107] Unhalted Core Cycles: 0x0 iter 78 diff = 109
+[853598.335108] Instruction Retired: 0x1 iter 78 diff = 18
+[853598.335108] LLC Misses: 0x2 iter 78 diff = 0
+[853598.335108] iter: 79
+[853598.335109] ctr: tsc iter 79 diff = 84
+[853598.335110] Unhalted Core Cycles: 0x0 iter 79 diff = 92
+[853598.335110] Instruction Retired: 0x1 iter 79 diff = 18
+[853598.335111] LLC Misses: 0x2 iter 79 diff = 0
+[853598.335111] iter: 80
+[853598.335112] ctr: tsc iter 80 diff = 98
+[853598.335112] Unhalted Core Cycles: 0x0 iter 80 diff = 104
+[853598.335113] Instruction Retired: 0x1 iter 80 diff = 18
+[853598.335113] LLC Misses: 0x2 iter 80 diff = 1
+[853598.335114] iter: 81
+[853598.335114] ctr: tsc iter 81 diff = 96
+[853598.335115] Unhalted Core Cycles: 0x0 iter 81 diff = 106
+[853598.335115] Instruction Retired: 0x1 iter 81 diff = 18
+[853598.335116] LLC Misses: 0x2 iter 81 diff = 0
+[853598.335116] iter: 82
+[853598.335117] ctr: tsc iter 82 diff = 98
+[853598.335117] Unhalted Core Cycles: 0x0 iter 82 diff = 103
+[853598.335118] Instruction Retired: 0x1 iter 82 diff = 18
+[853598.335118] LLC Misses: 0x2 iter 82 diff = 0
+[853598.335119] iter: 83
+[853598.335119] ctr: tsc iter 83 diff = 102
+[853598.335120] Unhalted Core Cycles: 0x0 iter 83 diff = 104
+[853598.335120] Instruction Retired: 0x1 iter 83 diff = 18
+[853598.335121] LLC Misses: 0x2 iter 83 diff = 0
+[853598.335121] iter: 84
+[853598.335122] ctr: tsc iter 84 diff = 108
+[853598.335122] Unhalted Core Cycles: 0x0 iter 84 diff = 113
+[853598.335123] Instruction Retired: 0x1 iter 84 diff = 18
+[853598.335124] LLC Misses: 0x2 iter 84 diff = 0
+[853598.335124] iter: 85
+[853598.335124] ctr: tsc iter 85 diff = 90
+[853598.335125] Unhalted Core Cycles: 0x0 iter 85 diff = 95
+[853598.335125] Instruction Retired: 0x1 iter 85 diff = 18
+[853598.335126] LLC Misses: 0x2 iter 85 diff = 1
+[853598.335126] iter: 86
+[853598.335127] ctr: tsc iter 86 diff = 104
+[853598.335128] Unhalted Core Cycles: 0x0 iter 86 diff = 109
+[853598.335128] Instruction Retired: 0x1 iter 86 diff = 13
+[853598.335129] LLC Misses: 0x2 iter 86 diff = 0
+[853598.335129] iter: 87
+[853598.335130] ctr: tsc iter 87 diff = 102
+[853598.335130] Unhalted Core Cycles: 0x0 iter 87 diff = 102
+[853598.335131] Instruction Retired: 0x1 iter 87 diff = 18
+[853598.335131] LLC Misses: 0x2 iter 87 diff = 0
+[853598.335132] iter: 88
+[853598.335132] ctr: tsc iter 88 diff = 88
+[853598.335133] Unhalted Core Cycles: 0x0 iter 88 diff = 96
+[853598.335133] Instruction Retired: 0x1 iter 88 diff = 18
+[853598.335134] LLC Misses: 0x2 iter 88 diff = 0
+[853598.335134] iter: 89
+[853598.335134] ctr: tsc iter 89 diff = 82
+[853598.335135] Unhalted Core Cycles: 0x0 iter 89 diff = 83
+[853598.335135] Instruction Retired: 0x1 iter 89 diff = 18
+[853598.335136] LLC Misses: 0x2 iter 89 diff = 0
+[853598.335136] iter: 90
+[853598.335136] ctr: tsc iter 90 diff = 86
+[853598.335137] Unhalted Core Cycles: 0x0 iter 90 diff = 91
+[853598.335137] Instruction Retired: 0x1 iter 90 diff = 18
+[853598.335138] LLC Misses: 0x2 iter 90 diff = 0
+[853598.335138] iter: 91
+[853598.335138] ctr: tsc iter 91 diff = 92
+[853598.335139] Unhalted Core Cycles: 0x0 iter 91 diff = 93
+[853598.335139] Instruction Retired: 0x1 iter 91 diff = 18
+[853598.335139] LLC Misses: 0x2 iter 91 diff = 0
+[853598.335140] iter: 92
+[853598.335140] ctr: tsc iter 92 diff = 86
+[853598.335141] Unhalted Core Cycles: 0x0 iter 92 diff = 95
+[853598.335141] Instruction Retired: 0x1 iter 92 diff = 18
+[853598.335142] LLC Misses: 0x2 iter 92 diff = 0
+[853598.335142] iter: 93
+[853598.335142] ctr: tsc iter 93 diff = 84
+[853598.335143] Unhalted Core Cycles: 0x0 iter 93 diff = 84
+[853598.335143] Instruction Retired: 0x1 iter 93 diff = 18
+[853598.335144] LLC Misses: 0x2 iter 93 diff = 0
+[853598.335144] iter: 94
+[853598.335144] ctr: tsc iter 94 diff = 112
+[853598.335145] Unhalted Core Cycles: 0x0 iter 94 diff = 127
+[853598.335145] Instruction Retired: 0x1 iter 94 diff = 18
+[853598.335146] LLC Misses: 0x2 iter 94 diff = 0
+[853598.335146] iter: 95
+[853598.335146] ctr: tsc iter 95 diff = 90
+[853598.335147] Unhalted Core Cycles: 0x0 iter 95 diff = 95
+[853598.335147] Instruction Retired: 0x1 iter 95 diff = 15
+[853598.335147] LLC Misses: 0x2 iter 95 diff = 0
+[853598.335148] iter: 96
+[853598.335148] ctr: tsc iter 96 diff = 92
+[853598.335148] Unhalted Core Cycles: 0x0 iter 96 diff = 101
+[853598.335149] Instruction Retired: 0x1 iter 96 diff = 18
+[853598.335149] LLC Misses: 0x2 iter 96 diff = 0
+[853598.335150] iter: 97
+[853598.335150] ctr: tsc iter 97 diff = 94
+[853598.335151] Unhalted Core Cycles: 0x0 iter 97 diff = 104
+[853598.335151] Instruction Retired: 0x1 iter 97 diff = 18
+[853598.335151] LLC Misses: 0x2 iter 97 diff = 1
+[853598.335152] iter: 98
+[853598.335152] ctr: tsc iter 98 diff = 84
+[853598.335153] Unhalted Core Cycles: 0x0 iter 98 diff = 90
+[853598.335153] Instruction Retired: 0x1 iter 98 diff = 18
+[853598.335154] LLC Misses: 0x2 iter 98 diff = 1
+[853598.335154] iter: 99
+[853598.335155] ctr: tsc iter 99 diff = 104
+[853598.335155] Unhalted Core Cycles: 0x0 iter 99 diff = 106
+[853598.335156] Instruction Retired: 0x1 iter 99 diff = 18
+[853598.335156] LLC Misses: 0x2 iter 99 diff = 0
+[853598.335156] iter: 100
+[853598.335157] ctr: tsc iter 100 diff = 106
+[853598.335158] Unhalted Core Cycles: 0x0 iter 100 diff = 105
+[853598.335158] Instruction Retired: 0x1 iter 100 diff = 18
+[853598.335159] LLC Misses: 0x2 iter 100 diff = 0
+[853598.335159] iter: 101
+[853598.335160] ctr: tsc iter 101 diff = 92
+[853598.335160] Unhalted Core Cycles: 0x0 iter 101 diff = 97
+[853598.335161] Instruction Retired: 0x1 iter 101 diff = 18
+[853598.335161] LLC Misses: 0x2 iter 101 diff = 0
+[853598.335162] iter: 102
+[853598.335162] ctr: tsc iter 102 diff = 100
+[853598.335163] Unhalted Core Cycles: 0x0 iter 102 diff = 106
+[853598.335163] Instruction Retired: 0x1 iter 102 diff = 18
+[853598.335164] LLC Misses: 0x2 iter 102 diff = 0
+[853598.335165] iter: 103
+[853598.335165] ctr: tsc iter 103 diff = 88
+[853598.335166] Unhalted Core Cycles: 0x0 iter 103 diff = 92
+[853598.335166] Instruction Retired: 0x1 iter 103 diff = 18
+[853598.335167] LLC Misses: 0x2 iter 103 diff = 0
+[853598.335167] iter: 104
+[853598.335168] ctr: tsc iter 104 diff = 100
+[853598.335168] Unhalted Core Cycles: 0x0 iter 104 diff = 97
+[853598.335169] Instruction Retired: 0x1 iter 104 diff = 20
+[853598.335169] LLC Misses: 0x2 iter 104 diff = 0
+[853598.335170] iter: 105
+[853598.335170] ctr: tsc iter 105 diff = 104
+[853598.335171] Unhalted Core Cycles: 0x0 iter 105 diff = 116
+[853598.335171] Instruction Retired: 0x1 iter 105 diff = 13
+[853598.335172] LLC Misses: 0x2 iter 105 diff = 0
+[853598.335172] iter: 106
+[853598.335173] ctr: tsc iter 106 diff = 102
+[853598.335173] Unhalted Core Cycles: 0x0 iter 106 diff = 102
+[853598.335174] Instruction Retired: 0x1 iter 106 diff = 18
+[853598.335175] LLC Misses: 0x2 iter 106 diff = 0
+[853598.335175] iter: 107
+[853598.335176] ctr: tsc iter 107 diff = 94
+[853598.335176] Unhalted Core Cycles: 0x0 iter 107 diff = 98
+[853598.335177] Instruction Retired: 0x1 iter 107 diff = 18
+[853598.335177] LLC Misses: 0x2 iter 107 diff = 0
+[853598.335178] iter: 108
+[853598.335178] ctr: tsc iter 108 diff = 96
+[853598.335179] Unhalted Core Cycles: 0x0 iter 108 diff = 102
+[853598.335180] Instruction Retired: 0x1 iter 108 diff = 22
+[853598.335180] LLC Misses: 0x2 iter 108 diff = 0
+[853598.335181] iter: 109
+[853598.335181] ctr: tsc iter 109 diff = 100
+[853598.335182] Unhalted Core Cycles: 0x0 iter 109 diff = 103
+[853598.335182] Instruction Retired: 0x1 iter 109 diff = 18
+[853598.335182] LLC Misses: 0x2 iter 109 diff = 0
+[853598.335183] iter: 110
+[853598.335183] ctr: tsc iter 110 diff = 82
+[853598.335184] Unhalted Core Cycles: 0x0 iter 110 diff = 83
+[853598.335184] Instruction Retired: 0x1 iter 110 diff = 18
+[853598.335185] LLC Misses: 0x2 iter 110 diff = 0
+[853598.335185] iter: 111
+[853598.335186] ctr: tsc iter 111 diff = 98
+[853598.335186] Unhalted Core Cycles: 0x0 iter 111 diff = 104
+[853598.335187] Instruction Retired: 0x1 iter 111 diff = 18
+[853598.335187] LLC Misses: 0x2 iter 111 diff = 0
+[853598.335187] iter: 112
+[853598.335188] ctr: tsc iter 112 diff = 80
+[853598.335188] Unhalted Core Cycles: 0x0 iter 112 diff = 85
+[853598.335189] Instruction Retired: 0x1 iter 112 diff = 18
+[853598.335189] LLC Misses: 0x2 iter 112 diff = 0
+[853598.335190] iter: 113
+[853598.335190] ctr: tsc iter 113 diff = 90
+[853598.335191] Unhalted Core Cycles: 0x0 iter 113 diff = 84
+[853598.335191] Instruction Retired: 0x1 iter 113 diff = 18
+[853598.335192] LLC Misses: 0x2 iter 113 diff = 0
+[853598.335192] iter: 114
+[853598.335193] ctr: tsc iter 114 diff = 94
+[853598.335193] Unhalted Core Cycles: 0x0 iter 114 diff = 101
+[853598.335194] Instruction Retired: 0x1 iter 114 diff = 15
+[853598.335194] LLC Misses: 0x2 iter 114 diff = 0
+[853598.335194] iter: 115
+[853598.335195] ctr: tsc iter 115 diff = 102
+[853598.335195] Unhalted Core Cycles: 0x0 iter 115 diff = 111
+[853598.335196] Instruction Retired: 0x1 iter 115 diff = 18
+[853598.335196] LLC Misses: 0x2 iter 115 diff = 0
+[853598.335197] iter: 116
+[853598.335197] ctr: tsc iter 116 diff = 84
+[853598.335197] Unhalted Core Cycles: 0x0 iter 116 diff = 84
+[853598.335198] Instruction Retired: 0x1 iter 116 diff = 18
+[853598.335198] LLC Misses: 0x2 iter 116 diff = 0
+[853598.335199] iter: 117
+[853598.335199] ctr: tsc iter 117 diff = 96
+[853598.335200] Unhalted Core Cycles: 0x0 iter 117 diff = 92
+[853598.335200] Instruction Retired: 0x1 iter 117 diff = 22
+[853598.335201] LLC Misses: 0x2 iter 117 diff = 0
+[853598.335201] iter: 118
+[853598.335201] ctr: tsc iter 118 diff = 82
+[853598.335202] Unhalted Core Cycles: 0x0 iter 118 diff = 90
+[853598.335202] Instruction Retired: 0x1 iter 118 diff = 18
+[853598.335203] LLC Misses: 0x2 iter 118 diff = 0
+[853598.335203] iter: 119
+[853598.335203] ctr: tsc iter 119 diff = 92
+[853598.335204] Unhalted Core Cycles: 0x0 iter 119 diff = 99
+[853598.335204] Instruction Retired: 0x1 iter 119 diff = 18
+[853598.335205] LLC Misses: 0x2 iter 119 diff = 0
+[853598.335205] iter: 120
+[853598.335206] ctr: tsc iter 120 diff = 84
+[853598.335206] Unhalted Core Cycles: 0x0 iter 120 diff = 84
+[853598.335207] Instruction Retired: 0x1 iter 120 diff = 18
+[853598.335207] LLC Misses: 0x2 iter 120 diff = 0
+[853598.335208] iter: 121
+[853598.335208] ctr: tsc iter 121 diff = 86
+[853598.335209] Unhalted Core Cycles: 0x0 iter 121 diff = 85
+[853598.335209] Instruction Retired: 0x1 iter 121 diff = 18
+[853598.335210] LLC Misses: 0x2 iter 121 diff = 0
+[853598.335210] iter: 122
+[853598.335211] ctr: tsc iter 122 diff = 94
+[853598.335211] Unhalted Core Cycles: 0x0 iter 122 diff = 100
+[853598.335212] Instruction Retired: 0x1 iter 122 diff = 18
+[853598.335213] LLC Misses: 0x2 iter 122 diff = 1
+[853598.335213] iter: 123
+[853598.335213] ctr: tsc iter 123 diff = 98
+[853598.335214] Unhalted Core Cycles: 0x0 iter 123 diff = 99
+[853598.335214] Instruction Retired: 0x1 iter 123 diff = 18
+[853598.335215] LLC Misses: 0x2 iter 123 diff = 0
+[853598.335215] iter: 124
+[853598.335215] ctr: tsc iter 124 diff = 100
+[853598.335216] Unhalted Core Cycles: 0x0 iter 124 diff = 106
+[853598.335216] Instruction Retired: 0x1 iter 124 diff = 18
+[853598.335217] LLC Misses: 0x2 iter 124 diff = 0
+[853598.335217] iter: 125
+[853598.335218] ctr: tsc iter 125 diff = 100
+[853598.335218] Unhalted Core Cycles: 0x0 iter 125 diff = 102
+[853598.335219] Instruction Retired: 0x1 iter 125 diff = 18
+[853598.335219] LLC Misses: 0x2 iter 125 diff = 1
+[853598.335220] iter: 126
+[853598.335220] ctr: tsc iter 126 diff = 86
+[853598.335221] Unhalted Core Cycles: 0x0 iter 126 diff = 90
+[853598.335221] Instruction Retired: 0x1 iter 126 diff = 18
+[853598.335222] LLC Misses: 0x2 iter 126 diff = 0
+[853598.335222] iter: 127
+[853598.335223] ctr: tsc iter 127 diff = 98
+[853598.335223] Unhalted Core Cycles: 0x0 iter 127 diff = 104
+[853598.335224] Instruction Retired: 0x1 iter 127 diff = 18
+[853598.335224] LLC Misses: 0x2 iter 127 diff = 0
+[853598.335225] iter: 128
+[853598.335225] ctr: tsc iter 128 diff = 94
+[853598.335226] Unhalted Core Cycles: 0x0 iter 128 diff = 99
+[853598.335226] Instruction Retired: 0x1 iter 128 diff = 18
+[853598.335227] LLC Misses: 0x2 iter 128 diff = 0
+[853598.335227] iter: 129
+[853598.335228] ctr: tsc iter 129 diff = 100
+[853598.335228] Unhalted Core Cycles: 0x0 iter 129 diff = 105
+[853598.335229] Instruction Retired: 0x1 iter 129 diff = 18
+[853598.335229] LLC Misses: 0x2 iter 129 diff = 1
+[853598.335230] iter: 130
+[853598.335230] ctr: tsc iter 130 diff = 100
+[853598.335231] Unhalted Core Cycles: 0x0 iter 130 diff = 104
+[853598.335231] Instruction Retired: 0x1 iter 130 diff = 18
+[853598.335232] LLC Misses: 0x2 iter 130 diff = 0
+[853598.335232] iter: 131
+[853598.335233] ctr: tsc iter 131 diff = 92
+[853598.335233] Unhalted Core Cycles: 0x0 iter 131 diff = 95
+[853598.335234] Instruction Retired: 0x1 iter 131 diff = 18
+[853598.335235] LLC Misses: 0x2 iter 131 diff = 0
+[853598.335235] iter: 132
+[853598.335235] ctr: tsc iter 132 diff = 102
+[853598.335236] Unhalted Core Cycles: 0x0 iter 132 diff = 106
+[853598.335236] Instruction Retired: 0x1 iter 132 diff = 18
+[853598.335237] LLC Misses: 0x2 iter 132 diff = 0
+[853598.335237] iter: 133
+[853598.335238] ctr: tsc iter 133 diff = 94
+[853598.335238] Unhalted Core Cycles: 0x0 iter 133 diff = 99
+[853598.335239] Instruction Retired: 0x1 iter 133 diff = 18
+[853598.335239] LLC Misses: 0x2 iter 133 diff = 0
+[853598.335240] iter: 134
+[853598.335240] ctr: tsc iter 134 diff = 116
+[853598.335240] Unhalted Core Cycles: 0x0 iter 134 diff = 126
+[853598.335241] Instruction Retired: 0x1 iter 134 diff = 13
+[853598.335241] LLC Misses: 0x2 iter 134 diff = 0
+[853598.335242] iter: 135
+[853598.335242] ctr: tsc iter 135 diff = 100
+[853598.335242] Unhalted Core Cycles: 0x0 iter 135 diff = 98
+[853598.335243] Instruction Retired: 0x1 iter 135 diff = 20
+[853598.335243] LLC Misses: 0x2 iter 135 diff = 0
+[853598.335244] iter: 136
+[853598.335244] ctr: tsc iter 136 diff = 86
+[853598.335244] Unhalted Core Cycles: 0x0 iter 136 diff = 92
+[853598.335245] Instruction Retired: 0x1 iter 136 diff = 18
+[853598.335246] LLC Misses: 0x2 iter 136 diff = 0
+[853598.335246] iter: 137
+[853598.335246] ctr: tsc iter 137 diff = 106
+[853598.335247] Unhalted Core Cycles: 0x0 iter 137 diff = 125
+[853598.335247] Instruction Retired: 0x1 iter 137 diff = 17
+[853598.335248] LLC Misses: 0x2 iter 137 diff = 0
+[853598.335248] iter: 138
+[853598.335248] ctr: tsc iter 138 diff = 86
+[853598.335249] Unhalted Core Cycles: 0x0 iter 138 diff = 89
+[853598.335249] Instruction Retired: 0x1 iter 138 diff = 18
+[853598.335250] LLC Misses: 0x2 iter 138 diff = 1
+[853598.335250] iter: 139
+[853598.335250] ctr: tsc iter 139 diff = 96
+[853598.335251] Unhalted Core Cycles: 0x0 iter 139 diff = 112
+[853598.335251] Instruction Retired: 0x1 iter 139 diff = 22
+[853598.335252] LLC Misses: 0x2 iter 139 diff = 0
+[853598.335252] iter: 140
+[853598.335253] ctr: tsc iter 140 diff = 96
+[853598.335253] Unhalted Core Cycles: 0x0 iter 140 diff = 105
+[853598.335254] Instruction Retired: 0x1 iter 140 diff = 18
+[853598.335254] LLC Misses: 0x2 iter 140 diff = 0
+[853598.335254] iter: 141
+[853598.335255] ctr: tsc iter 141 diff = 92
+[853598.335255] Unhalted Core Cycles: 0x0 iter 141 diff = 97
+[853598.335255] Instruction Retired: 0x1 iter 141 diff = 18
+[853598.335256] LLC Misses: 0x2 iter 141 diff = 0
+[853598.335256] iter: 142
+[853598.335257] ctr: tsc iter 142 diff = 120
+[853598.335257] Unhalted Core Cycles: 0x0 iter 142 diff = 137
+[853598.335258] Instruction Retired: 0x1 iter 142 diff = 17
+[853598.335258] LLC Misses: 0x2 iter 142 diff = 0
+[853598.335259] iter: 143
+[853598.335259] ctr: tsc iter 143 diff = 90
+[853598.335260] Unhalted Core Cycles: 0x0 iter 143 diff = 92
+[853598.335260] Instruction Retired: 0x1 iter 143 diff = 18
+[853598.335261] LLC Misses: 0x2 iter 143 diff = 0
+[853598.335261] iter: 144
+[853598.335261] ctr: tsc iter 144 diff = 90
+[853598.335262] Unhalted Core Cycles: 0x0 iter 144 diff = 92
+[853598.335262] Instruction Retired: 0x1 iter 144 diff = 18
+[853598.335262] LLC Misses: 0x2 iter 144 diff = 0
+[853598.335263] iter: 145
+[853598.335263] ctr: tsc iter 145 diff = 108
+[853598.335264] Unhalted Core Cycles: 0x0 iter 145 diff = 112
+[853598.335264] Instruction Retired: 0x1 iter 145 diff = 14
+[853598.335265] LLC Misses: 0x2 iter 145 diff = 0
+[853598.335265] iter: 146
+[853598.335265] ctr: tsc iter 146 diff = 92
+[853598.335266] Unhalted Core Cycles: 0x0 iter 146 diff = 91
+[853598.335266] Instruction Retired: 0x1 iter 146 diff = 18
+[853598.335267] LLC Misses: 0x2 iter 146 diff = 0
+[853598.335267] iter: 147
+[853598.335268] ctr: tsc iter 147 diff = 110
+[853598.335268] Unhalted Core Cycles: 0x0 iter 147 diff = 123
+[853598.335268] Instruction Retired: 0x1 iter 147 diff = 17
+[853598.335269] LLC Misses: 0x2 iter 147 diff = 0
+[853598.335269] iter: 148
+[853598.335269] ctr: tsc iter 148 diff = 88
+[853598.335270] Unhalted Core Cycles: 0x0 iter 148 diff = 93
+[853598.335270] Instruction Retired: 0x1 iter 148 diff = 18
+[853598.335271] LLC Misses: 0x2 iter 148 diff = 0
+[853598.335271] iter: 149
+[853598.335272] ctr: tsc iter 149 diff = 84
+[853598.335272] Unhalted Core Cycles: 0x0 iter 149 diff = 87
+[853598.335273] Instruction Retired: 0x1 iter 149 diff = 18
+[853598.335273] LLC Misses: 0x2 iter 149 diff = 0
+[853598.335273] iter: 150
+[853598.335274] ctr: tsc iter 150 diff = 88
+[853598.335274] Unhalted Core Cycles: 0x0 iter 150 diff = 92
+[853598.335275] Instruction Retired: 0x1 iter 150 diff = 18
+[853598.335275] LLC Misses: 0x2 iter 150 diff = 0
+[853598.335276] iter: 151
+[853598.335276] ctr: tsc iter 151 diff = 100
+[853598.335277] Unhalted Core Cycles: 0x0 iter 151 diff = 105
+[853598.335277] Instruction Retired: 0x1 iter 151 diff = 18
+[853598.335277] LLC Misses: 0x2 iter 151 diff = 0
+[853598.335278] iter: 152
+[853598.335278] ctr: tsc iter 152 diff = 86
+[853598.335279] Unhalted Core Cycles: 0x0 iter 152 diff = 98
+[853598.335279] Instruction Retired: 0x1 iter 152 diff = 18
+[853598.335280] LLC Misses: 0x2 iter 152 diff = 2
+[853598.335280] iter: 153
+[853598.335280] ctr: tsc iter 153 diff = 112
+[853598.335281] Unhalted Core Cycles: 0x0 iter 153 diff = 124
+[853598.335281] Instruction Retired: 0x1 iter 153 diff = 17
+[853598.335282] LLC Misses: 0x2 iter 153 diff = 2
+[853598.335282] iter: 154
+[853598.335282] ctr: tsc iter 154 diff = 104
+[853598.335283] Unhalted Core Cycles: 0x0 iter 154 diff = 114
+[853598.335283] Instruction Retired: 0x1 iter 154 diff = 18
+[853598.335284] LLC Misses: 0x2 iter 154 diff = 0
+[853598.335284] iter: 155
+[853598.335284] ctr: tsc iter 155 diff = 90
+[853598.335285] Unhalted Core Cycles: 0x0 iter 155 diff = 95
+[853598.335285] Instruction Retired: 0x1 iter 155 diff = 18
+[853598.335286] LLC Misses: 0x2 iter 155 diff = 0
+[853598.335286] iter: 156
+[853598.335287] ctr: tsc iter 156 diff = 88
+[853598.335287] Unhalted Core Cycles: 0x0 iter 156 diff = 99
+[853598.335288] Instruction Retired: 0x1 iter 156 diff = 18
+[853598.335288] LLC Misses: 0x2 iter 156 diff = 0
+[853598.335288] iter: 157
+[853598.335289] ctr: tsc iter 157 diff = 90
+[853598.335289] Unhalted Core Cycles: 0x0 iter 157 diff = 96
+[853598.335290] Instruction Retired: 0x1 iter 157 diff = 22
+[853598.335290] LLC Misses: 0x2 iter 157 diff = 0
+[853598.335290] iter: 158
+[853598.335291] ctr: tsc iter 158 diff = 106
+[853598.335291] Unhalted Core Cycles: 0x0 iter 158 diff = 105
+[853598.335292] Instruction Retired: 0x1 iter 158 diff = 18
+[853598.335292] LLC Misses: 0x2 iter 158 diff = 0
+[853598.335293] iter: 159
+[853598.335293] ctr: tsc iter 159 diff = 106
+[853598.335293] Unhalted Core Cycles: 0x0 iter 159 diff = 110
+[853598.335294] Instruction Retired: 0x1 iter 159 diff = 18
+[853598.335295] LLC Misses: 0x2 iter 159 diff = 0
+[853598.335295] iter: 160
+[853598.335295] ctr: tsc iter 160 diff = 92
+[853598.335296] Unhalted Core Cycles: 0x0 iter 160 diff = 106
+[853598.335297] Instruction Retired: 0x1 iter 160 diff = 18
+[853598.335297] LLC Misses: 0x2 iter 160 diff = 0
+[853598.335297] iter: 161
+[853598.335298] ctr: tsc iter 161 diff = 102
+[853598.335298] Unhalted Core Cycles: 0x0 iter 161 diff = 98
+[853598.335299] Instruction Retired: 0x1 iter 161 diff = 22
+[853598.335299] LLC Misses: 0x2 iter 161 diff = 0
+[853598.335300] iter: 162
+[853598.335300] ctr: tsc iter 162 diff = 90
+[853598.335301] Unhalted Core Cycles: 0x0 iter 162 diff = 92
+[853598.335301] Instruction Retired: 0x1 iter 162 diff = 22
+[853598.335301] LLC Misses: 0x2 iter 162 diff = 0
+[853598.335302] iter: 163
+[853598.335302] ctr: tsc iter 163 diff = 84
+[853598.335303] Unhalted Core Cycles: 0x0 iter 163 diff = 87
+[853598.335303] Instruction Retired: 0x1 iter 163 diff = 18
+[853598.335303] LLC Misses: 0x2 iter 163 diff = 1
+[853598.335304] iter: 164
+[853598.335304] ctr: tsc iter 164 diff = 82
+[853598.335305] Unhalted Core Cycles: 0x0 iter 164 diff = 83
+[853598.335305] Instruction Retired: 0x1 iter 164 diff = 18
+[853598.335305] LLC Misses: 0x2 iter 164 diff = 0
+[853598.335306] iter: 165
+[853598.335306] ctr: tsc iter 165 diff = 84
+[853598.335306] Unhalted Core Cycles: 0x0 iter 165 diff = 84
+[853598.335307] Instruction Retired: 0x1 iter 165 diff = 18
+[853598.335308] LLC Misses: 0x2 iter 165 diff = 1
+[853598.335308] iter: 166
+[853598.335309] ctr: tsc iter 166 diff = 100
+[853598.335309] Unhalted Core Cycles: 0x0 iter 166 diff = 108
+[853598.335310] Instruction Retired: 0x1 iter 166 diff = 13
+[853598.335310] LLC Misses: 0x2 iter 166 diff = 0
+[853598.335310] iter: 167
+[853598.335311] ctr: tsc iter 167 diff = 84
+[853598.335311] Unhalted Core Cycles: 0x0 iter 167 diff = 85
+[853598.335312] Instruction Retired: 0x1 iter 167 diff = 18
+[853598.335312] LLC Misses: 0x2 iter 167 diff = 0
+[853598.335313] iter: 168
+[853598.335313] ctr: tsc iter 168 diff = 88
+[853598.335313] Unhalted Core Cycles: 0x0 iter 168 diff = 92
+[853598.335314] Instruction Retired: 0x1 iter 168 diff = 18
+[853598.335314] LLC Misses: 0x2 iter 168 diff = 0
+[853598.335315] iter: 169
+[853598.335315] ctr: tsc iter 169 diff = 80
+[853598.335315] Unhalted Core Cycles: 0x0 iter 169 diff = 111
+[853598.335316] Instruction Retired: 0x1 iter 169 diff = 18
+[853598.335316] LLC Misses: 0x2 iter 169 diff = 0
+[853598.335316] iter: 170
+[853598.335317] ctr: tsc iter 170 diff = 82
+[853598.335317] Unhalted Core Cycles: 0x0 iter 170 diff = 85
+[853598.335318] Instruction Retired: 0x1 iter 170 diff = 18
+[853598.335318] LLC Misses: 0x2 iter 170 diff = 0
+[853598.335319] iter: 171
+[853598.335319] ctr: tsc iter 171 diff = 82
+[853598.335319] Unhalted Core Cycles: 0x0 iter 171 diff = 83
+[853598.335320] Instruction Retired: 0x1 iter 171 diff = 18
+[853598.335320] LLC Misses: 0x2 iter 171 diff = 0
+[853598.335321] iter: 172
+[853598.335321] ctr: tsc iter 172 diff = 98
+[853598.335321] Unhalted Core Cycles: 0x0 iter 172 diff = 81
+[853598.335322] Instruction Retired: 0x1 iter 172 diff = 18
+[853598.335322] LLC Misses: 0x2 iter 172 diff = 0
+[853598.335322] iter: 173
+[853598.335323] ctr: tsc iter 173 diff = 84
+[853598.335323] Unhalted Core Cycles: 0x0 iter 173 diff = 87
+[853598.335324] Instruction Retired: 0x1 iter 173 diff = 18
+[853598.335324] LLC Misses: 0x2 iter 173 diff = 0
+[853598.335324] iter: 174
+[853598.335325] ctr: tsc iter 174 diff = 80
+[853598.335325] Unhalted Core Cycles: 0x0 iter 174 diff = 84
+[853598.335326] Instruction Retired: 0x1 iter 174 diff = 18
+[853598.335326] LLC Misses: 0x2 iter 174 diff = 0
+[853598.335327] iter: 175
+[853598.335327] ctr: tsc iter 175 diff = 86
+[853598.335327] Unhalted Core Cycles: 0x0 iter 175 diff = 90
+[853598.335328] Instruction Retired: 0x1 iter 175 diff = 18
+[853598.335328] LLC Misses: 0x2 iter 175 diff = 0
+[853598.335329] iter: 176
+[853598.335329] ctr: tsc iter 176 diff = 82
+[853598.335329] Unhalted Core Cycles: 0x0 iter 176 diff = 84
+[853598.335330] Instruction Retired: 0x1 iter 176 diff = 18
+[853598.335330] LLC Misses: 0x2 iter 176 diff = 0
+[853598.335331] iter: 177
+[853598.335331] ctr: tsc iter 177 diff = 90
+[853598.335332] Unhalted Core Cycles: 0x0 iter 177 diff = 87
+[853598.335332] Instruction Retired: 0x1 iter 177 diff = 18
+[853598.335333] LLC Misses: 0x2 iter 177 diff = 0
+[853598.335333] iter: 178
+[853598.335333] ctr: tsc iter 178 diff = 90
+[853598.335334] Unhalted Core Cycles: 0x0 iter 178 diff = 90
+[853598.335334] Instruction Retired: 0x1 iter 178 diff = 18
+[853598.335335] LLC Misses: 0x2 iter 178 diff = 0
+[853598.335335] iter: 179
+[853598.335336] ctr: tsc iter 179 diff = 108
+[853598.335336] Unhalted Core Cycles: 0x0 iter 179 diff = 109
+[853598.335337] Instruction Retired: 0x1 iter 179 diff = 17
+[853598.335337] LLC Misses: 0x2 iter 179 diff = 0
+[853598.335338] iter: 180
+[853598.335338] ctr: tsc iter 180 diff = 82
+[853598.335339] Unhalted Core Cycles: 0x0 iter 180 diff = 86
+[853598.335339] Instruction Retired: 0x1 iter 180 diff = 18
+[853598.335340] LLC Misses: 0x2 iter 180 diff = 0
+[853598.335340] iter: 181
+[853598.335340] ctr: tsc iter 181 diff = 104
+[853598.335341] Unhalted Core Cycles: 0x0 iter 181 diff = 103
+[853598.335341] Instruction Retired: 0x1 iter 181 diff = 18
+[853598.335342] LLC Misses: 0x2 iter 181 diff = 0
+[853598.335342] iter: 182
+[853598.335343] ctr: tsc iter 182 diff = 96
+[853598.335343] Unhalted Core Cycles: 0x0 iter 182 diff = 107
+[853598.335344] Instruction Retired: 0x1 iter 182 diff = 14
+[853598.335344] LLC Misses: 0x2 iter 182 diff = 0
+[853598.335345] iter: 183
+[853598.335345] ctr: tsc iter 183 diff = 100
+[853598.335346] Unhalted Core Cycles: 0x0 iter 183 diff = 121
+[853598.335346] Instruction Retired: 0x1 iter 183 diff = 18
+[853598.335347] LLC Misses: 0x2 iter 183 diff = 0
+[853598.335347] iter: 184
+[853598.335348] ctr: tsc iter 184 diff = 86
+[853598.335348] Unhalted Core Cycles: 0x0 iter 184 diff = 94
+[853598.335348] Instruction Retired: 0x1 iter 184 diff = 18
+[853598.335349] LLC Misses: 0x2 iter 184 diff = 0
+[853598.335349] iter: 185
+[853598.335349] ctr: tsc iter 185 diff = 86
+[853598.335350] Unhalted Core Cycles: 0x0 iter 185 diff = 88
+[853598.335350] Instruction Retired: 0x1 iter 185 diff = 18
+[853598.335351] LLC Misses: 0x2 iter 185 diff = 0
+[853598.335351] iter: 186
+[853598.335352] ctr: tsc iter 186 diff = 90
+[853598.335352] Unhalted Core Cycles: 0x0 iter 186 diff = 94
+[853598.335352] Instruction Retired: 0x1 iter 186 diff = 18
+[853598.335353] LLC Misses: 0x2 iter 186 diff = 0
+[853598.335353] iter: 187
+[853598.335354] ctr: tsc iter 187 diff = 94
+[853598.335354] Unhalted Core Cycles: 0x0 iter 187 diff = 96
+[853598.335355] Instruction Retired: 0x1 iter 187 diff = 18
+[853598.335355] LLC Misses: 0x2 iter 187 diff = 0
+[853598.335356] iter: 188
+[853598.335356] ctr: tsc iter 188 diff = 82
+[853598.335356] Unhalted Core Cycles: 0x0 iter 188 diff = 89
+[853598.335357] Instruction Retired: 0x1 iter 188 diff = 18
+[853598.335357] LLC Misses: 0x2 iter 188 diff = 0
+[853598.335358] iter: 189
+[853598.335358] ctr: tsc iter 189 diff = 90
+[853598.335359] Unhalted Core Cycles: 0x0 iter 189 diff = 89
+[853598.335359] Instruction Retired: 0x1 iter 189 diff = 18
+[853598.335360] LLC Misses: 0x2 iter 189 diff = 0
+[853598.335360] iter: 190
+[853598.335360] ctr: tsc iter 190 diff = 88
+[853598.335361] Unhalted Core Cycles: 0x0 iter 190 diff = 93
+[853598.335361] Instruction Retired: 0x1 iter 190 diff = 18
+[853598.335362] LLC Misses: 0x2 iter 190 diff = 0
+[853598.335362] iter: 191
+[853598.335362] ctr: tsc iter 191 diff = 84
+[853598.335363] Unhalted Core Cycles: 0x0 iter 191 diff = 89
+[853598.335363] Instruction Retired: 0x1 iter 191 diff = 22
+[853598.335364] LLC Misses: 0x2 iter 191 diff = 0
+[853598.335364] iter: 192
+[853598.335365] ctr: tsc iter 192 diff = 106
+[853598.335365] Unhalted Core Cycles: 0x0 iter 192 diff = 115
+[853598.335366] Instruction Retired: 0x1 iter 192 diff = 18
+[853598.335366] LLC Misses: 0x2 iter 192 diff = 1
+[853598.335367] iter: 193
+[853598.335367] ctr: tsc iter 193 diff = 86
+[853598.335367] Unhalted Core Cycles: 0x0 iter 193 diff = 89
+[853598.335368] Instruction Retired: 0x1 iter 193 diff = 18
+[853598.335368] LLC Misses: 0x2 iter 193 diff = 0
+[853598.335369] iter: 194
+[853598.335369] ctr: tsc iter 194 diff = 88
+[853598.335369] Unhalted Core Cycles: 0x0 iter 194 diff = 91
+[853598.335370] Instruction Retired: 0x1 iter 194 diff = 18
+[853598.335370] LLC Misses: 0x2 iter 194 diff = 0
+[853598.335371] iter: 195
+[853598.335371] ctr: tsc iter 195 diff = 98
+[853598.335372] Unhalted Core Cycles: 0x0 iter 195 diff = 100
+[853598.335372] Instruction Retired: 0x1 iter 195 diff = 18
+[853598.335372] LLC Misses: 0x2 iter 195 diff = 0
+[853598.335373] iter: 196
+[853598.335373] ctr: tsc iter 196 diff = 82
+[853598.335374] Unhalted Core Cycles: 0x0 iter 196 diff = 86
+[853598.335374] Instruction Retired: 0x1 iter 196 diff = 18
+[853598.335375] LLC Misses: 0x2 iter 196 diff = 0
+[853598.335375] iter: 197
+[853598.335375] ctr: tsc iter 197 diff = 100
+[853598.335376] Unhalted Core Cycles: 0x0 iter 197 diff = 102
+[853598.335376] Instruction Retired: 0x1 iter 197 diff = 18
+[853598.335377] LLC Misses: 0x2 iter 197 diff = 0
+[853598.335377] iter: 198
+[853598.335378] ctr: tsc iter 198 diff = 102
+[853598.335378] Unhalted Core Cycles: 0x0 iter 198 diff = 104
+[853598.335379] Instruction Retired: 0x1 iter 198 diff = 20
+[853598.335379] LLC Misses: 0x2 iter 198 diff = 0
+[853598.335380] iter: 199
+[853598.335380] ctr: tsc iter 199 diff = 96
+[853598.335380] Unhalted Core Cycles: 0x0 iter 199 diff = 100
+[853598.335381] Instruction Retired: 0x1 iter 199 diff = 18
+[853598.335381] LLC Misses: 0x2 iter 199 diff = 0
+[853598.335382] iter: 200
+[853598.335382] ctr: tsc iter 200 diff = 90
+[853598.335383] Unhalted Core Cycles: 0x0 iter 200 diff = 93
+[853598.335383] Instruction Retired: 0x1 iter 200 diff = 18
+[853598.335384] LLC Misses: 0x2 iter 200 diff = 0
+[853598.335384] iter: 201
+[853598.335385] ctr: tsc iter 201 diff = 94
+[853598.335385] Unhalted Core Cycles: 0x0 iter 201 diff = 102
+[853598.335386] Instruction Retired: 0x1 iter 201 diff = 18
+[853598.335386] LLC Misses: 0x2 iter 201 diff = 0
+[853598.335387] iter: 202
+[853598.335387] ctr: tsc iter 202 diff = 102
+[853598.335388] Unhalted Core Cycles: 0x0 iter 202 diff = 102
+[853598.335388] Instruction Retired: 0x1 iter 202 diff = 18
+[853598.335388] LLC Misses: 0x2 iter 202 diff = 0
+[853598.335389] iter: 203
+[853598.335389] ctr: tsc iter 203 diff = 104
+[853598.335390] Unhalted Core Cycles: 0x0 iter 203 diff = 107
+[853598.335391] Instruction Retired: 0x1 iter 203 diff = 18
+[853598.335391] LLC Misses: 0x2 iter 203 diff = 1
+[853598.335391] iter: 204
+[853598.335392] ctr: tsc iter 204 diff = 98
+[853598.335393] Unhalted Core Cycles: 0x0 iter 204 diff = 106
+[853598.335393] Instruction Retired: 0x1 iter 204 diff = 18
+[853598.335394] LLC Misses: 0x2 iter 204 diff = 0
+[853598.335394] iter: 205
+[853598.335395] ctr: tsc iter 205 diff = 98
+[853598.335395] Unhalted Core Cycles: 0x0 iter 205 diff = 107
+[853598.335396] Instruction Retired: 0x1 iter 205 diff = 18
+[853598.335396] LLC Misses: 0x2 iter 205 diff = 0
+[853598.335397] iter: 206
+[853598.335397] ctr: tsc iter 206 diff = 88
+[853598.335397] Unhalted Core Cycles: 0x0 iter 206 diff = 93
+[853598.335398] Instruction Retired: 0x1 iter 206 diff = 18
+[853598.335399] LLC Misses: 0x2 iter 206 diff = 0
+[853598.335399] iter: 207
+[853598.335399] ctr: tsc iter 207 diff = 84
+[853598.335400] Unhalted Core Cycles: 0x0 iter 207 diff = 88
+[853598.335400] Instruction Retired: 0x1 iter 207 diff = 18
+[853598.335401] LLC Misses: 0x2 iter 207 diff = 0
+[853598.335401] iter: 208
+[853598.335402] ctr: tsc iter 208 diff = 102
+[853598.335402] Unhalted Core Cycles: 0x0 iter 208 diff = 111
+[853598.335403] Instruction Retired: 0x1 iter 208 diff = 18
+[853598.335403] LLC Misses: 0x2 iter 208 diff = 0
+[853598.335404] iter: 209
+[853598.335404] ctr: tsc iter 209 diff = 98
+[853598.335405] Unhalted Core Cycles: 0x0 iter 209 diff = 103
+[853598.335405] Instruction Retired: 0x1 iter 209 diff = 15
+[853598.335406] LLC Misses: 0x2 iter 209 diff = 0
+[853598.335406] iter: 210
+[853598.335406] ctr: tsc iter 210 diff = 84
+[853598.335407] Unhalted Core Cycles: 0x0 iter 210 diff = 89
+[853598.335407] Instruction Retired: 0x1 iter 210 diff = 18
+[853598.335408] LLC Misses: 0x2 iter 210 diff = 0
+[853598.335408] iter: 211
+[853598.335409] ctr: tsc iter 211 diff = 100
+[853598.335409] Unhalted Core Cycles: 0x0 iter 211 diff = 90
+[853598.335410] Instruction Retired: 0x1 iter 211 diff = 18
+[853598.335410] LLC Misses: 0x2 iter 211 diff = 0
+[853598.335411] iter: 212
+[853598.335411] ctr: tsc iter 212 diff = 102
+[853598.335412] Unhalted Core Cycles: 0x0 iter 212 diff = 103
+[853598.335412] Instruction Retired: 0x1 iter 212 diff = 18
+[853598.335413] LLC Misses: 0x2 iter 212 diff = 2
+[853598.335413] iter: 213
+[853598.335413] ctr: tsc iter 213 diff = 92
+[853598.335414] Unhalted Core Cycles: 0x0 iter 213 diff = 91
+[853598.335414] Instruction Retired: 0x1 iter 213 diff = 18
+[853598.335415] LLC Misses: 0x2 iter 213 diff = 0
+[853598.335415] iter: 214
+[853598.335416] ctr: tsc iter 214 diff = 90
+[853598.335416] Unhalted Core Cycles: 0x0 iter 214 diff = 90
+[853598.335416] Instruction Retired: 0x1 iter 214 diff = 18
+[853598.335417] LLC Misses: 0x2 iter 214 diff = 0
+[853598.335417] iter: 215
+[853598.335418] ctr: tsc iter 215 diff = 92
+[853598.335418] Unhalted Core Cycles: 0x0 iter 215 diff = 94
+[853598.335419] Instruction Retired: 0x1 iter 215 diff = 18
+[853598.335419] LLC Misses: 0x2 iter 215 diff = 2
+[853598.335420] iter: 216
+[853598.335420] ctr: tsc iter 216 diff = 98
+[853598.335421] Unhalted Core Cycles: 0x0 iter 216 diff = 102
+[853598.335421] Instruction Retired: 0x1 iter 216 diff = 13
+[853598.335422] LLC Misses: 0x2 iter 216 diff = 0
+[853598.335422] iter: 217
+[853598.335423] ctr: tsc iter 217 diff = 104
+[853598.335423] Unhalted Core Cycles: 0x0 iter 217 diff = 98
+[853598.335424] Instruction Retired: 0x1 iter 217 diff = 18
+[853598.335424] LLC Misses: 0x2 iter 217 diff = 0
+[853598.335425] iter: 218
+[853598.335425] ctr: tsc iter 218 diff = 92
+[853598.335426] Unhalted Core Cycles: 0x0 iter 218 diff = 92
+[853598.335426] Instruction Retired: 0x1 iter 218 diff = 13
+[853598.335427] LLC Misses: 0x2 iter 218 diff = 0
+[853598.335427] iter: 219
+[853598.335428] ctr: tsc iter 219 diff = 96
+[853598.335428] Unhalted Core Cycles: 0x0 iter 219 diff = 102
+[853598.335429] Instruction Retired: 0x1 iter 219 diff = 18
+[853598.335429] LLC Misses: 0x2 iter 219 diff = 0
+[853598.335430] iter: 220
+[853598.335430] ctr: tsc iter 220 diff = 90
+[853598.335431] Unhalted Core Cycles: 0x0 iter 220 diff = 103
+[853598.335431] Instruction Retired: 0x1 iter 220 diff = 18
+[853598.335432] LLC Misses: 0x2 iter 220 diff = 1
+[853598.335432] iter: 221
+[853598.335433] ctr: tsc iter 221 diff = 84
+[853598.335433] Unhalted Core Cycles: 0x0 iter 221 diff = 86
+[853598.335434] Instruction Retired: 0x1 iter 221 diff = 18
+[853598.335434] LLC Misses: 0x2 iter 221 diff = 0
+[853598.335435] iter: 222
+[853598.335435] ctr: tsc iter 222 diff = 90
+[853598.335436] Unhalted Core Cycles: 0x0 iter 222 diff = 103
+[853598.335436] Instruction Retired: 0x1 iter 222 diff = 18
+[853598.335437] LLC Misses: 0x2 iter 222 diff = 0
+[853598.335437] iter: 223
+[853598.335438] ctr: tsc iter 223 diff = 102
+[853598.335438] Unhalted Core Cycles: 0x0 iter 223 diff = 101
+[853598.335439] Instruction Retired: 0x1 iter 223 diff = 18
+[853598.335440] LLC Misses: 0x2 iter 223 diff = 0
+[853598.335440] iter: 224
+[853598.335440] ctr: tsc iter 224 diff = 98
+[853598.335441] Unhalted Core Cycles: 0x0 iter 224 diff = 101
+[853598.335442] Instruction Retired: 0x1 iter 224 diff = 22
+[853598.335442] LLC Misses: 0x2 iter 224 diff = 0
+[853598.335443] iter: 225
+[853598.335443] ctr: tsc iter 225 diff = 106
+[853598.335443] Unhalted Core Cycles: 0x0 iter 225 diff = 110
+[853598.335444] Instruction Retired: 0x1 iter 225 diff = 18
+[853598.335444] LLC Misses: 0x2 iter 225 diff = 0
+[853598.335445] iter: 226
+[853598.335445] ctr: tsc iter 226 diff = 98
+[853598.335446] Unhalted Core Cycles: 0x0 iter 226 diff = 105
+[853598.335446] Instruction Retired: 0x1 iter 226 diff = 18
+[853598.335447] LLC Misses: 0x2 iter 226 diff = 0
+[853598.335447] iter: 227
+[853598.335448] ctr: tsc iter 227 diff = 96
+[853598.335449] Unhalted Core Cycles: 0x0 iter 227 diff = 98
+[853598.335449] Instruction Retired: 0x1 iter 227 diff = 18
+[853598.335450] LLC Misses: 0x2 iter 227 diff = 0
+[853598.335450] iter: 228
+[853598.335451] ctr: tsc iter 228 diff = 98
+[853598.335451] Unhalted Core Cycles: 0x0 iter 228 diff = 99
+[853598.335452] Instruction Retired: 0x1 iter 228 diff = 18
+[853598.335452] LLC Misses: 0x2 iter 228 diff = 0
+[853598.335453] iter: 229
+[853598.335453] ctr: tsc iter 229 diff = 102
+[853598.335454] Unhalted Core Cycles: 0x0 iter 229 diff = 111
+[853598.335454] Instruction Retired: 0x1 iter 229 diff = 15
+[853598.335455] LLC Misses: 0x2 iter 229 diff = 0
+[853598.335455] iter: 230
+[853598.335456] ctr: tsc iter 230 diff = 92
+[853598.335456] Unhalted Core Cycles: 0x0 iter 230 diff = 102
+[853598.335457] Instruction Retired: 0x1 iter 230 diff = 18
+[853598.335458] LLC Misses: 0x2 iter 230 diff = 0
+[853598.335458] iter: 231
+[853598.335458] ctr: tsc iter 231 diff = 104
+[853598.335459] Unhalted Core Cycles: 0x0 iter 231 diff = 106
+[853598.335460] Instruction Retired: 0x1 iter 231 diff = 20
+[853598.335460] LLC Misses: 0x2 iter 231 diff = 0
+[853598.335461] iter: 232
+[853598.335461] ctr: tsc iter 232 diff = 94
+[853598.335462] Unhalted Core Cycles: 0x0 iter 232 diff = 94
+[853598.335462] Instruction Retired: 0x1 iter 232 diff = 18
+[853598.335463] LLC Misses: 0x2 iter 232 diff = 0
+[853598.335463] iter: 233
+[853598.335464] ctr: tsc iter 233 diff = 96
+[853598.335464] Unhalted Core Cycles: 0x0 iter 233 diff = 96
+[853598.335465] Instruction Retired: 0x1 iter 233 diff = 22
+[853598.335465] LLC Misses: 0x2 iter 233 diff = 0
+[853598.335465] iter: 234
+[853598.335466] ctr: tsc iter 234 diff = 92
+[853598.335466] Unhalted Core Cycles: 0x0 iter 234 diff = 88
+[853598.335467] Instruction Retired: 0x1 iter 234 diff = 18
+[853598.335467] LLC Misses: 0x2 iter 234 diff = 0
+[853598.335467] iter: 235
+[853598.335468] ctr: tsc iter 235 diff = 84
+[853598.335468] Unhalted Core Cycles: 0x0 iter 235 diff = 87
+[853598.335469] Instruction Retired: 0x1 iter 235 diff = 18
+[853598.335469] LLC Misses: 0x2 iter 235 diff = 0
+[853598.335469] iter: 236
+[853598.335470] ctr: tsc iter 236 diff = 88
+[853598.335470] Unhalted Core Cycles: 0x0 iter 236 diff = 92
+[853598.335471] Instruction Retired: 0x1 iter 236 diff = 18
+[853598.335471] LLC Misses: 0x2 iter 236 diff = 0
+[853598.335472] iter: 237
+[853598.335472] ctr: tsc iter 237 diff = 82
+[853598.335473] Unhalted Core Cycles: 0x0 iter 237 diff = 85
+[853598.335474] Instruction Retired: 0x1 iter 237 diff = 18
+[853598.335474] LLC Misses: 0x2 iter 237 diff = 0
+[853598.335475] iter: 238
+[853598.335475] ctr: tsc iter 238 diff = 100
+[853598.335476] Unhalted Core Cycles: 0x0 iter 238 diff = 108
+[853598.335476] Instruction Retired: 0x1 iter 238 diff = 18
+[853598.335477] LLC Misses: 0x2 iter 238 diff = 0
+[853598.335477] iter: 239
+[853598.335477] ctr: tsc iter 239 diff = 82
+[853598.335478] Unhalted Core Cycles: 0x0 iter 239 diff = 85
+[853598.335478] Instruction Retired: 0x1 iter 239 diff = 18
+[853598.335479] LLC Misses: 0x2 iter 239 diff = 1
+[853598.335479] iter: 240
+[853598.335480] ctr: tsc iter 240 diff = 98
+[853598.335480] Unhalted Core Cycles: 0x0 iter 240 diff = 103
+[853598.335481] Instruction Retired: 0x1 iter 240 diff = 20
+[853598.335481] LLC Misses: 0x2 iter 240 diff = 0
+[853598.335482] iter: 241
+[853598.335482] ctr: tsc iter 241 diff = 82
+[853598.335482] Unhalted Core Cycles: 0x0 iter 241 diff = 82
+[853598.335483] Instruction Retired: 0x1 iter 241 diff = 18
+[853598.335484] LLC Misses: 0x2 iter 241 diff = 0
+[853598.335484] iter: 242
+[853598.335484] ctr: tsc iter 242 diff = 100
+[853598.335485] Unhalted Core Cycles: 0x0 iter 242 diff = 108
+[853598.335486] Instruction Retired: 0x1 iter 242 diff = 18
+[853598.335486] LLC Misses: 0x2 iter 242 diff = 0
+[853598.335487] iter: 243
+[853598.335487] ctr: tsc iter 243 diff = 140
+[853598.335487] Unhalted Core Cycles: 0x0 iter 243 diff = 181
+[853598.335488] Instruction Retired: 0x1 iter 243 diff = 17
+[853598.335488] LLC Misses: 0x2 iter 243 diff = 0
+[853598.335489] iter: 244
+[853598.335489] ctr: tsc iter 244 diff = 84
+[853598.335489] Unhalted Core Cycles: 0x0 iter 244 diff = 85
+[853598.335490] Instruction Retired: 0x1 iter 244 diff = 18
+[853598.335490] LLC Misses: 0x2 iter 244 diff = 0
+[853598.335490] iter: 245
+[853598.335491] ctr: tsc iter 245 diff = 84
+[853598.335491] Unhalted Core Cycles: 0x0 iter 245 diff = 94
+[853598.335492] Instruction Retired: 0x1 iter 245 diff = 18
+[853598.335492] LLC Misses: 0x2 iter 245 diff = 0
+[853598.335493] iter: 246
+[853598.335493] ctr: tsc iter 246 diff = 116
+[853598.335493] Unhalted Core Cycles: 0x0 iter 246 diff = 136
+[853598.335494] Instruction Retired: 0x1 iter 246 diff = 17
+[853598.335494] LLC Misses: 0x2 iter 246 diff = 0
+[853598.335495] iter: 247
+[853598.335495] ctr: tsc iter 247 diff = 84
+[853598.335495] Unhalted Core Cycles: 0x0 iter 247 diff = 88
+[853598.335496] Instruction Retired: 0x1 iter 247 diff = 18
+[853598.335496] LLC Misses: 0x2 iter 247 diff = 0
+[853598.335497] iter: 248
+[853598.335497] ctr: tsc iter 248 diff = 80
+[853598.335497] Unhalted Core Cycles: 0x0 iter 248 diff = 85
+[853598.335498] Instruction Retired: 0x1 iter 248 diff = 18
+[853598.335498] LLC Misses: 0x2 iter 248 diff = 0
+[853598.335498] iter: 249
+[853598.335499] ctr: tsc iter 249 diff = 96
+[853598.335499] Unhalted Core Cycles: 0x0 iter 249 diff = 102
+[853598.335500] Instruction Retired: 0x1 iter 249 diff = 18
+[853598.335500] LLC Misses: 0x2 iter 249 diff = 0
+[853598.335500] iter: 250
+[853598.335501] ctr: tsc iter 250 diff = 98
+[853598.335501] Unhalted Core Cycles: 0x0 iter 250 diff = 94
+[853598.335502] Instruction Retired: 0x1 iter 250 diff = 18
+[853598.335502] LLC Misses: 0x2 iter 250 diff = 0
+[853598.335502] iter: 251
+[853598.335503] ctr: tsc iter 251 diff = 90
+[853598.335503] Unhalted Core Cycles: 0x0 iter 251 diff = 92
+[853598.335503] Instruction Retired: 0x1 iter 251 diff = 18
+[853598.335504] LLC Misses: 0x2 iter 251 diff = 0
+[853598.335504] iter: 252
+[853598.335505] ctr: tsc iter 252 diff = 88
+[853598.335505] Unhalted Core Cycles: 0x0 iter 252 diff = 92
+[853598.335505] Instruction Retired: 0x1 iter 252 diff = 18
+[853598.335506] LLC Misses: 0x2 iter 252 diff = 0
+[853598.335506] iter: 253
+[853598.335506] ctr: tsc iter 253 diff = 80
+[853598.335507] Unhalted Core Cycles: 0x0 iter 253 diff = 83
+[853598.335507] Instruction Retired: 0x1 iter 253 diff = 18
+[853598.335508] LLC Misses: 0x2 iter 253 diff = 0
+[853598.335508] iter: 254
+[853598.335508] ctr: tsc iter 254 diff = 88
+[853598.335509] Unhalted Core Cycles: 0x0 iter 254 diff = 88
+[853598.335509] Instruction Retired: 0x1 iter 254 diff = 18
+[853598.335510] LLC Misses: 0x2 iter 254 diff = 0
+[853598.335510] iter: 255
+[853598.335510] ctr: tsc iter 255 diff = 80
+[853598.335511] Unhalted Core Cycles: 0x0 iter 255 diff = 85
+[853598.335511] Instruction Retired: 0x1 iter 255 diff = 18
+[853598.335512] LLC Misses: 0x2 iter 255 diff = 0
+[853598.335512] iter: 256
+[853598.335512] ctr: tsc iter 256 diff = 92
+[853598.335513] Unhalted Core Cycles: 0x0 iter 256 diff = 94
+[853598.335513] Instruction Retired: 0x1 iter 256 diff = 18
+[853598.335514] LLC Misses: 0x2 iter 256 diff = 0
+[853598.335514] iter: 257
+[853598.335514] ctr: tsc iter 257 diff = 82
+[853598.335515] Unhalted Core Cycles: 0x0 iter 257 diff = 85
+[853598.335515] Instruction Retired: 0x1 iter 257 diff = 18
+[853598.335515] LLC Misses: 0x2 iter 257 diff = 0
+[853598.335516] iter: 258
+[853598.335516] ctr: tsc iter 258 diff = 82
+[853598.335517] Unhalted Core Cycles: 0x0 iter 258 diff = 86
+[853598.335517] Instruction Retired: 0x1 iter 258 diff = 18
+[853598.335517] LLC Misses: 0x2 iter 258 diff = 3
+[853598.335518] iter: 259
+[853598.335518] ctr: tsc iter 259 diff = 102
+[853598.335518] Unhalted Core Cycles: 0x0 iter 259 diff = 98
+[853598.335519] Instruction Retired: 0x1 iter 259 diff = 13
+[853598.335519] LLC Misses: 0x2 iter 259 diff = 0
+[853598.335520] iter: 260
+[853598.335520] ctr: tsc iter 260 diff = 98
+[853598.335520] Unhalted Core Cycles: 0x0 iter 260 diff = 99
+[853598.335521] Instruction Retired: 0x1 iter 260 diff = 18
+[853598.335521] LLC Misses: 0x2 iter 260 diff = 1
+[853598.335521] iter: 261
+[853598.335522] ctr: tsc iter 261 diff = 92
+[853598.335522] Unhalted Core Cycles: 0x0 iter 261 diff = 97
+[853598.335523] Instruction Retired: 0x1 iter 261 diff = 13
+[853598.335523] LLC Misses: 0x2 iter 261 diff = 0
+[853598.335523] iter: 262
+[853598.335524] ctr: tsc iter 262 diff = 84
+[853598.335524] Unhalted Core Cycles: 0x0 iter 262 diff = 86
+[853598.335525] Instruction Retired: 0x1 iter 262 diff = 18
+[853598.335525] LLC Misses: 0x2 iter 262 diff = 0
+[853598.335525] iter: 263
+[853598.335526] ctr: tsc iter 263 diff = 82
+[853598.335527] Unhalted Core Cycles: 0x0 iter 263 diff = 84
+[853598.335527] Instruction Retired: 0x1 iter 263 diff = 18
+[853598.335527] LLC Misses: 0x2 iter 263 diff = 0
+[853598.335528] iter: 264
+[853598.335528] ctr: tsc iter 264 diff = 100
+[853598.335529] Unhalted Core Cycles: 0x0 iter 264 diff = 104
+[853598.335529] Instruction Retired: 0x1 iter 264 diff = 22
+[853598.335529] LLC Misses: 0x2 iter 264 diff = 0
+[853598.335530] iter: 265
+[853598.335530] ctr: tsc iter 265 diff = 92
+[853598.335530] Unhalted Core Cycles: 0x0 iter 265 diff = 89
+[853598.335531] Instruction Retired: 0x1 iter 265 diff = 18
+[853598.335531] LLC Misses: 0x2 iter 265 diff = 0
+[853598.335532] iter: 266
+[853598.335532] ctr: tsc iter 266 diff = 82
+[853598.335532] Unhalted Core Cycles: 0x0 iter 266 diff = 84
+[853598.335533] Instruction Retired: 0x1 iter 266 diff = 18
+[853598.335533] LLC Misses: 0x2 iter 266 diff = 0
+[853598.335533] iter: 267
+[853598.335534] ctr: tsc iter 267 diff = 106
+[853598.335534] Unhalted Core Cycles: 0x0 iter 267 diff = 117
+[853598.335535] Instruction Retired: 0x1 iter 267 diff = 18
+[853598.335535] LLC Misses: 0x2 iter 267 diff = 0
+[853598.335535] iter: 268
+[853598.335536] ctr: tsc iter 268 diff = 80
+[853598.335536] Unhalted Core Cycles: 0x0 iter 268 diff = 84
+[853598.335537] Instruction Retired: 0x1 iter 268 diff = 18
+[853598.335537] LLC Misses: 0x2 iter 268 diff = 0
+[853598.335537] iter: 269
+[853598.335538] ctr: tsc iter 269 diff = 84
+[853598.335538] Unhalted Core Cycles: 0x0 iter 269 diff = 84
+[853598.335539] Instruction Retired: 0x1 iter 269 diff = 18
+[853598.335539] LLC Misses: 0x2 iter 269 diff = 0
+[853598.335539] iter: 270
+[853598.335540] ctr: tsc iter 270 diff = 84
+[853598.335540] Unhalted Core Cycles: 0x0 iter 270 diff = 85
+[853598.335540] Instruction Retired: 0x1 iter 270 diff = 18
+[853598.335541] LLC Misses: 0x2 iter 270 diff = 0
+[853598.335541] iter: 271
+[853598.335542] ctr: tsc iter 271 diff = 86
+[853598.335542] Unhalted Core Cycles: 0x0 iter 271 diff = 87
+[853598.335542] Instruction Retired: 0x1 iter 271 diff = 18
+[853598.335543] LLC Misses: 0x2 iter 271 diff = 0
+[853598.335543] iter: 272
+[853598.335543] ctr: tsc iter 272 diff = 82
+[853598.335544] Unhalted Core Cycles: 0x0 iter 272 diff = 84
+[853598.335544] Instruction Retired: 0x1 iter 272 diff = 18
+[853598.335545] LLC Misses: 0x2 iter 272 diff = 0
+[853598.335545] iter: 273
+[853598.335545] ctr: tsc iter 273 diff = 84
+[853598.335546] Unhalted Core Cycles: 0x0 iter 273 diff = 85
+[853598.335546] Instruction Retired: 0x1 iter 273 diff = 18
+[853598.335546] LLC Misses: 0x2 iter 273 diff = 0
+[853598.335547] iter: 274
+[853598.335547] ctr: tsc iter 274 diff = 84
+[853598.335547] Unhalted Core Cycles: 0x0 iter 274 diff = 95
+[853598.335548] Instruction Retired: 0x1 iter 274 diff = 18
+[853598.335548] LLC Misses: 0x2 iter 274 diff = 0
+[853598.335549] iter: 275
+[853598.335549] ctr: tsc iter 275 diff = 84
+[853598.335549] Unhalted Core Cycles: 0x0 iter 275 diff = 86
+[853598.335550] Instruction Retired: 0x1 iter 275 diff = 18
+[853598.335550] LLC Misses: 0x2 iter 275 diff = 0
+[853598.335550] iter: 276
+[853598.335551] ctr: tsc iter 276 diff = 82
+[853598.335551] Unhalted Core Cycles: 0x0 iter 276 diff = 85
+[853598.335552] Instruction Retired: 0x1 iter 276 diff = 18
+[853598.335552] LLC Misses: 0x2 iter 276 diff = 0
+[853598.335552] iter: 277
+[853598.335553] ctr: tsc iter 277 diff = 82
+[853598.335553] Unhalted Core Cycles: 0x0 iter 277 diff = 84
+[853598.335554] Instruction Retired: 0x1 iter 277 diff = 18
+[853598.335554] LLC Misses: 0x2 iter 277 diff = 0
+[853598.335554] iter: 278
+[853598.335555] ctr: tsc iter 278 diff = 82
+[853598.335555] Unhalted Core Cycles: 0x0 iter 278 diff = 84
+[853598.335556] Instruction Retired: 0x1 iter 278 diff = 18
+[853598.335556] LLC Misses: 0x2 iter 278 diff = 0
+[853598.335556] iter: 279
+[853598.335557] ctr: tsc iter 279 diff = 82
+[853598.335557] Unhalted Core Cycles: 0x0 iter 279 diff = 85
+[853598.335558] Instruction Retired: 0x1 iter 279 diff = 18
+[853598.335558] LLC Misses: 0x2 iter 279 diff = 0
+[853598.335558] iter: 280
+[853598.335559] ctr: tsc iter 280 diff = 82
+[853598.335559] Unhalted Core Cycles: 0x0 iter 280 diff = 84
+[853598.335559] Instruction Retired: 0x1 iter 280 diff = 18
+[853598.335560] LLC Misses: 0x2 iter 280 diff = 0
+[853598.335560] iter: 281
+[853598.335561] ctr: tsc iter 281 diff = 84
+[853598.335561] Unhalted Core Cycles: 0x0 iter 281 diff = 84
+[853598.335561] Instruction Retired: 0x1 iter 281 diff = 18
+[853598.335562] LLC Misses: 0x2 iter 281 diff = 0
+[853598.335562] iter: 282
+[853598.335562] ctr: tsc iter 282 diff = 84
+[853598.335563] Unhalted Core Cycles: 0x0 iter 282 diff = 84
+[853598.335563] Instruction Retired: 0x1 iter 282 diff = 18
+[853598.335564] LLC Misses: 0x2 iter 282 diff = 0
+[853598.335564] iter: 283
+[853598.335565] ctr: tsc iter 283 diff = 86
+[853598.335565] Unhalted Core Cycles: 0x0 iter 283 diff = 83
+[853598.335565] Instruction Retired: 0x1 iter 283 diff = 18
+[853598.335566] LLC Misses: 0x2 iter 283 diff = 0
+[853598.335566] iter: 284
+[853598.335566] ctr: tsc iter 284 diff = 86
+[853598.335567] Unhalted Core Cycles: 0x0 iter 284 diff = 91
+[853598.335567] Instruction Retired: 0x1 iter 284 diff = 18
+[853598.335568] LLC Misses: 0x2 iter 284 diff = 0
+[853598.335568] iter: 285
+[853598.335569] ctr: tsc iter 285 diff = 88
+[853598.335569] Unhalted Core Cycles: 0x0 iter 285 diff = 91
+[853598.335569] Instruction Retired: 0x1 iter 285 diff = 18
+[853598.335570] LLC Misses: 0x2 iter 285 diff = 0
+[853598.335570] iter: 286
+[853598.335571] ctr: tsc iter 286 diff = 104
+[853598.335571] Unhalted Core Cycles: 0x0 iter 286 diff = 114
+[853598.335571] Instruction Retired: 0x1 iter 286 diff = 22
+[853598.335572] LLC Misses: 0x2 iter 286 diff = 0
+[853598.335572] iter: 287
+[853598.335573] ctr: tsc iter 287 diff = 92
+[853598.335573] Unhalted Core Cycles: 0x0 iter 287 diff = 96
+[853598.335574] Instruction Retired: 0x1 iter 287 diff = 18
+[853598.335574] LLC Misses: 0x2 iter 287 diff = 0
+[853598.335574] iter: 288
+[853598.335575] ctr: tsc iter 288 diff = 88
+[853598.335575] Unhalted Core Cycles: 0x0 iter 288 diff = 93
+[853598.335576] Instruction Retired: 0x1 iter 288 diff = 18
+[853598.335576] LLC Misses: 0x2 iter 288 diff = 0
+[853598.335576] iter: 289
+[853598.335577] ctr: tsc iter 289 diff = 88
+[853598.335577] Unhalted Core Cycles: 0x0 iter 289 diff = 99
+[853598.335578] Instruction Retired: 0x1 iter 289 diff = 18
+[853598.335578] LLC Misses: 0x2 iter 289 diff = 1
+[853598.335578] iter: 290
+[853598.335579] ctr: tsc iter 290 diff = 102
+[853598.335579] Unhalted Core Cycles: 0x0 iter 290 diff = 122
+[853598.335580] Instruction Retired: 0x1 iter 290 diff = 13
+[853598.335580] LLC Misses: 0x2 iter 290 diff = 0
+[853598.335580] iter: 291
+[853598.335581] ctr: tsc iter 291 diff = 102
+[853598.335581] Unhalted Core Cycles: 0x0 iter 291 diff = 97
+[853598.335582] Instruction Retired: 0x1 iter 291 diff = 20
+[853598.335582] LLC Misses: 0x2 iter 291 diff = 0
+[853598.335582] iter: 292
+[853598.335583] ctr: tsc iter 292 diff = 92
+[853598.335583] Unhalted Core Cycles: 0x0 iter 292 diff = 104
+[853598.335584] Instruction Retired: 0x1 iter 292 diff = 18
+[853598.335584] LLC Misses: 0x2 iter 292 diff = 0
+[853598.335584] iter: 293
+[853598.335585] ctr: tsc iter 293 diff = 86
+[853598.335585] Unhalted Core Cycles: 0x0 iter 293 diff = 89
+[853598.335586] Instruction Retired: 0x1 iter 293 diff = 18
+[853598.335586] LLC Misses: 0x2 iter 293 diff = 0
+[853598.335586] iter: 294
+[853598.335587] ctr: tsc iter 294 diff = 88
+[853598.335587] Unhalted Core Cycles: 0x0 iter 294 diff = 91
+[853598.335588] Instruction Retired: 0x1 iter 294 diff = 18
+[853598.335588] LLC Misses: 0x2 iter 294 diff = 0
+[853598.335588] iter: 295
+[853598.335589] ctr: tsc iter 295 diff = 90
+[853598.335589] Unhalted Core Cycles: 0x0 iter 295 diff = 92
+[853598.335589] Instruction Retired: 0x1 iter 295 diff = 18
+[853598.335590] LLC Misses: 0x2 iter 295 diff = 0
+[853598.335590] iter: 296
+[853598.335590] ctr: tsc iter 296 diff = 90
+[853598.335591] Unhalted Core Cycles: 0x0 iter 296 diff = 101
+[853598.335591] Instruction Retired: 0x1 iter 296 diff = 18
+[853598.335592] LLC Misses: 0x2 iter 296 diff = 0
+[853598.335592] iter: 297
+[853598.335592] ctr: tsc iter 297 diff = 84
+[853598.335593] Unhalted Core Cycles: 0x0 iter 297 diff = 85
+[853598.335593] Instruction Retired: 0x1 iter 297 diff = 18
+[853598.335594] LLC Misses: 0x2 iter 297 diff = 0
+[853598.335594] iter: 298
+[853598.335594] ctr: tsc iter 298 diff = 82
+[853598.335595] Unhalted Core Cycles: 0x0 iter 298 diff = 83
+[853598.335595] Instruction Retired: 0x1 iter 298 diff = 18
+[853598.335596] LLC Misses: 0x2 iter 298 diff = 0
+[853598.335596] iter: 299
+[853598.335596] ctr: tsc iter 299 diff = 86
+[853598.335597] Unhalted Core Cycles: 0x0 iter 299 diff = 88
+[853598.335597] Instruction Retired: 0x1 iter 299 diff = 18
+[853598.335598] LLC Misses: 0x2 iter 299 diff = 0
+[853598.335598] iter: 300
+[853598.335599] ctr: tsc iter 300 diff = 90
+[853598.335599] Unhalted Core Cycles: 0x0 iter 300 diff = 91
+[853598.335600] Instruction Retired: 0x1 iter 300 diff = 18
+[853598.335600] LLC Misses: 0x2 iter 300 diff = 0
+[853598.335600] iter: 301
+[853598.335601] ctr: tsc iter 301 diff = 84
+[853598.335601] Unhalted Core Cycles: 0x0 iter 301 diff = 87
+[853598.335601] Instruction Retired: 0x1 iter 301 diff = 18
+[853598.335602] LLC Misses: 0x2 iter 301 diff = 0
+[853598.335602] iter: 302
+[853598.335603] ctr: tsc iter 302 diff = 86
+[853598.335603] Unhalted Core Cycles: 0x0 iter 302 diff = 90
+[853598.335603] Instruction Retired: 0x1 iter 302 diff = 18
+[853598.335604] LLC Misses: 0x2 iter 302 diff = 0
+[853598.335604] iter: 303
+[853598.335605] ctr: tsc iter 303 diff = 82
+[853598.335605] Unhalted Core Cycles: 0x0 iter 303 diff = 84
+[853598.335605] Instruction Retired: 0x1 iter 303 diff = 18
+[853598.335606] LLC Misses: 0x2 iter 303 diff = 0
+[853598.335606] iter: 304
+[853598.335607] ctr: tsc iter 304 diff = 102
+[853598.335607] Unhalted Core Cycles: 0x0 iter 304 diff = 108
+[853598.335608] Instruction Retired: 0x1 iter 304 diff = 18
+[853598.335608] LLC Misses: 0x2 iter 304 diff = 0
+[853598.335608] iter: 305
+[853598.335609] ctr: tsc iter 305 diff = 108
+[853598.335609] Unhalted Core Cycles: 0x0 iter 305 diff = 129
+[853598.335610] Instruction Retired: 0x1 iter 305 diff = 17
+[853598.335610] LLC Misses: 0x2 iter 305 diff = 0
+[853598.335610] iter: 306
+[853598.335611] ctr: tsc iter 306 diff = 96
+[853598.335611] Unhalted Core Cycles: 0x0 iter 306 diff = 101
+[853598.335612] Instruction Retired: 0x1 iter 306 diff = 18
+[853598.335612] LLC Misses: 0x2 iter 306 diff = 0
+[853598.335612] iter: 307
+[853598.335613] ctr: tsc iter 307 diff = 116
+[853598.335613] Unhalted Core Cycles: 0x0 iter 307 diff = 136
+[853598.335614] Instruction Retired: 0x1 iter 307 diff = 13
+[853598.335614] LLC Misses: 0x2 iter 307 diff = 0
+[853598.335615] iter: 308
+[853598.335615] ctr: tsc iter 308 diff = 90
+[853598.335615] Unhalted Core Cycles: 0x0 iter 308 diff = 91
+[853598.335616] Instruction Retired: 0x1 iter 308 diff = 18
+[853598.335616] LLC Misses: 0x2 iter 308 diff = 0
+[853598.335617] iter: 309
+[853598.335617] ctr: tsc iter 309 diff = 106
+[853598.335618] Unhalted Core Cycles: 0x0 iter 309 diff = 110
+[853598.335618] Instruction Retired: 0x1 iter 309 diff = 18
+[853598.335618] LLC Misses: 0x2 iter 309 diff = 0
+[853598.335619] iter: 310
+[853598.335619] ctr: tsc iter 310 diff = 102
+[853598.335620] Unhalted Core Cycles: 0x0 iter 310 diff = 121
+[853598.335620] Instruction Retired: 0x1 iter 310 diff = 14
+[853598.335621] LLC Misses: 0x2 iter 310 diff = 0
+[853598.335621] iter: 311
+[853598.335621] ctr: tsc iter 311 diff = 100
+[853598.335622] Unhalted Core Cycles: 0x0 iter 311 diff = 104
+[853598.335622] Instruction Retired: 0x1 iter 311 diff = 18
+[853598.335622] LLC Misses: 0x2 iter 311 diff = 0
+[853598.335623] iter: 312
+[853598.335623] ctr: tsc iter 312 diff = 96
+[853598.335624] Unhalted Core Cycles: 0x0 iter 312 diff = 107
+[853598.335624] Instruction Retired: 0x1 iter 312 diff = 18
+[853598.335625] LLC Misses: 0x2 iter 312 diff = 0
+[853598.335625] iter: 313
+[853598.335625] ctr: tsc iter 313 diff = 84
+[853598.335626] Unhalted Core Cycles: 0x0 iter 313 diff = 85
+[853598.335626] Instruction Retired: 0x1 iter 313 diff = 18
+[853598.335627] LLC Misses: 0x2 iter 313 diff = 0
+[853598.335627] iter: 314
+[853598.335627] ctr: tsc iter 314 diff = 98
+[853598.335628] Unhalted Core Cycles: 0x0 iter 314 diff = 110
+[853598.335628] Instruction Retired: 0x1 iter 314 diff = 18
+[853598.335629] LLC Misses: 0x2 iter 314 diff = 0
+[853598.335629] iter: 315
+[853598.335629] ctr: tsc iter 315 diff = 96
+[853598.335630] Unhalted Core Cycles: 0x0 iter 315 diff = 101
+[853598.335630] Instruction Retired: 0x1 iter 315 diff = 18
+[853598.335631] LLC Misses: 0x2 iter 315 diff = 1
+[853598.335631] iter: 316
+[853598.335631] ctr: tsc iter 316 diff = 92
+[853598.335632] Unhalted Core Cycles: 0x0 iter 316 diff = 100
+[853598.335632] Instruction Retired: 0x1 iter 316 diff = 15
+[853598.335633] LLC Misses: 0x2 iter 316 diff = 0
+[853598.335633] iter: 317
+[853598.335633] ctr: tsc iter 317 diff = 86
+[853598.335634] Unhalted Core Cycles: 0x0 iter 317 diff = 93
+[853598.335634] Instruction Retired: 0x1 iter 317 diff = 18
+[853598.335635] LLC Misses: 0x2 iter 317 diff = 1
+[853598.335635] iter: 318
+[853598.335635] ctr: tsc iter 318 diff = 106
+[853598.335636] Unhalted Core Cycles: 0x0 iter 318 diff = 116
+[853598.335636] Instruction Retired: 0x1 iter 318 diff = 22
+[853598.335637] LLC Misses: 0x2 iter 318 diff = 0
+[853598.335637] iter: 319
+[853598.335637] ctr: tsc iter 319 diff = 100
+[853598.335638] Unhalted Core Cycles: 0x0 iter 319 diff = 102
+[853598.335638] Instruction Retired: 0x1 iter 319 diff = 18
+[853598.335639] LLC Misses: 0x2 iter 319 diff = 0
+[853598.335639] iter: 320
+[853598.335640] ctr: tsc iter 320 diff = 110
+[853598.335640] Unhalted Core Cycles: 0x0 iter 320 diff = 122
+[853598.335640] Instruction Retired: 0x1 iter 320 diff = 17
+[853598.335641] LLC Misses: 0x2 iter 320 diff = 0
+[853598.335641] iter: 321
+[853598.335642] ctr: tsc iter 321 diff = 116
+[853598.335642] Unhalted Core Cycles: 0x0 iter 321 diff = 138
+[853598.335643] Instruction Retired: 0x1 iter 321 diff = 17
+[853598.335643] LLC Misses: 0x2 iter 321 diff = 0
+[853598.335643] iter: 322
+[853598.335644] ctr: tsc iter 322 diff = 82
+[853598.335644] Unhalted Core Cycles: 0x0 iter 322 diff = 83
+[853598.335645] Instruction Retired: 0x1 iter 322 diff = 18
+[853598.335645] LLC Misses: 0x2 iter 322 diff = 0
+[853598.335645] iter: 323
+[853598.335646] ctr: tsc iter 323 diff = 82
+[853598.335646] Unhalted Core Cycles: 0x0 iter 323 diff = 84
+[853598.335647] Instruction Retired: 0x1 iter 323 diff = 18
+[853598.335647] LLC Misses: 0x2 iter 323 diff = 0
+[853598.335648] iter: 324
+[853598.335648] ctr: tsc iter 324 diff = 86
+[853598.335648] Unhalted Core Cycles: 0x0 iter 324 diff = 90
+[853598.335649] Instruction Retired: 0x1 iter 324 diff = 18
+[853598.335649] LLC Misses: 0x2 iter 324 diff = 0
+[853598.335650] iter: 325
+[853598.335650] ctr: tsc iter 325 diff = 106
+[853598.335650] Unhalted Core Cycles: 0x0 iter 325 diff = 124
+[853598.335651] Instruction Retired: 0x1 iter 325 diff = 17
+[853598.335651] LLC Misses: 0x2 iter 325 diff = 0
+[853598.335652] iter: 326
+[853598.335652] ctr: tsc iter 326 diff = 92
+[853598.335652] Unhalted Core Cycles: 0x0 iter 326 diff = 90
+[853598.335653] Instruction Retired: 0x1 iter 326 diff = 18
+[853598.335653] LLC Misses: 0x2 iter 326 diff = 0
+[853598.335654] iter: 327
+[853598.335654] ctr: tsc iter 327 diff = 88
+[853598.335654] Unhalted Core Cycles: 0x0 iter 327 diff = 95
+[853598.335655] Instruction Retired: 0x1 iter 327 diff = 18
+[853598.335655] LLC Misses: 0x2 iter 327 diff = 1
+[853598.335656] iter: 328
+[853598.335656] ctr: tsc iter 328 diff = 104
+[853598.335656] Unhalted Core Cycles: 0x0 iter 328 diff = 110
+[853598.335657] Instruction Retired: 0x1 iter 328 diff = 15
+[853598.335657] LLC Misses: 0x2 iter 328 diff = 0
+[853598.335658] iter: 329
+[853598.335658] ctr: tsc iter 329 diff = 88
+[853598.335658] Unhalted Core Cycles: 0x0 iter 329 diff = 92
+[853598.335659] Instruction Retired: 0x1 iter 329 diff = 18
+[853598.335659] LLC Misses: 0x2 iter 329 diff = 0
+[853598.335659] iter: 330
+[853598.335660] ctr: tsc iter 330 diff = 86
+[853598.335660] Unhalted Core Cycles: 0x0 iter 330 diff = 87
+[853598.335661] Instruction Retired: 0x1 iter 330 diff = 18
+[853598.335661] LLC Misses: 0x2 iter 330 diff = 0
+[853598.335661] iter: 331
+[853598.335662] ctr: tsc iter 331 diff = 84
+[853598.335662] Unhalted Core Cycles: 0x0 iter 331 diff = 85
+[853598.335663] Instruction Retired: 0x1 iter 331 diff = 18
+[853598.335663] LLC Misses: 0x2 iter 331 diff = 1
+[853598.335663] iter: 332
+[853598.335664] ctr: tsc iter 332 diff = 88
+[853598.335664] Unhalted Core Cycles: 0x0 iter 332 diff = 93
+[853598.335665] Instruction Retired: 0x1 iter 332 diff = 18
+[853598.335665] LLC Misses: 0x2 iter 332 diff = 0
+[853598.335666] iter: 333
+[853598.335666] ctr: tsc iter 333 diff = 106
+[853598.335666] Unhalted Core Cycles: 0x0 iter 333 diff = 108
+[853598.335667] Instruction Retired: 0x1 iter 333 diff = 18
+[853598.335667] LLC Misses: 0x2 iter 333 diff = 2
+[853598.335668] iter: 334
+[853598.335668] ctr: tsc iter 334 diff = 82
+[853598.335668] Unhalted Core Cycles: 0x0 iter 334 diff = 85
+[853598.335669] Instruction Retired: 0x1 iter 334 diff = 18
+[853598.335669] LLC Misses: 0x2 iter 334 diff = 0
+[853598.335670] iter: 335
+[853598.335670] ctr: tsc iter 335 diff = 104
+[853598.335670] Unhalted Core Cycles: 0x0 iter 335 diff = 121
+[853598.335671] Instruction Retired: 0x1 iter 335 diff = 18
+[853598.335671] LLC Misses: 0x2 iter 335 diff = 0
+[853598.335671] iter: 336
+[853598.335672] ctr: tsc iter 336 diff = 84
+[853598.335672] Unhalted Core Cycles: 0x0 iter 336 diff = 86
+[853598.335673] Instruction Retired: 0x1 iter 336 diff = 18
+[853598.335673] LLC Misses: 0x2 iter 336 diff = 0
+[853598.335673] iter: 337
+[853598.335674] ctr: tsc iter 337 diff = 110
+[853598.335674] Unhalted Core Cycles: 0x0 iter 337 diff = 105
+[853598.335675] Instruction Retired: 0x1 iter 337 diff = 17
+[853598.335675] LLC Misses: 0x2 iter 337 diff = 0
+[853598.335675] iter: 338
+[853598.335676] ctr: tsc iter 338 diff = 108
+[853598.335676] Unhalted Core Cycles: 0x0 iter 338 diff = 129
+[853598.335677] Instruction Retired: 0x1 iter 338 diff = 17
+[853598.335677] LLC Misses: 0x2 iter 338 diff = 0
+[853598.335677] iter: 339
+[853598.335678] ctr: tsc iter 339 diff = 84
+[853598.335678] Unhalted Core Cycles: 0x0 iter 339 diff = 86
+[853598.335679] Instruction Retired: 0x1 iter 339 diff = 18
+[853598.335679] LLC Misses: 0x2 iter 339 diff = 0
+[853598.335679] iter: 340
+[853598.335680] ctr: tsc iter 340 diff = 90
+[853598.335680] Unhalted Core Cycles: 0x0 iter 340 diff = 97
+[853598.335681] Instruction Retired: 0x1 iter 340 diff = 18
+[853598.335681] LLC Misses: 0x2 iter 340 diff = 0
+[853598.335681] iter: 341
+[853598.335682] ctr: tsc iter 341 diff = 108
+[853598.335682] Unhalted Core Cycles: 0x0 iter 341 diff = 129
+[853598.335683] Instruction Retired: 0x1 iter 341 diff = 17
+[853598.335683] LLC Misses: 0x2 iter 341 diff = 0
+[853598.335683] iter: 342
+[853598.335684] ctr: tsc iter 342 diff = 86
+[853598.335684] Unhalted Core Cycles: 0x0 iter 342 diff = 89
+[853598.335685] Instruction Retired: 0x1 iter 342 diff = 18
+[853598.335685] LLC Misses: 0x2 iter 342 diff = 0
+[853598.335685] iter: 343
+[853598.335686] ctr: tsc iter 343 diff = 82
+[853598.335686] Unhalted Core Cycles: 0x0 iter 343 diff = 84
+[853598.335687] Instruction Retired: 0x1 iter 343 diff = 18
+[853598.335687] LLC Misses: 0x2 iter 343 diff = 0
+[853598.335687] iter: 344
+[853598.335688] ctr: tsc iter 344 diff = 110
+[853598.335688] Unhalted Core Cycles: 0x0 iter 344 diff = 124
+[853598.335689] Instruction Retired: 0x1 iter 344 diff = 17
+[853598.335689] LLC Misses: 0x2 iter 344 diff = 0
+[853598.335689] iter: 345
+[853598.335690] ctr: tsc iter 345 diff = 102
+[853598.335690] Unhalted Core Cycles: 0x0 iter 345 diff = 119
+[853598.335691] Instruction Retired: 0x1 iter 345 diff = 15
+[853598.335691] LLC Misses: 0x2 iter 345 diff = 0
+[853598.335691] iter: 346
+[853598.335692] ctr: tsc iter 346 diff = 86
+[853598.335692] Unhalted Core Cycles: 0x0 iter 346 diff = 98
+[853598.335693] Instruction Retired: 0x1 iter 346 diff = 18
+[853598.335693] LLC Misses: 0x2 iter 346 diff = 0
+[853598.335694] iter: 347
+[853598.335694] ctr: tsc iter 347 diff = 114
+[853598.335694] Unhalted Core Cycles: 0x0 iter 347 diff = 131
+[853598.335695] Instruction Retired: 0x1 iter 347 diff = 17
+[853598.335695] LLC Misses: 0x2 iter 347 diff = 0
+[853598.335696] iter: 348
+[853598.335696] ctr: tsc iter 348 diff = 102
+[853598.335696] Unhalted Core Cycles: 0x0 iter 348 diff = 102
+[853598.335697] Instruction Retired: 0x1 iter 348 diff = 18
+[853598.335697] LLC Misses: 0x2 iter 348 diff = 0
+[853598.335698] iter: 349
+[853598.335698] ctr: tsc iter 349 diff = 84
+[853598.335699] Unhalted Core Cycles: 0x0 iter 349 diff = 87
+[853598.335699] Instruction Retired: 0x1 iter 349 diff = 18
+[853598.335699] LLC Misses: 0x2 iter 349 diff = 0
+[853598.335700] iter: 350
+[853598.335700] ctr: tsc iter 350 diff = 92
+[853598.335701] Unhalted Core Cycles: 0x0 iter 350 diff = 109
+[853598.335701] Instruction Retired: 0x1 iter 350 diff = 22
+[853598.335701] LLC Misses: 0x2 iter 350 diff = 2
+[853598.335702] iter: 351
+[853598.335702] ctr: tsc iter 351 diff = 82
+[853598.335703] Unhalted Core Cycles: 0x0 iter 351 diff = 83
+[853598.335703] Instruction Retired: 0x1 iter 351 diff = 18
+[853598.335704] LLC Misses: 0x2 iter 351 diff = 0
+[853598.335704] iter: 352
+[853598.335704] ctr: tsc iter 352 diff = 86
+[853598.335705] Unhalted Core Cycles: 0x0 iter 352 diff = 89
+[853598.335705] Instruction Retired: 0x1 iter 352 diff = 18
+[853598.335706] LLC Misses: 0x2 iter 352 diff = 0
+[853598.335706] iter: 353
+[853598.335706] ctr: tsc iter 353 diff = 98
+[853598.335707] Unhalted Core Cycles: 0x0 iter 353 diff = 103
+[853598.335707] Instruction Retired: 0x1 iter 353 diff = 18
+[853598.335707] LLC Misses: 0x2 iter 353 diff = 0
+[853598.335708] iter: 354
+[853598.335708] ctr: tsc iter 354 diff = 108
+[853598.335709] Unhalted Core Cycles: 0x0 iter 354 diff = 125
+[853598.335709] Instruction Retired: 0x1 iter 354 diff = 17
+[853598.335710] LLC Misses: 0x2 iter 354 diff = 0
+[853598.335710] iter: 355
+[853598.335710] ctr: tsc iter 355 diff = 90
+[853598.335711] Unhalted Core Cycles: 0x0 iter 355 diff = 95
+[853598.335711] Instruction Retired: 0x1 iter 355 diff = 18
+[853598.335711] LLC Misses: 0x2 iter 355 diff = 0
+[853598.335712] iter: 356
+[853598.335712] ctr: tsc iter 356 diff = 98
+[853598.335713] Unhalted Core Cycles: 0x0 iter 356 diff = 112
+[853598.335713] Instruction Retired: 0x1 iter 356 diff = 22
+[853598.335714] LLC Misses: 0x2 iter 356 diff = 0
+[853598.335714] iter: 357
+[853598.335714] ctr: tsc iter 357 diff = 88
+[853598.335715] Unhalted Core Cycles: 0x0 iter 357 diff = 91
+[853598.335715] Instruction Retired: 0x1 iter 357 diff = 18
+[853598.335715] LLC Misses: 0x2 iter 357 diff = 0
+[853598.335716] iter: 358
+[853598.335716] ctr: tsc iter 358 diff = 102
+[853598.335717] Unhalted Core Cycles: 0x0 iter 358 diff = 111
+[853598.335717] Instruction Retired: 0x1 iter 358 diff = 18
+[853598.335718] LLC Misses: 0x2 iter 358 diff = 0
+[853598.335718] iter: 359
+[853598.335718] ctr: tsc iter 359 diff = 84
+[853598.335719] Unhalted Core Cycles: 0x0 iter 359 diff = 87
+[853598.335719] Instruction Retired: 0x1 iter 359 diff = 18
+[853598.335720] LLC Misses: 0x2 iter 359 diff = 0
+[853598.335720] iter: 360
+[853598.335720] ctr: tsc iter 360 diff = 84
+[853598.335721] Unhalted Core Cycles: 0x0 iter 360 diff = 86
+[853598.335721] Instruction Retired: 0x1 iter 360 diff = 18
+[853598.335722] LLC Misses: 0x2 iter 360 diff = 0
+[853598.335722] iter: 361
+[853598.335722] ctr: tsc iter 361 diff = 82
+[853598.335723] Unhalted Core Cycles: 0x0 iter 361 diff = 84
+[853598.335723] Instruction Retired: 0x1 iter 361 diff = 18
+[853598.335724] LLC Misses: 0x2 iter 361 diff = 0
+[853598.335724] iter: 362
+[853598.335724] ctr: tsc iter 362 diff = 86
+[853598.335725] Unhalted Core Cycles: 0x0 iter 362 diff = 88
+[853598.335725] Instruction Retired: 0x1 iter 362 diff = 18
+[853598.335726] LLC Misses: 0x2 iter 362 diff = 0
+[853598.335726] iter: 363
+[853598.335726] ctr: tsc iter 363 diff = 98
+[853598.335727] Unhalted Core Cycles: 0x0 iter 363 diff = 91
+[853598.335727] Instruction Retired: 0x1 iter 363 diff = 18
+[853598.335728] LLC Misses: 0x2 iter 363 diff = 0
+[853598.335728] iter: 364
+[853598.335728] ctr: tsc iter 364 diff = 88
+[853598.335729] Unhalted Core Cycles: 0x0 iter 364 diff = 94
+[853598.335729] Instruction Retired: 0x1 iter 364 diff = 18
+[853598.335730] LLC Misses: 0x2 iter 364 diff = 0
+[853598.335730] iter: 365
+[853598.335730] ctr: tsc iter 365 diff = 98
+[853598.335731] Unhalted Core Cycles: 0x0 iter 365 diff = 104
+[853598.335731] Instruction Retired: 0x1 iter 365 diff = 15
+[853598.335732] LLC Misses: 0x2 iter 365 diff = 0
+[853598.335732] iter: 366
+[853598.335732] ctr: tsc iter 366 diff = 84
+[853598.335733] Unhalted Core Cycles: 0x0 iter 366 diff = 90
+[853598.335733] Instruction Retired: 0x1 iter 366 diff = 18
+[853598.335734] LLC Misses: 0x2 iter 366 diff = 0
+[853598.335734] iter: 367
+[853598.335735] ctr: tsc iter 367 diff = 96
+[853598.335735] Unhalted Core Cycles: 0x0 iter 367 diff = 104
+[853598.335736] Instruction Retired: 0x1 iter 367 diff = 13
+[853598.335736] LLC Misses: 0x2 iter 367 diff = 0
+[853598.335736] iter: 368
+[853598.335737] ctr: tsc iter 368 diff = 88
+[853598.335737] Unhalted Core Cycles: 0x0 iter 368 diff = 95
+[853598.335737] Instruction Retired: 0x1 iter 368 diff = 18
+[853598.335738] LLC Misses: 0x2 iter 368 diff = 0
+[853598.335738] iter: 369
+[853598.335739] ctr: tsc iter 369 diff = 92
+[853598.335739] Unhalted Core Cycles: 0x0 iter 369 diff = 95
+[853598.335739] Instruction Retired: 0x1 iter 369 diff = 18
+[853598.335740] LLC Misses: 0x2 iter 369 diff = 0
+[853598.335740] iter: 370
+[853598.335741] ctr: tsc iter 370 diff = 90
+[853598.335741] Unhalted Core Cycles: 0x0 iter 370 diff = 92
+[853598.335741] Instruction Retired: 0x1 iter 370 diff = 18
+[853598.335742] LLC Misses: 0x2 iter 370 diff = 1
+[853598.335742] iter: 371
+[853598.335742] ctr: tsc iter 371 diff = 98
+[853598.335743] Unhalted Core Cycles: 0x0 iter 371 diff = 104
+[853598.335743] Instruction Retired: 0x1 iter 371 diff = 13
+[853598.335744] LLC Misses: 0x2 iter 371 diff = 0
+[853598.335744] iter: 372
+[853598.335744] ctr: tsc iter 372 diff = 88
+[853598.335745] Unhalted Core Cycles: 0x0 iter 372 diff = 95
+[853598.335745] Instruction Retired: 0x1 iter 372 diff = 18
+[853598.335746] LLC Misses: 0x2 iter 372 diff = 1
+[853598.335746] iter: 373
+[853598.335746] ctr: tsc iter 373 diff = 82
+[853598.335747] Unhalted Core Cycles: 0x0 iter 373 diff = 84
+[853598.335747] Instruction Retired: 0x1 iter 373 diff = 18
+[853598.335748] LLC Misses: 0x2 iter 373 diff = 2
+[853598.335748] iter: 374
+[853598.335748] ctr: tsc iter 374 diff = 88
+[853598.335749] Unhalted Core Cycles: 0x0 iter 374 diff = 95
+[853598.335749] Instruction Retired: 0x1 iter 374 diff = 13
+[853598.335750] LLC Misses: 0x2 iter 374 diff = 0
+[853598.335750] iter: 375
+[853598.335751] ctr: tsc iter 375 diff = 82
+[853598.335751] Unhalted Core Cycles: 0x0 iter 375 diff = 84
+[853598.335751] Instruction Retired: 0x1 iter 375 diff = 18
+[853598.335752] LLC Misses: 0x2 iter 375 diff = 0
+[853598.335752] iter: 376
+[853598.335753] ctr: tsc iter 376 diff = 96
+[853598.335753] Unhalted Core Cycles: 0x0 iter 376 diff = 105
+[853598.335754] Instruction Retired: 0x1 iter 376 diff = 18
+[853598.335754] LLC Misses: 0x2 iter 376 diff = 0
+[853598.335754] iter: 377
+[853598.335755] ctr: tsc iter 377 diff = 88
+[853598.335755] Unhalted Core Cycles: 0x0 iter 377 diff = 92
+[853598.335755] Instruction Retired: 0x1 iter 377 diff = 18
+[853598.335756] LLC Misses: 0x2 iter 377 diff = 0
+[853598.335756] iter: 378
+[853598.335757] ctr: tsc iter 378 diff = 102
+[853598.335757] Unhalted Core Cycles: 0x0 iter 378 diff = 108
+[853598.335758] Instruction Retired: 0x1 iter 378 diff = 22
+[853598.335758] LLC Misses: 0x2 iter 378 diff = 0
+[853598.335759] iter: 379
+[853598.335759] ctr: tsc iter 379 diff = 98
+[853598.335759] Unhalted Core Cycles: 0x0 iter 379 diff = 96
+[853598.335760] Instruction Retired: 0x1 iter 379 diff = 18
+[853598.335760] LLC Misses: 0x2 iter 379 diff = 0
+[853598.335761] iter: 380
+[853598.335761] ctr: tsc iter 380 diff = 108
+[853598.335761] Unhalted Core Cycles: 0x0 iter 380 diff = 127
+[853598.335762] Instruction Retired: 0x1 iter 380 diff = 17
+[853598.335762] LLC Misses: 0x2 iter 380 diff = 0
+[853598.335763] iter: 381
+[853598.335763] ctr: tsc iter 381 diff = 88
+[853598.335764] Unhalted Core Cycles: 0x0 iter 381 diff = 90
+[853598.335764] Instruction Retired: 0x1 iter 381 diff = 18
+[853598.335764] LLC Misses: 0x2 iter 381 diff = 0
+[853598.335765] iter: 382
+[853598.335765] ctr: tsc iter 382 diff = 110
+[853598.335766] Unhalted Core Cycles: 0x0 iter 382 diff = 130
+[853598.335766] Instruction Retired: 0x1 iter 382 diff = 17
+[853598.335767] LLC Misses: 0x2 iter 382 diff = 0
+[853598.335767] iter: 383
+[853598.335767] ctr: tsc iter 383 diff = 82
+[853598.335768] Unhalted Core Cycles: 0x0 iter 383 diff = 85
+[853598.335768] Instruction Retired: 0x1 iter 383 diff = 18
+[853598.335768] LLC Misses: 0x2 iter 383 diff = 0
+[853598.335769] iter: 384
+[853598.335769] ctr: tsc iter 384 diff = 96
+[853598.335770] Unhalted Core Cycles: 0x0 iter 384 diff = 111
+[853598.335770] Instruction Retired: 0x1 iter 384 diff = 15
+[853598.335770] LLC Misses: 0x2 iter 384 diff = 0
+[853598.335771] iter: 385
+[853598.335771] ctr: tsc iter 385 diff = 90
+[853598.335772] Unhalted Core Cycles: 0x0 iter 385 diff = 94
+[853598.335772] Instruction Retired: 0x1 iter 385 diff = 18
+[853598.335772] LLC Misses: 0x2 iter 385 diff = 0
+[853598.335773] iter: 386
+[853598.335773] ctr: tsc iter 386 diff = 88
+[853598.335774] Unhalted Core Cycles: 0x0 iter 386 diff = 100
+[853598.335774] Instruction Retired: 0x1 iter 386 diff = 18
+[853598.335774] LLC Misses: 0x2 iter 386 diff = 0
+[853598.335775] iter: 387
+[853598.335775] ctr: tsc iter 387 diff = 86
+[853598.335775] Unhalted Core Cycles: 0x0 iter 387 diff = 89
+[853598.335776] Instruction Retired: 0x1 iter 387 diff = 18
+[853598.335776] LLC Misses: 0x2 iter 387 diff = 0
+[853598.335777] iter: 388
+[853598.335777] ctr: tsc iter 388 diff = 88
+[853598.335778] Unhalted Core Cycles: 0x0 iter 388 diff = 96
+[853598.335778] Instruction Retired: 0x1 iter 388 diff = 20
+[853598.335778] LLC Misses: 0x2 iter 388 diff = 0
+[853598.335779] iter: 389
+[853598.335779] ctr: tsc iter 389 diff = 86
+[853598.335780] Unhalted Core Cycles: 0x0 iter 389 diff = 91
+[853598.335780] Instruction Retired: 0x1 iter 389 diff = 18
+[853598.335780] LLC Misses: 0x2 iter 389 diff = 0
+[853598.335781] iter: 390
+[853598.335781] ctr: tsc iter 390 diff = 120
+[853598.335782] Unhalted Core Cycles: 0x0 iter 390 diff = 146
+[853598.335782] Instruction Retired: 0x1 iter 390 diff = 17
+[853598.335782] LLC Misses: 0x2 iter 390 diff = 0
+[853598.335783] iter: 391
+[853598.335783] ctr: tsc iter 391 diff = 94
+[853598.335784] Unhalted Core Cycles: 0x0 iter 391 diff = 100
+[853598.335784] Instruction Retired: 0x1 iter 391 diff = 18
+[853598.335785] LLC Misses: 0x2 iter 391 diff = 0
+[853598.335785] iter: 392
+[853598.335785] ctr: tsc iter 392 diff = 88
+[853598.335786] Unhalted Core Cycles: 0x0 iter 392 diff = 92
+[853598.335786] Instruction Retired: 0x1 iter 392 diff = 18
+[853598.335787] LLC Misses: 0x2 iter 392 diff = 0
+[853598.335787] iter: 393
+[853598.335787] ctr: tsc iter 393 diff = 88
+[853598.335788] Unhalted Core Cycles: 0x0 iter 393 diff = 101
+[853598.335788] Instruction Retired: 0x1 iter 393 diff = 19
+[853598.335789] LLC Misses: 0x2 iter 393 diff = 0
+[853598.335789] iter: 394
+[853598.335789] ctr: tsc iter 394 diff = 82
+[853598.335790] Unhalted Core Cycles: 0x0 iter 394 diff = 84
+[853598.335790] Instruction Retired: 0x1 iter 394 diff = 22
+[853598.335791] LLC Misses: 0x2 iter 394 diff = 0
+[853598.335791] iter: 395
+[853598.335791] ctr: tsc iter 395 diff = 90
+[853598.335792] Unhalted Core Cycles: 0x0 iter 395 diff = 93
+[853598.335792] Instruction Retired: 0x1 iter 395 diff = 18
+[853598.335793] LLC Misses: 0x2 iter 395 diff = 0
+[853598.335793] iter: 396
+[853598.335793] ctr: tsc iter 396 diff = 90
+[853598.335794] Unhalted Core Cycles: 0x0 iter 396 diff = 95
+[853598.335794] Instruction Retired: 0x1 iter 396 diff = 18
+[853598.335795] LLC Misses: 0x2 iter 396 diff = 0
+[853598.335795] iter: 397
+[853598.335795] ctr: tsc iter 397 diff = 90
+[853598.335796] Unhalted Core Cycles: 0x0 iter 397 diff = 96
+[853598.335796] Instruction Retired: 0x1 iter 397 diff = 18
+[853598.335797] LLC Misses: 0x2 iter 397 diff = 0
+[853598.335797] iter: 398
+[853598.335797] ctr: tsc iter 398 diff = 84
+[853598.335798] Unhalted Core Cycles: 0x0 iter 398 diff = 84
+[853598.335798] Instruction Retired: 0x1 iter 398 diff = 18
+[853598.335799] LLC Misses: 0x2 iter 398 diff = 0
+[853598.335799] iter: 399
+[853598.335799] ctr: tsc iter 399 diff = 108
+[853598.335800] Unhalted Core Cycles: 0x0 iter 399 diff = 99
+[853598.335800] Instruction Retired: 0x1 iter 399 diff = 18
+[853598.335801] LLC Misses: 0x2 iter 399 diff = 0
+[853598.335801] iter: 400
+[853598.335802] ctr: tsc iter 400 diff = 96
+[853598.335802] Unhalted Core Cycles: 0x0 iter 400 diff = 101
+[853598.335803] Instruction Retired: 0x1 iter 400 diff = 18
+[853598.335803] LLC Misses: 0x2 iter 400 diff = 0
+[853598.335804] iter: 401
+[853598.335804] ctr: tsc iter 401 diff = 112
+[853598.335805] Unhalted Core Cycles: 0x0 iter 401 diff = 134
+[853598.335805] Instruction Retired: 0x1 iter 401 diff = 17
+[853598.335806] LLC Misses: 0x2 iter 401 diff = 0
+[853598.335806] iter: 402
+[853598.335807] ctr: tsc iter 402 diff = 100
+[853598.335807] Unhalted Core Cycles: 0x0 iter 402 diff = 107
+[853598.335808] Instruction Retired: 0x1 iter 402 diff = 18
+[853598.335808] LLC Misses: 0x2 iter 402 diff = 0
+[853598.335809] iter: 403
+[853598.335809] ctr: tsc iter 403 diff = 98
+[853598.335810] Unhalted Core Cycles: 0x0 iter 403 diff = 101
+[853598.335810] Instruction Retired: 0x1 iter 403 diff = 15
+[853598.335811] LLC Misses: 0x2 iter 403 diff = 0
+[853598.335811] iter: 404
+[853598.335811] ctr: tsc iter 404 diff = 106
+[853598.335812] Unhalted Core Cycles: 0x0 iter 404 diff = 110
+[853598.335812] Instruction Retired: 0x1 iter 404 diff = 18
+[853598.335813] LLC Misses: 0x2 iter 404 diff = 0
+[853598.335813] iter: 405
+[853598.335814] ctr: tsc iter 405 diff = 102
+[853598.335814] Unhalted Core Cycles: 0x0 iter 405 diff = 105
+[853598.335815] Instruction Retired: 0x1 iter 405 diff = 18
+[853598.335815] LLC Misses: 0x2 iter 405 diff = 0
+[853598.335816] iter: 406
+[853598.335816] ctr: tsc iter 406 diff = 88
+[853598.335817] Unhalted Core Cycles: 0x0 iter 406 diff = 91
+[853598.335817] Instruction Retired: 0x1 iter 406 diff = 20
+[853598.335817] LLC Misses: 0x2 iter 406 diff = 0
+[853598.335818] iter: 407
+[853598.335818] ctr: tsc iter 407 diff = 100
+[853598.335819] Unhalted Core Cycles: 0x0 iter 407 diff = 107
+[853598.335819] Instruction Retired: 0x1 iter 407 diff = 13
+[853598.335820] LLC Misses: 0x2 iter 407 diff = 1
+[853598.335820] iter: 408
+[853598.335821] ctr: tsc iter 408 diff = 98
+[853598.335821] Unhalted Core Cycles: 0x0 iter 408 diff = 110
+[853598.335822] Instruction Retired: 0x1 iter 408 diff = 15
+[853598.335822] LLC Misses: 0x2 iter 408 diff = 0
+[853598.335823] iter: 409
+[853598.335823] ctr: tsc iter 409 diff = 90
+[853598.335824] Unhalted Core Cycles: 0x0 iter 409 diff = 102
+[853598.335825] Instruction Retired: 0x1 iter 409 diff = 15
+[853598.335825] LLC Misses: 0x2 iter 409 diff = 0
+[853598.335826] iter: 410
+[853598.335826] ctr: tsc iter 410 diff = 114
+[853598.335826] Unhalted Core Cycles: 0x0 iter 410 diff = 138
+[853598.335827] Instruction Retired: 0x1 iter 410 diff = 17
+[853598.335827] LLC Misses: 0x2 iter 410 diff = 0
+[853598.335828] iter: 411
+[853598.335828] ctr: tsc iter 411 diff = 96
+[853598.335829] Unhalted Core Cycles: 0x0 iter 411 diff = 87
+[853598.335829] Instruction Retired: 0x1 iter 411 diff = 18
+[853598.335830] LLC Misses: 0x2 iter 411 diff = 0
+[853598.335830] iter: 412
+[853598.335830] ctr: tsc iter 412 diff = 100
+[853598.335831] Unhalted Core Cycles: 0x0 iter 412 diff = 101
+[853598.335831] Instruction Retired: 0x1 iter 412 diff = 18
+[853598.335832] LLC Misses: 0x2 iter 412 diff = 0
+[853598.335832] iter: 413
+[853598.335832] ctr: tsc iter 413 diff = 104
+[853598.335833] Unhalted Core Cycles: 0x0 iter 413 diff = 107
+[853598.335833] Instruction Retired: 0x1 iter 413 diff = 18
+[853598.335834] LLC Misses: 0x2 iter 413 diff = 0
+[853598.335834] iter: 414
+[853598.335835] ctr: tsc iter 414 diff = 82
+[853598.335835] Unhalted Core Cycles: 0x0 iter 414 diff = 84
+[853598.335835] Instruction Retired: 0x1 iter 414 diff = 18
+[853598.335836] LLC Misses: 0x2 iter 414 diff = 0
+[853598.335836] iter: 415
+[853598.335837] ctr: tsc iter 415 diff = 88
+[853598.335837] Unhalted Core Cycles: 0x0 iter 415 diff = 87
+[853598.335838] Instruction Retired: 0x1 iter 415 diff = 18
+[853598.335838] LLC Misses: 0x2 iter 415 diff = 0
+[853598.335839] iter: 416
+[853598.335839] ctr: tsc iter 416 diff = 100
+[853598.335840] Unhalted Core Cycles: 0x0 iter 416 diff = 102
+[853598.335840] Instruction Retired: 0x1 iter 416 diff = 13
+[853598.335841] LLC Misses: 0x2 iter 416 diff = 0
+[853598.335841] iter: 417
+[853598.335842] ctr: tsc iter 417 diff = 98
+[853598.335842] Unhalted Core Cycles: 0x0 iter 417 diff = 95
+[853598.335843] Instruction Retired: 0x1 iter 417 diff = 20
+[853598.335843] LLC Misses: 0x2 iter 417 diff = 0
+[853598.335844] iter: 418
+[853598.335844] ctr: tsc iter 418 diff = 92
+[853598.335845] Unhalted Core Cycles: 0x0 iter 418 diff = 95
+[853598.335845] Instruction Retired: 0x1 iter 418 diff = 18
+[853598.335846] LLC Misses: 0x2 iter 418 diff = 0
+[853598.335846] iter: 419
+[853598.335847] ctr: tsc iter 419 diff = 94
+[853598.335847] Unhalted Core Cycles: 0x0 iter 419 diff = 104
+[853598.335848] Instruction Retired: 0x1 iter 419 diff = 18
+[853598.335848] LLC Misses: 0x2 iter 419 diff = 0
+[853598.335849] iter: 420
+[853598.335849] ctr: tsc iter 420 diff = 80
+[853598.335850] Unhalted Core Cycles: 0x0 iter 420 diff = 84
+[853598.335850] Instruction Retired: 0x1 iter 420 diff = 18
+[853598.335850] LLC Misses: 0x2 iter 420 diff = 0
+[853598.335851] iter: 421
+[853598.335851] ctr: tsc iter 421 diff = 106
+[853598.335852] Unhalted Core Cycles: 0x0 iter 421 diff = 119
+[853598.335852] Instruction Retired: 0x1 iter 421 diff = 19
+[853598.335853] LLC Misses: 0x2 iter 421 diff = 0
+[853598.335853] iter: 422
+[853598.335853] ctr: tsc iter 422 diff = 118
+[853598.335854] Unhalted Core Cycles: 0x0 iter 422 diff = 126
+[853598.335854] Instruction Retired: 0x1 iter 422 diff = 13
+[853598.335855] LLC Misses: 0x2 iter 422 diff = 0
+[853598.335855] iter: 423
+[853598.335855] ctr: tsc iter 423 diff = 92
+[853598.335856] Unhalted Core Cycles: 0x0 iter 423 diff = 97
+[853598.335856] Instruction Retired: 0x1 iter 423 diff = 22
+[853598.335857] LLC Misses: 0x2 iter 423 diff = 0
+[853598.335857] iter: 424
+[853598.335858] ctr: tsc iter 424 diff = 100
+[853598.335858] Unhalted Core Cycles: 0x0 iter 424 diff = 106
+[853598.335859] Instruction Retired: 0x1 iter 424 diff = 13
+[853598.335859] LLC Misses: 0x2 iter 424 diff = 1
+[853598.335860] iter: 425
+[853598.335860] ctr: tsc iter 425 diff = 102
+[853598.335860] Unhalted Core Cycles: 0x0 iter 425 diff = 112
+[853598.335861] Instruction Retired: 0x1 iter 425 diff = 13
+[853598.335861] LLC Misses: 0x2 iter 425 diff = 0
+[853598.335862] iter: 426
+[853598.335862] ctr: tsc iter 426 diff = 92
+[853598.335863] Unhalted Core Cycles: 0x0 iter 426 diff = 90
+[853598.335863] Instruction Retired: 0x1 iter 426 diff = 15
+[853598.335864] LLC Misses: 0x2 iter 426 diff = 0
+[853598.335864] iter: 427
+[853598.335865] ctr: tsc iter 427 diff = 96
+[853598.335865] Unhalted Core Cycles: 0x0 iter 427 diff = 99
+[853598.335866] Instruction Retired: 0x1 iter 427 diff = 15
+[853598.335866] LLC Misses: 0x2 iter 427 diff = 2
+[853598.335867] iter: 428
+[853598.335867] ctr: tsc iter 428 diff = 92
+[853598.335867] Unhalted Core Cycles: 0x0 iter 428 diff = 101
+[853598.335868] Instruction Retired: 0x1 iter 428 diff = 18
+[853598.335868] LLC Misses: 0x2 iter 428 diff = 0
+[853598.335869] iter: 429
+[853598.335869] ctr: tsc iter 429 diff = 106
+[853598.335870] Unhalted Core Cycles: 0x0 iter 429 diff = 109
+[853598.335871] Instruction Retired: 0x1 iter 429 diff = 20
+[853598.335871] LLC Misses: 0x2 iter 429 diff = 0
+[853598.335872] iter: 430
+[853598.335872] ctr: tsc iter 430 diff = 98
+[853598.335872] Unhalted Core Cycles: 0x0 iter 430 diff = 104
+[853598.335873] Instruction Retired: 0x1 iter 430 diff = 18
+[853598.335874] LLC Misses: 0x2 iter 430 diff = 0
+[853598.335874] iter: 431
+[853598.335874] ctr: tsc iter 431 diff = 84
+[853598.335875] Unhalted Core Cycles: 0x0 iter 431 diff = 91
+[853598.335875] Instruction Retired: 0x1 iter 431 diff = 18
+[853598.335876] LLC Misses: 0x2 iter 431 diff = 0
+[853598.335876] iter: 432
+[853598.335877] ctr: tsc iter 432 diff = 86
+[853598.335877] Unhalted Core Cycles: 0x0 iter 432 diff = 92
+[853598.335878] Instruction Retired: 0x1 iter 432 diff = 18
+[853598.335878] LLC Misses: 0x2 iter 432 diff = 0
+[853598.335879] iter: 433
+[853598.335880] ctr: tsc iter 433 diff = 98
+[853598.335880] Unhalted Core Cycles: 0x0 iter 433 diff = 98
+[853598.335881] Instruction Retired: 0x1 iter 433 diff = 18
+[853598.335881] LLC Misses: 0x2 iter 433 diff = 0
+[853598.335882] iter: 434
+[853598.335882] ctr: tsc iter 434 diff = 108
+[853598.335883] Unhalted Core Cycles: 0x0 iter 434 diff = 107
+[853598.335883] Instruction Retired: 0x1 iter 434 diff = 20
+[853598.335884] LLC Misses: 0x2 iter 434 diff = 0
+[853598.335884] iter: 435
+[853598.335885] ctr: tsc iter 435 diff = 106
+[853598.335885] Unhalted Core Cycles: 0x0 iter 435 diff = 107
+[853598.335886] Instruction Retired: 0x1 iter 435 diff = 15
+[853598.335886] LLC Misses: 0x2 iter 435 diff = 0
+[853598.335887] iter: 436
+[853598.335887] ctr: tsc iter 436 diff = 96
+[853598.335888] Unhalted Core Cycles: 0x0 iter 436 diff = 98
+[853598.335889] Instruction Retired: 0x1 iter 436 diff = 18
+[853598.335889] LLC Misses: 0x2 iter 436 diff = 0
+[853598.335890] iter: 437
+[853598.335890] ctr: tsc iter 437 diff = 102
+[853598.335891] Unhalted Core Cycles: 0x0 iter 437 diff = 108
+[853598.335891] Instruction Retired: 0x1 iter 437 diff = 18
+[853598.335892] LLC Misses: 0x2 iter 437 diff = 0
+[853598.335892] iter: 438
+[853598.335892] ctr: tsc iter 438 diff = 92
+[853598.335893] Unhalted Core Cycles: 0x0 iter 438 diff = 89
+[853598.335894] Instruction Retired: 0x1 iter 438 diff = 18
+[853598.335894] LLC Misses: 0x2 iter 438 diff = 0
+[853598.335895] iter: 439
+[853598.335895] ctr: tsc iter 439 diff = 96
+[853598.335896] Unhalted Core Cycles: 0x0 iter 439 diff = 102
+[853598.335896] Instruction Retired: 0x1 iter 439 diff = 15
+[853598.335897] LLC Misses: 0x2 iter 439 diff = 0
+[853598.335897] iter: 440
+[853598.335898] ctr: tsc iter 440 diff = 98
+[853598.335898] Unhalted Core Cycles: 0x0 iter 440 diff = 104
+[853598.335899] Instruction Retired: 0x1 iter 440 diff = 18
+[853598.335900] LLC Misses: 0x2 iter 440 diff = 0
+[853598.335900] iter: 441
+[853598.335900] ctr: tsc iter 441 diff = 96
+[853598.335901] Unhalted Core Cycles: 0x0 iter 441 diff = 99
+[853598.335902] Instruction Retired: 0x1 iter 441 diff = 18
+[853598.335902] LLC Misses: 0x2 iter 441 diff = 3
+[853598.335903] iter: 442
+[853598.335903] ctr: tsc iter 442 diff = 84
+[853598.335904] Unhalted Core Cycles: 0x0 iter 442 diff = 113
+[853598.335904] Instruction Retired: 0x1 iter 442 diff = 18
+[853598.335905] LLC Misses: 0x2 iter 442 diff = 0
+[853598.335905] iter: 443
+[853598.335906] ctr: tsc iter 443 diff = 98
+[853598.335906] Unhalted Core Cycles: 0x0 iter 443 diff = 103
+[853598.335907] Instruction Retired: 0x1 iter 443 diff = 18
+[853598.335907] LLC Misses: 0x2 iter 443 diff = 0
+[853598.335908] iter: 444
+[853598.335908] ctr: tsc iter 444 diff = 98
+[853598.335909] Unhalted Core Cycles: 0x0 iter 444 diff = 105
+[853598.335910] Instruction Retired: 0x1 iter 444 diff = 13
+[853598.335910] LLC Misses: 0x2 iter 444 diff = 0
+[853598.335911] iter: 445
+[853598.335911] ctr: tsc iter 445 diff = 82
+[853598.335911] Unhalted Core Cycles: 0x0 iter 445 diff = 84
+[853598.335912] Instruction Retired: 0x1 iter 445 diff = 18
+[853598.335912] LLC Misses: 0x2 iter 445 diff = 0
+[853598.335913] iter: 446
+[853598.335913] ctr: tsc iter 446 diff = 100
+[853598.335914] Unhalted Core Cycles: 0x0 iter 446 diff = 106
+[853598.335915] Instruction Retired: 0x1 iter 446 diff = 18
+[853598.335915] LLC Misses: 0x2 iter 446 diff = 0
+[853598.335916] iter: 447
+[853598.335916] ctr: tsc iter 447 diff = 98
+[853598.335917] Unhalted Core Cycles: 0x0 iter 447 diff = 109
+[853598.335917] Instruction Retired: 0x1 iter 447 diff = 15
+[853598.335918] LLC Misses: 0x2 iter 447 diff = 0
+[853598.335924] iter: 448
+[853598.335924] ctr: tsc iter 448 diff = 86
+[853598.335925] Unhalted Core Cycles: 0x0 iter 448 diff = 88
+[853598.335925] Instruction Retired: 0x1 iter 448 diff = 18
+[853598.335926] LLC Misses: 0x2 iter 448 diff = 0
+[853598.335926] iter: 449
+[853598.335926] ctr: tsc iter 449 diff = 90
+[853598.335927] Unhalted Core Cycles: 0x0 iter 449 diff = 94
+[853598.335928] Instruction Retired: 0x1 iter 449 diff = 18
+[853598.335928] LLC Misses: 0x2 iter 449 diff = 0
+[853598.335928] iter: 450
+[853598.335929] ctr: tsc iter 450 diff = 90
+[853598.335929] Unhalted Core Cycles: 0x0 iter 450 diff = 96
+[853598.335930] Instruction Retired: 0x1 iter 450 diff = 18
+[853598.335930] LLC Misses: 0x2 iter 450 diff = 0
+[853598.335931] iter: 451
+[853598.335931] ctr: tsc iter 451 diff = 102
+[853598.335931] Unhalted Core Cycles: 0x0 iter 451 diff = 118
+[853598.335932] Instruction Retired: 0x1 iter 451 diff = 17
+[853598.335932] LLC Misses: 0x2 iter 451 diff = 0
+[853598.335932] iter: 452
+[853598.335933] ctr: tsc iter 452 diff = 84
+[853598.335933] Unhalted Core Cycles: 0x0 iter 452 diff = 84
+[853598.335934] Instruction Retired: 0x1 iter 452 diff = 18
+[853598.335934] LLC Misses: 0x2 iter 452 diff = 0
+[853598.335934] iter: 453
+[853598.335935] ctr: tsc iter 453 diff = 94
+[853598.335935] Unhalted Core Cycles: 0x0 iter 453 diff = 88
+[853598.335936] Instruction Retired: 0x1 iter 453 diff = 18
+[853598.335936] LLC Misses: 0x2 iter 453 diff = 0
+[853598.335937] iter: 454
+[853598.335937] ctr: tsc iter 454 diff = 90
+[853598.335937] Unhalted Core Cycles: 0x0 iter 454 diff = 92
+[853598.335938] Instruction Retired: 0x1 iter 454 diff = 18
+[853598.335938] LLC Misses: 0x2 iter 454 diff = 0
+[853598.335938] iter: 455
+[853598.335939] ctr: tsc iter 455 diff = 84
+[853598.335939] Unhalted Core Cycles: 0x0 iter 455 diff = 84
+[853598.335940] Instruction Retired: 0x1 iter 455 diff = 18
+[853598.335940] LLC Misses: 0x2 iter 455 diff = 0
+[853598.335940] iter: 456
+[853598.335941] ctr: tsc iter 456 diff = 84
+[853598.335941] Unhalted Core Cycles: 0x0 iter 456 diff = 84
+[853598.335942] Instruction Retired: 0x1 iter 456 diff = 18
+[853598.335942] LLC Misses: 0x2 iter 456 diff = 0
+[853598.335942] iter: 457
+[853598.335943] ctr: tsc iter 457 diff = 84
+[853598.335943] Unhalted Core Cycles: 0x0 iter 457 diff = 84
+[853598.335943] Instruction Retired: 0x1 iter 457 diff = 18
+[853598.335944] LLC Misses: 0x2 iter 457 diff = 1
+[853598.335944] iter: 458
+[853598.335944] ctr: tsc iter 458 diff = 82
+[853598.335945] Unhalted Core Cycles: 0x0 iter 458 diff = 84
+[853598.335945] Instruction Retired: 0x1 iter 458 diff = 18
+[853598.335946] LLC Misses: 0x2 iter 458 diff = 0
+[853598.335946] iter: 459
+[853598.335946] ctr: tsc iter 459 diff = 80
+[853598.335947] Unhalted Core Cycles: 0x0 iter 459 diff = 83
+[853598.335947] Instruction Retired: 0x1 iter 459 diff = 18
+[853598.335948] LLC Misses: 0x2 iter 459 diff = 0
+[853598.335948] iter: 460
+[853598.335948] ctr: tsc iter 460 diff = 82
+[853598.335949] Unhalted Core Cycles: 0x0 iter 460 diff = 84
+[853598.335949] Instruction Retired: 0x1 iter 460 diff = 18
+[853598.335949] LLC Misses: 0x2 iter 460 diff = 0
+[853598.335950] iter: 461
+[853598.335950] ctr: tsc iter 461 diff = 80
+[853598.335950] Unhalted Core Cycles: 0x0 iter 461 diff = 83
+[853598.335951] Instruction Retired: 0x1 iter 461 diff = 18
+[853598.335951] LLC Misses: 0x2 iter 461 diff = 0
+[853598.335952] iter: 462
+[853598.335952] ctr: tsc iter 462 diff = 80
+[853598.335952] Unhalted Core Cycles: 0x0 iter 462 diff = 84
+[853598.335953] Instruction Retired: 0x1 iter 462 diff = 18
+[853598.335953] LLC Misses: 0x2 iter 462 diff = 0
+[853598.335954] iter: 463
+[853598.335954] ctr: tsc iter 463 diff = 82
+[853598.335954] Unhalted Core Cycles: 0x0 iter 463 diff = 83
+[853598.335955] Instruction Retired: 0x1 iter 463 diff = 18
+[853598.335955] LLC Misses: 0x2 iter 463 diff = 0
+[853598.335955] iter: 464
+[853598.335956] ctr: tsc iter 464 diff = 84
+[853598.335956] Unhalted Core Cycles: 0x0 iter 464 diff = 87
+[853598.335957] Instruction Retired: 0x1 iter 464 diff = 18
+[853598.335957] LLC Misses: 0x2 iter 464 diff = 1
+[853598.335957] iter: 465
+[853598.335958] ctr: tsc iter 465 diff = 80
+[853598.335958] Unhalted Core Cycles: 0x0 iter 465 diff = 84
+[853598.335959] Instruction Retired: 0x1 iter 465 diff = 18
+[853598.335959] LLC Misses: 0x2 iter 465 diff = 0
+[853598.335960] iter: 466
+[853598.335960] ctr: tsc iter 466 diff = 82
+[853598.335960] Unhalted Core Cycles: 0x0 iter 466 diff = 84
+[853598.335961] Instruction Retired: 0x1 iter 466 diff = 18
+[853598.335961] LLC Misses: 0x2 iter 466 diff = 2
+[853598.335961] iter: 467
+[853598.335962] ctr: tsc iter 467 diff = 96
+[853598.335962] Unhalted Core Cycles: 0x0 iter 467 diff = 98
+[853598.335963] Instruction Retired: 0x1 iter 467 diff = 18
+[853598.335963] LLC Misses: 0x2 iter 467 diff = 0
+[853598.335964] iter: 468
+[853598.335964] ctr: tsc iter 468 diff = 84
+[853598.335964] Unhalted Core Cycles: 0x0 iter 468 diff = 94
+[853598.335965] Instruction Retired: 0x1 iter 468 diff = 18
+[853598.335965] LLC Misses: 0x2 iter 468 diff = 3
+[853598.335966] iter: 469
+[853598.335966] ctr: tsc iter 469 diff = 106
+[853598.335967] Unhalted Core Cycles: 0x0 iter 469 diff = 118
+[853598.335967] Instruction Retired: 0x1 iter 469 diff = 13
+[853598.335968] LLC Misses: 0x2 iter 469 diff = 0
+[853598.335968] iter: 470
+[853598.335969] ctr: tsc iter 470 diff = 96
+[853598.335969] Unhalted Core Cycles: 0x0 iter 470 diff = 101
+[853598.335970] Instruction Retired: 0x1 iter 470 diff = 18
+[853598.335970] LLC Misses: 0x2 iter 470 diff = 0
+[853598.335971] iter: 471
+[853598.335971] ctr: tsc iter 471 diff = 92
+[853598.335972] Unhalted Core Cycles: 0x0 iter 471 diff = 102
+[853598.335972] Instruction Retired: 0x1 iter 471 diff = 18
+[853598.335973] LLC Misses: 0x2 iter 471 diff = 0
+[853598.335973] iter: 472
+[853598.335974] ctr: tsc iter 472 diff = 102
+[853598.335974] Unhalted Core Cycles: 0x0 iter 472 diff = 105
+[853598.335975] Instruction Retired: 0x1 iter 472 diff = 20
+[853598.335975] LLC Misses: 0x2 iter 472 diff = 1
+[853598.335976] iter: 473
+[853598.335976] ctr: tsc iter 473 diff = 92
+[853598.335977] Unhalted Core Cycles: 0x0 iter 473 diff = 99
+[853598.335977] Instruction Retired: 0x1 iter 473 diff = 18
+[853598.335978] LLC Misses: 0x2 iter 473 diff = 0
+[853598.335978] iter: 474
+[853598.335979] ctr: tsc iter 474 diff = 96
+[853598.335979] Unhalted Core Cycles: 0x0 iter 474 diff = 101
+[853598.335979] Instruction Retired: 0x1 iter 474 diff = 22
+[853598.335980] LLC Misses: 0x2 iter 474 diff = 0
+[853598.335980] iter: 475
+[853598.335980] ctr: tsc iter 475 diff = 82
+[853598.335981] Unhalted Core Cycles: 0x0 iter 475 diff = 85
+[853598.335981] Instruction Retired: 0x1 iter 475 diff = 18
+[853598.335982] LLC Misses: 0x2 iter 475 diff = 0
+[853598.335982] iter: 476
+[853598.335982] ctr: tsc iter 476 diff = 84
+[853598.335983] Unhalted Core Cycles: 0x0 iter 476 diff = 85
+[853598.335983] Instruction Retired: 0x1 iter 476 diff = 18
+[853598.335983] LLC Misses: 0x2 iter 476 diff = 0
+[853598.335984] iter: 477
+[853598.335984] ctr: tsc iter 477 diff = 90
+[853598.335985] Unhalted Core Cycles: 0x0 iter 477 diff = 93
+[853598.335985] Instruction Retired: 0x1 iter 477 diff = 18
+[853598.335985] LLC Misses: 0x2 iter 477 diff = 1
+[853598.335986] iter: 478
+[853598.335986] ctr: tsc iter 478 diff = 96
+[853598.335987] Unhalted Core Cycles: 0x0 iter 478 diff = 93
+[853598.335987] Instruction Retired: 0x1 iter 478 diff = 18
+[853598.335987] LLC Misses: 0x2 iter 478 diff = 0
+[853598.335988] iter: 479
+[853598.335988] ctr: tsc iter 479 diff = 86
+[853598.335989] Unhalted Core Cycles: 0x0 iter 479 diff = 88
+[853598.335989] Instruction Retired: 0x1 iter 479 diff = 18
+[853598.335990] LLC Misses: 0x2 iter 479 diff = 0
+[853598.335990] iter: 480
+[853598.335990] ctr: tsc iter 480 diff = 112
+[853598.335991] Unhalted Core Cycles: 0x0 iter 480 diff = 127
+[853598.335991] Instruction Retired: 0x1 iter 480 diff = 17
+[853598.335992] LLC Misses: 0x2 iter 480 diff = 0
+[853598.335992] iter: 481
+[853598.335992] ctr: tsc iter 481 diff = 110
+[853598.335993] Unhalted Core Cycles: 0x0 iter 481 diff = 121
+[853598.335993] Instruction Retired: 0x1 iter 481 diff = 18
+[853598.335994] LLC Misses: 0x2 iter 481 diff = 0
+[853598.335994] iter: 482
+[853598.335994] ctr: tsc iter 482 diff = 88
+[853598.335995] Unhalted Core Cycles: 0x0 iter 482 diff = 91
+[853598.335995] Instruction Retired: 0x1 iter 482 diff = 18
+[853598.335996] LLC Misses: 0x2 iter 482 diff = 0
+[853598.335996] iter: 483
+[853598.335996] ctr: tsc iter 483 diff = 90
+[853598.335997] Unhalted Core Cycles: 0x0 iter 483 diff = 103
+[853598.335997] Instruction Retired: 0x1 iter 483 diff = 18
+[853598.335998] LLC Misses: 0x2 iter 483 diff = 0
+[853598.335998] iter: 484
+[853598.335998] ctr: tsc iter 484 diff = 106
+[853598.335999] Unhalted Core Cycles: 0x0 iter 484 diff = 106
+[853598.335999] Instruction Retired: 0x1 iter 484 diff = 18
+[853598.336000] LLC Misses: 0x2 iter 484 diff = 0
+[853598.336000] iter: 485
+[853598.336000] ctr: tsc iter 485 diff = 94
+[853598.336001] Unhalted Core Cycles: 0x0 iter 485 diff = 100
+[853598.336001] Instruction Retired: 0x1 iter 485 diff = 18
+[853598.336002] LLC Misses: 0x2 iter 485 diff = 0
+[853598.336002] iter: 486
+[853598.336002] ctr: tsc iter 486 diff = 96
+[853598.336003] Unhalted Core Cycles: 0x0 iter 486 diff = 107
+[853598.336003] Instruction Retired: 0x1 iter 486 diff = 19
+[853598.336003] LLC Misses: 0x2 iter 486 diff = 0
+[853598.336004] iter: 487
+[853598.336004] ctr: tsc iter 487 diff = 96
+[853598.336005] Unhalted Core Cycles: 0x0 iter 487 diff = 90
+[853598.336005] Instruction Retired: 0x1 iter 487 diff = 18
+[853598.336006] LLC Misses: 0x2 iter 487 diff = 0
+[853598.336006] iter: 488
+[853598.336006] ctr: tsc iter 488 diff = 96
+[853598.336007] Unhalted Core Cycles: 0x0 iter 488 diff = 92
+[853598.336007] Instruction Retired: 0x1 iter 488 diff = 18
+[853598.336008] LLC Misses: 0x2 iter 488 diff = 0
+[853598.336008] iter: 489
+[853598.336008] ctr: tsc iter 489 diff = 98
+[853598.336009] Unhalted Core Cycles: 0x0 iter 489 diff = 108
+[853598.336009] Instruction Retired: 0x1 iter 489 diff = 15
+[853598.336010] LLC Misses: 0x2 iter 489 diff = 0
+[853598.336010] iter: 490
+[853598.336011] ctr: tsc iter 490 diff = 102
+[853598.336011] Unhalted Core Cycles: 0x0 iter 490 diff = 116
+[853598.336011] Instruction Retired: 0x1 iter 490 diff = 18
+[853598.336012] LLC Misses: 0x2 iter 490 diff = 0
+[853598.336012] iter: 491
+[853598.336013] ctr: tsc iter 491 diff = 94
+[853598.336013] Unhalted Core Cycles: 0x0 iter 491 diff = 102
+[853598.336014] Instruction Retired: 0x1 iter 491 diff = 13
+[853598.336014] LLC Misses: 0x2 iter 491 diff = 1
+[853598.336014] iter: 492
+[853598.336015] ctr: tsc iter 492 diff = 92
+[853598.336015] Unhalted Core Cycles: 0x0 iter 492 diff = 103
+[853598.336016] Instruction Retired: 0x1 iter 492 diff = 17
+[853598.336016] LLC Misses: 0x2 iter 492 diff = 0
+[853598.336016] iter: 493
+[853598.336017] ctr: tsc iter 493 diff = 86
+[853598.336017] Unhalted Core Cycles: 0x0 iter 493 diff = 85
+[853598.336018] Instruction Retired: 0x1 iter 493 diff = 18
+[853598.336018] LLC Misses: 0x2 iter 493 diff = 0
+[853598.336019] iter: 494
+[853598.336019] ctr: tsc iter 494 diff = 96
+[853598.336019] Unhalted Core Cycles: 0x0 iter 494 diff = 101
+[853598.336020] Instruction Retired: 0x1 iter 494 diff = 17
+[853598.336020] LLC Misses: 0x2 iter 494 diff = 0
+[853598.336021] iter: 495
+[853598.336021] ctr: tsc iter 495 diff = 86
+[853598.336021] Unhalted Core Cycles: 0x0 iter 495 diff = 95
+[853598.336022] Instruction Retired: 0x1 iter 495 diff = 18
+[853598.336022] LLC Misses: 0x2 iter 495 diff = 0
+[853598.336023] iter: 496
+[853598.336023] ctr: tsc iter 496 diff = 104
+[853598.336024] Unhalted Core Cycles: 0x0 iter 496 diff = 105
+[853598.336024] Instruction Retired: 0x1 iter 496 diff = 18
+[853598.336024] LLC Misses: 0x2 iter 496 diff = 0
+[853598.336025] iter: 497
+[853598.336025] ctr: tsc iter 497 diff = 86
+[853598.336025] Unhalted Core Cycles: 0x0 iter 497 diff = 89
+[853598.336026] Instruction Retired: 0x1 iter 497 diff = 18
+[853598.336026] LLC Misses: 0x2 iter 497 diff = 0
+[853598.336027] iter: 498
+[853598.336027] ctr: tsc iter 498 diff = 80
+[853598.336028] Unhalted Core Cycles: 0x0 iter 498 diff = 83
+[853598.336028] Instruction Retired: 0x1 iter 498 diff = 18
+[853598.336028] LLC Misses: 0x2 iter 498 diff = 0
+[853598.336029] iter: 499
+[853598.336029] ctr: tsc iter 499 diff = 100
+[853598.336030] Unhalted Core Cycles: 0x0 iter 499 diff = 97
+[853598.336030] Instruction Retired: 0x1 iter 499 diff = 18
+[853598.336030] LLC Misses: 0x2 iter 499 diff = 0
+[853610.336735] rdctr: Kernel says we are allowde to run on CPU: 0.
+[853610.343438] rdctr: Kernel module init completed.

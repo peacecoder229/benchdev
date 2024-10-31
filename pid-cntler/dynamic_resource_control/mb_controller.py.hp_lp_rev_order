@@ -1,0 +1,56 @@
+import sys
+import os
+import time
+from strategy.pid import PID
+from control_knobs.mba import MBA
+from strategy.MA_pid import MAPID
+
+def return_performance(input_file='pqos_output/pqos.log'):
+    try:
+        output = os.popen('tail -n 2 %s' % input_file)
+        result_l = output.readline().split()
+        result_l_mb = result_l[4]
+        result_l_ipc = result_l[1]
+        result_h = output.readline().split()
+        result_h_mb = result_h[4]
+        result_h_ipc = result_h[1]
+        # result = output.read().split(',')[10] # P95
+        return float(result_h_mb), float(result_l_mb), float(result_h_ipc), float(result_l_ipc)
+    except:
+        return -1, -1, -1, -1
+
+def start_pqos(lp_core='[3-17,30-44]', hp_core='[18-27,46-55]', path='pqos_output/pqos.log'):
+    cmd = 'pqos -m all:%s,%s -i 5 > %s &'%(hp_core, lp_core, path)
+    os.system(cmd)
+
+def run(qps_target, static_flag=0, use_sys_bw=0, lp_core='18-27,46-55'):
+    sysbw = 1
+    #c = PID()
+    c = MAPID(p=1, i=4)
+    m = MBA(0, 5, lp_core)
+    start_pqos()
+    print "hp_mb","lp_mb","hp_ipc","lp_ipc","level_now"
+    while 1:
+        hp_mb,lp_mb,hp_ipc,lp_ipc = return_performance()
+        if hp_mb==-1 and lp_mb==-1:
+            time.sleep(5)
+            continue
+        if static_flag:
+            print hp_mb,lp_mb,hp_ipc,lp_ipc,m.get_level()
+        if not static_flag:
+            if (hp_mb > 0) and (use_sys_bw==0):
+                error_percentage = qps_target/hp_mb - 1.0
+            elif (hp_mb > 0) and (use_sys_bw==1):
+                error_percentage = qps_target/(hp_mb + lp_mb) -1.0
+            else:
+                error_percentage = 0.0
+            l = c.e2l(error_percentage)
+            print ",".join([str(hp_mb),str(lp_mb),str(hp_ipc),str(lp_ipc), str(m.get_level())])
+            m.change_levels(l)
+        time.sleep(5)
+
+if __name__ == "__main__":
+    qps = int(sys.argv[1])
+    static_flag = int(sys.argv[2])
+    use_sys_bw =  int(sys.argv[3])
+    run(qps, static_flag, use_sys_bw, lp_core='3-17,30-44')

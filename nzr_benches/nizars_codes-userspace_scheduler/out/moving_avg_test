@@ -1,0 +1,742 @@
+112
+503
+the server IP is =  127.0.0.1 .
+the core start is 0 and core end is 49 .
+Server#0(0-49) is listening on port#47001
+numThreads: 50 test for 660TopK value: 2 seconds
+
+TCPServer Waiting for client on port 47001
+Server#1(28-77) is listening on port#47002
+numThreads: 50 test for 660TopK value: 2 seconds
+
+TCPServer Waiting for client on port 47002
+set client to y_client.sh 20 47001 127.0.0.1 /91-111/ 1 500 20000  2
+Client1 launched without corepin, will request to Server on port  47002
+Client2 launched without corepin, will request to Server on port  47001
+Client3 launched without corepin, will request to Server on port  47002
+Client4 launched without corepin, will request to Server on port  47001
+Client5 launched without corepin, will request to Server on port  47002
+Client6 launched without corepin, will request to Server on port  47001
+Client7 launched without corepin, will request to Server on port  47002
+Client8 launched without corepin, will request to Server on port  47001
+Client9 launched without corepin, will request to Server on port  47002
+Client10 launched without corepin, will request to Server on port  47001
+Client Number: 2 is on 
+Client Number: 1 is on 
+Client11 launched without corepin, will request to Server on port  47002
+Client Number: 3 is on 
+Client Number: 4 is on 
+Client12 launched without corepin, will request to Server on port  47001
+Client Number: 5 is on 
+Client13 launched without corepin, will request to Server on port  47002
+Client Number: 7 is on 
+Client14 launched without corepin, will request to Server on port  47001
+Client Number: 8 is on 
+Client15 launched without corepin, will request to Server on port  47002
+Client Number: 6 is on 
+Client16 launched without corepin, will request to Server on port  47001
+Client Number: 9 is on 
+Client17 launched without corepin, will request to Server on port  47002
+Client Number: 10 is on 
+Client18 launched without corepin, will request to Server on port  47001
+Client Number: 11 is on 
+Client19 launched without corepin, will request to Server on port  47002
+Client Number: 12 is on 
+Client20 launched without corepin, will request to Server on port  47001
+Client Number: 13 is on 
+Client Number: 14 is on 
+Client Number: 15 is on 
+Client Number: 16 is on 
+Client Number: 17 is on 
+Client Number: 18 is on 
+Client Number: 19 is on 
+Client Number: 20 is on 
+Client#7 got connected to server at socket5
+Client#4 got connected to server at socket5
+Client#10 got connected to server at socket5
+Client#2 got connected to server at socket5
+Client#17 got connected to server at socket5
+Client#8 got connected to server at socket5
+Client#9 got connected to server at socket5
+Client#12 got connected to server at socket5
+Client#19 got connected to server at socket5
+Client#14 got connected to server at socket5
+Client#15 got connected to server at socket5
+Client#11 got connected to server at socket5
+Client#16 got connected to server at socket5
+Client#3 got connected to server at socket5
+Client#6 got connected to server at socket5
+Client#13 got connected to server at socket5
+Client#20 got connected to server at socket5
+Client#5 got connected to server at socket5
+Client#18 got connected to server at socket5
+Client#1 got connected to server at socket5
+Accepted connection on descriptor 256 (host=127.0.0.1, port=52218)
+Accepted connection on descriptor 257 (host=127.0.0.1, port=52226)
+Accepted connection on descriptor 258 (host=127.0.0.1, port=52230)
+Accepted connection on descriptor 259 (host=127.0.0.1, port=52234)
+Accepted connection on descriptor 260 (host=127.0.0.1, port=52238)
+Accepted connection on descriptor 261 (host=127.0.0.1, port=52240)
+Accepted connection on descriptor 262 (host=127.0.0.1, port=52244)
+Accepted connection on descriptor 263 (host=127.0.0.1, port=52248)
+Accepted connection on descriptor 264 (host=127.0.0.1, port=52252)
+Accepted connection on descriptor 265 (host=127.0.0.1, port=52256)
+1965.19
+Accepted connection on descriptor 256 (host=127.0.0.1, port=48082)
+Accepted connection on descriptor 257 (host=127.0.0.1, port=48084)
+Accepted connection on descriptor 258 (host=127.0.0.1, port=48086)
+Accepted connection on descriptor 259 (host=127.0.0.1, port=48090)
+Accepted connection on descriptor 260 (host=127.0.0.1, port=48094)
+Accepted connection on descriptor 261 (host=127.0.0.1, port=48098)
+Accepted connection on descriptor 262 (host=127.0.0.1, port=48104)
+Accepted connection on descriptor 263 (host=127.0.0.1, port=48108)
+Accepted connection on descriptor 264 (host=127.0.0.1, port=48112)
+Accepted connection on descriptor 265 (host=127.0.0.1, port=48116)
+7042.9
+3460.03
+3317.34
+1962.31
+1902.76
+1267.08
+1296.14
+965.731
+966.465
+937.428
+950.576
+962.921
+971.321
+986.172
+1021.58
+977.119
+973.006
+995.357
+984.189
+1060.31
+1019.97
+1123.02
+1097.05
+1011.16
+1016.66
+972.303
+962.436
+958.092
+950.886
+932.763
+903.676
+838.995
+818.383
+872.232
+854.069
+820.121
+808.018
+888.548
+876.399
+872.451
+870.447
+1012.9
+1018.69
+1077.16
+1111.54
+1152.15
+1207.46
+1328.2
+1330.15
+1384.93
+1377.13
+1468
+1458.91
+1208.54
+1211.03
+911.151
+925.958
+857.466
+867.049
+865.631
+889.37
+976.654
+999.257
+1098.35
+1130.35
+1141.25
+1180.43
+1098.13
+1102.65
+1113.92
+1102.23
+1206.77
+1189.91
+1084.4
+1076.53
+1111.16
+1111.46
+1040.79
+1047.1
+969.176
+984.384
+990.364
+985.786
+1001.66
+981.912
+1113.23
+1115.73
+1267.62
+1231.48
+1186.05
+1224.16
+1081.35
+1110.87
+1054.44
+1068.69
+1014.74
+1066.55
+995.384
+985.826
+1017.46
+1006.48
+816.681
+813.65
+803.496
+830.931
+738.063
+743.416
+832.417
+820.988
+931.515
+932.433
+1084.84
+1108.49
+1181.04
+1218.12
+1186.34
+1206.82
+1211.5
+1211.14
+1078.34
+1056.02
+1039.35
+1046.51
+1024.08
+1009.55
+1069.25
+1087.44
+1075.63
+1085.13
+1126.47
+1109.04
+1139.13
+1179.17
+1226.35
+1285.99
+974.359
+1053.94
+969.881
+1051.71
+946.862
+979.447
+961.838
+1041.23
+1082.68
+1180.67
+1208.66
+1279.84
+1233.52
+1303.97
+1277.67
+1339.12
+1113.62
+1138.83
+926.651
+936.719
+801.397
+839.311
+823.32
+880.662
+957.237
+1024.41
+1199.38
+1262.72
+1005.59
+1004.47
+958.146
+979.798
+934.924
+974.204
+1015.84
+1064.35
+1115.88
+1146.24
+1068.34
+1098.25
+1044.59
+1044.95
+1056.08
+1075.1
+1058.51
+1132.35
+993.067
+1007.18
+982.603
+991.53
+973.662
+1011.44
+1170.16
+1185.96
+1031.31
+1031.8
+997.655
+986.672
+890.401
+895.212
+1013.84
+1074.58
+1031.99
+1068.98
+1056.58
+1089.82
+1067.93
+1095.53
+1019.62
+1040.19
+1088.12
+1074.69
+1169.59
+1131.08
+991.917
+977.502
+1049.95
+1061.37
+1005.08
+1020.94
+1022.66
+1042.24
+972.916
+984.225
+972.966
+977.393
+1021.48
+1002.18
+1116.6
+1105.15
+1171.48
+1142.52
+1184.47
+1177.26
+1279.23
+1302.49
+1230.18
+1234.2
+1195.18
+1205.32
+1094.71
+1110.91
+1086.92
+1048.55
+1070.26
+1064.34
+991.01
+1013.52
+1053.56
+1074.73
+1119.94
+1154.45
+1078.84
+1067.65
+1067.01
+1023.2
+989.775
+983.213
+1072.79
+1087.86
+1186.14
+1271.53
+1191.82
+1218.17
+1186.97
+1214.48
+990.721
+1019.51
+1064.72
+1071.82
+1130.14
+1112.87
+1133.8
+1114.26
+1166.9
+1184.95
+1013.41
+998.945
+1041.76
+1068.67
+980.275
+1005.32
+1099.33
+1103.49
+1115.33
+1144.37
+1168.76
+1141.68
+1103.27
+1101.16
+938.986
+937.379
+961.176
+974.066
+982.482
+997.52
+1109.72
+1148.26
+1070.44
+1097.78
+1036.99
+1066.84
+1076.58
+1074.29
+1112.54
+1122.49
+988.528
+1001.39
+935.082
+926.502
+843.559
+838.927
+950.827
+929.876
+1001.57
+974.977
+1215.46
+1188.9
+1204.19
+1157.25
+1146.2
+1127.25
+988.887
+1014.04
+1011.99
+1005.27
+965.511
+961.22
+923.509
+923.491
+942.819
+936.711
+1004.2
+979.553
+1075.14
+1029.96
+1033.09
+1032.57
+1079.77
+1112.47
+1021.58
+1066.18
+1115.41
+1164.47
+1154.56
+1198.03
+1257.95
+1311.39
+1312.95
+1342.75
+1311.07
+1324.54
+1238.5
+1231.95
+1134.41
+1144.43
+1135.44
+1123.12
+1186.88
+1200.7
+1189.64
+1227.93
+1057.7
+1106.82
+1044.7
+1089.58
+988.505
+1010.74
+1075.87
+1119.06
+1124.9
+1168.64
+1176.95
+1257.98
+1196.85
+1294.9
+1206.85
+1279.57
+1219.9
+1283.47
+1119.7
+1162.48
+1092.19
+1099.05
+1026.81
+1089.98
+1015.29
+1101.49
+955.04
+973.9
+922.086
+929.428
+934.64
+955.847
+921.295
+928.014
+813.698
+799.326
+833.723
+855.024
+918.249
+938.603
+1150.44
+1155.47
+1283.5
+1275.04
+1277.48
+1253.34
+1129.31
+1150.96
+1099.36
+1094.21
+1150.36
+1132.74
+1065.8
+1045.32
+1098.46
+1099.5
+1056.16
+1042.91
+972.018
+986.865
+1021.69
+1022.32
+967.8
+949.673
+973.441
+989.384
+970.086
+978.855
+980.731
+981.39
+904.951
+938.749
+861.327
+900.141
+849.982
+912.258
+964.945
+972.134
+1104.77
+1140.46
+1148.59
+1164.14
+1076.33
+1082.26
+1183.3
+1198.85
+1187.1
+1189.48
+1232.89
+1262.02
+1082.37
+1074.4
+953.576
+976.015
+882.736
+870.95
+924.301
+931.527
+1003.07
+1027.59
+1068.89
+1113.15
+1035.78
+1058.62
+1042.32
+1087.82
+1042.83
+1075.4
+1084.38
+1109
+1143.14
+1119.33
+1112.88
+1118.27
+1088.43
+1079.73
+1038.35
+1031.85
+954.792
+971.354
+972.26
+977.576
+1026.26
+1043.62
+1264.71
+1281.76
+1265.62
+1273.43
+1242.06
+1239.98
+1176.18
+1187.88
+1065.97
+1072.26
+1081.09
+1119.43
+1007.16
+991.044
+996.066
+983.154
+1004.86
+971.095
+951.57
+client7 complete
+client4 complete
+949.014
+client8 complete
+client2 complete
+client12 complete
+client10 complete
+client19 complete
+client17 complete
+client3 complete
+client9 complete
+client15 complete
+client14 complete
+client6 complete
+client11 complete
+client5 complete
+client20 complete
+client16 complete
+client13 complete
+client18 complete
+client1 complete
+fully read packets from client:#7 is  14047 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#4 is  13972 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#8 is  13941 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#2 is  13884 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#12 is  13883 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#10 is  13778 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#19 is  14096 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#17 is  13892 while partially is: 0 the percentage of complete : 1
+Bad FD or con reset or pipe closed
+connection closed from Server side
+fully read packets from client:#3 is  14000 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#9 is  14091 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#15 is  13883 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#14 is  13933 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#6 is  13835 while partially is: 0 the percentage of complete : 1
+Bad FD or con reset or pipe closed
+connection closed from Server side
+fully read packets from client:#11 is  14085 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#5 is  14043 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#20 is  13957 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#16 is  13849 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#13 is  13922 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#18 is  13836 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#1 is  13794 while partially is: 0 the percentage of complete : 1
+client start 1 and end 21 Experiment Done. Combining log now....
+client_21_done
+finished all clients
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+worker: complete flag true, finish now
+
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+
+
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+worker: complete flag true, finish now
+
+worker: complete flag true, finish nowworker: complete flag true, finish now
+
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+source process/hwdrc_process.inc.sh
+source hook/pqos_msr.inc.sh
+# source hook/emon.inc.sh
+
+LP_CAT=0x7fff
+LP_MBA=10 # change it if needed
+MLC_DURATION=5
+HP_CORES=60-89,180-209
+LP_CORES=90-119,210-239
+HP_INSTANCES=60
+LP_INSTANCES=60
+hp=mlc_benchmark
+lp=mlc_benchmark
+#mba_scaling $hp $lp
+#KEEP_LP_RUNNING=0
+workload_pair $hp $lp

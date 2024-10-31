@@ -1,0 +1,64 @@
+runspec v6674 started at Sat Jul 30 10:08:36 2016 on ""
+runspec is: /SPECcpu/bin/runspec
+runspec: runspec --define default-platform-flags --iterations=1 --loose --nobuild --rate 8 -c /SPECcpu/config/cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.cfg --define smt --define cores=4 --define physicalfirst --define no-numa --define THP_enabled -T base -o text bwaves
+toolset: linux-suse10-amd64
+
+Locating benchmarks...found 31 benchmarks in 6 benchsets.
+Reading config file '/SPECcpu/config/cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.cfg'
+Running "specperl /SPECcpu/config/sysinfo.rev6914" to gather system information.
+Read 64 total lines from the sysinfo program.
+Read 63 usable lines from the sysinfo program.
+
+
+WARNING: Your config file sets some fields that are also set by sysinfo:
+  hw_cpu_name, hw_disk, hw_nchips, prepared_by, sw_file, sw_os001, sw_state
+To avoid this warning in the future, see
+  http://www.spec.org/cpu2006/Docs/config.html#sysinfo
+
+
+
+Retrieving flags file (Intel-ic16.0-official-linux64.xml)...
+Retrieving flags file (Default-Platform-Flags.xml)...
+Verbosity = 5
+Action    = validate
+Tune      = base
+Ext       = cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+Size      = ref
+Machine   = default
+benchmarks= 410.bwaves
+outputs   = text
+username  = root
+
+Environment settings:
+KMP_AFFINITY = "granularity=fine,compact,1,0"
+LD_LIBRARY_PATH = "/SPECcpu/libs/32:/SPECcpu/libs/64:/SPECcpu/sh"
+OMP_NUM_THREADS = "4"
+
+Benchmarks selected: 410.bwaves
+Compiling Binaries
+
+------------------------------------------------------------------------
+  Up to date 410.bwaves base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default
+
+
+Setting Up Run Directories
+  Setting up 410.bwaves ref base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default: existing (run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007)
+
+-----------------------------------
+Running Benchmarks
+
+-----------------------------------
+  Running 410.bwaves ref base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default (8 copies)
+Commands to run:
+    -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000
+    -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001
+    -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002
+    -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003
+    -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004
+    -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005
+    -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006
+    -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007
+    -e bwaves.err ../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/bwaves_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 (timed)
+Specinvoke: /SPECcpu/bin/specinvoke -d /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
+Issuing command '/SPECcpu/bin/specinvoke -d /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q'
+Start command: Sat Jul 30 10:08:37 2016 (1469873317)

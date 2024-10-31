@@ -1,0 +1,14 @@
+[global]
+bs=1M
+ioengine=libaio
+rw=randrw
+rwmixread=80
+runtime=1800
+time_based=1
+direct=1
+group_reporting
+iodepth=1
+exitall
+[test]
+filename=/dev/pmem12
+numjobs=28

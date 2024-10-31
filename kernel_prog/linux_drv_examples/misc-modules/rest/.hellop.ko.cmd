@@ -1,0 +1,1 @@
+cmd_/pnpdata/kernel_prog/linux_drv_examples/misc-modules/rest/hellop.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /pnpdata/kernel_prog/linux_drv_examples/misc-modules/rest/hellop.ko /pnpdata/kernel_prog/linux_drv_examples/misc-modules/rest/hellop.o /pnpdata/kernel_prog/linux_drv_examples/misc-modules/rest/hellop.mod.o ;  true

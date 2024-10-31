@@ -1,0 +1,4 @@
+ 
+JAVA_OPTS_C=-Xmx2g -Xms2g -Xmn1536m -XX:+AlwaysPreTouch -XX:ParallelGCThreads=2
+JAVA_OPTS_TI=-Xmx2g -Xms2g -Xmn1536m -XX:+AlwaysPreTouch -XX:ParallelGCThreads=2 >> sut.txt
+echo JAVA_OPTS_BE=-Xmx42000M -Xms42000M -Xmn39480M -XX:+AlwaysPreTouch -XX:-UseAdaptiveSizePolicy -XX:MaxTenuringThreshold=15 -XX:-UseBiasedLocking -XX:+AggressiveOpts -XX:SurvivorRatio=10 -XX:TargetSurvivorRatio=90 -XX:ParallelGCThreads=28 -XX:TargetSurvivorRatio=90 -XX:+UseParallelOldGC -XX:+PrintGCDetails -XX:+PrintHeapAtGC -XX:+PrintGCTimeStamps

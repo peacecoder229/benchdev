@@ -1,0 +1,393 @@
+==============================================================================
+Debug log for CPU2006.  This file contains very detailed debugging
+output from the CPU2006 tools (as if "--verbose 99" had been specified) and is
+typically useful only to developers of the CPU2006 toolset.   
+
+For a successful run, this debug log will be removed automatically, unless you
+specify "--keeptmp" on the command line, or "keeptmp=1" in your config file.
+
+If you file a support request with cpu2006support@spec.org, you may be
+asked to submit this file.
+------------------------------------------------------------------------------
+
+Environment variables that should have been set or changed by shrc:
+SPEC: /SPECcpu
+PATH: /SPECcpu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+SPECPERLLIB: /SPECcpu/bin:/SPECcpu/bin/lib
+LD_LIBRARY_PATH: /SPECcpu/libs/32:/SPECcpu/libs/64:/SPECcpu/sh
+DYLD_LIBRARY_PATH: 
+LC_ALL: C
+LC_LANG: C
+SPECDB_PWD: /SPECcpu
+------------------------------------------------------------------------------
+
+Runspec's verbose version output:
+                 This is the SPEC CPU2006 benchmark tools suite.
+
+Version summary:
+    CPU2006 version: 1.2
+ Benchmarks version: 118
+      Tools version: 118
+    runspec version: 6674 ($Id: runspec 6674 2011-07-21 16:47:54Z CloyceS $)
+
+Tools information:
+ Tools package installed: linux-suse10-amd64
+ File locking method: fcntl(2) (probably network-safe)
+Mode |  UID  |  GID  |   Size  |    Modified Date   | Name
+0755 | 1000  | 100   |  168536 | 15-Apr-2011 22:02:04 | specmake
+0755 | 1000  | 100   | 1365259 | 15-Apr-2011 22:02:05 | specperl
+0755 | 1000  | 100   |   25088 | 15-Apr-2011 22:02:50 | specinvoke
+0755 | 1000  | 100   |   27736 | 15-Apr-2011 22:02:50 | specinvoke_pm
+0755 | 1000  | 100   |  189984 | 15-Apr-2011 22:02:05 | specxz
+0755 | 1000  | 100   |   40560 | 15-Apr-2011 22:02:50 | specmd5sum
+0755 | 0     | 0     |    7623 | 23-Mar-2017 13:27:16 | specdiff
+0755 | 0     | 0     |   89725 | 23-Mar-2017 13:27:16 | specpp
+0755 | 1000  | 100   |  239088 | 15-Apr-2011 22:02:05 | specrxp
+0755 | 0     | 0     |  129039 | 23-Mar-2017 13:27:16 | runspec
+
+Version info for specinvoke (specinvoke): specinvoke r6392
+Version info for specmake (specmake): GNU Make 3.82
+Version info for specrxp (/SPECcpu/bin/specrxp): RXP 1.5.0 Copyright Richard Tobin, LTG, HCRC, University of Edinburgh
+                                                 Modified for use in SPEC benchmarks - 14 April 2011
+Version info for specxz (/SPECcpu/bin/specxz): xz (XZ Utils) 5.0.0
+Version info for specpp (/SPECcpu/bin/specperl): filepp version 1.8.0SPEC
+Version info for specperl (/SPECcpu/bin/specperl): This is specperl 5, version 12, subversion 3 (v5.12.3) built for x86_64-linux
+                                                   For more detail on specperl, say 'specperl -V'
+
+==============================================================================
+
+1469514783.36: runspec v6674 started at Tue Jul 26 06:33:02 2016 on ""
+1469514783.36: runspec is: /SPECcpu/bin/runspec
+1469514783.36: runspec: runspec --define default-platform-flags --iterations=1 --loose --nobuild --rate 16 -c /SPECcpu/config/cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.cfg --define smt --define cores=8 --define physicalfirst --define no-numa --define THP_enabled -T base -o text bwaves
+1469514783.36: toolset: linux-suse10-amd64
+
+1469514783.36(0.02s): Locating benchmarks...Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU(?:=\S*)?(?=\s|$)' for DSPEC_CPU in /SPECcpu/benchspec/flags-mandatory.xml
+1469514783.38: Created default regexp '(?:^|(?<=\s))[-/]USPEC_CPU(?:=\S*)?(?=\s|$)' for USPEC_CPU in /SPECcpu/benchspec/flags-mandatory.xml
+1469514783.38: Created default regexp '(?:^|(?<=\s))[-/]DNDEBUG(?:=\S*)?(?=\s|$)' for DNDEBUG in /SPECcpu/benchspec/flags-mandatory.xml
+1469514783.38: Created default regexp '(?:^|(?<=\s))[-/]UNDEBUG(?:=\S*)?(?=\s|$)' for UNDEBUG in /SPECcpu/benchspec/flags-mandatory.xml
+1469514783.38: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_WINDOWS(?:=\S*)?(?=\s|$)' for DSPEC_CPU_WINDOWS in /SPECcpu/benchspec/flags-mandatory.xml
+1469514783.38: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_ILP32(?:=\S*)?(?=\s|$)' for DSPEC_CPU_ILP32 in /SPECcpu/benchspec/flags-mandatory.xml
+1469514783.38: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_P64(?:=\S*)?(?=\s|$)' for DSPEC_CPU_P64 in /SPECcpu/benchspec/flags-mandatory.xml
+1469514783.38: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_LP64(?:=\S*)?(?=\s|$)' for DSPEC_CPU_LP64 in /SPECcpu/benchspec/flags-mandatory.xml
+1469514783.38: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_ILP64(?:=\S*)?(?=\s|$)' for DSPEC_CPU_ILP64 in /SPECcpu/benchspec/flags-mandatory.xml
+1469514783.38: Reading suite directory for 'CPU2006', '/SPECcpu/benchspec'
+1469514783.38:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '400.perlbench'
+1469514783.38:     Evaluated /SPECcpu/benchspec/CPU2006/400.perlbench/Spec/object.pm in 0.001374960s
+1469514783.38:     Instantiated Spec::Benchmark::perlbench400 in 0.000421047s
+1469514783.38:     Finding src.alts took 0.000127077s
+1469514783.38:   Setting up perlbench took 0.002256155s
+
+1469514783.38:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '401.bzip2'
+1469514783.38:     Evaluated /SPECcpu/benchspec/CPU2006/401.bzip2/Spec/object.pm in 0.000353098s
+1469514783.38:     Instantiated Spec::Benchmark::bzip2401 in 0.000211000s
+1469514783.38:     Finding src.alts took 0.000041008s
+1469514783.38:   Setting up bzip2 took 0.000770092s
+
+1469514783.38:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '403.gcc'
+1469514783.38:     Evaluated /SPECcpu/benchspec/CPU2006/403.gcc/Spec/object.pm in 0.000391960s
+1469514783.38:     Instantiated Spec::Benchmark::gcc403 in 0.000224113s
+1469514783.38:     Finding src.alts took 0.000048876s
+1469514783.38:   Setting up gcc took 0.000823021s
+
+1469514783.38:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '410.bwaves'
+1469514783.38:     Evaluated /SPECcpu/benchspec/CPU2006/410.bwaves/Spec/object.pm in 0.000336170s
+1469514783.38:     Instantiated Spec::Benchmark::bwaves410 in 0.000215054s
+1469514783.38:     Finding src.alts took 0.000038147s
+1469514783.38:   Setting up bwaves took 0.000735044s
+
+1469514783.38:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '416.gamess'
+1469514783.38:     Evaluated /SPECcpu/benchspec/CPU2006/416.gamess/Spec/object.pm in 0.000437975s
+1469514783.38:     Instantiated Spec::Benchmark::gamess416 in 0.000218868s
+1469514783.38:     Finding src.alts took 0.000047922s
+1469514783.38:   Setting up gamess took 0.000866175s
+
+1469514783.38:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '429.mcf'
+1469514783.38:     Evaluated /SPECcpu/benchspec/CPU2006/429.mcf/Spec/object.pm in 0.000277996s
+1469514783.38:     Instantiated Spec::Benchmark::mcf429 in 0.000195980s
+1469514783.38:     Finding src.alts took 0.000041008s
+1469514783.38:   Setting up mcf took 0.000716209s
+
+1469514783.38:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '433.milc'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/433.milc/Spec/object.pm in 0.000336885s
+1469514783.39:     Instantiated Spec::Benchmark::milc433 in 0.000276804s
+1469514783.39:     Finding src.alts took 0.000046015s
+1469514783.39:   Setting up milc took 0.000807047s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '434.zeusmp'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/434.zeusmp/Spec/object.pm in 0.000262022s
+1469514783.39:     Instantiated Spec::Benchmark::zeusmp434 in 0.000192881s
+1469514783.39:     Finding src.alts took 0.000036955s
+1469514783.39:   Setting up zeusmp took 0.000631809s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '435.gromacs'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/435.gromacs/Spec/object.pm in 0.000426054s
+1469514783.39:     Instantiated Spec::Benchmark::gromacs435 in 0.000218868s
+1469514783.39:     Finding src.alts took 0.000041962s
+1469514783.39:   Setting up gromacs took 0.000846863s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '436.cactusADM'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/436.cactusADM/Spec/object.pm in 0.000615120s
+1469514783.39:     Instantiated Spec::Benchmark::cactusADM436 in 0.000266075s
+1469514783.39:     Finding src.alts took 0.000109196s
+1469514783.39:   Setting up cactusADM took 0.001178026s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '437.leslie3d'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/437.leslie3d/Spec/object.pm in 0.000315905s
+1469514783.39:     Instantiated Spec::Benchmark::leslie3d437 in 0.000203133s
+1469514783.39:     Finding src.alts took 0.000037193s
+1469514783.39:   Setting up leslie3d took 0.000709057s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '444.namd'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/444.namd/Spec/object.pm in 0.000379086s
+1469514783.39:     Instantiated Spec::Benchmark::namd444 in 0.000204802s
+1469514783.39:     Finding src.alts took 0.000045061s
+1469514783.39:   Setting up namd took 0.000782013s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '445.gobmk'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/445.gobmk/Spec/object.pm in 0.000406981s
+1469514783.39:     Instantiated Spec::Benchmark::gobmk445 in 0.000202894s
+1469514783.39:     Finding src.alts took 0.000046015s
+1469514783.39:   Setting up gobmk took 0.000807047s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '447.dealII'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/447.dealII/Spec/object.pm in 0.000862837s
+1469514783.39:     Instantiated Spec::Benchmark::dealII447 in 0.000347853s
+1469514783.39:     Finding src.alts took 0.000072956s
+1469514783.39:   Setting up dealII took 0.001527786s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '450.soplex'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/450.soplex/Spec/object.pm in 0.000447035s
+1469514783.39:     Instantiated Spec::Benchmark::soplex450 in 0.000243187s
+1469514783.39:     Finding src.alts took 0.000053883s
+1469514783.39:   Setting up soplex took 0.000921011s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '453.povray'
+1469514783.39:     Evaluated /SPECcpu/benchspec/CPU2006/453.povray/Spec/object.pm in 0.000432014s
+1469514783.39:     Instantiated Spec::Benchmark::povray453 in 0.000297070s
+1469514783.39:     Finding src.alts took 0.000055075s
+1469514783.39:   Setting up povray took 0.000958920s
+
+1469514783.39:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '454.calculix'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/454.calculix/Spec/object.pm in 0.000664949s
+1469514783.40:     Instantiated Spec::Benchmark::calculix454 in 0.000286102s
+1469514783.40:     Finding src.alts took 0.000066042s
+1469514783.40:   Setting up calculix took 0.001255989s
+
+1469514783.40:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '456.hmmer'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/456.hmmer/Spec/object.pm in 0.000450134s
+1469514783.40:     Instantiated Spec::Benchmark::hmmer456 in 0.000365973s
+1469514783.40:     Finding src.alts took 0.000055075s
+1469514783.40:   Setting up hmmer took 0.001044035s
+
+1469514783.40:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '458.sjeng'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/458.sjeng/Spec/object.pm in 0.000339031s
+1469514783.40:     Instantiated Spec::Benchmark::sjeng458 in 0.000191927s
+1469514783.40:     Finding src.alts took 0.000038862s
+1469514783.40:   Setting up sjeng took 0.000715971s
+
+1469514783.40:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '459.GemsFDTD'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/459.GemsFDTD/Spec/object.pm in 0.000422001s
+1469514783.40:     Instantiated Spec::Benchmark::GemsFDTD459 in 0.000252962s
+1469514783.40:     Finding src.alts took 0.000046015s
+1469514783.40:   Setting up GemsFDTD took 0.000886202s
+
+1469514783.40:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '462.libquantum'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/462.libquantum/Spec/object.pm in 0.000308037s
+1469514783.40:     Instantiated Spec::Benchmark::libquantum462 in 0.000228882s
+1469514783.40:     Finding src.alts took 0.000041008s
+1469514783.40:   Setting up libquantum took 0.000725985s
+
+1469514783.40:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '464.h264ref'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/464.h264ref/Spec/object.pm in 0.000333071s
+1469514783.40:     Instantiated Spec::Benchmark::h264ref464 in 0.000184774s
+1469514783.40:     Finding src.alts took 0.000039101s
+1469514783.40:   Setting up h264ref took 0.000700951s
+
+1469514783.40:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '465.tonto'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/465.tonto/Spec/object.pm in 0.001477957s
+1469514783.40:     Instantiated Spec::Benchmark::tonto465 in 0.000411034s
+1469514783.40:     Finding src.alts took 0.000085115s
+1469514783.40:   Setting up tonto took 0.002348900s
+
+1469514783.40:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '470.lbm'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/470.lbm/Spec/object.pm in 0.000274897s
+1469514783.40:     Instantiated Spec::Benchmark::lbm470 in 0.000187874s
+1469514783.40:     Finding src.alts took 0.000070095s
+1469514783.40:   Setting up lbm took 0.000679970s
+
+1469514783.40:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '471.omnetpp'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/471.omnetpp/Spec/object.pm in 0.000259876s
+1469514783.40:     Instantiated Spec::Benchmark::omnetpp471 in 0.000181913s
+1469514783.40:     Finding src.alts took 0.000036001s
+1469514783.40:   Setting up omnetpp took 0.000605106s
+
+1469514783.40:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '473.astar'
+1469514783.40:     Evaluated /SPECcpu/benchspec/CPU2006/473.astar/Spec/object.pm in 0.000388861s
+1469514783.41:     Instantiated Spec::Benchmark::astar473 in 0.000216007s
+1469514783.41:     Finding src.alts took 0.000046968s
+1469514783.41:   Setting up astar took 0.000813961s
+
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '481.wrf'
+1469514783.41:     Evaluated /SPECcpu/benchspec/CPU2006/481.wrf/Spec/object.pm in 0.001688004s
+1469514783.41:     Instantiated Spec::Benchmark::wrf481 in 0.000376940s
+1469514783.41:     Finding src.alts took 0.000086069s
+1469514783.41:   Setting up wrf took 0.002524137s
+
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '482.sphinx3'
+1469514783.41:     Evaluated /SPECcpu/benchspec/CPU2006/482.sphinx3/Spec/object.pm in 0.000667095s
+1469514783.41:     Instantiated Spec::Benchmark::sphinx3482 in 0.000282049s
+1469514783.41:     Finding src.alts took 0.000061035s
+1469514783.41:   Setting up sphinx3 took 0.001263142s
+
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '483.xalancbmk'
+1469514783.41:     Evaluated /SPECcpu/benchspec/CPU2006/483.xalancbmk/Spec/object.pm in 0.001173973s
+1469514783.41:     Instantiated Spec::Benchmark::xalancbmk483 in 0.000434875s
+1469514783.41:     Finding src.alts took 0.000084162s
+1469514783.41:   Setting up xalancbmk took 0.001975060s
+
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '998.specrand'
+1469514783.41:     Evaluated /SPECcpu/benchspec/CPU2006/998.specrand/Spec/object.pm in 0.000400066s
+1469514783.41:     Instantiated Spec::Benchmark::specrand998 in 0.000211000s
+1469514783.41:     Finding src.alts took 0.000046015s
+1469514783.41:   Setting up specrand took 0.000834942s
+
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '999.specrand'
+1469514783.41:     Evaluated /SPECcpu/benchspec/CPU2006/999.specrand/Spec/object.pm in 0.000319958s
+1469514783.41:     Instantiated Spec::Benchmark::specrand999 in 0.000248909s
+1469514783.41:     Finding src.alts took 0.000046968s
+1469514783.41:   Setting up specrand took 0.000768185s
+
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'CFP2006.bset'
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'CINT2006.bset'
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'all_c.bset'
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'all_cpp.bset'
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'all_fortran.bset'
+1469514783.41:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'all_mixed.bset'
+1469514783.41: Setting up suite took 0.036382198s
+1469514783.41: Reading suite directory for 'Makefile.defaults', '/SPECcpu/benchspec'
+1469514783.41: Reading suite directory for 'flags-mandatory.xml', '/SPECcpu/benchspec'
+1469514783.41: Reading suite directory for 'version.txt', '/SPECcpu/benchspec'
+1469514783.42: found 31 benchmarks in 6 benchsets.
+1469514783.42: Reading config file '/SPECcpu/config/cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.cfg'
+1469514783.43: Running "specperl /SPECcpu/config/sysinfo.rev6914" to gather system information.
+1469514783.51: Read 64 total lines from the sysinfo program.
+1469514783.51: Read 63 usable lines from the sysinfo program.
+
+
+1469514783.53: WARNING: Your config file sets some fields that are also set by sysinfo:
+1469514783.53:   hw_cpu_name, hw_disk, hw_nchips, prepared_by, sw_file, sw_os001, sw_state
+1469514783.53: To avoid this warning in the future, see
+1469514783.53:   http://www.spec.org/cpu2006/Docs/config.html#sysinfo
+
+
+
+1469514783.54:   '410.bwaves' added
+1469514783.54: Retrieving flags file (Intel-ic16.0-official-linux64.xml)...
+1469514783.57: Retrieving flags file (Default-Platform-Flags.xml)...
+1469514783.59: Verbosity = 5
+1469514783.59: Action    = validate
+1469514783.59: Tune      = base
+1469514783.59: Ext       = cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469514783.59: Size      = ref
+1469514783.59: Machine   = default
+1469514783.59: benchmarks= 410.bwaves
+1469514783.59: outputs   = text
+1469514783.59: username  = root
+
+1469514783.59: Environment settings:
+1469514783.59: KMP_AFFINITY = "granularity=fine,compact,1,0"
+1469514783.59: LD_LIBRARY_PATH = "/SPECcpu/libs/32:/SPECcpu/libs/64:/SPECcpu/sh"
+1469514783.59: OMP_NUM_THREADS = "8"
+
+1469514783.59: Benchmarks selected: 410.bwaves
+1469514783.59: Compiling Binaries
+
+1469514783.59: ------------------------------------------------------------------------
+1469514784.06: Tee child 202 exited with code 0 (exit code=0, signal=0)
+1469514784.07:   Up to date 410.bwaves base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default
+
+
+1469514784.07: Setting Up Run Directories
+1469514784.08:   Setting up 410.bwaves ref base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014/bwaves.in
+1469514784.08: Comparing MD5 hashes:
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/data/ref/input/bwaves.in
+1469514784.08:   252c37ec14393ec2a587213021dd52b6 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015/bwaves.in
+1469514784.10: Comparing MD5 hashes:
+1469514784.10:   0a8cc9b3fcb06a007492ac5e1fff48e9 /SPECcpu/benchspec/CPU2006/410.bwaves/exe/bwaves_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469514784.10:   0a8cc9b3fcb06a007492ac5e1fff48e9 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/bwaves_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469514784.10: created (run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015)
+
+1469514784.10: -----------------------------------
+1469514784.10: Running Benchmarks
+
+1469514784.10: -----------------------------------
+1469514784.12: Comparing MD5 hashes:
+1469514784.12:   0a8cc9b3fcb06a007492ac5e1fff48e9 /SPECcpu/benchspec/CPU2006/410.bwaves/exe/bwaves_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469514784.12:   0a8cc9b3fcb06a007492ac5e1fff48e9 /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/bwaves_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469514784.13: REAPER(check, ) called
+1469514784.13:   Running 410.bwaves ref base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default (16 copies)
+1469514784.14: Commands to run:
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014
+1469514784.14:     -C /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015
+1469514784.14:     -e bwaves.err ../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/bwaves_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 (timed)
+1469514784.15: Specinvoke: /SPECcpu/bin/specinvoke -d /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
+1469514784.15: Issuing command '/SPECcpu/bin/specinvoke -d /SPECcpu/benchspec/CPU2006/410.bwaves/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q'
+1469514784.15: Start command: Tue Jul 26 06:33:04 2016 (1469514784)

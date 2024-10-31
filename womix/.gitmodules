@@ -1,0 +1,3 @@
+[submodule "hwdrc_postsi"]
+	path = hwdrc_postsi
+	url = https://gitlab.devtools.intel.com/longcui/hwdrc_postsi.git

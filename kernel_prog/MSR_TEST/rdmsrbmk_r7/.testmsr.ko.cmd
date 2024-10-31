@@ -1,0 +1,1 @@
+cmd_/pnpdata/exel_process/MSR_TEST/rdmsrbmk_r7/testmsr.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /pnpdata/exel_process/MSR_TEST/rdmsrbmk_r7/testmsr.ko /pnpdata/exel_process/MSR_TEST/rdmsrbmk_r7/testmsr.o /pnpdata/exel_process/MSR_TEST/rdmsrbmk_r7/testmsr.mod.o ;  true

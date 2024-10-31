@@ -1,0 +1,3723 @@
+Slot:	00:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	20
+NUMANode:	0
+
+Slot:	00:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	20
+NUMANode:	0
+
+Slot:	00:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	20
+NUMANode:	0
+
+Slot:	00:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+NUMANode:	0
+
+Slot:	00:0d.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1bbd]
+Rev:	10
+Driver:	pcieport
+NUMANode:	0
+
+Slot:	00:0f.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1bbf]
+Rev:	10
+Driver:	pcieport
+NUMANode:	0
+
+Slot:	00:14.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1bcd]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+ProgIf:	30
+Driver:	xhci_hcd
+NUMANode:	0
+
+Slot:	00:14.2
+Class:	RAM memory [0500]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1bce]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+NUMANode:	0
+
+Slot:	00:14.4
+Class:	Host bridge [0600]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1bfe]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+NUMANode:	0
+
+Slot:	00:15.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1bff]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+Driver:	ismt_smbus
+Module:	i2c_ismt
+NUMANode:	0
+
+Slot:	00:16.0
+Class:	Communication controller [0780]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1be0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+Module:	mei_me
+NUMANode:	0
+
+Slot:	00:16.1
+Class:	Communication controller [0780]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1be1]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+NUMANode:	0
+
+Slot:	00:16.4
+Class:	Communication controller [0780]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1be4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+NUMANode:	0
+
+Slot:	00:17.0
+Class:	SATA controller [0106]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1ba2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+ProgIf:	01
+Driver:	ahci
+NUMANode:	0
+
+Slot:	00:1f.0
+Class:	ISA bridge [0601]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1b81]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+NUMANode:	0
+
+Slot:	00:1f.3
+Class:	Audio device [0403]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1bc8]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+Driver:	snd_hda_intel
+Module:	snd_hda_intel
+NUMANode:	0
+
+Slot:	00:1f.4
+Class:	SMBus [0c05]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1bc9]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+Driver:	i801_smbus
+Module:	i2c_i801
+NUMANode:	0
+
+Slot:	00:1f.5
+Class:	Serial bus controller [0c80]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1bca]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	10
+NUMANode:	0
+
+Slot:	01:00.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Ethernet Controller I225-LM [15f2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	03
+Driver:	igc
+Module:	igc
+NUMANode:	0
+
+Slot:	02:00.0
+Class:	PCI bridge [0604]
+Vendor:	ASPEED Technology, Inc. [1a03]
+Device:	AST1150 PCI-to-PCI Bridge [1150]
+Rev:	06
+NUMANode:	0
+
+Slot:	03:00.0
+Class:	VGA compatible controller [0300]
+Vendor:	ASPEED Technology, Inc. [1a03]
+Device:	ASPEED Graphics Family [2000]
+SVendor:	ASPEED Technology, Inc. [1a03]
+SDevice:	ASPEED Graphics Family [2000]
+Rev:	52
+Driver:	ast
+Module:	ast
+NUMANode:	0
+
+Slot:	04:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	04:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	04:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	04:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	04:01.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Device [352a]
+Rev:	04
+Driver:	pcieport
+NUMANode:	0
+
+Slot:	05:00.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Ethernet Controller X550 [1563]
+SVendor:	Intel Corporation [8086]
+SDevice:	Ethernet Converged Network Adapter X550-T2 [001a]
+PhySlot:	2
+Rev:	01
+Driver:	ixgbe
+Module:	ixgbe
+NUMANode:	0
+
+Slot:	05:00.1
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Ethernet Controller X550 [1563]
+SVendor:	Intel Corporation [8086]
+SDevice:	Ethernet Converged Network Adapter X550-T2 [001a]
+PhySlot:	2
+Rev:	01
+Driver:	ixgbe
+Module:	ixgbe
+NUMANode:	0
+
+Slot:	06:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	06:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	06:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	06:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	07:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	07:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	07:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	07:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	07:01.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Device [352a]
+Rev:	04
+Driver:	pcieport
+NUMANode:	0
+
+Slot:	08:00.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1452]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+PhySlot:	11
+Rev:	11
+Driver:	idpf
+Module:	idpf
+Module:	idpf_test
+NUMANode:	0
+
+Slot:	08:00.1
+Class:	Non-Volatile memory controller [0108]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1457]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+PhySlot:	11
+Rev:	11
+ProgIf:	02
+Module:	nvme
+NUMANode:	0
+
+Slot:	08:00.3
+Class:	Network and computing encryption device [1000]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1455]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+PhySlot:	11
+Rev:	11
+NUMANode:	0
+
+Slot:	08:00.4
+Class:	Processing accelerators [1200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1459]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+PhySlot:	11
+Rev:	11
+NUMANode:	0
+
+Slot:	08:00.6
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1453]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+PhySlot:	11
+Rev:	11
+NUMANode:	0
+
+Slot:	08:00.7
+Class:	Non-Volatile memory controller [0108]
+Vendor:	Intel Corporation [8086]
+Device:	Device [1458]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+PhySlot:	11
+Rev:	11
+NUMANode:	0
+
+Slot:	08:01.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [145a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	11
+NUMANode:	0
+
+Slot:	08:01.1
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [145a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	11
+NUMANode:	0
+
+Slot:	08:01.2
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [145a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	11
+NUMANode:	0
+
+Slot:	08:01.3
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [145a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	11
+NUMANode:	0
+
+Slot:	08:01.4
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [145a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	11
+NUMANode:	0
+
+Slot:	08:01.5
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [145a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	11
+NUMANode:	0
+
+Slot:	08:01.6
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [145a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	11
+NUMANode:	0
+
+Slot:	08:01.7
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Device [145a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	11
+NUMANode:	0
+
+Slot:	68:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	68:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	68:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	68:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	69:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	69:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	69:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	69:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	6a:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	6a:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	6a:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	6a:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	6a:01.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b25]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	6a:02.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0cfe]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	6a:03.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake MSM [09a6]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	6a:03.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake PMON MSM [09a7]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	6a:03.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [09a8]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	6b:00.0
+Class:	Co-processor [0b40]
+Vendor:	Intel Corporation [8086]
+Device:	Device [4940]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	40
+NUMANode:	0
+
+Slot:	6d:00.0
+Class:	Co-processor [0b40]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2710]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	6f:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	6f:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	6f:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	6f:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	74:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	74:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	74:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	74:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	79:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	79:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	79:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	0
+
+Slot:	79:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3250]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3251]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Driver:	isst_if_pci
+Module:	isst_if_mmio
+NUMANode:	0
+
+Slot:	7e:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3252]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:00.3
+Class:	Host bridge [0600]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake IEH [0998]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:00.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3255]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:01.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3240]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:01.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3241]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:01.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3242]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:02.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3240]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:02.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3241]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:02.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3242]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:03.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3240]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:03.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3241]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:03.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3242]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:04.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3240]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:04.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3241]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:04.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3242]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:05.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3245]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:05.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3246]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:05.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3247]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:06.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3245]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:06.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3246]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:06.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3247]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:07.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3245]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:07.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3246]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:07.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3247]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:08.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3245]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:08.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3246]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:08.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3247]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:0c.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:0d.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:0e.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:0f.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:1a.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2880]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:1b.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2880]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:1c.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2880]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7e:1d.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2880]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:00.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:00.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:00.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:00.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:00.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:01.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:01.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:01.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:01.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:01.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:01.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:01.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:01.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:02.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:02.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:02.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:02.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:02.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:02.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:02.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:02.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:03.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:03.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:03.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:03.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:03.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:03.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:03.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:03.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:04.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:04.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:04.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:04.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:04.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:04.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:04.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:04.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:05.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:05.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:05.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:05.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:05.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:05.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:05.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:05.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:06.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:06.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:06.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:06.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:06.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:06.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:06.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:06.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0a.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0a.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0a.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0a.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0a.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0a.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0a.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0a.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0b.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0b.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0b.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0b.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0b.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0b.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0b.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0b.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0c.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0c.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0c.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0c.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0c.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0c.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0c.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0c.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0d.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0d.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0d.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0d.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0d.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0d.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0d.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0d.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0e.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0e.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0e.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0e.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0e.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0e.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0e.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0e.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0f.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0f.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0f.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0f.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0f.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0f.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0f.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:0f.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:10.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:10.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:10.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:10.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:10.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:10.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:10.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:10.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:1d.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [344f]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:1d.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3457]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	0
+
+Slot:	7f:1e.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3258]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	0
+
+Slot:	7f:1e.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3259]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+Driver:	isst_if_mbox_pci
+Module:	isst_if_mbox_pci
+NUMANode:	0
+
+Slot:	7f:1e.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	0
+
+Slot:	7f:1e.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325b]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	0
+
+Slot:	7f:1e.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	0
+
+Slot:	7f:1e.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	0
+
+Slot:	7f:1e.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325e]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	0
+
+Slot:	7f:1e.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325f]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	0
+
+Slot:	80:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	80:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	80:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	80:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	97:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	97:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	97:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	97:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	a7:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	a7:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	a7:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	a7:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	b7:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	b7:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	b7:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	b7:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	c7:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	c7:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	c7:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	c7:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	d7:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	d7:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	d7:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	d7:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	e7:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	e7:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	e7:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	e7:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	e7:01.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b25]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	e7:02.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0cfe]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	e7:03.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake MSM [09a6]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	e7:03.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake PMON MSM [09a7]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	e7:03.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [09a8]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	e8:00.0
+Class:	Co-processor [0b40]
+Vendor:	Intel Corporation [8086]
+Device:	Device [4940]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	40
+NUMANode:	1
+
+Slot:	ea:00.0
+Class:	Co-processor [0b40]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2710]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ec:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	ec:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	ec:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	ec:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	f1:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	f1:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	f1:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	f1:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	f6:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Memory Map/VT-d [09a2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	f6:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake Mesh 2 PCIe [09a4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	f6:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake RAS [09a3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	20
+NUMANode:	1
+
+Slot:	f6:00.4
+Class:	Generic system peripheral [0807]
+Vendor:	Intel Corporation [8086]
+Device:	Device [0b23]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3250]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3251]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Driver:	isst_if_pci
+Module:	isst_if_mmio
+NUMANode:	1
+
+Slot:	fe:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3252]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:00.3
+Class:	Host bridge [0600]
+Vendor:	Intel Corporation [8086]
+Device:	Ice Lake IEH [0998]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:00.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3255]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:01.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3240]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:01.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3241]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:01.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3242]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:02.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3240]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:02.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3241]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:02.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3242]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:03.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3240]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:03.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3241]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:03.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3242]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:04.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3240]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:04.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3241]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:04.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3242]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:05.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3245]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:05.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3246]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:05.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3247]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:06.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3245]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:06.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3246]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:06.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3247]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:07.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3245]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:07.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3246]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:07.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3247]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:08.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3245]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:08.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3246]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:08.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3247]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:0c.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:0d.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:0e.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:0f.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:1a.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2880]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:1b.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2880]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:1c.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2880]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	fe:1d.0
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2880]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:00.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:00.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:00.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:00.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:00.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:00.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:00.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:01.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:01.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:01.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:01.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:01.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:01.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:01.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:01.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:02.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:02.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:02.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:02.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:02.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:02.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:02.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:02.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:03.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:03.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:03.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:03.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:03.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:03.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:03.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:03.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:04.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:04.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:04.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:04.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:04.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:04.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:04.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:04.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:05.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:05.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:05.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:05.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:05.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:05.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:05.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:05.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:06.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:06.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:06.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:06.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:06.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:06.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:06.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:06.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0a.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0a.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0a.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0a.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0a.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0a.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0a.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0a.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0b.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0b.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0b.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0b.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0b.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0b.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0b.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0b.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0c.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0c.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0c.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0c.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0c.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0c.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0c.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0c.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0d.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0d.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0d.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0d.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0d.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0d.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0d.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0d.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0e.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0e.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0e.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0e.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0e.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0e.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0e.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0e.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0f.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0f.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0f.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0f.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0f.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0f.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0f.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:0f.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:10.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:10.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:10.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:10.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:10.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:10.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:10.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:10.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [324d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:1d.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [344f]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:1d.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3457]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+NUMANode:	1
+
+Slot:	ff:1e.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3258]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	1
+
+Slot:	ff:1e.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [3259]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+Driver:	isst_if_mbox_pci
+Module:	isst_if_mbox_pci
+NUMANode:	1
+
+Slot:	ff:1e.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	1
+
+Slot:	ff:1e.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325b]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	1
+
+Slot:	ff:1e.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	1
+
+Slot:	ff:1e.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	1
+
+Slot:	ff:1e.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325e]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	1
+
+Slot:	ff:1e.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Device [325f]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	07
+NUMANode:	1
+

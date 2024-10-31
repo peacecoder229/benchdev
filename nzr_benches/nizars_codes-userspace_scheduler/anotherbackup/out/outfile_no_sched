@@ -1,0 +1,696 @@
+112
+503
+the server IP is =  127.0.0.1 .
+the core start is 0 and core end is 26 .
+Server#0(0-26) is listening on port#47001
+numThreads: 27 test for 660TopK value: 2 seconds
+
+TCPServer Waiting for client on port 47001
+Server#1(28-54) is listening on port#47002
+numThreads: 27 test for 660TopK value: 2 seconds
+
+TCPServer Waiting for client on port 47002
+set client to y_client.sh 20 47001 127.0.0.1 /91-111/ 1 500 20000  2
+Client1 launched without corepin, will request to Server on port  47002
+Client2 launched without corepin, will request to Server on port  47001
+Client3 launched without corepin, will request to Server on port  47002
+Client4 launched without corepin, will request to Server on port  47001
+Client5 launched without corepin, will request to Server on port  47002
+Client6 launched without corepin, will request to Server on port  47001
+Client7 launched without corepin, will request to Server on port  47002
+Client8 launched without corepin, will request to Server on port  47001
+Client9 launched without corepin, will request to Server on port  47002
+Client Number: 1 is on 
+Client10 launched without corepin, will request to Server on port  47001
+Client Number: 2 is on 
+Client Number: 3 is on 
+Client Number: 4 is on 
+Client11 launched without corepin, will request to Server on port  47002
+Client12 launched without corepin, will request to Server on port  47001
+Client13 launched without corepin, will request to Server on port  47002
+Client14 launched without corepin, will request to Server on port  47001
+Client Number: 6 is on 
+Client Number: 5 is on 
+Client15 launched without corepin, will request to Server on port  47002
+Client Number: 8 is on 
+Client16 launched without corepin, will request to Server on port  47001
+Client Number: 7 is on 
+Client17 launched without corepin, will request to Server on port  47002
+Client18 launched without corepin, will request to Server on port  47001
+Client Number: 10 is on 
+Client Number: 9 is on 
+Client Number: 11 is on 
+Client19 launched without corepin, will request to Server on port  47002
+Client Number: 12 is on 
+Client20 launched without corepin, will request to Server on port  47001
+Client Number: 13 is on 
+Client Number: 15 is on 
+Client Number: 14 is on 
+Client Number: 17 is on 
+Client Number: 16 is on 
+Client Number: 18 is on 
+Client Number: 19 is on 
+Client Number: 20 is on 
+Client#1 got connected to server at socket5
+Client#8 got connected to server at socket5
+Client#12 got connected to server at socket5
+Client#15 got connected to server at socket5
+Client#4 got connected to server at socket5
+Client#2 got connected to server at socket5
+Client#19 got connected to server at socket5
+Client#17 got connected to server at socket5
+Client#10 got connected to server at socket5
+Client#3 got connected to server at socket5
+Accepted connection on descriptor 141 (host=127.0.0.1, port=59856)
+Accepted connection on descriptor 142 (host=127.0.0.1, port=59858)
+Accepted connection on descriptor 143 (host=127.0.0.1, port=59862)
+Accepted connection on descriptor 144 (host=127.0.0.1, port=59864)
+Accepted connection on descriptor 145 (host=127.0.0.1, port=59870)
+7968.66
+Accepted connection on descriptor 141 (host=127.0.0.1, port=44178)
+Accepted connection on descriptor 142 (host=127.0.0.1, port=44184)
+Accepted connection on descriptor 143 (host=127.0.0.1, port=44190)
+Accepted connection on descriptor 144 (host=127.0.0.1, port=44192)
+Accepted connection on descriptor 145 (host=127.0.0.1, port=44196)
+3679.47
+Client#20 got connected to server at socket5
+Client#13 got connected to server at socket5
+Client#14 got connected to server at socket5
+Client#16 got connected to server at socket5
+Client#11 got connected to server at socket5
+Client#7 got connected to server at socket5
+Client#6 got connected to server at socket5
+Client#9 got connected to server at socket5
+Client#18 got connected to server at socket5
+Client#5 got connected to server at socket5
+Accepted connection on descriptor 146 (host=127.0.0.1, port=59874)
+Accepted connection on descriptor 147 (host=127.0.0.1, port=59878)
+Accepted connection on descriptor 148 (host=127.0.0.1, port=59880)
+Accepted connection on descriptor 149 (host=127.0.0.1, port=59886)
+Accepted connection on descriptor 150 (host=127.0.0.1, port=59890)
+1414.68
+Accepted connection on descriptor 146 (host=127.0.0.1, port=44200)
+Accepted connection on descriptor 147 (host=127.0.0.1, port=44206)
+Accepted connection on descriptor 148 (host=127.0.0.1, port=44208)
+Accepted connection on descriptor 149 (host=127.0.0.1, port=44212)
+Accepted connection on descriptor 150 (host=127.0.0.1, port=44216)
+1429.74
+829.843
+848.473
+576.038
+570.955
+421.15
+420.591
+443.818
+424.878
+509.667
+513.012
+488.425
+473.969
+415.203
+415.295
+490.447
+493.1
+490.711
+489.941
+502.505
+499.388
+414.841
+407.415
+422.287
+433.36
+464.94
+452.756
+414.166
+410.378
+361.377
+357.084
+422.205
+412.114
+435.748
+432.371
+430.658
+416.347
+427.149
+418.498
+514.085
+515.179
+517.862
+524.772
+551.756
+557.631
+608.369
+576.425
+627.822
+612.866
+516.254
+521.08
+413.356
+415.815
+362.113
+363.368
+417.453
+423.992
+454.192
+459.838
+451.511
+462.905
+503.092
+510.088
+531.603
+532.694
+458.516
+467.541
+506.877
+531.968
+579.825
+584.966
+482.723
+479.106
+446.804
+457.578
+451.482
+446.276
+429.581
+437.149
+433.584
+443.389
+506.562
+512.925
+552.391
+550.059
+540.671
+555.193
+448.899
+454.579
+429.96
+432.638
+416.825
+414.987
+401.898
+400.48
+422.436
+428.238
+403.639
+407.89
+380.896
+379.74
+364.645
+388.953
+402.031
+424.311
+448.298
+469.959
+460.593
+459.159
+490.064
+479.558
+493.388
+490.194
+497.784
+509.903
+444.353
+449.704
+454.771
+453.643
+489.366
+476.218
+498.887
+516.4
+505.248
+505.185
+532.47
+522.721
+456.194
+461.053
+561.657
+588.138
+454.762
+455.8
+408.111
+403.42
+410.305
+421.117
+469.675
+476.477
+615.478
+643.339
+701.417
+710.894
+528.375
+534.66
+501.073
+497.827
+484.967
+484.467
+402.332
+399.952
+357.819
+353.217
+482.003
+473.69
+491.468
+489.343
+522.504
+533.145
+447.432
+442.461
+443.099
+444.981
+548.006
+538.346
+479.911
+495.437
+522.471
+523.035
+464.865
+446.949
+423.626
+438.369
+499.75
+497.81
+546.054
+536.976
+450.828
+440.975
+464.656
+467.122
+598.515
+598.099
+538.397
+529.419
+389.656
+386.192
+438.202
+427.106
+444.976
+435.435
+517.093
+514.5
+458.486
+446.244
+451.671
+456.686
+526.59
+504.909
+481.751
+473.863
+599.359
+574.611
+605.848
+583.596
+429.076
+427.557
+476.198
+482.511
+489.081
+468.885
+402.405
+401.685
+414.419
+423.699
+539.024
+554.128
+483.127
+464.177
+465.641
+443.098
+552.311
+548.962
+571.227
+576.872
+476.217
+460.077
+517.608
+509.155
+545.672
+559.771
+483.799
+482.134
+483.967
+492.733
+486.194
+470.504
+463.5
+471.313
+488.263
+489.178
+425.808
+433.982
+473.456
+460.93
+446.731
+470.725
+531.748
+550.505
+644.775
+631.817
+482.527
+473.839
+462.81
+444.365
+463.158
+458.12
+507.783
+519.809
+619.804
+577.61
+490.153
+483.121
+541.825
+529.691
+440.335
+423.487
+504.164
+503.793
+442.357
+458.477
+501.763
+513.971
+515.669
+513.274
+492.444
+483.989
+452.594
+439.288
+389.271
+407.863
+526.576
+535.505
+519.744
+509.693
+490.831
+469.585
+407.434
+410.66
+476.741
+482.47
+494.333
+492.791
+435.169
+420.772
+411.961
+401.726
+373.953
+376.145
+385.796
+404.076
+550.468
+540.242
+592.798
+597.212
+548.988
+549.598
+467.17
+448.651
+432.722
+443.606
+410.78
+414.913
+438.648
+448.82
+407.692
+396.669
+440.651
+449.278
+446.899
+455.018
+463.51
+470.772
+456.975
+466.707
+440.52
+453.605
+491.646
+486.062
+470.825
+459.951
+499.854
+490.704
+575.856
+573.789
+598.604
+591.523
+500.167
+485.339
+547.385
+536.06
+465.333
+453.846
+454.164
+446.725
+560.208
+560.69
+621.113
+607.433
+467.935
+447.723
+465.256
+455.051
+504.285
+495.685
+481.66
+491.281
+594.895
+585.809
+623.242
+603.679
+592.891
+570.77
+497.968
+486.004
+515.374
+516.992
+539.347
+509.527
+463.23
+454.489
+458.994
+461.644
+487.522
+512.416
+426.181
+420.979
+377.971
+396.785
+427.606
+430.416
+434.454
+420.963
+365.409
+361.241
+401.976
+419.116
+527.002
+519.291
+579.326
+595.252
+555.292
+540.805
+520.473
+506.095
+472.822
+473.292
+462.884
+480.196
+550.454
+511.255
+463.208
+443.5
+462.165
+485.294
+454.935
+440.785
+422.816
+420.625
+481.477
+454.873
+388.105
+381.595
+413.104
+419.069
+492.3
+485.804
+414.845
+403.41
+369.908
+372.227
+403.228
+411.403
+480.799
+502.03
+467.691
+455.643
+471.486
+473.833
+482.053
+459.582
+479.716
+483.341
+617.262
+589.989
+559.129
+565.964
+516.517
+508.997
+434.791
+417.192
+410.021
+422.061
+435.447
+430.866
+460.242
+463.983
+500.274
+506.077
+505.495
+491.631
+438.966
+455.622
+479.498
+489.488
+524.934
+524.694
+545.183
+520.161
+475.86
+500.212
+474.06
+471.415
+533.652
+509.306
+440.61
+419.828
+461.73
+443.912
+528.129
+554.262
+659.907
+727.511
+556.873
+552.034
+476.971
+499.942
+511.812
+496.536
+484.853
+451.185
+460.597
+439.41
+434.807
+420.409
+387.335
+388.957
+416.552
+442.73
+458.315
+454.966
+422.677
+425.235
+454.37
+469.478
+497.075
+482.808
+client12 complete
+client1 complete
+client8 complete
+client15 complete
+client4 complete
+client17 complete
+client2 complete
+client10 complete
+client19 complete
+client3 complete
+client20 complete
+client11 complete
+client13 complete
+client14 complete
+client16 complete
+client7 complete
+client18 complete
+client6 complete
+client9 complete
+client5 complete
+fully read packets from client:#12 is  13854 while partially is: 0 the percentage of complete : 1
+507.496
+fully read packets from client:#1 is  13507 while partially is: 0 the percentage of complete : 1
+512.426
+fully read packets from client:#8 is  13964 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#15 is  13495 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#4 is  14155 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#17 is  13623 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#2 is  14005 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#10 is  13808 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#19 is  13637 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#3 is  13517 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#20 is  13960 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#11 is  13531 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#13 is  13636 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#14 is  13849 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#16 is  13652 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#7 is  13420 while partially is: 0 the percentage of complete : 1
+Bad FD or con reset or pipe closed
+connection closed from Server side
+fully read packets from client:#18 is  13592 while partially is: 0 the percentage of complete : 1
+Bad FD or con reset or pipe closed
+connection closed from Server side
+fully read packets from client:#9 is  13787 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#6 is  13702 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#5 is  13581 while partially is: 0 the percentage of complete : 1
+client start 1 and end 21 Experiment Done. Combining log now....
+client_21_done
+finished all clients
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish nowworker: complete flag true, finish nowworker: complete flag true, finish nowworker: complete flag true, finish now
+
+worker: complete flag true, finish nowworker: complete flag true, finish nowworker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+
+
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+
+
+
+worker: complete flag true, finish nowworker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+worker: complete flag true, finish now
+
+worker: complete flag true, finish now
+
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish now
+
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish nowworker: complete flag true, finish nowworker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+
+worker: complete flag true, finish now
+
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now
+worker: complete flag true, finish now

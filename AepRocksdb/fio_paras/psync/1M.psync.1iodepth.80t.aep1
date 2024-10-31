@@ -1,0 +1,13 @@
+[global]
+bs=1M
+ioengine=psync
+rw=randread
+runtime=600
+direct=1
+group_reporting
+iodepth=1
+size=50G
+exitall
+[test]
+filename=/dev/pmem8
+numjobs=80

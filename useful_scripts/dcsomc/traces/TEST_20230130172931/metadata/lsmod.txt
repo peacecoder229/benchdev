@@ -1,0 +1,96 @@
+Module                  Size  Used by
+sepint5              2813952  0
+socperf3              610304  1 sepint5
+pax                    16384  0
+ice                   806912  0
+binfmt_misc            20480  1
+ib_core               413696  0
+rpcsec_gss_krb5        32768  0
+auth_rpcgss           151552  1 rpcsec_gss_krb5
+nfsv4                 819200  2
+nfs                   454656  2 nfsv4
+lockd                 106496  1 nfs
+grace                  16384  1 lockd
+cifs                 1249280  0
+cifs_arc4              16384  1 cifs
+cifs_md4               16384  1 cifs
+vhost_net              28672  0
+vhost                  53248  1 vhost_net
+vhost_iotlb            16384  1 vhost
+tap                    32768  1 vhost_net
+tun                    57344  1 vhost_net
+xt_CHECKSUM            16384  1
+ipt_REJECT             16384  2
+nf_reject_ipv4         16384  1 ipt_REJECT
+xt_conntrack           16384  2
+xt_MASQUERADE          16384  4
+nf_conntrack_netlink    53248  0
+xfrm_user              45056  1
+xt_addrtype            16384  2
+nft_chain_nat          16384  8
+nf_nat                 73728  2 nft_chain_nat,xt_MASQUERADE
+nf_conntrack          196608  4 xt_conntrack,nf_nat,nf_conntrack_netlink,xt_MASQUERADE
+nf_defrag_ipv6         20480  1 nf_conntrack
+nf_defrag_ipv4         16384  1 nf_conntrack
+br_netfilter           28672  0
+bridge                299008  1 br_netfilter
+stp                    16384  1 bridge
+llc                    16384  2 bridge,stp
+nft_compat             20480  28
+nf_tables             274432  229 nft_compat,nft_chain_nat
+nfnetlink              20480  4 nft_compat,nf_conntrack_netlink,nf_tables
+overlay               155648  0
+sunrpc                622592  9 nfsv4,auth_rpcgss,lockd,rpcsec_gss_krb5,nfs
+intel_rapl_msr         16384  0
+intel_rapl_common      24576  1 intel_rapl_msr
+intel_uncore_frequency    16384  0
+intel_uncore_frequency_common    16384  1 intel_uncore_frequency
+x86_pkg_temp_thermal    16384  0
+intel_powerclamp       16384  0
+coretemp               16384  0
+ofpart                 16384  0
+idxd_vdev              36864  0
+spi_nor               106496  0
+iTCO_wdt               16384  0
+pmt_crashlog           16384  0
+intel_pmc_bxt          16384  1 iTCO_wdt
+pmt_telemetry          16384  0
+mtd                    77824  3 spi_nor,ofpart
+intel_sdsi             16384  0
+iTCO_vendor_support    16384  1 iTCO_wdt
+pmt_class              16384  2 pmt_crashlog,pmt_telemetry
+kvm_intel             507904  0
+kvm                  1122304  1 kvm_intel
+joydev                 24576  0
+snd_pcm               139264  0
+isst_if_mbox_pci       16384  0
+isst_if_mmio           16384  0
+idxd                  126976  1 idxd_vdev
+isst_if_common         16384  2 isst_if_mmio,isst_if_mbox_pci
+intel_vsec             16384  0
+i2c_i801               32768  0
+mei_me                 40960  0
+spi_intel_pci          16384  0
+snd_timer              36864  1 snd_pcm
+i2c_smbus              16384  1 i2c_i801
+mei                   151552  1 mei_me
+spi_intel              24576  1 spi_intel_pci
+ipmi_ssif              36864  0
+i2c_ismt               24576  0
+wmi                    28672  0
+ipmi_si                69632  1
+cxl_acpi               16384  0
+cxl_core               73728  1 cxl_acpi
+acpi_power_meter       20480  0
+pfr_update             16384  0
+pfr_telemetry          16384  0
+crc32c_intel           24576  0
+igc                   147456  0
+ast                    69632  0
+drm_vram_helper        20480  1 ast
+drm_ttm_helper         16384  2 drm_vram_helper,ast
+pinctrl_emmitsburg     24576  0
+pinctrl_intel          28672  1 pinctrl_emmitsburg
+sr_mod                 28672  0
+cdrom                  65536  1 sr_mod
+fuse                  147456  1

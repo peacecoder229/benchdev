@@ -1,0 +1,13 @@
+[global]
+bs=1M
+ioengine=libaio
+rw=randread
+runtime=600
+direct=1
+group_reporting
+iodepth=16
+size=50G
+exitall
+[test]
+filename=/dev/pmem8
+numjobs=48

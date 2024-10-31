@@ -1,0 +1,220 @@
+##############################################################################
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+#                                                                            #
+# 'reportable' flag not set during run                                       #
+# 471.omnetpp (base) did not have enough runs!                               #
+# 456.hmmer (base) did not have enough runs!                                 #
+# 445.gobmk (base) did not have enough runs!                                 #
+# 458.sjeng (base) did not have enough runs!                                 #
+# 429.mcf (base) did not have enough runs!                                   #
+# 473.astar (base) did not have enough runs!                                 #
+# 483.xalancbmk (base) did not have enough runs!                             #
+# 400.perlbench (base) did not have enough runs!                             #
+# 464.h264ref (base) did not have enough runs!                               #
+# 462.libquantum (base) did not have enough runs!                            #
+# 401.bzip2 (base) did not have enough runs!                                 #
+# 403.gcc (base) did not have enough runs!                                   #
+#                                                                            #
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+##############################################################################
+                           SPEC(R) CINT2006 Summary
+                     Intel Corporation System Model Name
+                           Thu Jul 19 03:05:20 2018
+
+CPU2006 License: 13                                      Test date: Jul-2018
+Test sponsor: Intel Corporation              Hardware availability: Dec-2010
+Tested by:    Intel Corporation              Software availability: Aug-2015
+
+                                  Estimated                       Estimated
+                Base     Base       Base        Peak     Peak       Peak
+Benchmarks     Copies  Run Time     Rate       Copies  Run Time     Rate 
+-------------- ------  ---------  ---------    ------  ---------  ---------
+400.perlbench                               NR                                 
+401.bzip2                                   NR                                 
+403.gcc                                     NR                                 
+429.mcf             8        221        330 *                                  
+445.gobmk                                   NR                                 
+456.hmmer                                   NR                                 
+458.sjeng                                   NR                                 
+462.libquantum                              NR                                 
+464.h264ref                                 NR                                 
+471.omnetpp                                 NR                                 
+473.astar                                   NR                                 
+483.xalancbmk                               NR                                 
+==============================================================================
+400.perlbench                               NR                                 
+401.bzip2                                   NR                                 
+403.gcc                                     NR                                 
+429.mcf             8        221        330 *                                  
+445.gobmk                                   NR                                 
+456.hmmer                                   NR                                 
+458.sjeng                                   NR                                 
+462.libquantum                              NR                                 
+464.h264ref                                 NR                                 
+471.omnetpp                                 NR                                 
+473.astar                                   NR                                 
+483.xalancbmk                               NR                                 
+ Est. SPECint(R)_rate_base2006          330
+ Est. SPECint_rate2006                                              Not Run
+
+
+                                   HARDWARE
+                                   --------
+            CPU Name: Genuine Intel 0000%@
+ CPU Characteristics:  
+             CPU MHz: 3000
+                 FPU: Integrated
+      CPU(s) enabled: 9999 cores, 1 chip, 9999 cores/chip, 9999 threads/core
+    CPU(s) orderable: 9999 chip
+       Primary Cache: 9999 KB I + 9999 KB D on chip per core
+     Secondary Cache: 9999 MB I+D on chip per core
+            L3 Cache: None
+         Other Cache: None
+              Memory: 9999 GB
+                      187.589 GB fixme: If using DDR3, format is:
+                      'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'
+      Disk Subsystem: 10 GB  add more disk info here
+      Other Hardware: None
+
+
+                                   SOFTWARE
+                                   --------
+    Operating System: openSUSE 42.2 (x86_64)
+                      4.14.10-300.fc27.x86_64
+            Compiler: C/C++: Version 16.0 of Intel C++ Studio XE
+                      for Linux
+       Auto Parallel: Yes
+         File System: xfs
+        System State: Run level N (add definition here)
+       Base Pointers: 32/64-bit
+       Peak Pointers: 32/64-bit
+      Other Software: Microquill SmartHeap V10.2
+
+
+                            Operating System Notes
+                            ----------------------
+     Stack size set to unlimited using "ulimit -s unlimited"
+
+                                Platform Notes
+                                --------------
+     Sysinfo program /SPECcpu/config/sysinfo.rev6914
+     $Rev: 6914 $ $Date:: 2014-06-25 #$ e3fbb8667b5a285932ceab81e28219e1
+     running on  Thu Jul 19 03:05:22 2018
+    
+     This section contains SUT (System Under Test) info as seen by
+     some common utilities.  To remove or add to this section, see:
+       http://www.spec.org/cpu2006/Docs/config.html#sysinfo
+    
+     From /proc/cpuinfo
+        model name : Genuine Intel(R) CPU 0000%@
+           1 "physical id"s (chips)
+           32 "processors"
+        cores, siblings (Caution: counting these is hw and system dependent.  The
+        following excerpts from /proc/cpuinfo might not be reliable.  Use with
+        caution.)
+           cpu cores : 16
+           siblings  : 32
+           physical 0: cores 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+        cache size : 22528 KB
+    
+     From /proc/meminfo
+        MemTotal:       196701668 kB
+        HugePages_Total:       0
+        Hugepagesize:       2048 kB
+    
+     From /etc/*release* /etc/*version*
+        SuSE-release:
+           openSUSE 42.2 (x86_64)
+           VERSION = 42.2
+           CODENAME = Malachite
+           # /etc/SuSE-release is deprecated and will be removed in the future, use
+           /etc/os-release instead
+        os-release:
+           NAME="openSUSE Leap"
+           VERSION="42.2"
+           ID=opensuse
+           ID_LIKE="suse"
+           VERSION_ID="42.2"
+           PRETTY_NAME="openSUSE Leap 42.2"
+           ANSI_COLOR="0;32"
+           CPE_NAME="cpe:/o:opensuse:leap:42.2"
+    
+     uname -a:
+        Linux 90e7c38ed682 4.14.10-300.fc27.x86_64 #1 SMP Mon Jan 1 02:40:17 UTC 2018
+        x86_64 x86_64 x86_64 GNU/Linux
+    
+    
+     SPEC is set to: /SPECcpu
+        Filesystem
+        Type  Size  Used Avail Use% Mounted on
+        /dev/mapper/docker-8:37-917508-b402eff75eca246039d09fa511ceccdccd6c9c7123ff02d42249cf533e6ee18a xfs    10G  4.0G  6.1G  40% /
+    
+     (End of data from sysinfo program)
+
+                                General Notes
+                                -------------
+    Environment variables set by runspec before the start of the run:
+    KMP_AFFINITY = "granularity=fine,compact,1,0"
+    LD_LIBRARY_PATH = "/SPECcpu/libs/32:/SPECcpu/libs/64:/SPECcpu/sh"
+    OMP_NUM_THREADS = "4"
+    
+     Binaries compiled on a system with 1x Intel Core i5-4670K CPU + 32GB
+     memory using RedHat EL 7.1
+     Transparent Huge Pages enabled with:
+     echo always > /sys/kernel/mm/transparent_hugepage/enabled
+
+                           Base Compiler Invocation
+                           ------------------------
+C benchmarks:
+
+ 429.mcf: icc  -m64
+
+
+                            Base Portability Flags
+                            ----------------------
+ 429.mcf: -DSPEC_CPU_LP64
+
+
+                           Base Optimization Flags
+                           -----------------------
+C benchmarks:
+
+ 429.mcf: -xSSE4.2 -ipo -O3 -no-prec-div -parallel -opt-prefetch -auto-p32
+
+
+                               Base Other Flags
+                               ----------------
+C benchmarks:
+
+ 429.mcf: No flags used
+
+
+    SPEC and SPECint are registered trademarks of the Standard Performance
+    Evaluation Corporation.  All other brand and product names appearing
+    in this result are trademarks or registered trademarks of their
+    respective holders.
+##############################################################################
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+#                                                                            #
+# 'reportable' flag not set during run                                       #
+# 471.omnetpp (base) did not have enough runs!                               #
+# 456.hmmer (base) did not have enough runs!                                 #
+# 445.gobmk (base) did not have enough runs!                                 #
+# 458.sjeng (base) did not have enough runs!                                 #
+# 429.mcf (base) did not have enough runs!                                   #
+# 473.astar (base) did not have enough runs!                                 #
+# 483.xalancbmk (base) did not have enough runs!                             #
+# 400.perlbench (base) did not have enough runs!                             #
+# 464.h264ref (base) did not have enough runs!                               #
+# 462.libquantum (base) did not have enough runs!                            #
+# 401.bzip2 (base) did not have enough runs!                                 #
+# 403.gcc (base) did not have enough runs!                                   #
+#                                                                            #
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+##############################################################################
+-----------------------------------------------------------------------------
+For questions about this result, please contact the tester.
+For other inquiries, please contact webmaster@spec.org.
+Copyright 2006-2018 Standard Performance Evaluation Corporation
+Tested with SPEC CPU2006 v1.2.
+Report generated on Thu Jul 19 03:09:13 2018 by CPU2006 ASCII formatter v6400.

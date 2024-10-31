@@ -1,0 +1,13 @@
+#!/bin/bash
+
+/mnt/original_pnp/pnpdata_original/hwpdesire/hwpdesire.sh -a 3700000
+/mnt/original_pnp/pnpdata_original/hwpdesire/hwpdesire.sh -m 1000000
+
+
+
+        # disable C1E, C3, C6
+        cpupower idle-set -e 0
+        cpupower idle-set -e 1
+        cpupower idle-set -d 2
+        cpupower idle-set -d 3
+#       cpupower idle-set -d 4

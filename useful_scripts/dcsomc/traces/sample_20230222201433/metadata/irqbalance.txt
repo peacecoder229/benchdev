@@ -1,0 +1,15 @@
+○ irqbalance.service - irqbalance daemon
+     Loaded: loaded (/usr/lib/systemd/system/irqbalance.service; enabled; vendor preset: enabled)
+     Active: inactive (dead) since Wed 2022-07-13 20:13:30 EDT; 7 months 10 days ago
+       Docs: man:irqbalance(1)
+             https://github.com/Irqbalance/irqbalance
+    Process: 3485 ExecStart=/usr/sbin/irqbalance --foreground $IRQBALANCE_ARGS (code=exited, status=0/SUCCESS)
+   Main PID: 3485 (code=exited, status=0/SUCCESS)
+        CPU: 1.472s
+
+Jul 13 20:00:22 fedora systemd[1]: Started irqbalance.service - irqbalance daemon.
+Jul 13 20:00:22 fedora /usr/sbin/irqbalance[3485]: libcap-ng used by "/usr/sbin/irqbalance" failed dropping bounding set due to not having CAP_SETPCAP in capng_apply
+Jul 13 20:13:30 fedora systemd[1]: Stopping irqbalance.service - irqbalance daemon...
+Jul 13 20:13:30 fedora systemd[1]: irqbalance.service: Deactivated successfully.
+Jul 13 20:13:30 fedora systemd[1]: Stopped irqbalance.service - irqbalance daemon.
+Jul 13 20:13:30 fedora systemd[1]: irqbalance.service: Consumed 1.472s CPU time.

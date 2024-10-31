@@ -1,0 +1,1 @@
+Linux version 5.19.0-emr.bkc.3.12.16.x86_64 (builder@9e123d92dc3b) (gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-17), GNU ld version 2.30-119.el8) #1 SMP PREEMPT_DYNAMIC Wed Jan 11 23:56:40 UTC 2023

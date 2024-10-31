@@ -1,0 +1,518 @@
+==============================================================================
+Debug log for CPU2006.  This file contains very detailed debugging
+output from the CPU2006 tools (as if "--verbose 99" had been specified) and is
+typically useful only to developers of the CPU2006 toolset.   
+
+For a successful run, this debug log will be removed automatically, unless you
+specify "--keeptmp" on the command line, or "keeptmp=1" in your config file.
+
+If you file a support request with cpu2006support@spec.org, you may be
+asked to submit this file.
+------------------------------------------------------------------------------
+
+Environment variables that should have been set or changed by shrc:
+SPEC: /SPECcpu
+PATH: /SPECcpu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+SPECPERLLIB: /SPECcpu/bin:/SPECcpu/bin/lib
+LD_LIBRARY_PATH: /SPECcpu/libs/32:/SPECcpu/libs/64:/SPECcpu/sh
+DYLD_LIBRARY_PATH: 
+LC_ALL: C
+LC_LANG: C
+SPECDB_PWD: /SPECcpu
+------------------------------------------------------------------------------
+
+Runspec's verbose version output:
+                 This is the SPEC CPU2006 benchmark tools suite.
+
+Version summary:
+    CPU2006 version: 1.2
+ Benchmarks version: 118
+      Tools version: 118
+    runspec version: 6674 ($Id: runspec 6674 2011-07-21 16:47:54Z CloyceS $)
+
+Tools information:
+ Tools package installed: linux-suse10-amd64
+ File locking method: fcntl(2) (probably network-safe)
+Mode |  UID  |  GID  |   Size  |    Modified Date   | Name
+0755 | 1000  | 100   |  168536 | 15-Apr-2011 22:02:04 | specmake
+0755 | 1000  | 100   | 1365259 | 15-Apr-2011 22:02:05 | specperl
+0755 | 1000  | 100   |   25088 | 15-Apr-2011 22:02:50 | specinvoke
+0755 | 1000  | 100   |   27736 | 15-Apr-2011 22:02:50 | specinvoke_pm
+0755 | 1000  | 100   |  189984 | 15-Apr-2011 22:02:05 | specxz
+0755 | 1000  | 100   |   40560 | 15-Apr-2011 22:02:50 | specmd5sum
+0755 | 0     | 0     |    7623 | 23-Mar-2017 13:27:16 | specdiff
+0755 | 0     | 0     |   89725 | 23-Mar-2017 13:27:16 | specpp
+0755 | 1000  | 100   |  239088 | 15-Apr-2011 22:02:05 | specrxp
+0755 | 0     | 0     |  129039 | 23-Mar-2017 13:27:16 | runspec
+
+Version info for specinvoke (specinvoke): specinvoke r6392
+Version info for specmake (specmake): GNU Make 3.82
+Version info for specrxp (/SPECcpu/bin/specrxp): RXP 1.5.0 Copyright Richard Tobin, LTG, HCRC, University of Edinburgh
+                                                 Modified for use in SPEC benchmarks - 14 April 2011
+Version info for specxz (/SPECcpu/bin/specxz): xz (XZ Utils) 5.0.0
+Version info for specpp (/SPECcpu/bin/specperl): filepp version 1.8.0SPEC
+Version info for specperl (/SPECcpu/bin/specperl): This is specperl 5, version 12, subversion 3 (v5.12.3) built for x86_64-linux
+                                                   For more detail on specperl, say 'specperl -V'
+
+==============================================================================
+
+1469878143.91: runspec v6674 started at Sat Jul 30 11:29:02 2016 on ""
+1469878143.91: runspec is: /SPECcpu/bin/runspec
+1469878143.91: runspec: runspec --define default-platform-flags --iterations=1 --loose --nobuild --rate 16 -c /SPECcpu/config/cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.cfg --define smt --define cores=8 --define physicalfirst --define no-numa --define THP_enabled -T base -o text mcf
+1469878143.91: toolset: linux-suse10-amd64
+
+1469878143.92: Locating benchmarks...Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU(?:=\S*)?(?=\s|$)' for DSPEC_CPU in /SPECcpu/benchspec/flags-mandatory.xml
+1469878143.92: Created default regexp '(?:^|(?<=\s))[-/]USPEC_CPU(?:=\S*)?(?=\s|$)' for USPEC_CPU in /SPECcpu/benchspec/flags-mandatory.xml
+1469878143.92: Created default regexp '(?:^|(?<=\s))[-/]DNDEBUG(?:=\S*)?(?=\s|$)' for DNDEBUG in /SPECcpu/benchspec/flags-mandatory.xml
+1469878143.92: Created default regexp '(?:^|(?<=\s))[-/]UNDEBUG(?:=\S*)?(?=\s|$)' for UNDEBUG in /SPECcpu/benchspec/flags-mandatory.xml
+1469878143.92: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_WINDOWS(?:=\S*)?(?=\s|$)' for DSPEC_CPU_WINDOWS in /SPECcpu/benchspec/flags-mandatory.xml
+1469878143.92: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_ILP32(?:=\S*)?(?=\s|$)' for DSPEC_CPU_ILP32 in /SPECcpu/benchspec/flags-mandatory.xml
+1469878143.92: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_P64(?:=\S*)?(?=\s|$)' for DSPEC_CPU_P64 in /SPECcpu/benchspec/flags-mandatory.xml
+1469878143.92: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_LP64(?:=\S*)?(?=\s|$)' for DSPEC_CPU_LP64 in /SPECcpu/benchspec/flags-mandatory.xml
+1469878143.92: Created default regexp '(?:^|(?<=\s))[-/]DSPEC_CPU_ILP64(?:=\S*)?(?=\s|$)' for DSPEC_CPU_ILP64 in /SPECcpu/benchspec/flags-mandatory.xml
+1469878143.92: Reading suite directory for 'CPU2006', '/SPECcpu/benchspec'
+1469878143.92:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '400.perlbench'
+1469878143.92:     Evaluated /SPECcpu/benchspec/CPU2006/400.perlbench/Spec/object.pm in 0.000744104s
+1469878143.92:     Instantiated Spec::Benchmark::perlbench400 in 0.000223160s
+1469878143.92:     Finding src.alts took 0.000031948s
+1469878143.92:   Setting up perlbench took 0.001157045s
+
+1469878143.92:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '401.bzip2'
+1469878143.92:     Evaluated /SPECcpu/benchspec/CPU2006/401.bzip2/Spec/object.pm in 0.000144005s
+1469878143.92:     Instantiated Spec::Benchmark::bzip2401 in 0.000141859s
+1469878143.92:     Finding src.alts took 0.000017881s
+1469878143.92:   Setting up bzip2 took 0.000426054s
+
+1469878143.92:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '403.gcc'
+1469878143.92:     Evaluated /SPECcpu/benchspec/CPU2006/403.gcc/Spec/object.pm in 0.000197887s
+1469878143.92:     Instantiated Spec::Benchmark::gcc403 in 0.000151873s
+1469878143.92:     Finding src.alts took 0.000017881s
+1469878143.92:   Setting up gcc took 0.000489950s
+
+1469878143.92:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '410.bwaves'
+1469878143.92:     Evaluated /SPECcpu/benchspec/CPU2006/410.bwaves/Spec/object.pm in 0.000120878s
+1469878143.92:     Instantiated Spec::Benchmark::bwaves410 in 0.000153065s
+1469878143.92:     Finding src.alts took 0.000018120s
+1469878143.92:   Setting up bwaves took 0.000409842s
+
+1469878143.92:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '416.gamess'
+1469878143.92:     Evaluated /SPECcpu/benchspec/CPU2006/416.gamess/Spec/object.pm in 0.000208855s
+1469878143.92:     Instantiated Spec::Benchmark::gamess416 in 0.000155210s
+1469878143.93:     Finding src.alts took 0.000019073s
+1469878143.93:   Setting up gamess took 0.000509024s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '429.mcf'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/429.mcf/Spec/object.pm in 0.000133991s
+1469878143.93:     Instantiated Spec::Benchmark::mcf429 in 0.000124931s
+1469878143.93:     Finding src.alts took 0.000016928s
+1469878143.93:   Setting up mcf took 0.000386000s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '433.milc'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/433.milc/Spec/object.pm in 0.000163078s
+1469878143.93:     Instantiated Spec::Benchmark::milc433 in 0.000139952s
+1469878143.93:     Finding src.alts took 0.000016928s
+1469878143.93:   Setting up milc took 0.000429869s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '434.zeusmp'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/434.zeusmp/Spec/object.pm in 0.000125170s
+1469878143.93:     Instantiated Spec::Benchmark::zeusmp434 in 0.000131845s
+1469878143.93:     Finding src.alts took 0.000015974s
+1469878143.93:   Setting up zeusmp took 0.000379801s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '435.gromacs'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/435.gromacs/Spec/object.pm in 0.000190973s
+1469878143.93:     Instantiated Spec::Benchmark::gromacs435 in 0.000138998s
+1469878143.93:     Finding src.alts took 0.000017881s
+1469878143.93:   Setting up gromacs took 0.000463009s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '436.cactusADM'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/436.cactusADM/Spec/object.pm in 0.000273943s
+1469878143.93:     Instantiated Spec::Benchmark::cactusADM436 in 0.000157833s
+1469878143.93:     Finding src.alts took 0.000018120s
+1469878143.93:   Setting up cactusADM took 0.000566006s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '437.leslie3d'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/437.leslie3d/Spec/object.pm in 0.000123978s
+1469878143.93:     Instantiated Spec::Benchmark::leslie3d437 in 0.000129938s
+1469878143.93:     Finding src.alts took 0.000016928s
+1469878143.93:   Setting up leslie3d took 0.000388861s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '444.namd'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/444.namd/Spec/object.pm in 0.000154018s
+1469878143.93:     Instantiated Spec::Benchmark::namd444 in 0.000131845s
+1469878143.93:     Finding src.alts took 0.000015974s
+1469878143.93:   Setting up namd took 0.000412941s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '445.gobmk'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/445.gobmk/Spec/object.pm in 0.000165939s
+1469878143.93:     Instantiated Spec::Benchmark::gobmk445 in 0.000130892s
+1469878143.93:     Finding src.alts took 0.000016928s
+1469878143.93:   Setting up gobmk took 0.000423908s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '447.dealII'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/447.dealII/Spec/object.pm in 0.000445843s
+1469878143.93:     Instantiated Spec::Benchmark::dealII447 in 0.000156164s
+1469878143.93:     Finding src.alts took 0.000019073s
+1469878143.93:   Setting up dealII took 0.000746965s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '450.soplex'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/450.soplex/Spec/object.pm in 0.000210047s
+1469878143.93:     Instantiated Spec::Benchmark::soplex450 in 0.000127077s
+1469878143.93:     Finding src.alts took 0.000016928s
+1469878143.93:   Setting up soplex took 0.000470877s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '453.povray'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/453.povray/Spec/object.pm in 0.000185013s
+1469878143.93:     Instantiated Spec::Benchmark::povray453 in 0.000151157s
+1469878143.93:     Finding src.alts took 0.000017881s
+1469878143.93:   Setting up povray took 0.000466824s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '454.calculix'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/454.calculix/Spec/object.pm in 0.000308990s
+1469878143.93:     Instantiated Spec::Benchmark::calculix454 in 0.000158072s
+1469878143.93:     Finding src.alts took 0.000018120s
+1469878143.93:   Setting up calculix took 0.000602007s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '456.hmmer'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/456.hmmer/Spec/object.pm in 0.000187874s
+1469878143.93:     Instantiated Spec::Benchmark::hmmer456 in 0.000129938s
+1469878143.93:     Finding src.alts took 0.000015974s
+1469878143.93:   Setting up hmmer took 0.000447035s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '458.sjeng'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/458.sjeng/Spec/object.pm in 0.000124931s
+1469878143.93:     Instantiated Spec::Benchmark::sjeng458 in 0.000120163s
+1469878143.93:     Finding src.alts took 0.000015974s
+1469878143.93:   Setting up sjeng took 0.000368118s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '459.GemsFDTD'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/459.GemsFDTD/Spec/object.pm in 0.000190973s
+1469878143.93:     Instantiated Spec::Benchmark::GemsFDTD459 in 0.000125170s
+1469878143.93:     Finding src.alts took 0.000018120s
+1469878143.93:   Setting up GemsFDTD took 0.000452042s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '462.libquantum'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/462.libquantum/Spec/object.pm in 0.000128031s
+1469878143.93:     Instantiated Spec::Benchmark::libquantum462 in 0.000124931s
+1469878143.93:     Finding src.alts took 0.000015974s
+1469878143.93:   Setting up libquantum took 0.000379086s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '464.h264ref'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/464.h264ref/Spec/object.pm in 0.000169039s
+1469878143.93:     Instantiated Spec::Benchmark::h264ref464 in 0.000128984s
+1469878143.93:     Finding src.alts took 0.000017166s
+1469878143.93:   Setting up h264ref took 0.000423193s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '465.tonto'
+1469878143.93:     Evaluated /SPECcpu/benchspec/CPU2006/465.tonto/Spec/object.pm in 0.000811815s
+1469878143.93:     Instantiated Spec::Benchmark::tonto465 in 0.000178099s
+1469878143.93:     Finding src.alts took 0.000021219s
+1469878143.93:   Setting up tonto took 0.001142979s
+
+1469878143.93:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '470.lbm'
+1469878143.94:     Evaluated /SPECcpu/benchspec/CPU2006/470.lbm/Spec/object.pm in 0.000110149s
+1469878143.94:     Instantiated Spec::Benchmark::lbm470 in 0.000120878s
+1469878143.94:     Finding src.alts took 0.000016928s
+1469878143.94:   Setting up lbm took 0.000353098s
+
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '471.omnetpp'
+1469878143.94:     Evaluated /SPECcpu/benchspec/CPU2006/471.omnetpp/Spec/object.pm in 0.000125170s
+1469878143.94:     Instantiated Spec::Benchmark::omnetpp471 in 0.000137091s
+1469878143.94:     Finding src.alts took 0.000016928s
+1469878143.94:   Setting up omnetpp took 0.000387907s
+
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '473.astar'
+1469878143.94:     Evaluated /SPECcpu/benchspec/CPU2006/473.astar/Spec/object.pm in 0.000169992s
+1469878143.94:     Instantiated Spec::Benchmark::astar473 in 0.000128031s
+1469878143.94:     Finding src.alts took 0.000016928s
+1469878143.94:   Setting up astar took 0.000426054s
+
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '481.wrf'
+1469878143.94:     Evaluated /SPECcpu/benchspec/CPU2006/481.wrf/Spec/object.pm in 0.000922918s
+1469878143.94:     Instantiated Spec::Benchmark::wrf481 in 0.000182867s
+1469878143.94:     Finding src.alts took 0.000020027s
+1469878143.94:   Setting up wrf took 0.001258850s
+
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '482.sphinx3'
+1469878143.94:     Evaluated /SPECcpu/benchspec/CPU2006/482.sphinx3/Spec/object.pm in 0.000350952s
+1469878143.94:     Instantiated Spec::Benchmark::sphinx3482 in 0.000144005s
+1469878143.94:     Finding src.alts took 0.000019073s
+1469878143.94:   Setting up sphinx3 took 0.000645876s
+
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '483.xalancbmk'
+1469878143.94:     Evaluated /SPECcpu/benchspec/CPU2006/483.xalancbmk/Spec/object.pm in 0.000519037s
+1469878143.94:     Instantiated Spec::Benchmark::xalancbmk483 in 0.000185966s
+1469878143.94:     Finding src.alts took 0.000020027s
+1469878143.94:   Setting up xalancbmk took 0.000852108s
+
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '998.specrand'
+1469878143.94:     Evaluated /SPECcpu/benchspec/CPU2006/998.specrand/Spec/object.pm in 0.000126123s
+1469878143.94:     Instantiated Spec::Benchmark::specrand998 in 0.000122070s
+1469878143.94:     Finding src.alts took 0.000015974s
+1469878143.94:   Setting up specrand took 0.000374079s
+
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', '999.specrand'
+1469878143.94:     Evaluated /SPECcpu/benchspec/CPU2006/999.specrand/Spec/object.pm in 0.000132799s
+1469878143.94:     Instantiated Spec::Benchmark::specrand999 in 0.000127077s
+1469878143.94:     Finding src.alts took 0.000018120s
+1469878143.94:   Setting up specrand took 0.000386000s
+
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'CFP2006.bset'
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'CINT2006.bset'
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'all_c.bset'
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'all_cpp.bset'
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'all_fortran.bset'
+1469878143.94:   Reading benchmark directory for '/SPECcpu/benchspec/CPU2006', '/SPECcpu/benchspec', 'all_mixed.bset'
+1469878143.94: Setting up suite took 0.019353867s
+1469878143.94: Reading suite directory for 'Makefile.defaults', '/SPECcpu/benchspec'
+1469878143.94: Reading suite directory for 'flags-mandatory.xml', '/SPECcpu/benchspec'
+1469878143.94: Reading suite directory for 'version.txt', '/SPECcpu/benchspec'
+1469878143.94: found 31 benchmarks in 6 benchsets.
+1469878143.94: Reading config file '/SPECcpu/config/cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.cfg'
+1469878143.95: Running "specperl /SPECcpu/config/sysinfo.rev6914" to gather system information.
+1469878143.99: Read 64 total lines from the sysinfo program.
+1469878143.99: Read 63 usable lines from the sysinfo program.
+
+
+1469878144.01: WARNING: Your config file sets some fields that are also set by sysinfo:
+1469878144.01:   hw_cpu_name, hw_disk, hw_nchips, prepared_by, sw_file, sw_os001, sw_state
+1469878144.01: To avoid this warning in the future, see
+1469878144.01:   http://www.spec.org/cpu2006/Docs/config.html#sysinfo
+
+
+
+1469878144.02:   '429.mcf' added
+1469878144.02: Retrieving flags file (Intel-ic16.0-official-linux64.xml)...
+1469878144.03: Retrieving flags file (Default-Platform-Flags.xml)...
+1469878144.04: Verbosity = 5
+1469878144.04: Action    = validate
+1469878144.04: Tune      = base
+1469878144.04: Ext       = cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469878144.04: Size      = ref
+1469878144.04: Machine   = default
+1469878144.04: benchmarks= 429.mcf
+1469878144.04: outputs   = text
+1469878144.04: username  = root
+
+1469878144.04: Environment settings:
+1469878144.04: KMP_AFFINITY = "granularity=fine,compact,1,0"
+1469878144.04: LD_LIBRARY_PATH = "/SPECcpu/libs/32:/SPECcpu/libs/64:/SPECcpu/sh"
+1469878144.04: OMP_NUM_THREADS = "8"
+
+1469878144.04: Benchmarks selected: 429.mcf
+1469878144.04: Compiling Binaries
+
+1469878144.04: ------------------------------------------------------------------------
+1469878144.33: Tee child 630 exited with code 0 (exit code=0, signal=0)
+1469878144.33:   Up to date 429.mcf base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default
+
+
+1469878144.33: Setting Up Run Directories
+1469878144.33:   Setting up 429.mcf ref base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/inp.in
+1469878144.35: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001/inp.in
+1469878144.36: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002/inp.in
+1469878144.38: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003/inp.in
+1469878144.40: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004/inp.in
+1469878144.41: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005/inp.in
+1469878144.43: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006/inp.in
+1469878144.44: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007/inp.in
+1469878144.46: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008/inp.in
+1469878144.48: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009/inp.in
+1469878144.49: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010/inp.in
+1469878144.51: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011/inp.in
+1469878144.52: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012/inp.in
+1469878144.54: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013/inp.in
+1469878144.56: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014/inp.in
+1469878144.57: Doing REALLY slow MD5 tests for /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015/inp.in
+1469878144.60: Comparing MD5 hashes:
+1469878144.60:   31a0d69a2552651bf2121ed4f5e8d10c /SPECcpu/benchspec/CPU2006/429.mcf/exe/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469878144.60:   31a0d69a2552651bf2121ed4f5e8d10c /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469878144.60: existing (run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014, run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015)
+
+1469878144.60: -----------------------------------
+1469878144.60: Running Benchmarks
+
+1469878144.60: -----------------------------------
+1469878144.60: Comparing MD5 hashes:
+1469878144.60:   31a0d69a2552651bf2121ed4f5e8d10c /SPECcpu/benchspec/CPU2006/429.mcf/exe/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469878144.60:   31a0d69a2552651bf2121ed4f5e8d10c /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812
+1469878144.61: REAPER(check, ) called
+1469878144.61:   Running 429.mcf ref base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default (16 copies)
+1469878144.62: Commands to run:
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014
+1469878144.62:     -C /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015
+1469878144.62:     -o inp.out -e inp.err ../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in (timed)
+1469878144.62: Specinvoke: /SPECcpu/bin/specinvoke -d /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
+1469878144.62: Issuing command '/SPECcpu/bin/specinvoke -d /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q'
+1469878144.62: Start command: Sat Jul 30 11:29:04 2016 (1469878144)
+1469878509.46: Tee child 654 exited with code 0 (exit code=0, signal=0)
+1469878509.46: Stop command: Sat Jul 30 11:35:09 2016 (1469878509)
+1469878509.46: Elapsed time for command: 00:06:05 (365)
+1469878509.47: specinvoke r6392
+1469878509.47:  Invoked as: /SPECcpu/bin/specinvoke -d /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
+1469878509.47: timer ticks over every 1000 ns
+1469878509.49:  Environment in effect for these runs:
+1469878509.49:  # 1: HOSTNAME=0b9ee3a51310
+1469878509.49:  # 2: SPECPERLLIB=/SPECcpu/bin:/SPECcpu/bin/lib
+1469878509.49:  # 3: WORKLOAD=mcf
+1469878509.49:  # 4: LC_ALL=C
+1469878509.49:  # 5: SPEC=/SPECcpu
+1469878509.49:  # 6: PATH=/SPECcpu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+1469878509.49:  # 7: PWD=/SPECcpu
+1469878509.49:  # 8: CONF=cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.cfg
+1469878509.49:  # 9: INSTANCES=16
+1469878509.49:  #10: HOME=/root
+1469878509.49:  #11: SHLVL=2
+1469878509.49:  #12: LC_LANG=C
+1469878509.49:  #13: _=/SPECcpu/bin/runspec
+1469878509.49:  #14: SPECDB_PWD=/SPECcpu
+1469878509.49:  #15: KMP_AFFINITY=granularity=fine,compact,1,0
+1469878509.49:  #16: LD_LIBRARY_PATH=/SPECcpu/libs/32:/SPECcpu/libs/64:/SPECcpu/sh
+1469878509.49:  #17: OMP_NUM_THREADS=8
+1469878509.49: running commands in speccmds.cmd 1 times
+1469878509.49: runs started at 1469878144, 625318000, Sat Jul 30 11:29:04 2016
+1469878509.49: run 1 started at 1469878144, 625326000, Sat Jul 30 11:29:04 2016
+1469878509.49: child started: 0, 1469878144, 625331000, pid=655, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 1, 1469878144, 625376000, pid=656, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 2, 1469878144, 625412000, pid=657, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 3, 1469878144, 625447000, pid=658, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 4, 1469878144, 625482000, pid=659, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 5, 1469878144, 625516000, pid=660, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 6, 1469878144, 625561000, pid=661, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 7, 1469878144, 625608000, pid=662, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 8, 1469878144, 625655000, pid=663, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 9, 1469878144, 625701000, pid=664, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 10, 1469878144, 625750000, pid=665, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 11, 1469878144, 625801000, pid=666, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 12, 1469878144, 625853000, pid=667, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 13, 1469878144, 625903000, pid=668, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 14, 1469878144, 625956000, pid=669, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child started: 15, 1469878144, 626006000, pid=670, '../run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000/mcf_base.cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 inp.in'
+1469878509.49: child finished: 9, 1469878497, 846401000, sec=353, nsec=220700000, pid=664, rc=0
+1469878509.49: Workload elapsed time (9:1) = 353.2207 seconds
+1469878509.49: child finished: 14, 1469878498, 650149000, sec=354, nsec=24193000, pid=669, rc=0
+1469878509.49: Workload elapsed time (14:1) = 354.024193 seconds
+1469878509.49: child finished: 2, 1469878499, 305374000, sec=354, nsec=679962000, pid=657, rc=0
+1469878509.49: Workload elapsed time (2:1) = 354.679962 seconds
+1469878509.49: child finished: 10, 1469878499, 461687000, sec=354, nsec=835937000, pid=665, rc=0
+1469878509.49: Workload elapsed time (10:1) = 354.835937 seconds
+1469878509.49: child finished: 4, 1469878499, 612880000, sec=354, nsec=987398000, pid=659, rc=0
+1469878509.49: Workload elapsed time (4:1) = 354.987398 seconds
+1469878509.49: child finished: 15, 1469878499, 922800000, sec=355, nsec=296794000, pid=670, rc=0
+1469878509.49: Workload elapsed time (15:1) = 355.296794 seconds
+1469878509.49: child finished: 6, 1469878499, 930778000, sec=355, nsec=305217000, pid=661, rc=0
+1469878509.49: Workload elapsed time (6:1) = 355.305217 seconds
+1469878509.49: child finished: 11, 1469878500, 82709000, sec=355, nsec=456908000, pid=666, rc=0
+1469878509.49: Workload elapsed time (11:1) = 355.456908 seconds
+1469878509.49: child finished: 8, 1469878500, 127710000, sec=355, nsec=502055000, pid=663, rc=0
+1469878509.49: Workload elapsed time (8:1) = 355.502055 seconds
+1469878509.49: child finished: 5, 1469878500, 220990000, sec=355, nsec=595474000, pid=660, rc=0
+1469878509.49: Workload elapsed time (5:1) = 355.595474 seconds
+1469878509.49: child finished: 3, 1469878500, 655881000, sec=356, nsec=30434000, pid=658, rc=0
+1469878509.49: Workload elapsed time (3:1) = 356.030434 seconds
+1469878509.49: child finished: 7, 1469878500, 729812000, sec=356, nsec=104204000, pid=662, rc=0
+1469878509.49: Workload elapsed time (7:1) = 356.104204 seconds
+1469878509.49: child finished: 0, 1469878501, 239083000, sec=356, nsec=613752000, pid=655, rc=0
+1469878509.49: Workload elapsed time (0:1) = 356.613752 seconds
+1469878509.49: child finished: 12, 1469878501, 346864000, sec=356, nsec=721011000, pid=667, rc=0
+1469878509.49: Workload elapsed time (12:1) = 356.721011 seconds
+1469878509.49: child finished: 13, 1469878501, 377520000, sec=356, nsec=751617000, pid=668, rc=0
+1469878509.49: Workload elapsed time (13:1) = 356.751617 seconds
+1469878509.49: child finished: 1, 1469878501, 463204000, sec=356, nsec=837828000, pid=656, rc=0
+1469878509.49: Workload elapsed time (1:1) = 356.837828 seconds
+1469878509.49: run 1 finished at: 1469878501, 463205000, Sat Jul 30 11:35:01 2016
+1469878509.49: run 1 elapsed time: 356, 837879000, 356.837879000
+1469878509.49: runs finished at 1469878501, 463237000, Sat Jul 30 11:35:01 2016
+1469878509.49: runs elapsed time: 356, 837919000, 356.837919000
+1469878509.49: Copy 0 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:35:01 2016.  Total elapsed time: 356.613752
+1469878509.49: Copy 1 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:35:01 2016.  Total elapsed time: 356.837828
+1469878509.49: Copy 2 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:34:59 2016.  Total elapsed time: 354.679962
+1469878509.49: Copy 3 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:35:00 2016.  Total elapsed time: 356.030434
+1469878509.49: Copy 4 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:34:59 2016.  Total elapsed time: 354.987398
+1469878509.49: Copy 5 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:35:00 2016.  Total elapsed time: 355.595474
+1469878509.49: Copy 6 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:34:59 2016.  Total elapsed time: 355.305217
+1469878509.49: Copy 7 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:35:00 2016.  Total elapsed time: 356.104204
+1469878509.49: Copy 8 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:35:00 2016.  Total elapsed time: 355.502055
+1469878509.49: Copy 9 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:34:57 2016.  Total elapsed time: 353.2207
+1469878509.49: Copy 10 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:34:59 2016.  Total elapsed time: 354.835937
+1469878509.49: Copy 11 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:35:00 2016.  Total elapsed time: 355.456908
+1469878509.49: Copy 12 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:35:01 2016.  Total elapsed time: 356.721011
+1469878509.49: Copy 13 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:35:01 2016.  Total elapsed time: 356.751617
+1469878509.49: Copy 14 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:34:58 2016.  Total elapsed time: 354.024193
+1469878509.49: Copy 15 of 429.mcf (base ref) run 1 finished at Sat Jul 30 11:34:59 2016.  Total elapsed time: 355.296794
+1469878509.49: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000'
+1469878509.49: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.49: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.49: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0001'
+1469878509.49: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.49: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.49: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0002'
+1469878509.49: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.49: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.49: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0003'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0004'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0005'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0006'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0007'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0008'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0009'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0010'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0011'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0012'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0013'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0014'
+1469878509.50: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.50: comparing files in '/SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0015'
+1469878509.51: comparing 'inp.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.51: comparing 'mcf.out' with abstol=, binary=, calctol=0, cw=, floatcompare=, ignorecase=, obiwan=, reltol=, skipabstol=, skipobiwan=, skipreltol=, skiptol=
+1469878509.51: Specinvoke: /SPECcpu/bin/specinvoke -E -d /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -c 16 -e compare.err -o compare.stdout -f compare.cmd
+1469878509.51: Issuing command '/SPECcpu/bin/specinvoke -E -d /SPECcpu/benchspec/CPU2006/429.mcf/run/run_base_ref_cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812.0000 -c 16 -e compare.err -o compare.stdout -f compare.cmd'
+1469878509.51: Start command: Sat Jul 30 11:35:09 2016 (1469878509)
+1469878510.34: Tee child 671 exited with code 0 (exit code=0, signal=0)
+1469878510.34: Stop command: Sat Jul 30 11:35:10 2016 (1469878510)
+1469878510.34: Elapsed time for command: 00:00:01 (1)
+1469878510.34: Selected multiplier of 1 for 429.mcf ref base cpu2006-1.2-ic16.0-lin64-sse42-speed-20150812 default
+1469878510.34: Benchmark Times:
+1469878510.34:   Start:    Sat Jul 30 11:29:04 2016 (1469878144)
+1469878510.34:   Stop:     Sat Jul 30 11:35:09 2016 (1469878509)
+1469878510.34:   Elapsed:  00:06:05 (365)
+1469878510.34:   Reported: 356 837919000 356.837919
+1469878510.34:  Success 429.mcf base ref ratio=408.93, runtime=356.837919, power=0.00w, temp=0.00 deg, humidity=0.00%
+1469878510.34: Success: 1x429.mcf

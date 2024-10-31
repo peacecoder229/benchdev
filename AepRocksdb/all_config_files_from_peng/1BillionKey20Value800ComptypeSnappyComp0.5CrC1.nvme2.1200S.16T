@@ -1,0 +1,187 @@
+[BENCHMARK]
+
+#Comma-separated list of operations to run in the specified order. available benchmarks:
+# - fillseq -> write N values in sequential key
+# - fillseqdeterministic -> write N values in the specified key order and keep the shape of the LSM tree
+# - fillrandom -> write N values in random key order in async mode
+# - filluniquerandomdeterministic -> write N values in a random key order and keep the shape of the LSM tree
+# - overwrite -> overwrite N values in random key order in async mode
+# - fillsync  -> write N/100 values in random key order in sync mode
+# - fill100K -> write N/1000 100K values in random order in async mode
+# - deleteseq -> delete N keys in sequential order
+# - deleterandom -> delete N keys in random order
+# - readseq -> read N times sequentially
+# - readtocache -> 1 thread reading database sequentially
+# - readreverse -> read N times in reverse order
+# - readrandom -> read N times in random order
+# - readmissing -> read N missing keys in random order
+# - readwhilewriting -> 1 writer, N threads doing random reads
+# - readwhilemerging -> 1 merger, N threads doing random reads
+# - readrandomwriterandom -> N threads doing random-read, random-write
+# - prefixscanrandom -> prefix scan N times in random order
+# - updaterandom -> N threads doing read-modify-write for random keys
+# - appendrandom -> N threads doing read-modify-write with growing values
+# - mergerandom -> same as updaterandom/appendrandom using merge operator. Must be used with merge_operator
+# - readrandommergerandom -> perform N random read-or-merge operations. Must be used with merge_operator
+# - newiterator -> repeated iterator creation
+# - seekrandom -> N random seeks, call Next seek_nexts times per seek
+# - seekrandomwhilewriting -> seekrandom and 1 thread doing overwrite
+# - seekrandomwhilemerging -> seekrandom and 1 thread doing merge
+# - crc32c -> repeated crc32c of 4K of data
+# - xxhash -> repeated xxHash of 4K of data
+# - acquireload -> load N*1000 times
+# - fillseekseq -> write N values in sequential key, then read them by seeking to each key
+# - trandomtransaction -> execute N random transactions and verify correctness
+# - randomreplacekeys -> randomly replaces N keys by deleting the old version and putting the new version
+# - timeseries -> 1 writer generates time series data and multiple readers doing random reads on id
+[BENCHMARK]
+#BENCHMARKS: readwhilewriting
+BENCHMARKS: readrandom
+#BENCHMARKS: fillseq
+#BENCHMARKS: readseq
+# NUMBER is the Number of key/values to place in database, you can use multiple values separated by a comma (,)
+#NUM: 150000000,275000000,300000000,350000000,375000000
+#NUM: 100,200
+NUM: 1000000000
+# USE_EXISTING_DB, If true, do not destroy the existing database. If you set this flag and also specify a benchmark that wants a fresh database, that benchmark will fail
+USE_EXISTING_DB: 1
+
+
+# DB is for use the db with the following name
+DB: /mnt/nvme2
+#DB: /mnt/nvme/rocksDB/
+#DB: /mnt/pmem/
+#DB: /mnt/ssd/
+# THREADS is the number of current threads to run
+THREADS: 16 
+
+# WRITE_BUFFER_SIZE is the number of bytes to buffer in memtable before compacting
+#WRITE_BUFFER_SIZE: 2048
+WRITE_BUFFER_SIZE: 134217728
+#WRITE_BUFFER_SIZE: 2048,4096
+#WRITE_BUFFER_SIZE: 102005473280
+#WRITE_BUFFER_SIZE: 268435456
+
+# TARGET_FILE_SIZE_BASE is the target file size at level-1
+#TARGET_FILE_SIZE_BASE: 4294967296
+TARGET_FILE_SIZE_BASE: 134217728
+
+# KEY_SIZE is for ?
+KEY_SIZE: 20
+
+# VALUE_SIZE is the size of each value
+VALUE_SIZE: 800 
+#VALUE_SIZE: 1048576,10485760,52428800
+
+# BLOCK_SIZE is the number of bytes in a block
+BLOCK_SIZE: 4096
+
+# CACHE_SIZE is the Number of bytes to use as a cache of uncompressed data
+#E: 1717986184
+#CACHE_SIZE:1073741824
+#1.6g CACHE_SIZE:1717986184
+CACHE_SIZE:17179869184
+# BLOOM_BITS is the bloom filter bits per key. Negative means default settings
+BLOOM_BITS: 10
+
+# CACHE_NUMSHARDBITS is the number of shards for the block cache
+CACHE_NUMSHARDBITS: 6
+
+# OPEN_FILES is the maximum number of files to keep open at the same time
+OPEN_FILES: 20480
+
+# NUM_LEVELS is the total number of levels
+NUM_LEVELS: 6
+
+# VERIFY_CHECKSUM is for verify the checksum for every block read from storage
+VERIFY_CHECKSUM: 1
+
+#MMAP_READ allow reads to occur via mmap-ing files
+MMAP_READ: 0
+
+#MMAP_WRITE is for ?
+MMAP_WRITE: 0
+
+#STATISTICS is for database statistics
+STATISTICS: 1
+
+#HISTOGRAM is for print histogram of operation timings
+HISTOGRAM: 1
+
+# SYNC if for sync all writes to disk
+SYNC: 0
+
+# DISABLE_WAL if true, do not write WAL for write
+#DISABLE_WAL: 1
+
+# COMPRESSION_TYPE is the algorithm to use to compress the database: snappy, zlib, bzlib2, lz4, lz4hc, xpress, kstd
+#COMPRESSION_TYPE: snappy
+COMPRESSION_TYPE: snappy
+# STATS_INTERVAL is for report stats every N operations when this is greater than zero. When 0 the interval grows over time.
+STATS_INTERVAL: 1048576
+
+# COMPRESSION_RATIO is for arrange to generate values that shrink to this fraction of their original size after compression
+COMPRESSION_RATIO: 0.5
+
+# DISABLE_DATA_SYNC if true, do not wait until data is synced to disk
+#DISABLE_DATA_SYNC: 1
+
+# MAX_WRITE_BUFFER_NUMBER is the number of in-memory memtables. Each memtable is of size WRITE_BUFFER_SIZE
+MAX_WRITE_BUFFER_NUMBER: 2
+
+# MAX_BACKGROUND_COMPACTIONS is the maximum number of concurrent background compations that can occur in parallel
+MAX_BACKGROUND_COMPACTIONS: 4
+
+# LEVEL0_FILE_NUM_COMPACTION_TRIGGER is the number of files in level-0 when compactions start
+LEVEL0_FILE_NUM_COMPACTION_TRIGGER: 8
+
+# LEVEL0_SLOWDOWN_WRITES_TRIGGER is the number of files in level-0 that will slow down writes
+LEVEL0_SLOWDOWN_WRITES_TRIGGER: 16
+
+# LEVEL0_SLOWDOWN_WRITES_TRIGGER is the number of files in level-0 that will trigger put stop
+LEVEL0_STOP_WRITES_TRIGGER: 24
+
+# DISABLE_SEEK_COMPACTION is not used, left here for backwards compatibility
+#DISABLE_SEEK_COMPACTION: 1
+
+# DELETE_OBSOLETE_FILES_PERIOD_MICROS is not used, left here for backwards compatibility
+DELETE_OBSOLETE_FILES_PERIOD_MICROS: 62914560
+
+# MIN_LEVEL_TO_COMPRESS, if non-negative, compression starts from this level. Levels with number < MIN_LEVEL_TO_COMPRESS are not compressed. Otherwise, apply compression_type to all levels.
+#MIN_LEVEL_TO_COMPRESS: 2
+
+# STATS_PER_INTERVAL, reports additional stats per interval when this is greater than 0
+STATS_PER_INTERVAL: 1
+
+# MAX_BYTES_FOR_LEVEL_BASE is the max bytes for level-1
+MAX_BYTES_FOR_LEVEL_BASE: 1073741824
+
+# HARD_RATE_LIMIT is for ?
+HARD_RATE_LIMIT: 2
+
+#RATE_LIMIT_DELAY_MAX_MILLISECONDS is for ?
+RATE_LIMIT_DELAY_MAX_MILLISECONDS: 1000000
+
+#MEMTABLEREP is for ?
+MEMTABLEREP: skip_list
+
+# NUM_MULTI_DB is for ?
+#NUM_MULTI_DB: 16
+
+# RATE_LIMITER_BYTES_PER_SEC is for ?
+RATE_LIMITER_BYTES_PER_SEC: 157286400
+
+# DURATION is for ?
+
+#DURATION: 4800
+#DURATION: 120
+#DURATION: 240
+DURATION: 1200 
+#DURATION: 2400
+#DURATION: 60
+
+# MAX_BACKGROUND_FLUSHES is for ?
+MAX_BACKGROUND_FLUSHES: 1
+#
+#
+#

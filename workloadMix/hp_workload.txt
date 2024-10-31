@@ -1,0 +1,7 @@
+specjbb
+bwaves
+rn50
+widedeep
+perlbench
+povray
+leslie3d

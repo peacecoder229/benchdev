@@ -1,0 +1,16 @@
+● irqbalance.service - irqbalance daemon
+   Loaded: loaded (/usr/lib/systemd/system/irqbalance.service; enabled; vendor preset: enabled)
+   Active: inactive (dead) since Mon 2023-01-30 11:22:38 PST; 6h ago
+     Docs: man:irqbalance(1)
+           https://github.com/Irqbalance/irqbalance
+ Main PID: 2705 (code=exited, status=0/SUCCESS)
+
+Jan 20 09:12:36 JF5300-B11A322T systemd[1]: Started irqbalance daemon.
+Jan 30 11:22:38 JF5300-B11A322T systemd[1]: irqbalance.service: Succeeded.
+Jan 30 13:07:19 JF5300-B11A322T systemd[1]: /usr/lib/systemd/system/irqbalance.service:6: Unknown lvalue 'ConditionCPUs' in section 'Unit'
+Jan 30 13:07:20 JF5300-B11A322T systemd[1]: /usr/lib/systemd/system/irqbalance.service:6: Unknown lvalue 'ConditionCPUs' in section 'Unit'
+Jan 30 13:07:20 JF5300-B11A322T systemd[1]: /usr/lib/systemd/system/irqbalance.service:6: Unknown lvalue 'ConditionCPUs' in section 'Unit'
+Jan 30 13:27:17 JF5300-B11A322T systemd[1]: /usr/lib/systemd/system/irqbalance.service:6: Unknown lvalue 'ConditionCPUs' in section 'Unit'
+Jan 30 13:28:36 JF5300-B11A322T systemd[1]: /usr/lib/systemd/system/irqbalance.service:6: Unknown lvalue 'ConditionCPUs' in section 'Unit'
+Jan 30 13:28:36 JF5300-B11A322T systemd[1]: /usr/lib/systemd/system/irqbalance.service:6: Unknown lvalue 'ConditionCPUs' in section 'Unit'
+Jan 30 13:28:37 JF5300-B11A322T systemd[1]: /usr/lib/systemd/system/irqbalance.service:6: Unknown lvalue 'ConditionCPUs' in section 'Unit'

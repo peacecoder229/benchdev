@@ -1,0 +1,17 @@
+ProcessorArea,PMON-Counter,PMON-Configuration,PMON-CounterUpper,Fixed-Counter,Fixed-Configuration,Muxed-Configuration,Matrix-Configuration,Compound PMON-Counter,Compound PMON-Configuration,Global-Status,Global-Filter0,Global-UnitControl,Global-OpcodeFilter,Global-Filter1,Global-Misc,Global-ThreadidFilter
+Core,^rob1_emon_gen_ctr(\d+)$,,,^rob1_emon_fixed_ctr(\d+)$,^rob1_emon_fixed_ctr_ctrl$,,^ml2_offcore_rsp_(\d+)_meu_ml2$,^rob1_compound_perf_ctr$,^rob1_compound_ctr_ctrl$,,,,,,,
+CBO,^cbo(\d+)_cbopmonct_?(\d+)?$,^cbo(\d+)_cbopmonctrctrl_?(\d+)?$,,,,,,,,^cbo(\d+)_cbopmonctrstatus$,^cbo(\d+)_cbopmonctrlglctr_?(\d+)?$,^cbo(\d+)_pmonunitctrl$,^cbo(\d+)_cbopmonctrlglctr_1_?(\d+)?$,,,
+HA,^ha(\d+)_cntr_(\d+)$,^ha(\d+)_cntrcfg_(\d+)$,,,,,,,,^ha(\d+)_unitstatus_?(\d+)?$,^ha(\d+)_haperfmonaddrmatch0_?(\d+)?$,^ha(\d+)_unitctrl_?(\d+)?$,^ha(\d+)_haperfmonopcodematch_?(\d+)?$,^ha(\d+)_haperfmonaddrmatch1_?(\d+)?$,,
+iMC,^imc(\d+)_c(\d+)_pmoncntr_(\d+)$,^imc(\d+)_c(\d+)_pmoncntrcfg_(\d+)$,,^imc(\d+)_c(\d+)_pmoncntr_fixed_?(\d+)?$,^imc(\d+)_c(\d+)_pmoncntrcfgfixed_?(\d+)?$,,,,,^imc(\d+)_c(\d+)_pmonunitstatus_?(\d+)?$,,^imc(\d+)_c(\d+)_pmonunitctrl$,,,,
+M2M,^imc(\d+)_m2mem_pmoncntr(\d+)$,^imc(\d+)_m2mem_pmoncntrcfg(\d+)$,,,,,,,,^imc(\d+)_m2mem_pmonunitstatus$,,^imc(\d+)_m2mem_pmonunitctrl$,,,,
+IRP,^irp(\d+)_pmoncntr_(\d+)$,^irp(\d+)_pmoncntrcfg_(\d+)$,,,,,,,,^irp(\d+)_pmonunitstatus$,^irp_pmonfilter$,^irp_pmonunitctrl$,,,,
+KTI LL,^kti(\d+)_pmoncntr_(\d+)$,^kti(\d+)_pmoncntrcfg_(\d+)$,,,,,,,,^kti(\d+)_pmonunitstatus$,,^kti(\d+)_pmonunitctrl$,,,,
+PCU,^pcu_cr_pmoncntr_(\d+)$,^pcu_cr_pmoncntrcfg_(\d+)$,,,,,,,,^pcu_cr_pmonunitstatus$,^pcu_cr_pmonpcufilter$,^pcu_cr_pmonunitctrl$,,,,
+UBOX,^gdxc_pmon_ncupmonct(\d+)$,^gdxc_pmon_ncupmonctctl(\d+)$,,^ncevents_ncupmonctrfx$,^ncevents_ncupmonctlfix$,^ubox_pmon_event_ncdec_mask_ctl(\d+)$,,,,^gdxc_pmon_ncupmonctsts$,,,,,,^gdxc_pmon_ncupmonctrlglctr$
+M2PCIe,^rputlctrlconfig(\d+)_pmoncntrlower(\d+)_(\d+)$,^rputlctrlconfig(\d+)_pmoncntrcfg(\d+)_(\d+)$,^rputlctrlconfig(\d+)_pmoncntrupper(\d+)_(\d+)$,,,,,,,^rputlctrlconfig(\d+)_pmonctrstatus(\d+)_?(\d+)?$,,^rputlctrlconfig(\d+)_pmonunitctrl(\d+)_?(\d+)?$,,,,
+M3KTI,^rcutlctrlconfig(\d+)_pmoncntrlower(\d+)_(\d+)$,^rcutlctrlconfig(\d+)_pmoncntrcfg(\d+)_(\d+)$,^rcutlctrlconfig(\d+)_pmoncntrupper(\d+)_(\d+)$,,,,,,,^rcutlctrlconfig(\d+)_pmonctrstatus(\d+)_?(\d+)?$,,^rcutlctrlconfig(\d+)_pmonunitctrl(\d+)_?(\d+)?$,,,,
+SBO,^sbo(\d+)_cr_sbopmonct_(\d+)$,^sbo(\d+)_cr_sbopmonctrctrl_(\d+)$,,,,,,,,^sbo(\d+)_cr_sbopmonctrstatus_?(\d+)?$,,^sbo(\d+)_cr_pmonunitctrl_?(\d+)?$,,,,
+CHA,^virtual_msr_cbopmonct_(\d+)_cha_(\d+)$,^virtual_msr_cbopmonctrctrl_(\d+)_cha_(\d+)$,,,,,,,,^virtual_msr_cbopmonctrstatus_cha_(\d+)$,,^virtual_msr_pmonunitctrl_cha_(\d+)$,,,,
+IIO,imi_pmoncntr_(\d+)$,imi_pmoncntrcfg_(\d+)$,,,,,,,,imi_pmonunitstatus$,,imi_pmonunitctrl,,,,
+CMS,,,,,,,,,,,,,,,,
+Global,,,,,,,,,,^ncevents_ncupmonglsts$,,^ncevents_ncupmonglctrl$,,,^ncevents_ncupmonconfig$,

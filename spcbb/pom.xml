@@ -1,0 +1,637 @@
+<!--
+    Copyright (c) 2012-2015 Standard Performance Evaluation Corporation (SPEC).
+    All rights reserved.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.spec.jbb</groupId>
+    <artifactId>specjbb2015</artifactId>
+    <packaging>jar</packaging>
+    <version>1.02</version>
+    <name>SPECjbb2015</name>
+    <developers>
+        <developer>
+            <name>Aleksey Shipilev</name>
+            <organization>Oracle</organization>
+            <roles>
+                <role>Lead Developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Sergey Katkov</name>
+            <organization>Intel</organization>
+            <roles>
+                <role>Lead Developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Bhaskar Devireddy</name>
+            <organization>AMD</organization>
+            <roles>
+                <role>Lead Developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Daryl Maier</name>
+            <organization>IBM</organization>
+            <roles>
+                <role>Lead Developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Elena Sayapina</name>
+            <organization>Intel</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Charlie Hunt</name>
+            <organization>Oracle</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Vasanth Venkatachalam</name>
+            <organization>AMD</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Shrinivas Joshi</name>
+            <organization>AMD</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Anil Kumar</name>
+            <organization>Intel</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Klaus Lange</name>
+            <organization>HP</organization>
+            <roles>
+                <role>Manager</role>
+            </roles>
+        </developer>
+
+    </developers>
+
+    <contributors>
+        <contributor>
+            <name>Dmitry Petrochenko</name>
+            <organization>Intel</organization>
+            <roles>
+                <role>Original prototype</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Staffan Friberg</name>
+            <organization>Oracle</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>David (Dagastine) Keenan</name>
+            <organization>Oracle</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Eric Stec</name>
+            <organization>IBM</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </contributor>
+    </contributors>
+
+    <description>
+        A benchmark for evaluating the performance of servers running typical Java business applications,
+        JBB2011 represents an order processing application for a wholesale supplier. The benchmark can be used
+        to evaluate performance of hardware and software aspects of Java Virtual Machine (JVM) servers.
+    </description>
+
+    <issueManagement>
+        <system>trac</system>
+        <url>https://pro.spec.org/private/trac/osg/java/jbb2011/</url>
+    </issueManagement>
+
+    <prerequisites>
+        <maven>3.0</maven>
+    </prerequisites>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <debug>true</debug>
+                    <meminitial>256</meminitial>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.11</version>
+                <configuration>
+                    <forkMode>always</forkMode>
+                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                    <forkedProcessTimeoutInSeconds>300</forkedProcessTimeoutInSeconds>
+                    <argLine>-noverify</argLine> <!-- required for Cobertura to work -->
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <addMavenDescriptor>false</addMavenDescriptor>
+                        <manifest>
+                            <mainClass>org.spec.jbb.Launcher</mainClass>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                        </manifest>
+                    </archive>
+                    <finalName>specjbb2015</finalName>
+                    <outputDirectory>${project.build.directory}/${project.name}-${project.version}</outputDirectory>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.testSourceDirectory}</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>dev-bundle-launcher</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <finalName>specjbb2015</finalName>
+                            <shadedArtifactAttached>false</shadedArtifactAttached>
+                            <shadedClassifierName>bundle</shadedClassifierName>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <manifestEntries>
+                                        <Main-Class>org.spec.jbb.Launcher</Main-Class>
+                                    </manifestEntries>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.0</version>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.5</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/${project.name}-${project.version}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>docs/</directory>
+                                    <includes>
+                                        <include>*license.txt</include>
+                                        <include>*readme.txt</include>
+                                    </includes>
+                                </resource>
+                                <resource>
+                                    <directory>${project.basedir}</directory>
+                                    <includes>
+                                        <include>config/*</include>
+                                        <include>docs/*</include>
+                                        <include>*.bat</include>
+                                        <include>*.sh</include>
+                                        <include>version.txt</include>
+                                        <include>redistributable_sources/**</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-jfreechart-license-to-lib</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/${project.name}-${project.version}/lib/jfreechart-jcommon-license</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>redistributable_sources/jfreechart</directory>
+                                    <includes>
+                                        <include>*LGPL*</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/${project.name}-${project.version}/lib</outputDirectory>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-jfreechart-sources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>sources</classifier>
+                            <includeGroupIds>org.jfree</includeGroupIds>
+                            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+                            <outputDirectory>${project.build.directory}/${project.name}-${project.version}/redistributable_sources/jfreechart</outputDirectory>
+                        </configuration>
+                    </execution> 
+                    <execution>
+                        <id>copy-grizzly-sources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>sources</classifier>
+                            <includeGroupIds>org.glassfish.grizzly</includeGroupIds>
+                            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+                            <outputDirectory>${project.build.directory}/${project.name}-${project.version}/redistributable_sources/grizzly</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-servlet-api-sources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>sources</classifier>
+                            <includeGroupIds>javax.servlet</includeGroupIds>
+                            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+                            <outputDirectory>${project.build.directory}/${project.name}-${project.version}/redistributable_sources/jetty/javax.servlet-api</outputDirectory>
+                        </configuration>
+                    </execution> 
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId> 
+                <artifactId>maven-assembly-plugin</artifactId> 
+                <version>2.2</version> 
+                <executions>
+                    <execution>
+                        <id>archive-src</id> 
+                        <phase>package</phase> 
+                        <goals>
+                            <goal>single</goal> 
+                        </goals>
+                        <configuration>
+                            <appendAssemblyId>false</appendAssemblyId> 
+                            <descriptors>
+                                <descriptor>src/main/assembly/archive-src.xml</descriptor> 
+                            </descriptors>
+                            <outputDirectory>${project.build.directory}/${project.name}-${project.version}</outputDirectory>
+                            <finalName>src</finalName>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>archive</id> 
+                        <phase>package</phase> 
+                        <goals>
+                            <goal>single</goal> 
+                        </goals>
+                        <configuration>
+                            <appendAssemblyId>false</appendAssemblyId> 
+                            <descriptors>
+                                <descriptor>src/main/assembly/archive.xml</descriptor> 
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <reporting>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.5.1</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.12</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.3</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>2.4.0</version>
+                <configuration>
+                    <effort>Max</effort>
+                    <threshold>Low</threshold>
+                    <includeFilterFile>src/main/resources/findbugs.xml</includeFilterFile>
+                    <excludeFilterFile>src/main/resources/findbugs-exclude.xml</excludeFilterFile>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <consoleOutput>false</consoleOutput>
+                    <configLocation>${project.basedir}/src/main/resources/checkstyle.xml</configLocation>
+                </configuration>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>checkstyle</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.8.1</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>taglist-maven-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <tagListOptions>
+                        <tagClasses>
+                            <tagClass>
+                                <displayName>FIXME work</displayName>
+                                <tags>
+                                    <tag>
+                                        <matchString>FIXME:</matchString>
+                                        <matchType>ignoreCase</matchType>
+                                    </tag>
+                                    <tag>
+                                        <matchString>FIXME</matchString>
+                                        <matchType>ignoreCase</matchType>
+                                    </tag>
+                                </tags>
+                            </tagClass>
+                            <tagClass>
+                                <displayName>TODO work</displayName>
+                                <tags>
+                                    <tag>
+                                        <matchString>todo</matchString>
+                                        <matchType>ignoreCase</matchType>
+                                    </tag>
+                                    <tag>
+                                        <matchString>todo:</matchString>
+                                        <matchType>ignoreCase</matchType>
+                                    </tag>
+                                    <tag>
+                                        <matchString>@todo</matchString>
+                                        <matchType>ignoreCase</matchType>
+                                    </tag>
+                                </tags>
+                            </tagClass>
+                        </tagClasses>
+
+                    </tagListOptions>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </reporting>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl -->
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.4.0-b180830.0438</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-core -->
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>2.3.0.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.4.0-b180830.0359</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.xml.bind/activation -->
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.0.19</version>
+            <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.lowagie</groupId>
+                    <artifactId>itext</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>xml-apis</groupId>
+                    <artifactId>xml-apis</artifactId>
+                </exclusion>
+            </exclusions> 
+        </dependency>    
+
+        <dependency>
+            <groupId>org.glassfish.grizzly</groupId>
+            <artifactId>grizzly-framework</artifactId>
+            <version>2.3.19_p1_internal</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.grizzly</groupId>
+            <artifactId>grizzly-http-server</artifactId>
+            <version>2.3.19</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>9.2.9.v20150224</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.jopt-simple</groupId>
+            <artifactId>jopt-simple</artifactId>
+            <version>4.8</version>
+        </dependency>
+
+    </dependencies>
+
+    <repositories>
+	<repository>
+	        <id>local-maven-repo</id>
+	        <url>file:///${project.basedir}/maven-repo</url>
+	</repository>
+
+        <repository>
+            <id>repo2 repo</id>
+            <name>repo2</name>
+            <url>http://repo2.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>maven2-repository.dev.java.net-main</id>
+            <name>Java.net Repository for Maven</name>
+            <url>http://download.java.net/maven/2/</url>
+        </repository>
+        <repository>
+            <id>maven2-repository.dev.java.net</id>
+            <name>Java.net Repository for Maven (Glassfish part)</name>
+            <url>http://download.java.net/maven/glassfish/</url>
+        </repository>
+        <repository>
+            <id>jvnet-snapshots</id>
+            <name>Java.net Repository for Maven (Snapshots)</name>
+            <url>https://maven.java.net/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>jvnet-releases</id>
+            <name>Java.net Repository for Maven (Releases)</name>
+            <url>https://maven.java.net/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+
+</project>
+

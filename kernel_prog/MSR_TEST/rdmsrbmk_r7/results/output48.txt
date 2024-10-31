@@ -1,0 +1,20 @@
+[883197.318622] rdmsrbmk: Initializing kernel module...
+[883197.324274] rdmskbmk: Successfully created thread on node 0, thread 0.
+[883197.324295] Printing sizes:
+[883197.324296] sizeof int: 4
+[883197.324297] sizeof long: 8
+[883197.324298] sizeof long long 8
+[883197.324298] sizeof unsigned int: 4
+[883197.324299] sizeof unsigned long: 8
+[883197.324300] sizeof unsigned long long 8
+[883197.324302] rdmsrbmk: run_wrmsr_test(mode 51): 0x38d=0x0000000000000033: iter 1 diff = 492
+[883197.324304] rdmsrbmk: run_wrmsr_test(mode 4390972): 0x186=0x000000000043003c: iter 1 diff = 568
+[883197.324305] rdmsrbmk: run_rdmsr_test: 0x186=0x000000000043003c: iter 1 diff = 336
+[883197.324306] rdmsrbmk: run_rdpmc_test: 0x0=0x0000030dc96f6698: iter 1 diff = 150
+[883197.324308] rdmsrbmk: run_rdmsr_test: 0xc1=0x0000030dc96f6bf4: iter 1 diff = 298
+[883197.324309] rdmsrbmk: run_rdmsr_test: 0x30a=0x000002c238327b93: iter 1 diff = 298
+[883197.324311] rdmsrbmk: run_rdmsr_test: 0xc1=0x0000030dc96f76a5: iter 1 diff = 304
+[883197.324312] rdmsrbmk: run_rdmsr_test: 0x30a=0x000002c23832869f: iter 1 diff = 304
+[883197.324313] rdmsrbmk: run_rdpmc_test: 0x40000001=0x000002c238328bc2: iter 1 diff = 150
+[883197.435324] rdmskbmk: Kernel says we are allowde to run on CPU: 0.
+[883197.442322] rdmsrbmk: Kernel module init completed.

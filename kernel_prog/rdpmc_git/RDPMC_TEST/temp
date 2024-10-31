@@ -1,0 +1,6 @@
+KVERSION = $(shell uname -r)
+all:
+	make -C /lib/modules/$(KVERSION)/build
+	gcc -c func_rdmsr.c -o func_rdmsr
+
+

@@ -1,0 +1,7 @@
+Perf_with_HWDRC_setting [even though we are not using it. Running in the background with previous setting) =lp=23193.5=numactl --membind=0 --physcpubind=48-63 ./wrk -t 64 -c 2000 -d 30s -R 500000 -L http://127.0.0.1:10002/1K 50.000% 1.77ms 75.000% 17.60ms 99.900% 306.17ms nginxscore=64,2000,1.77,17.6,306.17,493365.4,0
+
+With full contention: =lp=97556.1=numactl --membind=0 --physcpubind=48-63 ./wrk -t 64 -c 2000 -d 30s -R 500000 -L http://127.0.0.1:10002/1K 50.000% 628.73ms 75.000% 884.73ms 99.900% 1.39s nginxscore=64,2000,628.73,884.73,1390.0,487896.6,0
+/root/run_nginx
+
+
+P=8,I=16,D=0,SetP=2,ewma=6,res==lp=23617.7=numactl --membind=0 --physcpubind=48-63 ./wrk -t 64 -c 2000 -d 30s -R 500000 -L http://127.0.0.1:10002/1K 50.000% 1.53ms 75.000% 10.57ms 99.900% 620.03ms nginxscore=64,2000,1.53,10.57,620.03,494612.9666666667,0

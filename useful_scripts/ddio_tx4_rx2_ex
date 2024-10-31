@@ -1,0 +1,12 @@
+#!/bin/bash
+
+wrmsr 0xc8b 0x600
+wrmsr 0x5F 0xF
+/pnpdata/hwpdesire/hwpdesire.sh -a 2400000
+/pnpdata/hwpdesire/hwpdesire.sh -m 2400000
+        # disable C1E, C3, C6
+        cpupower idle-set -e 0
+        cpupower idle-set -e 1
+        cpupower idle-set -d 2
+        cpupower idle-set -d 3
+#       cpupower idle-set -d 4

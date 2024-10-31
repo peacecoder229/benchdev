@@ -1,0 +1,1 @@
+Linux fedora 5.10.45-p401.gad947b1 #1 SMP Wed Jan 11 02:31:36 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux

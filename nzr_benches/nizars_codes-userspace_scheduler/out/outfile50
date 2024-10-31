@@ -1,0 +1,642 @@
+112
+503
+the server IP is =  127.0.0.1 .
+the core start is 0 and core end is 49 .
+Server#0(0-49) is listening on port#47001
+numThreads: 50 test for 660TopK value: 2 seconds
+
+TCPServer Waiting for client on port 47001
+Server#1(28-77) is listening on port#47002
+numThreads: 50 test for 660TopK value: 2 seconds
+
+TCPServer Waiting for client on port 47002
+set client to y_client.sh 20 47001 127.0.0.1 /91-111/ 1 500 20000  2
+Client1 launched without corepin, will request to Server on port  47002
+Client2 launched without corepin, will request to Server on port  47001
+Client3 launched without corepin, will request to Server on port  47002
+Client4 launched without corepin, will request to Server on port  47001
+Client5 launched without corepin, will request to Server on port  47002
+Client6 launched without corepin, will request to Server on port  47001
+Client7 launched without corepin, will request to Server on port  47002
+Client8 launched without corepin, will request to Server on port  47001
+Client9 launched without corepin, will request to Server on port  47002
+Client10 launched without corepin, will request to Server on port  47001
+Client11 launched without corepin, will request to Server on port  47002
+Client Number: 1 is on 
+Client Number: 4 is on 
+Client12 launched without corepin, will request to Server on port  47001
+Client Number: 3 is on 
+Client Number: 5 is on 
+Client Number: 2 is on 
+Client13 launched without corepin, will request to Server on port  47002
+Client Number: 6 is on 
+Client14 launched without corepin, will request to Server on port  47001
+Client Number: 7 is on 
+Client15 launched without corepin, will request to Server on port  47002
+Client Number: 8 is on 
+Client16 launched without corepin, will request to Server on port  47001
+Client17 launched without corepin, will request to Server on port  47002
+Client Number: 9 is on 
+Client Number: 10 is on 
+Client18 launched without corepin, will request to Server on port  47001
+Client Number: 11 is on 
+Client19 launched without corepin, will request to Server on port  47002
+Client Number: 12 is on 
+Client20 launched without corepin, will request to Server on port  47001
+Client Number: 13 is on 
+Client Number: 14 is on 
+Client Number: 15 is on 
+Client Number: 16 is on 
+Client Number: 17 is on 
+Client Number: 18 is on 
+Client Number: 19 is on 
+Client Number: 20 is on 
+Client#8 got connected to server at socket5
+Client#2 got connected to server at socket5
+Client#3 got connected to server at socket5
+Client#9 got connected to server at socket5
+Client#7 got connected to server at socket5
+Client#5 got connected to server at socket5
+Client#4 got connected to server at socket5
+Client#1 got connected to server at socket5
+Client#18 got connected to server at socket5
+Client#20 got connected to server at socket5
+Client#16 got connected to server at socket5
+Client#10 got connected to server at socket5
+Client#17 got connected to server at socket5
+Client#14 got connected to server at socket5
+Client#19 got connected to server at socket5
+Client#6 got connected to server at socket5
+Client#12 got connected to server at socket5
+Client#11 got connected to server at socket5
+Client#15 got connected to server at socket5
+Accepted connection on descriptor 256 (host=127.0.0.1, port=59814)
+Accepted connection on descriptor 257 (host=127.0.0.1, port=59816)
+Accepted connection on descriptor 258 (host=127.0.0.1, port=59826)
+Accepted connection on descriptor 259 (host=127.0.0.1, port=59830)
+Accepted connection on descriptor 260 (host=127.0.0.1, port=59832)
+Accepted connection on descriptor 261 (host=127.0.0.1, port=59834)
+Accepted connection on descriptor 262 (host=127.0.0.1, port=59836)
+Accepted connection on descriptor 263 (host=127.0.0.1, port=59840)
+Accepted connection on descriptor 264 (host=127.0.0.1, port=59844)
+Accepted connection on descriptor 265 (host=127.0.0.1, port=59846)
+14021.5
+Accepted connection on descriptor 256 (host=127.0.0.1, port=44142)
+Accepted connection on descriptor 257 (host=127.0.0.1, port=44144)
+Accepted connection on descriptor 258 (host=127.0.0.1, port=44146)
+Accepted connection on descriptor 259 (host=127.0.0.1, port=44148)
+Accepted connection on descriptor 260 (host=127.0.0.1, port=44152)
+Accepted connection on descriptor 261 (host=127.0.0.1, port=44162)
+Accepted connection on descriptor 262 (host=127.0.0.1, port=44166)
+Accepted connection on descriptor 263 (host=127.0.0.1, port=44172)
+Accepted connection on descriptor 264 (host=127.0.0.1, port=44174)
+6800.14
+Client#13 got connected to server at socket5
+3614.5
+Accepted connection on descriptor 265 (host=127.0.0.1, port=44176)
+3720.38
+2077.87
+2183.84
+1127.69
+1106.76
+806.512
+806.033
+744.094
+745.698
+787.136
+802.275
+746.068
+740.605
+791.587
+783.978
+783.478
+776.616
+873.118
+874.086
+937.015
+928.532
+885.304
+888.389
+819.886
+817.914
+789.436
+776.603
+807.246
+808.139
+799.757
+781.466
+752.865
+749.884
+774.411
+753.618
+803.923
+797.392
+868.072
+846.53
+843.853
+834.459
+924.22
+944.254
+978.828
+998.05
+1025.81
+1041.49
+1125.87
+1123.97
+1208.05
+1183.23
+1253.83
+1276.3
+1047.84
+1035.9
+842.325
+852.595
+769.537
+768.262
+762.859
+766.278
+852.707
+854.06
+927.848
+891.665
+970.135
+987.706
+1033.11
+1006.42
+1009.29
+1007.61
+1037.21
+1047.66
+1075.57
+1045.03
+987.38
+979.543
+941.578
+948.569
+895.743
+884.347
+864.212
+869.796
+848.559
+842.235
+888.455
+882.113
+941.939
+941.723
+1023.18
+1041.78
+993.572
+1031.83
+915.262
+912.222
+842.154
+832.418
+787.023
+798.053
+705.358
+730.556
+717.362
+737.26
+681.068
+710.643
+670.068
+690.354
+652.03
+654.102
+706.698
+705.563
+743.982
+757.874
+793.077
+816.82
+820.095
+842.672
+807.654
+806.279
+837.174
+830.364
+818.883
+828.454
+848.78
+835.257
+832.593
+837.078
+877.433
+883.667
+903.051
+931.332
+926.478
+963.922
+924.578
+947.879
+884.639
+882.698
+931.414
+929.781
+843.334
+839.949
+862.683
+851.272
+795.918
+786.027
+863.819
+855.386
+945.492
+966.539
+1050.24
+1078.2
+1167.56
+1156.83
+1127.68
+1136.48
+1080.99
+1050.71
+944.794
+910.974
+749.714
+740.641
+718.554
+713.305
+767.39
+751.503
+881.313
+896.76
+1016.99
+997.163
+860.589
+859.163
+881.741
+887.322
+876.482
+875.582
+976.256
+974.79
+1058.08
+1031.9
+986.789
+976.516
+932.654
+917.954
+932.116
+935.152
+995.822
+966.987
+940.615
+936.551
+898.351
+917.908
+910.601
+925.198
+1008.63
+1015.16
+865.709
+857.991
+830.41
+838.536
+748.411
+751.109
+772.385
+818.56
+853.518
+897.845
+846.267
+898.342
+863.241
+910.399
+881.378
+907.461
+834.505
+858.073
+911.953
+936.674
+942.168
+958.782
+839.634
+819.726
+839.789
+804.771
+798.363
+759.263
+773.632
+732.297
+687.713
+694.895
+718.506
+739.003
+782.549
+811.774
+839.149
+849.755
+908.954
+888.154
+923.954
+896.243
+927.128
+926.809
+897.716
+894.297
+904.961
+901.708
+901.07
+898.976
+947.372
+937.358
+904.696
+920.005
+823.96
+829.946
+817.514
+852.976
+842.102
+833.299
+845.897
+806.843
+817.266
+811.146
+810.813
+796.622
+830.482
+864.652
+998.053
+1009.96
+1033.22
+1053.6
+993.79
+980.904
+926.507
+926.721
+844.872
+858.297
+930.629
+954.037
+980.563
+997.204
+974.529
+968.536
+974.746
+966.987
+849.108
+862.207
+932.142
+904.607
+841.92
+849.822
+914.333
+937.683
+881.784
+908.424
+927.816
+920.489
+933.523
+911.228
+803.933
+804.729
+844.409
+861.431
+900.6
+920.103
+982.68
+1014.13
+952.747
+957.821
+901.349
+914.036
+912.429
+936.039
+955.803
+958.038
+939.221
+926.374
+890.535
+872.594
+792.697
+762.413
+798.425
+770.17
+893.59
+843.622
+970.246
+993.189
+1120.82
+1151.05
+1041.42
+1049.63
+946.165
+960.633
+841.597
+828.637
+808.87
+836.867
+808.233
+806.768
+797.276
+800.639
+780.683
+793.214
+796.672
+804.054
+841.683
+817.522
+808.937
+790.026
+836.571
+831.544
+824.538
+831.708
+826.854
+843.32
+894.993
+877.746
+937.205
+964.33
+985.933
+986.324
+985.595
+992.577
+981.274
+988.602
+840.368
+836.294
+838.574
+816.648
+819.644
+818.937
+907.92
+901.337
+901.032
+919.122
+836.192
+861.402
+814.38
+824.319
+791.544
+801.316
+874.75
+869.365
+921.305
+914.009
+1018.72
+1002.73
+1078.91
+1065.64
+988.657
+992.065
+1001.81
+1016
+927.376
+966.63
+893.615
+909.444
+907.231
+894.287
+875.772
+866.093
+815.374
+796.899
+775.577
+779.444
+745.066
+740.864
+730.411
+725.768
+782.577
+768.426
+749.891
+747.896
+780.545
+771.461
+864.836
+865.043
+961.315
+962.681
+986.267
+1001.44
+993.346
+1015.49
+975.102
+954.082
+948.149
+920.825
+971.394
+948.331
+940.653
+915.039
+979.096
+944.744
+919.705
+934.384
+851.966
+887.936
+878.583
+889.37
+798.368
+802.623
+814.291
+821.372
+816.892
+837.504
+835.788
+841.561
+806.511
+810.197
+803.978
+802.092
+804.536
+793.426
+872.298
+863.913
+904.164
+882.456
+977.765
+973.409
+906.866
+932.375
+936.721
+956.032
+1009.66
+1034.87
+1031.7
+1006.93
+1028.03
+996.853
+918.155
+917.431
+789.736
+795.022
+712.702
+738.743
+753.258
+768.704
+799.676
+813.213
+873.206
+876.315
+844.754
+832.82
+841.996
+818.637
+848.543
+831.361
+909.374
+884.923
+918.903
+930.84
+928.293
+909.415
+884.182
+891.683
+845.61
+835.083
+800.7
+755.064
+790.68
+750.409
+785.649
+772.911
+client2 complete
+client7 complete
+client3 complete
+client8 complete
+client5 complete
+client20 complete
+client16 complete
+client9 complete
+client4 complete
+client10 complete
+client1 complete
+client18 complete
+client17 complete
+client19 complete
+client14 complete
+client12 complete
+client6 complete
+client11 complete
+client15 complete
+client13 complete
+fully read packets from client:#2 is  11659 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#7 is  11612 while partially is: 0 the percentage of complete : 1
+Bad FD or con reset or pipe closed
+connection closed from Server side
+fully read packets from client:#3 is  11608 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#8 is  11658 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#5 is  11548 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#20 is  11623 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#16 is  11657 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#9 is  11603 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#4 is  11625 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#10 is  11681 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#1 is  11664 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#18 is  11653 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#17 is  11629 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#19 is  11652 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#14 is  11652 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#12 is  11641 while partially is: 0 the percentage of complete : 1
+Bad FD or con reset or pipe closed
+connection closed from Server side
+fully read packets from client:#6 is  11652 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#11 is  11630 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#15 is  11523 while partially is: 0 the percentage of complete : 1
+fully read packets from client:#13 is  11679 while partially is: 0 the percentage of complete : 1
+client start 1 and end 21 Experiment Done. Combining log now....
+client_21_done
+finished all clients

@@ -1,0 +1,424 @@
+
+/dev/sda:
+
+ATA device, with non-removable media
+	Model Number:       INTEL SSDSC2KW010T8                     
+	Serial Number:      BTLA745000WS1P0EGN  
+	Firmware Revision:  LHF0B1C
+	Transport:          Serial, ATA8-AST, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6, SATA Rev 3.0
+Standards:
+	Used: unknown (minor revision code 0xffff) 
+	Supported: 10 9 8 7 6 5 
+	Likely used: 10
+Configuration:
+	Logical		max	current
+	cylinders	16383	16383
+	heads		16	16
+	sectors/track	63	63
+	--
+	CHS current addressable sectors:    16514064
+	LBA    user addressable sectors:   268435455
+	LBA48  user addressable sectors:  2000409264
+	Logical  Sector size:                   512 bytes
+	Physical Sector size:                   512 bytes
+	Logical Sector-0 offset:                  0 bytes
+	device size with M = 1024*1024:      976762 MBytes
+	device size with M = 1000*1000:     1024209 MBytes (1024 GB)
+	cache/buffer size  = unknown
+	Form Factor: 2.5 inch
+	Nominal Media Rotation Rate: Solid State Device
+Capabilities:
+	LBA, IORDY(can be disabled)
+	Queue depth: 32
+	Standby timer values: spec'd by Standard, no device specific minimum
+	R/W multiple sector transfer: Max = 16	Current = 16
+	Advanced power management level: 254
+	DMA: mdma0 mdma1 mdma2 udma0 udma1 udma2 udma3 udma4 udma5 *udma6 
+	     Cycle time: min=120ns recommended=120ns
+	PIO: pio0 pio1 pio2 pio3 pio4 
+	     Cycle time: no flow control=120ns  IORDY flow control=120ns
+Commands/features:
+	Enabled	Supported:
+	   *	SMART feature set
+	    	Security Mode feature set
+	   *	Power Management feature set
+	   *	Write cache
+	   *	Look-ahead
+	   *	Host Protected Area feature set
+	   *	WRITE_BUFFER command
+	   *	READ_BUFFER command
+	   *	NOP cmd
+	   *	DOWNLOAD_MICROCODE
+	   *	Advanced Power Management feature set
+	   *	48-bit Address feature set
+	   *	Mandatory FLUSH_CACHE
+	   *	FLUSH_CACHE_EXT
+	   *	SMART error logging
+	   *	SMART self-test
+	   *	General Purpose Logging feature set
+	   *	WRITE_{DMA|MULTIPLE}_FUA_EXT
+	   *	64-bit World wide name
+	   *	IDLE_IMMEDIATE with UNLOAD
+	   *	WRITE_UNCORRECTABLE_EXT command
+	   *	{READ,WRITE}_DMA_EXT_GPL commands
+	   *	Segmented DOWNLOAD_MICROCODE
+	   *	Gen1 signaling speed (1.5Gb/s)
+	   *	Gen2 signaling speed (3.0Gb/s)
+	   *	Gen3 signaling speed (6.0Gb/s)
+	   *	Native Command Queueing (NCQ)
+	   *	Host-initiated interface power management
+	   *	Phy event counters
+	   *	READ_LOG_DMA_EXT equivalent to READ_LOG_EXT
+	   *	DMA Setup Auto-Activate optimization
+	    	Device-initiated interface power management
+	   *	Software settings preservation
+	    	Device Sleep (DEVSLP)
+	   *	SMART Command Transport (SCT) feature set
+	   *	SCT Write Same (AC2)
+	   *	SCT Error Recovery Control (AC3)
+	   *	SCT Features Control (AC4)
+	   *	SCT Data Tables (AC5)
+	   *	SANITIZE feature set
+	   *	CRYPTO_SCRAMBLE_EXT command
+	   *	BLOCK_ERASE_EXT command
+	   *	Device encrypts all user data
+	   *	DOWNLOAD MICROCODE DMA command
+	   *	WRITE BUFFER DMA command
+	   *	READ BUFFER DMA command
+	   *	Data Set Management TRIM supported (limit 8 blocks)
+	   *	Deterministic read ZEROs after TRIM
+Security: 
+	Master password revision code = 65534
+		supported
+	not	enabled
+	not	locked
+	not	frozen
+	not	expired: security count
+		supported: enhanced erase
+	2min for SECURITY ERASE UNIT. 2min for ENHANCED SECURITY ERASE UNIT.
+Logical Unit WWN Device Identifier: 55cd2e414ecb6e0c
+	NAA		: 5
+	IEEE OUI	: 5cd2e4
+	Unique ID	: 14ecb6e0c
+Device Sleep:
+	DEVSLP Exit Timeout (DETO): 45 ms (drive)
+	Minimum DEVSLP Assertion Time (MDAT): 31 ms (drive)
+Checksum: correct
+
+/dev/sda1:
+
+ATA device, with non-removable media
+	Model Number:       INTEL SSDSC2KW010T8                     
+	Serial Number:      BTLA745000WS1P0EGN  
+	Firmware Revision:  LHF0B1C
+	Transport:          Serial, ATA8-AST, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6, SATA Rev 3.0
+Standards:
+	Used: unknown (minor revision code 0xffff) 
+	Supported: 10 9 8 7 6 5 
+	Likely used: 10
+Configuration:
+	Logical		max	current
+	cylinders	16383	16383
+	heads		16	16
+	sectors/track	63	63
+	--
+	CHS current addressable sectors:    16514064
+	LBA    user addressable sectors:   268435455
+	LBA48  user addressable sectors:  2000409264
+	Logical  Sector size:                   512 bytes
+	Physical Sector size:                   512 bytes
+	Logical Sector-0 offset:                  0 bytes
+	device size with M = 1024*1024:      976762 MBytes
+	device size with M = 1000*1000:     1024209 MBytes (1024 GB)
+	cache/buffer size  = unknown
+	Form Factor: 2.5 inch
+	Nominal Media Rotation Rate: Solid State Device
+Capabilities:
+	LBA, IORDY(can be disabled)
+	Queue depth: 32
+	Standby timer values: spec'd by Standard, no device specific minimum
+	R/W multiple sector transfer: Max = 16	Current = 16
+	Advanced power management level: 254
+	DMA: mdma0 mdma1 mdma2 udma0 udma1 udma2 udma3 udma4 udma5 *udma6 
+	     Cycle time: min=120ns recommended=120ns
+	PIO: pio0 pio1 pio2 pio3 pio4 
+	     Cycle time: no flow control=120ns  IORDY flow control=120ns
+Commands/features:
+	Enabled	Supported:
+	   *	SMART feature set
+	    	Security Mode feature set
+	   *	Power Management feature set
+	   *	Write cache
+	   *	Look-ahead
+	   *	Host Protected Area feature set
+	   *	WRITE_BUFFER command
+	   *	READ_BUFFER command
+	   *	NOP cmd
+	   *	DOWNLOAD_MICROCODE
+	   *	Advanced Power Management feature set
+	   *	48-bit Address feature set
+	   *	Mandatory FLUSH_CACHE
+	   *	FLUSH_CACHE_EXT
+	   *	SMART error logging
+	   *	SMART self-test
+	   *	General Purpose Logging feature set
+	   *	WRITE_{DMA|MULTIPLE}_FUA_EXT
+	   *	64-bit World wide name
+	   *	IDLE_IMMEDIATE with UNLOAD
+	   *	WRITE_UNCORRECTABLE_EXT command
+	   *	{READ,WRITE}_DMA_EXT_GPL commands
+	   *	Segmented DOWNLOAD_MICROCODE
+	   *	Gen1 signaling speed (1.5Gb/s)
+	   *	Gen2 signaling speed (3.0Gb/s)
+	   *	Gen3 signaling speed (6.0Gb/s)
+	   *	Native Command Queueing (NCQ)
+	   *	Host-initiated interface power management
+	   *	Phy event counters
+	   *	READ_LOG_DMA_EXT equivalent to READ_LOG_EXT
+	   *	DMA Setup Auto-Activate optimization
+	    	Device-initiated interface power management
+	   *	Software settings preservation
+	    	Device Sleep (DEVSLP)
+	   *	SMART Command Transport (SCT) feature set
+	   *	SCT Write Same (AC2)
+	   *	SCT Error Recovery Control (AC3)
+	   *	SCT Features Control (AC4)
+	   *	SCT Data Tables (AC5)
+	   *	SANITIZE feature set
+	   *	CRYPTO_SCRAMBLE_EXT command
+	   *	BLOCK_ERASE_EXT command
+	   *	Device encrypts all user data
+	   *	DOWNLOAD MICROCODE DMA command
+	   *	WRITE BUFFER DMA command
+	   *	READ BUFFER DMA command
+	   *	Data Set Management TRIM supported (limit 8 blocks)
+	   *	Deterministic read ZEROs after TRIM
+Security: 
+	Master password revision code = 65534
+		supported
+	not	enabled
+	not	locked
+	not	frozen
+	not	expired: security count
+		supported: enhanced erase
+	2min for SECURITY ERASE UNIT. 2min for ENHANCED SECURITY ERASE UNIT.
+Logical Unit WWN Device Identifier: 55cd2e414ecb6e0c
+	NAA		: 5
+	IEEE OUI	: 5cd2e4
+	Unique ID	: 14ecb6e0c
+Device Sleep:
+	DEVSLP Exit Timeout (DETO): 45 ms (drive)
+	Minimum DEVSLP Assertion Time (MDAT): 31 ms (drive)
+Checksum: correct
+
+/dev/sda2:
+
+ATA device, with non-removable media
+	Model Number:       INTEL SSDSC2KW010T8                     
+	Serial Number:      BTLA745000WS1P0EGN  
+	Firmware Revision:  LHF0B1C
+	Transport:          Serial, ATA8-AST, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6, SATA Rev 3.0
+Standards:
+	Used: unknown (minor revision code 0xffff) 
+	Supported: 10 9 8 7 6 5 
+	Likely used: 10
+Configuration:
+	Logical		max	current
+	cylinders	16383	16383
+	heads		16	16
+	sectors/track	63	63
+	--
+	CHS current addressable sectors:    16514064
+	LBA    user addressable sectors:   268435455
+	LBA48  user addressable sectors:  2000409264
+	Logical  Sector size:                   512 bytes
+	Physical Sector size:                   512 bytes
+	Logical Sector-0 offset:                  0 bytes
+	device size with M = 1024*1024:      976762 MBytes
+	device size with M = 1000*1000:     1024209 MBytes (1024 GB)
+	cache/buffer size  = unknown
+	Form Factor: 2.5 inch
+	Nominal Media Rotation Rate: Solid State Device
+Capabilities:
+	LBA, IORDY(can be disabled)
+	Queue depth: 32
+	Standby timer values: spec'd by Standard, no device specific minimum
+	R/W multiple sector transfer: Max = 16	Current = 16
+	Advanced power management level: 254
+	DMA: mdma0 mdma1 mdma2 udma0 udma1 udma2 udma3 udma4 udma5 *udma6 
+	     Cycle time: min=120ns recommended=120ns
+	PIO: pio0 pio1 pio2 pio3 pio4 
+	     Cycle time: no flow control=120ns  IORDY flow control=120ns
+Commands/features:
+	Enabled	Supported:
+	   *	SMART feature set
+	    	Security Mode feature set
+	   *	Power Management feature set
+	   *	Write cache
+	   *	Look-ahead
+	   *	Host Protected Area feature set
+	   *	WRITE_BUFFER command
+	   *	READ_BUFFER command
+	   *	NOP cmd
+	   *	DOWNLOAD_MICROCODE
+	   *	Advanced Power Management feature set
+	   *	48-bit Address feature set
+	   *	Mandatory FLUSH_CACHE
+	   *	FLUSH_CACHE_EXT
+	   *	SMART error logging
+	   *	SMART self-test
+	   *	General Purpose Logging feature set
+	   *	WRITE_{DMA|MULTIPLE}_FUA_EXT
+	   *	64-bit World wide name
+	   *	IDLE_IMMEDIATE with UNLOAD
+	   *	WRITE_UNCORRECTABLE_EXT command
+	   *	{READ,WRITE}_DMA_EXT_GPL commands
+	   *	Segmented DOWNLOAD_MICROCODE
+	   *	Gen1 signaling speed (1.5Gb/s)
+	   *	Gen2 signaling speed (3.0Gb/s)
+	   *	Gen3 signaling speed (6.0Gb/s)
+	   *	Native Command Queueing (NCQ)
+	   *	Host-initiated interface power management
+	   *	Phy event counters
+	   *	READ_LOG_DMA_EXT equivalent to READ_LOG_EXT
+	   *	DMA Setup Auto-Activate optimization
+	    	Device-initiated interface power management
+	   *	Software settings preservation
+	    	Device Sleep (DEVSLP)
+	   *	SMART Command Transport (SCT) feature set
+	   *	SCT Write Same (AC2)
+	   *	SCT Error Recovery Control (AC3)
+	   *	SCT Features Control (AC4)
+	   *	SCT Data Tables (AC5)
+	   *	SANITIZE feature set
+	   *	CRYPTO_SCRAMBLE_EXT command
+	   *	BLOCK_ERASE_EXT command
+	   *	Device encrypts all user data
+	   *	DOWNLOAD MICROCODE DMA command
+	   *	WRITE BUFFER DMA command
+	   *	READ BUFFER DMA command
+	   *	Data Set Management TRIM supported (limit 8 blocks)
+	   *	Deterministic read ZEROs after TRIM
+Security: 
+	Master password revision code = 65534
+		supported
+	not	enabled
+	not	locked
+	not	frozen
+	not	expired: security count
+		supported: enhanced erase
+	2min for SECURITY ERASE UNIT. 2min for ENHANCED SECURITY ERASE UNIT.
+Logical Unit WWN Device Identifier: 55cd2e414ecb6e0c
+	NAA		: 5
+	IEEE OUI	: 5cd2e4
+	Unique ID	: 14ecb6e0c
+Device Sleep:
+	DEVSLP Exit Timeout (DETO): 45 ms (drive)
+	Minimum DEVSLP Assertion Time (MDAT): 31 ms (drive)
+Checksum: correct
+
+/dev/sda3:
+
+ATA device, with non-removable media
+	Model Number:       INTEL SSDSC2KW010T8                     
+	Serial Number:      BTLA745000WS1P0EGN  
+	Firmware Revision:  LHF0B1C
+	Transport:          Serial, ATA8-AST, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6, SATA Rev 3.0
+Standards:
+	Used: unknown (minor revision code 0xffff) 
+	Supported: 10 9 8 7 6 5 
+	Likely used: 10
+Configuration:
+	Logical		max	current
+	cylinders	16383	16383
+	heads		16	16
+	sectors/track	63	63
+	--
+	CHS current addressable sectors:    16514064
+	LBA    user addressable sectors:   268435455
+	LBA48  user addressable sectors:  2000409264
+	Logical  Sector size:                   512 bytes
+	Physical Sector size:                   512 bytes
+	Logical Sector-0 offset:                  0 bytes
+	device size with M = 1024*1024:      976762 MBytes
+	device size with M = 1000*1000:     1024209 MBytes (1024 GB)
+	cache/buffer size  = unknown
+	Form Factor: 2.5 inch
+	Nominal Media Rotation Rate: Solid State Device
+Capabilities:
+	LBA, IORDY(can be disabled)
+	Queue depth: 32
+	Standby timer values: spec'd by Standard, no device specific minimum
+	R/W multiple sector transfer: Max = 16	Current = 16
+	Advanced power management level: 254
+	DMA: mdma0 mdma1 mdma2 udma0 udma1 udma2 udma3 udma4 udma5 *udma6 
+	     Cycle time: min=120ns recommended=120ns
+	PIO: pio0 pio1 pio2 pio3 pio4 
+	     Cycle time: no flow control=120ns  IORDY flow control=120ns
+Commands/features:
+	Enabled	Supported:
+	   *	SMART feature set
+	    	Security Mode feature set
+	   *	Power Management feature set
+	   *	Write cache
+	   *	Look-ahead
+	   *	Host Protected Area feature set
+	   *	WRITE_BUFFER command
+	   *	READ_BUFFER command
+	   *	NOP cmd
+	   *	DOWNLOAD_MICROCODE
+	   *	Advanced Power Management feature set
+	   *	48-bit Address feature set
+	   *	Mandatory FLUSH_CACHE
+	   *	FLUSH_CACHE_EXT
+	   *	SMART error logging
+	   *	SMART self-test
+	   *	General Purpose Logging feature set
+	   *	WRITE_{DMA|MULTIPLE}_FUA_EXT
+	   *	64-bit World wide name
+	   *	IDLE_IMMEDIATE with UNLOAD
+	   *	WRITE_UNCORRECTABLE_EXT command
+	   *	{READ,WRITE}_DMA_EXT_GPL commands
+	   *	Segmented DOWNLOAD_MICROCODE
+	   *	Gen1 signaling speed (1.5Gb/s)
+	   *	Gen2 signaling speed (3.0Gb/s)
+	   *	Gen3 signaling speed (6.0Gb/s)
+	   *	Native Command Queueing (NCQ)
+	   *	Host-initiated interface power management
+	   *	Phy event counters
+	   *	READ_LOG_DMA_EXT equivalent to READ_LOG_EXT
+	   *	DMA Setup Auto-Activate optimization
+	    	Device-initiated interface power management
+	   *	Software settings preservation
+	    	Device Sleep (DEVSLP)
+	   *	SMART Command Transport (SCT) feature set
+	   *	SCT Write Same (AC2)
+	   *	SCT Error Recovery Control (AC3)
+	   *	SCT Features Control (AC4)
+	   *	SCT Data Tables (AC5)
+	   *	SANITIZE feature set
+	   *	CRYPTO_SCRAMBLE_EXT command
+	   *	BLOCK_ERASE_EXT command
+	   *	Device encrypts all user data
+	   *	DOWNLOAD MICROCODE DMA command
+	   *	WRITE BUFFER DMA command
+	   *	READ BUFFER DMA command
+	   *	Data Set Management TRIM supported (limit 8 blocks)
+	   *	Deterministic read ZEROs after TRIM
+Security: 
+	Master password revision code = 65534
+		supported
+	not	enabled
+	not	locked
+	not	frozen
+	not	expired: security count
+		supported: enhanced erase
+	2min for SECURITY ERASE UNIT. 2min for ENHANCED SECURITY ERASE UNIT.
+Logical Unit WWN Device Identifier: 55cd2e414ecb6e0c
+	NAA		: 5
+	IEEE OUI	: 5cd2e4
+	Unique ID	: 14ecb6e0c
+Device Sleep:
+	DEVSLP Exit Timeout (DETO): 45 ms (drive)
+	Minimum DEVSLP Assertion Time (MDAT): 31 ms (drive)
+Checksum: correct

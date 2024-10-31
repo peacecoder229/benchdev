@@ -1,0 +1,449 @@
+2022-01-11 17:38:38,587 - WARNING - AccessVisa was registered twice, once in pysvtools.sxpcontroller.accesses.visa_access and once in pysvext.sapphirerapids.namednodes.accesses.visa, please rename one of these classes
+2022-01-11 17:38:41,706 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 17:38:41,709 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 17:39:26,463 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 17:39:26,464 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 17:40:31,694 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 17:40:31,694 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 18:13:51,635 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 18:13:51,637 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 18:14:30,697 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 18:14:30,697 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 18:21:59,898 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 18:21:59,900 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 18:32:29,373 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 18:32:29,375 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 18:37:06,490 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 18:37:06,493 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 18:40:11,635 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 18:40:11,638 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 18:44:43,070 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 18:44:43,073 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 18:47:02,193 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 18:47:02,195 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 19:05:12,398 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 19:05:12,400 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-11 19:47:33,336 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-11 19:47:33,338 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-12 11:02:14,937 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-12 11:02:14,939 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-12 11:09:03,698 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-12 11:09:03,701 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-12 12:56:18,662 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-12 12:56:18,665 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-12 13:35:00,881 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-12 13:35:00,884 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-12 13:37:49,660 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-12 13:37:49,662 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-12 14:20:40,449 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-12 14:20:40,452 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-12 15:06:54,173 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-12 15:06:54,175 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-12 16:05:50,312 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-12 16:05:50,315 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:01:32,794 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:01:32,795 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:01:52,292 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:01:52,293 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:13:09,710 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:13:09,712 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:16:02,288 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:16:02,291 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:22:39,007 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:22:39,010 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:29:29,116 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:29:29,118 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:45:23,085 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:45:23,087 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:47:10,310 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:47:10,313 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:53:03,229 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:53:03,229 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 12:56:56,364 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 12:56:56,366 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log
+2022-01-13 17:20:53,642 - INFO - pch find_all error
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/namednodes/discovery.py", line 182, in get_all
+    discovered_tmp = self.find_all(**kwargs)
+  File "/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/pch_discovery.py", line 112, in find_all
+    pchs = self.static.find_all()
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 1132, in find_all
+    return load(self.static_path, self.definition_path)
+  File "/usr/lib/python3/dist-packages/namednodes/discoveries/static.py", line 883, in load
+    lzma.decompress(open(input_path, 'rb').read())
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/pysvext/emmitsburg/namednodes/offlines/ebg_b1_1p0.spkx'
+2022-01-13 17:20:53,643 - ERROR - ERROR! Skipping 'pch', error hit during discovery, specify: stop_on_error=True to see traceback
+ERROR! When emailing the project enabler about this error, be sure to email them:
+  /home/pid_tuning/namednodes.log

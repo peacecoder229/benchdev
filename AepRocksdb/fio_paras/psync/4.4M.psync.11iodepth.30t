@@ -1,0 +1,13 @@
+[global]
+bs=4M
+ioengine=psync
+rw=randread
+runtime=180
+direct=1
+group_reporting
+iodepth=1
+size=50G
+exitall
+[test]
+filename=/dev/nvme0n1
+numjobs=30

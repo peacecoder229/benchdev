@@ -1,0 +1,7 @@
+specjbb.controller.type=PRESET
+specjbb.controller.preset.ir=12800
+specjbb.controller.preset.duration=180000
+specjbb.forkjoin.workers.Tier1=96
+specjbb.forkjoin.workers.Tier2=32
+specjbb.forkjoin.workers.Tier3=16
+specjbb.controller.port=24000

@@ -1,0 +1,1 @@
+BOOT_IMAGE=(hd1,gpt2)/vmlinuz-5.19.0-emr.bkc.3.12.16.x86_64 root=/dev/mapper/cs-root ro crashkernel=auto resume=/dev/mapper/cs-swap rd.lvm.lv=cs/root rd.lvm.lv=cs/swap rhgb quiet intel_iommu=on sm_on console=tty1 console=ttyS0,115200

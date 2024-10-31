@@ -1,0 +1,1 @@
+BOOT_IMAGE=(hd0,gpt2)/vmlinuz-5.10.45-p401.gad947b1 root=/dev/mapper/fedora_fedora-root ro rd.lvm.lv=fedora_fedora/root rhgb quiet skew_tick=1 skew_tick=1 skew_tick=1 skew_tick=1

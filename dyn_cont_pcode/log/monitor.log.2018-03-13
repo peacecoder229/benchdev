@@ -1,0 +1,565 @@
+2018-03-13 15:04:02,612 - INFO - SLO target is set to:[6000, 8000] sec
+2018-03-13 15:04:07,900 - INFO - System CPU utilization: 0.5
+2018-03-13 15:04:07,900 - INFO - Stream instance:0
+2018-03-13 15:04:07,900 - INFO - Stream finished:0
+2018-03-13 15:04:07,900 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:04:07,901 - INFO - JVM GC kicked in at application time:-1 sec
+2018-03-13 15:04:07,901 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:04:13,704 - INFO - System CPU utilization: 0.3
+2018-03-13 15:04:13,704 - INFO - Stream instance:0
+2018-03-13 15:04:13,704 - INFO - Stream finished:0
+2018-03-13 15:04:13,705 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:04:13,705 - INFO - JVM GC kicked in at application time:-1 sec
+2018-03-13 15:04:13,705 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:04:19,507 - INFO - System CPU utilization: 41.7
+2018-03-13 15:04:19,507 - INFO - Stream instance:0
+2018-03-13 15:04:19,508 - INFO - Stream finished:0
+2018-03-13 15:04:19,508 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:04:19,508 - INFO - JVM GC kicked in at application time:-1 sec
+2018-03-13 15:04:19,508 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:04:25,304 - INFO - System CPU utilization: 0.6
+2018-03-13 15:04:25,305 - INFO - Stream instance:0
+2018-03-13 15:04:25,305 - INFO - Stream finished:0
+2018-03-13 15:04:25,305 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:04:25,305 - INFO - JVM GC kicked in at application time:14.812 sec
+2018-03-13 15:04:25,305 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:04:31,097 - INFO - System CPU utilization: 5.9
+2018-03-13 15:04:31,098 - INFO - Stream instance:0
+2018-03-13 15:04:31,098 - INFO - Stream finished:0
+2018-03-13 15:04:31,098 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:04:31,098 - INFO - JVM GC kicked in at application time:14.812 sec
+2018-03-13 15:04:31,098 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:04:36,905 - INFO - System CPU utilization: 7.0
+2018-03-13 15:04:36,906 - INFO - Stream instance:0
+2018-03-13 15:04:36,906 - INFO - Stream finished:0
+2018-03-13 15:04:36,906 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:04:36,907 - INFO - JVM GC kicked in at application time:14.812 sec
+2018-03-13 15:04:36,907 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:04:42,694 - INFO - System CPU utilization: 14.3
+2018-03-13 15:04:42,695 - INFO - Stream instance:0
+2018-03-13 15:04:42,695 - INFO - Stream finished:0
+2018-03-13 15:04:42,695 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:04:42,695 - INFO - JVM GC kicked in at application time:14.812 sec
+2018-03-13 15:04:42,695 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:04:48,499 - INFO - System CPU utilization: 17.2
+2018-03-13 15:04:48,500 - INFO - Stream instance:0
+2018-03-13 15:04:48,500 - INFO - Stream finished:0
+2018-03-13 15:04:48,500 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:04:48,500 - INFO - JVM GC kicked in at application time:14.812 sec
+2018-03-13 15:04:48,500 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:04:54,306 - INFO - System CPU utilization: 18.0
+2018-03-13 15:04:54,306 - INFO - Stream instance:0
+2018-03-13 15:04:54,307 - INFO - Stream finished:0
+2018-03-13 15:04:54,307 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:04:54,307 - INFO - JVM GC kicked in at application time:14.812 sec
+2018-03-13 15:04:54,307 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:05:00,119 - INFO - System CPU utilization: 17.5
+2018-03-13 15:05:00,119 - INFO - Stream instance:0
+2018-03-13 15:05:00,119 - INFO - Stream finished:0
+2018-03-13 15:05:00,120 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:05:00,120 - INFO - JVM GC kicked in at application time:14.812 sec
+2018-03-13 15:05:00,120 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:05:05,924 - INFO - System CPU utilization: 20.4
+2018-03-13 15:05:05,924 - INFO - Stream instance:0
+2018-03-13 15:05:05,924 - INFO - Stream finished:0
+2018-03-13 15:05:05,925 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:05:05,925 - INFO - JVM GC kicked in at application time:55.21 sec
+2018-03-13 15:05:05,925 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:05:11,735 - INFO - System CPU utilization: 22.9
+2018-03-13 15:05:11,736 - INFO - Stream instance:0
+2018-03-13 15:05:11,736 - INFO - Stream finished:0
+2018-03-13 15:05:11,736 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:05:11,736 - INFO - JVM GC kicked in at application time:55.21 sec
+2018-03-13 15:05:11,737 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:05:17,537 - INFO - System CPU utilization: 21.1
+2018-03-13 15:05:17,537 - INFO - Stream instance:0
+2018-03-13 15:05:17,537 - INFO - Stream finished:0
+2018-03-13 15:05:17,538 - INFO - Production workload performance data in track at application time:-1 sec
+2018-03-13 15:05:17,538 - INFO - JVM GC kicked in at application time:55.21 sec
+2018-03-13 15:05:17,538 - WARNING - Cannot get performance data! Will retry in 5 sec.
+2018-03-13 15:05:23,335 - INFO - System CPU utilization: 21.3
+2018-03-13 15:05:23,335 - INFO - Stream instance:0
+2018-03-13 15:05:23,336 - INFO - Stream finished:0
+2018-03-13 15:05:23,336 - INFO - Production workload performance data in track at application time:79.0 sec
+2018-03-13 15:05:23,336 - INFO - JVM GC kicked in at application time:74.197 sec
+2018-03-13 15:05:23,336 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6900.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:05:34,652 - INFO - System CPU utilization: 23.7
+2018-03-13 15:05:34,653 - INFO - Stream instance:1
+2018-03-13 15:05:34,653 - INFO - Stream finished:0
+2018-03-13 15:05:34,653 - INFO - Production workload performance data in track at application time:85.0 sec
+2018-03-13 15:05:34,653 - INFO - JVM GC kicked in at application time:74.197 sec
+2018-03-13 15:05:34,653 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6700.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:05:46,068 - INFO - System CPU utilization: 25.9
+2018-03-13 15:05:46,069 - INFO - Stream instance:2
+2018-03-13 15:05:46,069 - INFO - Stream finished:0
+2018-03-13 15:05:46,069 - INFO - Production workload performance data in track at application time:98.0 sec
+2018-03-13 15:05:46,069 - INFO - JVM GC kicked in at application time:92.574 sec
+2018-03-13 15:05:46,069 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:05:57,531 - INFO - System CPU utilization: 27.3
+2018-03-13 15:05:57,532 - INFO - Stream instance:3
+2018-03-13 15:05:57,532 - INFO - Stream finished:1
+2018-03-13 15:05:57,532 - INFO - Production workload performance data in track at application time:112.0 sec
+2018-03-13 15:05:57,532 - INFO - JVM GC kicked in at application time:92.574 sec
+2018-03-13 15:05:57,532 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6600.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:06:09,003 - INFO - System CPU utilization: 32.0
+2018-03-13 15:06:09,003 - INFO - Stream instance:4
+2018-03-13 15:06:09,003 - INFO - Stream finished:2
+2018-03-13 15:06:09,004 - INFO - Production workload performance data in track at application time:118.0 sec
+2018-03-13 15:06:09,004 - INFO - JVM GC kicked in at application time:111.438 sec
+2018-03-13 15:06:09,004 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6900.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:06:20,445 - INFO - System CPU utilization: 32.8
+2018-03-13 15:06:20,445 - INFO - Stream instance:5
+2018-03-13 15:06:20,445 - INFO - Stream finished:4
+2018-03-13 15:06:20,445 - INFO - Production workload performance data in track at application time:134.0 sec
+2018-03-13 15:06:20,446 - INFO - JVM GC kicked in at application time:130.316 sec
+2018-03-13 15:06:20,446 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:06:31,919 - INFO - System CPU utilization: 35.7
+2018-03-13 15:06:31,920 - INFO - Stream instance:6
+2018-03-13 15:06:31,920 - INFO - Stream finished:6
+2018-03-13 15:06:31,920 - INFO - Production workload performance data in track at application time:142.0 sec
+2018-03-13 15:06:31,920 - INFO - JVM GC kicked in at application time:130.316 sec
+2018-03-13 15:06:31,920 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6400.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:06:43,410 - INFO - System CPU utilization: 35.2
+2018-03-13 15:06:43,411 - INFO - Stream instance:7
+2018-03-13 15:06:43,411 - INFO - Stream finished:9
+2018-03-13 15:06:43,411 - INFO - Production workload performance data in track at application time:155.0 sec
+2018-03-13 15:06:43,412 - INFO - JVM GC kicked in at application time:149.335 sec
+2018-03-13 15:06:43,412 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:06:55,010 - INFO - System CPU utilization: 36.3
+2018-03-13 15:06:55,011 - INFO - Stream instance:8
+2018-03-13 15:06:55,011 - INFO - Stream finished:12
+2018-03-13 15:06:55,011 - INFO - Production workload performance data in track at application time:168.0 sec
+2018-03-13 15:06:55,011 - INFO - JVM GC kicked in at application time:149.335 sec
+2018-03-13 15:06:55,011 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:07:06,661 - INFO - System CPU utilization: 45.5
+2018-03-13 15:07:06,661 - INFO - Stream instance:9
+2018-03-13 15:07:06,662 - INFO - Stream finished:16
+2018-03-13 15:07:06,662 - INFO - Production workload performance data in track at application time:176.0 sec
+2018-03-13 15:07:06,662 - INFO - JVM GC kicked in at application time:168.208 sec
+2018-03-13 15:07:06,662 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6600.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:07:18,303 - INFO - System CPU utilization: 43.7
+2018-03-13 15:07:18,303 - INFO - Stream instance:10
+2018-03-13 15:07:18,304 - INFO - Stream finished:20
+2018-03-13 15:07:18,304 - INFO - Production workload performance data in track at application time:190.0 sec
+2018-03-13 15:07:18,304 - INFO - JVM GC kicked in at application time:187.13 sec
+2018-03-13 15:07:18,304 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:07:29,991 - INFO - System CPU utilization: 44.1
+2018-03-13 15:07:29,991 - INFO - Stream instance:11
+2018-03-13 15:07:29,991 - INFO - Stream finished:23
+2018-03-13 15:07:29,992 - INFO - Production workload performance data in track at application time:203.0 sec
+2018-03-13 15:07:29,992 - INFO - JVM GC kicked in at application time:187.13 sec
+2018-03-13 15:07:29,992 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6400.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:07:41,911 - INFO - System CPU utilization: 52.2
+2018-03-13 15:07:41,912 - INFO - Stream instance:12
+2018-03-13 15:07:41,912 - INFO - Stream finished:27
+2018-03-13 15:07:41,912 - INFO - Production workload performance data in track at application time:211.0 sec
+2018-03-13 15:07:41,913 - INFO - JVM GC kicked in at application time:205.986 sec
+2018-03-13 15:07:41,913 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7100.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:07:53,750 - INFO - System CPU utilization: 49.1
+2018-03-13 15:07:53,751 - INFO - Stream instance:13
+2018-03-13 15:07:53,751 - INFO - Stream finished:31
+2018-03-13 15:07:53,751 - INFO - Production workload performance data in track at application time:226.0 sec
+2018-03-13 15:07:53,752 - INFO - JVM GC kicked in at application time:224.818 sec
+2018-03-13 15:07:53,752 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6900.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:08:05,651 - INFO - System CPU utilization: 46.5
+2018-03-13 15:08:05,652 - INFO - Stream instance:14
+2018-03-13 15:08:05,652 - INFO - Stream finished:37
+2018-03-13 15:08:05,652 - INFO - Production workload performance data in track at application time:234.0 sec
+2018-03-13 15:08:05,652 - INFO - JVM GC kicked in at application time:224.818 sec
+2018-03-13 15:08:05,652 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:08:21,982 - INFO - System CPU utilization: 49.0
+2018-03-13 15:08:21,983 - INFO - Stream instance:14
+2018-03-13 15:08:21,983 - INFO - Stream finished:43
+2018-03-13 15:08:21,983 - INFO - Production workload performance data in track at application time:256.0 sec
+2018-03-13 15:08:21,983 - INFO - JVM GC kicked in at application time:243.751 sec
+2018-03-13 15:08:21,984 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7000.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:08:38,344 - INFO - System CPU utilization: 51.8
+2018-03-13 15:08:38,345 - INFO - Stream instance:14
+2018-03-13 15:08:38,346 - INFO - Stream finished:48
+2018-03-13 15:08:38,346 - INFO - Production workload performance data in track at application time:270.0 sec
+2018-03-13 15:08:38,346 - INFO - JVM GC kicked in at application time:262.667 sec
+2018-03-13 15:08:38,346 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7100.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:08:54,762 - INFO - System CPU utilization: 49.7
+2018-03-13 15:08:54,763 - INFO - Stream instance:14
+2018-03-13 15:08:54,763 - INFO - Stream finished:55
+2018-03-13 15:08:54,763 - INFO - Production workload performance data in track at application time:284.0 sec
+2018-03-13 15:08:54,763 - INFO - JVM GC kicked in at application time:281.321 sec
+2018-03-13 15:08:54,764 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6900.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:09:11,167 - INFO - System CPU utilization: 49.6
+2018-03-13 15:09:11,167 - INFO - Stream instance:14
+2018-03-13 15:09:11,168 - INFO - Stream finished:61
+2018-03-13 15:09:11,168 - INFO - Production workload performance data in track at application time:306.0 sec
+2018-03-13 15:09:11,168 - INFO - JVM GC kicked in at application time:300.298 sec
+2018-03-13 15:09:11,168 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:09:27,521 - INFO - System CPU utilization: 51.0
+2018-03-13 15:09:27,522 - INFO - Stream instance:14
+2018-03-13 15:09:27,522 - INFO - Stream finished:67
+2018-03-13 15:09:27,522 - INFO - Production workload performance data in track at application time:320.0 sec
+2018-03-13 15:09:27,522 - INFO - JVM GC kicked in at application time:319.113 sec
+2018-03-13 15:09:27,522 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7100.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:09:44,060 - INFO - System CPU utilization: 55.7
+2018-03-13 15:09:44,060 - INFO - Stream instance:14
+2018-03-13 15:09:44,061 - INFO - Stream finished:75
+2018-03-13 15:09:44,061 - INFO - Production workload performance data in track at application time:334.0 sec
+2018-03-13 15:09:44,061 - INFO - JVM GC kicked in at application time:319.113 sec
+2018-03-13 15:09:44,062 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7100.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:10:00,493 - INFO - System CPU utilization: 53.3
+2018-03-13 15:10:00,494 - INFO - Stream instance:14
+2018-03-13 15:10:00,494 - INFO - Stream finished:81
+2018-03-13 15:10:00,495 - INFO - Production workload performance data in track at application time:355.0 sec
+2018-03-13 15:10:00,495 - INFO - JVM GC kicked in at application time:337.861 sec
+2018-03-13 15:10:00,495 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7400.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:10:16,832 - INFO - System CPU utilization: 48.5
+2018-03-13 15:10:16,833 - INFO - Stream instance:14
+2018-03-13 15:10:16,833 - INFO - Stream finished:87
+2018-03-13 15:10:16,834 - INFO - Production workload performance data in track at application time:370.0 sec
+2018-03-13 15:10:16,834 - INFO - JVM GC kicked in at application time:356.6 sec
+2018-03-13 15:10:16,834 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:10:33,207 - INFO - System CPU utilization: 50.7
+2018-03-13 15:10:33,208 - INFO - Stream instance:14
+2018-03-13 15:10:33,208 - INFO - Stream finished:95
+2018-03-13 15:10:33,208 - INFO - Production workload performance data in track at application time:385.0 sec
+2018-03-13 15:10:33,208 - INFO - JVM GC kicked in at application time:375.415 sec
+2018-03-13 15:10:33,209 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7000.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:10:49,672 - INFO - System CPU utilization: 61.6
+2018-03-13 15:10:49,673 - INFO - Stream instance:14
+2018-03-13 15:10:49,673 - INFO - Stream finished:100
+2018-03-13 15:10:49,673 - INFO - Production workload performance data in track at application time:399.0 sec
+2018-03-13 15:10:49,674 - INFO - JVM GC kicked in at application time:394.264 sec
+2018-03-13 15:10:49,674 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:11:06,148 - INFO - System CPU utilization: 58.2
+2018-03-13 15:11:06,149 - INFO - Stream instance:14
+2018-03-13 15:11:06,149 - INFO - Stream finished:107
+2018-03-13 15:11:06,149 - INFO - Production workload performance data in track at application time:414.0 sec
+2018-03-13 15:11:06,150 - INFO - JVM GC kicked in at application time:413.162 sec
+2018-03-13 15:11:06,150 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:11:22,593 - INFO - System CPU utilization: 50.7
+2018-03-13 15:11:22,594 - INFO - Stream instance:14
+2018-03-13 15:11:22,595 - INFO - Stream finished:114
+2018-03-13 15:11:22,595 - INFO - Production workload performance data in track at application time:438.0 sec
+2018-03-13 15:11:22,595 - INFO - JVM GC kicked in at application time:431.951 sec
+2018-03-13 15:11:22,595 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:11:38,996 - INFO - System CPU utilization: 52.1
+2018-03-13 15:11:38,997 - INFO - Stream instance:14
+2018-03-13 15:11:38,997 - INFO - Stream finished:121
+2018-03-13 15:11:38,997 - INFO - Production workload performance data in track at application time:452.0 sec
+2018-03-13 15:11:38,997 - INFO - JVM GC kicked in at application time:450.607 sec
+2018-03-13 15:11:38,997 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:11:55,407 - INFO - System CPU utilization: 49.7
+2018-03-13 15:11:55,407 - INFO - Stream instance:14
+2018-03-13 15:11:55,408 - INFO - Stream finished:128
+2018-03-13 15:11:55,408 - INFO - Production workload performance data in track at application time:467.0 sec
+2018-03-13 15:11:55,408 - INFO - JVM GC kicked in at application time:450.607 sec
+2018-03-13 15:11:55,408 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6600.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:12:11,819 - INFO - System CPU utilization: 51.2
+2018-03-13 15:12:11,820 - INFO - Stream instance:14
+2018-03-13 15:12:11,820 - INFO - Stream finished:133
+2018-03-13 15:12:11,820 - INFO - Production workload performance data in track at application time:481.0 sec
+2018-03-13 15:12:11,821 - INFO - JVM GC kicked in at application time:469.359 sec
+2018-03-13 15:12:11,821 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7000.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:12:28,269 - INFO - System CPU utilization: 59.3
+2018-03-13 15:12:28,269 - INFO - Stream instance:14
+2018-03-13 15:12:28,270 - INFO - Stream finished:141
+2018-03-13 15:12:28,270 - INFO - Production workload performance data in track at application time:498.0 sec
+2018-03-13 15:12:28,270 - INFO - JVM GC kicked in at application time:488.137 sec
+2018-03-13 15:12:28,270 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:12:44,697 - INFO - System CPU utilization: 51.8
+2018-03-13 15:12:44,698 - INFO - Stream instance:14
+2018-03-13 15:12:44,698 - INFO - Stream finished:146
+2018-03-13 15:12:44,699 - INFO - Production workload performance data in track at application time:520.0 sec
+2018-03-13 15:12:44,699 - INFO - JVM GC kicked in at application time:507.045 sec
+2018-03-13 15:12:44,699 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7000.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:13:01,071 - INFO - System CPU utilization: 47.0
+2018-03-13 15:13:01,072 - INFO - Stream instance:14
+2018-03-13 15:13:01,072 - INFO - Stream finished:155
+2018-03-13 15:13:01,072 - INFO - Production workload performance data in track at application time:534.0 sec
+2018-03-13 15:13:01,073 - INFO - JVM GC kicked in at application time:525.943 sec
+2018-03-13 15:13:01,073 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7400.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:13:17,593 - INFO - System CPU utilization: 51.9
+2018-03-13 15:13:17,594 - INFO - Stream instance:14
+2018-03-13 15:13:17,594 - INFO - Stream finished:160
+2018-03-13 15:13:17,595 - INFO - Production workload performance data in track at application time:547.0 sec
+2018-03-13 15:13:17,595 - INFO - JVM GC kicked in at application time:544.638 sec
+2018-03-13 15:13:17,595 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:13:33,992 - INFO - System CPU utilization: 48.9
+2018-03-13 15:13:33,992 - INFO - Stream instance:14
+2018-03-13 15:13:33,993 - INFO - Stream finished:165
+2018-03-13 15:13:33,993 - INFO - Production workload performance data in track at application time:568.0 sec
+2018-03-13 15:13:33,993 - INFO - JVM GC kicked in at application time:563.523 sec
+2018-03-13 15:13:33,993 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7600.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:13:50,398 - INFO - System CPU utilization: 52.2
+2018-03-13 15:13:50,398 - INFO - Stream instance:14
+2018-03-13 15:13:50,399 - INFO - Stream finished:173
+2018-03-13 15:13:50,399 - INFO - Production workload performance data in track at application time:582.0 sec
+2018-03-13 15:13:50,399 - INFO - JVM GC kicked in at application time:563.523 sec
+2018-03-13 15:13:50,399 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6700.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:14:06,836 - INFO - System CPU utilization: 57.7
+2018-03-13 15:14:06,837 - INFO - Stream instance:14
+2018-03-13 15:14:06,837 - INFO - Stream finished:179
+2018-03-13 15:14:06,837 - INFO - Production workload performance data in track at application time:596.0 sec
+2018-03-13 15:14:06,837 - INFO - JVM GC kicked in at application time:582.343 sec
+2018-03-13 15:14:06,837 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6900.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:14:23,185 - INFO - System CPU utilization: 49.6
+2018-03-13 15:14:23,185 - INFO - Stream instance:14
+2018-03-13 15:14:23,186 - INFO - Stream finished:184
+2018-03-13 15:14:23,186 - INFO - Production workload performance data in track at application time:617.0 sec
+2018-03-13 15:14:23,186 - INFO - JVM GC kicked in at application time:601.16 sec
+2018-03-13 15:14:23,186 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:14:39,602 - INFO - System CPU utilization: 52.6
+2018-03-13 15:14:39,603 - INFO - Stream instance:14
+2018-03-13 15:14:39,604 - INFO - Stream finished:193
+2018-03-13 15:14:39,604 - INFO - Production workload performance data in track at application time:631.0 sec
+2018-03-13 15:14:39,604 - INFO - JVM GC kicked in at application time:620.025 sec
+2018-03-13 15:14:39,604 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6700.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:14:56,062 - INFO - System CPU utilization: 55.1
+2018-03-13 15:14:56,063 - INFO - Stream instance:14
+2018-03-13 15:14:56,063 - INFO - Stream finished:198
+2018-03-13 15:14:56,063 - INFO - Production workload performance data in track at application time:645.0 sec
+2018-03-13 15:14:56,063 - INFO - JVM GC kicked in at application time:638.79 sec
+2018-03-13 15:14:56,064 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:15:12,444 - INFO - System CPU utilization: 53.1
+2018-03-13 15:15:12,445 - INFO - Stream instance:14
+2018-03-13 15:15:12,446 - INFO - Stream finished:205
+2018-03-13 15:15:12,446 - INFO - Production workload performance data in track at application time:660.0 sec
+2018-03-13 15:15:12,446 - INFO - JVM GC kicked in at application time:657.518 sec
+2018-03-13 15:15:12,446 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:15:28,865 - INFO - System CPU utilization: 50.3
+2018-03-13 15:15:28,866 - INFO - Stream instance:14
+2018-03-13 15:15:28,866 - INFO - Stream finished:212
+2018-03-13 15:15:28,866 - INFO - Production workload performance data in track at application time:679.0 sec
+2018-03-13 15:15:28,867 - INFO - JVM GC kicked in at application time:676.27 sec
+2018-03-13 15:15:28,867 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6600.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:15:45,285 - INFO - System CPU utilization: 52.2
+2018-03-13 15:15:45,286 - INFO - Stream instance:14
+2018-03-13 15:15:45,287 - INFO - Stream finished:219
+2018-03-13 15:15:45,287 - INFO - Production workload performance data in track at application time:700.0 sec
+2018-03-13 15:15:45,287 - INFO - JVM GC kicked in at application time:695.041 sec
+2018-03-13 15:15:45,287 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7700.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:16:01,729 - INFO - System CPU utilization: 63.3
+2018-03-13 15:16:01,730 - INFO - Stream instance:14
+2018-03-13 15:16:01,730 - INFO - Stream finished:226
+2018-03-13 15:16:01,730 - INFO - Production workload performance data in track at application time:714.0 sec
+2018-03-13 15:16:01,731 - INFO - JVM GC kicked in at application time:695.041 sec
+2018-03-13 15:16:01,731 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7400.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:16:18,213 - INFO - System CPU utilization: 51.3
+2018-03-13 15:16:18,213 - INFO - Stream instance:14
+2018-03-13 15:16:18,214 - INFO - Stream finished:233
+2018-03-13 15:16:18,214 - INFO - Production workload performance data in track at application time:728.0 sec
+2018-03-13 15:16:18,214 - INFO - JVM GC kicked in at application time:713.817 sec
+2018-03-13 15:16:18,214 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7400.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:16:34,598 - INFO - System CPU utilization: 47.1
+2018-03-13 15:16:34,599 - INFO - Stream instance:14
+2018-03-13 15:16:34,599 - INFO - Stream finished:240
+2018-03-13 15:16:34,600 - INFO - Production workload performance data in track at application time:746.0 sec
+2018-03-13 15:16:34,600 - INFO - JVM GC kicked in at application time:732.468 sec
+2018-03-13 15:16:34,600 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:16:51,041 - INFO - System CPU utilization: 51.8
+2018-03-13 15:16:51,041 - INFO - Stream instance:14
+2018-03-13 15:16:51,042 - INFO - Stream finished:244
+2018-03-13 15:16:51,042 - INFO - Production workload performance data in track at application time:760.0 sec
+2018-03-13 15:16:51,042 - INFO - JVM GC kicked in at application time:751.131 sec
+2018-03-13 15:16:51,042 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:17:07,398 - INFO - System CPU utilization: 49.0
+2018-03-13 15:17:07,399 - INFO - Stream instance:14
+2018-03-13 15:17:07,399 - INFO - Stream finished:251
+2018-03-13 15:17:07,399 - INFO - Production workload performance data in track at application time:782.0 sec
+2018-03-13 15:17:07,399 - INFO - JVM GC kicked in at application time:769.858 sec
+2018-03-13 15:17:07,399 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:17:23,806 - INFO - System CPU utilization: 52.2
+2018-03-13 15:17:23,807 - INFO - Stream instance:14
+2018-03-13 15:17:23,807 - INFO - Stream finished:258
+2018-03-13 15:17:23,807 - INFO - Production workload performance data in track at application time:797.0 sec
+2018-03-13 15:17:23,807 - INFO - JVM GC kicked in at application time:788.668 sec
+2018-03-13 15:17:23,807 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7500.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:17:40,236 - INFO - System CPU utilization: 51.8
+2018-03-13 15:17:40,237 - INFO - Stream instance:14
+2018-03-13 15:17:40,237 - INFO - Stream finished:263
+2018-03-13 15:17:40,238 - INFO - Production workload performance data in track at application time:811.0 sec
+2018-03-13 15:17:40,238 - INFO - JVM GC kicked in at application time:807.424 sec
+2018-03-13 15:17:40,238 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6900.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:17:56,607 - INFO - System CPU utilization: 44.1
+2018-03-13 15:17:56,608 - INFO - Stream instance:14
+2018-03-13 15:17:56,608 - INFO - Stream finished:272
+2018-03-13 15:17:56,608 - INFO - Production workload performance data in track at application time:831.0 sec
+2018-03-13 15:17:56,608 - INFO - JVM GC kicked in at application time:826.189 sec
+2018-03-13 15:17:56,609 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:18:13,078 - INFO - System CPU utilization: 57.2
+2018-03-13 15:18:13,079 - INFO - Stream instance:14
+2018-03-13 15:18:13,079 - INFO - Stream finished:277
+2018-03-13 15:18:13,079 - INFO - Production workload performance data in track at application time:845.0 sec
+2018-03-13 15:18:13,079 - INFO - JVM GC kicked in at application time:826.189 sec
+2018-03-13 15:18:13,079 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7100.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:18:29,482 - INFO - System CPU utilization: 59.4
+2018-03-13 15:18:29,483 - INFO - Stream instance:14
+2018-03-13 15:18:29,483 - INFO - Stream finished:283
+2018-03-13 15:18:29,483 - INFO - Production workload performance data in track at application time:859.0 sec
+2018-03-13 15:18:29,483 - INFO - JVM GC kicked in at application time:844.932 sec
+2018-03-13 15:18:29,484 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:18:45,905 - INFO - System CPU utilization: 50.3
+2018-03-13 15:18:45,906 - INFO - Stream instance:14
+2018-03-13 15:18:45,907 - INFO - Stream finished:291
+2018-03-13 15:18:45,907 - INFO - Production workload performance data in track at application time:880.0 sec
+2018-03-13 15:18:45,907 - INFO - JVM GC kicked in at application time:863.692 sec
+2018-03-13 15:18:45,907 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7000.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:19:02,312 - INFO - System CPU utilization: 57.5
+2018-03-13 15:19:02,313 - INFO - Stream instance:14
+2018-03-13 15:19:02,313 - INFO - Stream finished:296
+2018-03-13 15:19:02,314 - INFO - Production workload performance data in track at application time:894.0 sec
+2018-03-13 15:19:02,314 - INFO - JVM GC kicked in at application time:882.401 sec
+2018-03-13 15:19:02,314 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7100.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:19:18,682 - INFO - System CPU utilization: 50.4
+2018-03-13 15:19:18,683 - INFO - Stream instance:14
+2018-03-13 15:19:18,683 - INFO - Stream finished:303
+2018-03-13 15:19:18,683 - INFO - Production workload performance data in track at application time:911.0 sec
+2018-03-13 15:19:18,683 - INFO - JVM GC kicked in at application time:901.276 sec
+2018-03-13 15:19:18,683 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:19:35,163 - INFO - System CPU utilization: 49.0
+2018-03-13 15:19:35,164 - INFO - Stream instance:14
+2018-03-13 15:19:35,165 - INFO - Stream finished:310
+2018-03-13 15:19:35,165 - INFO - Production workload performance data in track at application time:925.0 sec
+2018-03-13 15:19:35,165 - INFO - JVM GC kicked in at application time:919.947 sec
+2018-03-13 15:19:35,165 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:19:51,694 - INFO - System CPU utilization: 57.2
+2018-03-13 15:19:51,695 - INFO - Stream instance:14
+2018-03-13 15:19:51,695 - INFO - Stream finished:317
+2018-03-13 15:19:51,695 - INFO - Production workload performance data in track at application time:939.0 sec
+2018-03-13 15:19:51,695 - INFO - JVM GC kicked in at application time:938.771 sec
+2018-03-13 15:19:51,696 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7000.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:20:08,123 - INFO - System CPU utilization: 56.1
+2018-03-13 15:20:08,124 - INFO - Stream instance:14
+2018-03-13 15:20:08,124 - INFO - Stream finished:324
+2018-03-13 15:20:08,124 - INFO - Production workload performance data in track at application time:962.0 sec
+2018-03-13 15:20:08,124 - INFO - JVM GC kicked in at application time:957.573 sec
+2018-03-13 15:20:08,124 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7500.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:20:24,530 - INFO - System CPU utilization: 52.2
+2018-03-13 15:20:24,531 - INFO - Stream instance:14
+2018-03-13 15:20:24,532 - INFO - Stream finished:331
+2018-03-13 15:20:24,532 - INFO - Production workload performance data in track at application time:977.0 sec
+2018-03-13 15:20:24,532 - INFO - JVM GC kicked in at application time:976.328 sec
+2018-03-13 15:20:24,532 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:20:41,017 - INFO - System CPU utilization: 45.9
+2018-03-13 15:20:41,018 - INFO - Stream instance:14
+2018-03-13 15:20:41,019 - INFO - Stream finished:338
+2018-03-13 15:20:41,019 - INFO - Production workload performance data in track at application time:991.0 sec
+2018-03-13 15:20:41,019 - INFO - JVM GC kicked in at application time:976.328 sec
+2018-03-13 15:20:41,020 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:20:57,392 - INFO - System CPU utilization: 46.0
+2018-03-13 15:20:57,393 - INFO - Stream instance:14
+2018-03-13 15:20:57,394 - INFO - Stream finished:345
+2018-03-13 15:20:57,394 - INFO - Production workload performance data in track at application time:1012.0 sec
+2018-03-13 15:20:57,394 - INFO - JVM GC kicked in at application time:995.123 sec
+2018-03-13 15:20:57,394 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:21:13,726 - INFO - System CPU utilization: 48.4
+2018-03-13 15:21:13,726 - INFO - Stream instance:14
+2018-03-13 15:21:13,726 - INFO - Stream finished:348
+2018-03-13 15:21:13,727 - INFO - Production workload performance data in track at application time:1026.0 sec
+2018-03-13 15:21:13,727 - INFO - JVM GC kicked in at application time:1013.922 sec
+2018-03-13 15:21:13,727 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7000.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:21:30,123 - INFO - System CPU utilization: 59.2
+2018-03-13 15:21:30,124 - INFO - Stream instance:14
+2018-03-13 15:21:30,124 - INFO - Stream finished:356
+2018-03-13 15:21:30,124 - INFO - Production workload performance data in track at application time:1040.0 sec
+2018-03-13 15:21:30,124 - INFO - JVM GC kicked in at application time:1032.655 sec
+2018-03-13 15:21:30,124 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7700.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:21:46,543 - INFO - System CPU utilization: 50.6
+2018-03-13 15:21:46,544 - INFO - Stream instance:14
+2018-03-13 15:21:46,544 - INFO - Stream finished:361
+2018-03-13 15:21:46,545 - INFO - Production workload performance data in track at application time:1060.0 sec
+2018-03-13 15:21:46,545 - INFO - JVM GC kicked in at application time:1051.368 sec
+2018-03-13 15:21:46,545 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7500.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:22:02,898 - INFO - System CPU utilization: 45.3
+2018-03-13 15:22:02,899 - INFO - Stream instance:14
+2018-03-13 15:22:02,899 - INFO - Stream finished:369
+2018-03-13 15:22:02,899 - INFO - Production workload performance data in track at application time:1075.0 sec
+2018-03-13 15:22:02,899 - INFO - JVM GC kicked in at application time:1070.338 sec
+2018-03-13 15:22:02,899 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:22:19,340 - INFO - System CPU utilization: 51.9
+2018-03-13 15:22:19,341 - INFO - Stream instance:14
+2018-03-13 15:22:19,341 - INFO - Stream finished:375
+2018-03-13 15:22:19,341 - INFO - Production workload performance data in track at application time:1088.0 sec
+2018-03-13 15:22:19,341 - INFO - JVM GC kicked in at application time:1089.017 sec
+2018-03-13 15:22:19,341 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:22:35,773 - INFO - System CPU utilization: 67.3
+2018-03-13 15:22:35,774 - INFO - Stream instance:14
+2018-03-13 15:22:35,774 - INFO - Stream finished:381
+2018-03-13 15:22:35,775 - INFO - Production workload performance data in track at application time:1107.0 sec
+2018-03-13 15:22:35,775 - INFO - JVM GC kicked in at application time:1089.017 sec
+2018-03-13 15:22:35,775 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 6900.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:22:52,197 - INFO - System CPU utilization: 55.6
+2018-03-13 15:22:52,197 - INFO - Stream instance:14
+2018-03-13 15:22:52,198 - INFO - Stream finished:389
+2018-03-13 15:22:52,198 - INFO - Production workload performance data in track at application time:1121.0 sec
+2018-03-13 15:22:52,198 - INFO - JVM GC kicked in at application time:1107.829 sec
+2018-03-13 15:22:52,198 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:23:08,600 - INFO - System CPU utilization: 51.8
+2018-03-13 15:23:08,601 - INFO - Stream instance:14
+2018-03-13 15:23:08,602 - INFO - Stream finished:394
+2018-03-13 15:23:08,602 - INFO - Production workload performance data in track at application time:1143.0 sec
+2018-03-13 15:23:08,602 - INFO - JVM GC kicked in at application time:1126.612 sec
+2018-03-13 15:23:08,602 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:23:25,032 - INFO - System CPU utilization: 51.8
+2018-03-13 15:23:25,033 - INFO - Stream instance:14
+2018-03-13 15:23:25,033 - INFO - Stream finished:403
+2018-03-13 15:23:25,034 - INFO - Production workload performance data in track at application time:1158.0 sec
+2018-03-13 15:23:25,034 - INFO - JVM GC kicked in at application time:1145.393 sec
+2018-03-13 15:23:25,034 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7400.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:23:41,462 - INFO - System CPU utilization: 52.7
+2018-03-13 15:23:41,463 - INFO - Stream instance:14
+2018-03-13 15:23:41,463 - INFO - Stream finished:408
+2018-03-13 15:23:41,463 - INFO - Production workload performance data in track at application time:1173.0 sec
+2018-03-13 15:23:41,464 - INFO - JVM GC kicked in at application time:1164.121 sec
+2018-03-13 15:23:41,464 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:23:57,923 - INFO - System CPU utilization: 46.2
+2018-03-13 15:23:57,924 - INFO - Stream instance:14
+2018-03-13 15:23:57,924 - INFO - Stream finished:416
+2018-03-13 15:23:57,924 - INFO - Production workload performance data in track at application time:1187.0 sec
+2018-03-13 15:23:57,924 - INFO - JVM GC kicked in at application time:1182.839 sec
+2018-03-13 15:23:57,924 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7100.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:24:14,325 - INFO - System CPU utilization: 54.5
+2018-03-13 15:24:14,326 - INFO - Stream instance:14
+2018-03-13 15:24:14,326 - INFO - Stream finished:422
+2018-03-13 15:24:14,326 - INFO - Production workload performance data in track at application time:1209.0 sec
+2018-03-13 15:24:14,327 - INFO - JVM GC kicked in at application time:1201.548 sec
+2018-03-13 15:24:14,327 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7800.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:24:30,764 - INFO - System CPU utilization: 50.9
+2018-03-13 15:24:30,765 - INFO - Stream instance:14
+2018-03-13 15:24:30,766 - INFO - Stream finished:429
+2018-03-13 15:24:30,766 - INFO - Production workload performance data in track at application time:1222.0 sec
+2018-03-13 15:24:30,766 - INFO - JVM GC kicked in at application time:1220.29 sec
+2018-03-13 15:24:30,767 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7100.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:24:47,187 - INFO - System CPU utilization: 42.6
+2018-03-13 15:24:47,188 - INFO - Stream instance:14
+2018-03-13 15:24:47,189 - INFO - Stream finished:436
+2018-03-13 15:24:47,189 - INFO - Production workload performance data in track at application time:1236.0 sec
+2018-03-13 15:24:47,189 - INFO - JVM GC kicked in at application time:1220.29 sec
+2018-03-13 15:24:47,190 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7000.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:25:03,649 - INFO - System CPU utilization: 54.9
+2018-03-13 15:25:03,649 - INFO - Stream instance:14
+2018-03-13 15:25:03,650 - INFO - Stream finished:443
+2018-03-13 15:25:03,650 - INFO - Production workload performance data in track at application time:1252.0 sec
+2018-03-13 15:25:03,650 - INFO - JVM GC kicked in at application time:1239.06 sec
+2018-03-13 15:25:03,650 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7300.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:25:20,052 - INFO - System CPU utilization: 51.9
+2018-03-13 15:25:20,053 - INFO - Stream instance:14
+2018-03-13 15:25:20,053 - INFO - Stream finished:445
+2018-03-13 15:25:20,054 - INFO - Production workload performance data in track at application time:1274.0 sec
+2018-03-13 15:25:20,054 - INFO - JVM GC kicked in at application time:1257.761 sec
+2018-03-13 15:25:20,054 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7000.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:25:36,411 - INFO - System CPU utilization: 42.8
+2018-03-13 15:25:36,412 - INFO - Stream instance:14
+2018-03-13 15:25:36,412 - INFO - Stream finished:457
+2018-03-13 15:25:36,412 - INFO - Production workload performance data in track at application time:1288.0 sec
+2018-03-13 15:25:36,413 - INFO - JVM GC kicked in at application time:1276.504 sec
+2018-03-13 15:25:36,413 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:25:52,897 - INFO - System CPU utilization: 59.1
+2018-03-13 15:25:52,898 - INFO - Stream instance:14
+2018-03-13 15:25:52,898 - INFO - Stream finished:459
+2018-03-13 15:25:52,898 - INFO - Production workload performance data in track at application time:1302.0 sec
+2018-03-13 15:25:52,899 - INFO - JVM GC kicked in at application time:1295.314 sec
+2018-03-13 15:25:52,899 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7500.0, SLO_Target: latency in [6000, 8000]
+2018-03-13 15:26:09,301 - INFO - System CPU utilization: 53.7
+2018-03-13 15:26:09,302 - INFO - Stream instance:14
+2018-03-13 15:26:09,302 - INFO - Stream finished:466
+2018-03-13 15:26:09,302 - INFO - Production workload performance data in track at application time:1316.0 sec
+2018-03-13 15:26:09,302 - INFO - JVM GC kicked in at application time:1314.018 sec
+2018-03-13 15:26:09,303 - INFO - Achieved SLO (Service Level Objective), SLI(Service Level Indicator): 7200.0, SLO_Target: latency in [6000, 8000]

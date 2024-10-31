@@ -1,0 +1,12 @@
+#!/bin/bash
+
+./change_msr.py 0x774  0x80001b1b write
+./change_msr.py 0x620  0x80001414 write
+
+
+        # disable C1E, C3, C6
+        cpupower idle-set -e 0
+        cpupower idle-set -e 1
+        cpupower idle-set -d 2
+        cpupower idle-set -d 3
+#       cpupower idle-set -d 4

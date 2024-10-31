@@ -1,0 +1,80 @@
+Module                  Size  Used by
+tls                    81920  0
+binfmt_misc            24576  1
+nf_tables             241664  0
+nfnetlink              16384  1 nf_tables
+sepint5              2813952  0
+socperf3              610304  1 sepint5
+pax                    16384  0
+idpf                  172032  0
+rfkill                 28672  1
+sunrpc                651264  1
+vfat                   20480  1
+fat                    86016  1 vfat
+snd_hda_codec_realtek   151552  1
+snd_hda_codec_generic    98304  1 snd_hda_codec_realtek
+ledtrig_audio          16384  1 snd_hda_codec_generic
+intel_rapl_msr         20480  0
+intel_rapl_common      28672  1 intel_rapl_msr
+snd_hda_intel          57344  0
+snd_intel_dspcfg       20480  1 snd_hda_intel
+snd_hda_codec         167936  3 snd_hda_codec_generic,snd_hda_intel,snd_hda_codec_realtek
+snd_hda_core          106496  4 snd_hda_codec_generic,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+idpf_test             180224  0
+snd_hwdep              16384  1 snd_hda_codec
+snd_seq                86016  0
+x86_pkg_temp_thermal    20480  0
+iTCO_wdt               16384  0
+intel_powerclamp       20480  0
+iTCO_vendor_support    16384  1 iTCO_wdt
+coretemp               20480  0
+snd_seq_device         16384  1 snd_seq
+snd_pcm               131072  3 snd_hda_intel,snd_hda_codec,snd_hda_core
+snd_timer              45056  2 snd_seq,snd_pcm
+rapl                   20480  0
+snd                   106496  9 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm
+isst_if_mbox_pci       16384  0
+isst_if_mmio           16384  0
+auxiliary              16384  2 idpf_test,idpf
+ftdi_sio               65536  0
+mei_me                 45056  0
+i2c_i801               32768  0
+soundcore              16384  1 snd
+pcspkr                 16384  0
+isst_if_common         16384  2 isst_if_mmio,isst_if_mbox_pci
+joydev                 28672  0
+i2c_smbus              20480  1 i2c_i801
+mei                   139264  1 mei_me
+i2c_ismt               32768  0
+ipmi_ssif              40960  0
+acpi_ipmi              20480  0
+ipmi_si                73728  1
+ipmi_devintf           20480  0
+ipmi_msghandler       118784  4 ipmi_devintf,ipmi_si,acpi_ipmi,ipmi_ssif
+acpi_pad              184320  0
+acpi_power_meter       20480  0
+fuse                  143360  1
+zram                   28672  1
+xfs                  1896448  2
+libcrc32c              16384  2 nf_tables,xfs
+crct10dif_pclmul       16384  1
+crc32_pclmul           16384  0
+crc32c_intel           24576  1
+ghash_clmulni_intel    16384  0
+ast                    57344  0
+i2c_algo_bit           16384  1 ast
+drm_vram_helper        20480  1 ast
+ixgbe                 393216  0
+drm_kms_helper        266240  4 drm_vram_helper,ast
+nvme                   49152  0
+cec                    49152  1 drm_kms_helper
+drm_ttm_helper         16384  1 drm_vram_helper
+ttm                   114688  2 drm_vram_helper,drm_ttm_helper
+nvme_core             122880  1 nvme
+mdio                   16384  1 ixgbe
+drm                   610304  6 drm_kms_helper,drm_vram_helper,ast,drm_ttm_helper,ttm
+dca                    16384  1 ixgbe
+igc                   131072  0
+wmi                    36864  0
+ip6_tables             32768  0
+ip_tables              28672  0

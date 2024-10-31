@@ -1,0 +1,14 @@
+m*
+*.log
+*.txt
+*/*/*.csv
+*/*/*/LOG
+results/*
+bench/*.log
+bench/*.txt
+bench/*.o
+*.swp
+*.o
+results
+results/*
+

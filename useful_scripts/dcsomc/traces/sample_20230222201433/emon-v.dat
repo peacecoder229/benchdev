@@ -1,0 +1,443 @@
+EMON Version .............. V11.39 Beta (private)
+Copyright(C) 1993 Intel Corporation. All rights reserved.
+Application Build Date: Dec 15 2022 at 16:14:08
+SEP Driver Version: 5.39 Beta (private)
+PAX Driver Version: 1.0
+Linux Kernel Version: 5.10.45-p401.gad947b1
+Collection Mode: Driver
+total_number_of_processors  ...... 224
+number_of_online_processors ...... 224
+cpu_family ................ Intel(R) Xeon(R) Processor code named Sapphirerapids
+cpu_model ................. 143 (0x8f)
+cpu_stepping .............. 7 (0x7)
+L1 Data Cache ............. 48KB, 12-way, 64-byte line size
+                            2 HW threads share this cache, No SW Init Required
+L1 Code Cache ............. 32KB, 8-way, 64-byte line size
+                            2 HW threads share this cache, No SW Init Required
+L2 Unified Cache .......... 2MB, 16-way, 64-byte line size
+                            2 HW threads share this cache, No SW Init Required
+L3 Unified Cache .......... 105MB, Fully Associative, 64-byte line size
+                            No SW Init Required
+64-byte Prefetching
+
+Device Type ............... Intel(R) Xeon(R) Processor code named Sapphirerapids
+EMON Database ............. sapphirerapids_server
+Platform type ............. 131
+number_of_selectors ....... 8
+number_of_var_counters .... 8
+number_of_fixed_ctrs....... 4
+Fixed Counter Events:
+counter 0 ................. INST_RETIRED.ANY
+counter 1 ................. CPU_CLK_UNHALTED.THREAD
+counter 2 ................. CPU_CLK_UNHALTED.REF_TSC
+counter 3 ................. TOPDOWN.SLOTS
+number of devices ......... 1
+number_of_events .......... 930
+
+Processor Features:
+    (Thermal Throttling) (Enabled)
+    (Hyper-Threading) (Enabled)
+    (DCU IP Prefetching) (Enabled)
+    (DCU Streamer Prefetching) (Enabled)
+    (MLC Spatial Prefetching) (Enabled)
+    (MLC Streamer Prefetching) (Enabled)
+    (Number of Packages:    2)
+    (Cores Per Package:    56)
+    (Threads Per Package:  112)
+    (Threads Per Core:      2)
+
+Uncore Performance Monitoring Units:
+    cha             : 56
+    mdf             : 40
+    imc             : 8
+    cxlcm           : 6
+    cxldp           : 6
+    mchbm           : 0
+    m2hbm           : 0
+    pmem_fc         : 8
+    pmem_mc         : 8
+    m2m             : 4
+    qpi             : 4
+    r3qpi           : 4
+    iio             : 12
+    irp             : 12
+    pcu             : 1
+    ubox            : 1
+    m2pcie          : 12
+    rdt             : 1
+
+RDT H/W Support:
+    L3 Cache Occupancy		: Yes
+    Total Memory Bandwidth	: Yes
+    Local Memory Bandwidth	: Yes
+    L3 Cache Allocation		: Yes
+    L2 Cache Allocation		: Yes
+    Highest Available RMID	: 447
+    Sample Multiplier		: 114688
+
+GPU Information:
+    No GPU devices found
+
+RAM Features:
+    (Package/Memory Controller/Channel)
+	(0/0/0) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(0/0/1) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(0/1/0) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(0/1/1) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(0/2/0) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(0/2/1) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(0/3/0) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(0/3/1) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(1/0/0) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(1/0/1) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(1/1/0) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(1/1/1) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(1/2/0) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(1/2/1) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(1/3/0) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+	(1/3/1) (Total Number of Ranks on this Channel: 2)
+		 (Dimm0 Info: Capacity = 16 GB, Data Width = 64, Form Factor = DIMM, Memory Type = Synchronous, Registered (Buffered), Speed = 4800MT/s)
+		 (Dimm1 Info: Empty)
+
+QPI Link Features:
+	Package 0 :
+		QPI Link 0 connects to Package 1, Link 0
+		QPI Link 1 connects to Package 1, Link 1
+		QPI Link 2 connects to Package 1, Link 2
+		QPI Link 3 connects to Package 1, Link 3
+	Package 1 :
+		QPI Link 0 connects to Package 0, Link 0
+		QPI Link 1 connects to Package 0, Link 1
+		QPI Link 2 connects to Package 0, Link 2
+		QPI Link 3 connects to Package 0, Link 3
+
+IIO Unit Features:
+	Package 0 :
+		domain:0 bus:0x00 stack:0 mesh:111
+		domain:0 bus:0x04 stack:1 mesh:112
+		domain:0 bus:0x69 stack:2 mesh:118
+		domain:0 bus:0x07 stack:3 mesh:114
+		domain:0 bus:0x06 stack:4 mesh:113
+		domain:0 bus:0x68 stack:5 mesh:119
+		domain:0 bus:0x6a stack:8 mesh:110
+		domain:0 bus:0x6f stack:9 mesh:116
+		domain:0 bus:0x74 stack:10 mesh:115
+		domain:0 bus:0x79 stack:11 mesh:121
+	Package 1 :
+		domain:0 bus:0x80 stack:0 mesh:111
+		domain:0 bus:0x97 stack:1 mesh:112
+		domain:0 bus:0xd7 stack:2 mesh:118
+		domain:0 bus:0xb7 stack:3 mesh:114
+		domain:0 bus:0xa7 stack:4 mesh:113
+		domain:0 bus:0xc7 stack:5 mesh:119
+		domain:0 bus:0xe7 stack:8 mesh:110
+		domain:0 bus:0xec stack:9 mesh:116
+		domain:0 bus:0xf1 stack:10 mesh:115
+		domain:0 bus:0xf6 stack:11 mesh:121
+
+TSC Freq .................. 2000.00 MHz
+
+UFS Freq (limit) .......... 2500.00 MHz
+
+Processor Base Freq ....... 2000.00 MHz
+
+Processor Maximum Freq .... 3800.00 MHz
+
+Bus Reference Freq ........ 100.00 MHz
+
+MAX TURBO RATIO (limit)
+1C .......... 3800.00 MHz
+2C .......... 3800.00 MHz
+3C .......... 3800.00 MHz
+4C .......... 3800.00 MHz
+5C .......... 3800.00 MHz
+6C .......... 3800.00 MHz
+7C .......... 3800.00 MHz
+8C .......... 3800.00 MHz
+9C .......... 3800.00 MHz
+10C ......... 3800.00 MHz
+11C ......... 3800.00 MHz
+12C ......... 3800.00 MHz
+13C ......... 3800.00 MHz
+14C ......... 3800.00 MHz
+15C ......... 3800.00 MHz
+16C ......... 3800.00 MHz
+17C ......... 3800.00 MHz
+18C ......... 3800.00 MHz
+19C ......... 3800.00 MHz
+20C ......... 3800.00 MHz
+21C ......... 3800.00 MHz
+22C ......... 3800.00 MHz
+23C ......... 3800.00 MHz
+24C ......... 3800.00 MHz
+25C ......... 3800.00 MHz
+26C ......... 3800.00 MHz
+27C ......... 3800.00 MHz
+28C ......... 3800.00 MHz
+29C ......... 3500.00 MHz
+30C ......... 3500.00 MHz
+31C ......... 3500.00 MHz
+32C ......... 3500.00 MHz
+
+NUMA node(s):                    2
+NUMA node0 CPU(s):               0-55,112-167
+NUMA node1 CPU(s):               56-111,168-223
+
+		   OS Processor <-> Physical/Logical Mapping
+		   -----------------------------------------
+	  OS Processor	  Phys. Package	      Core	Logical Processor	Core Type
+		0		0		0		0		core
+		1		0		1		0		core
+		2		0		2		0		core
+		3		0		3		0		core
+		4		0		4		0		core
+		5		0		5		0		core
+		6		0		6		0		core
+		7		0		7		0		core
+		8		0		8		0		core
+		9		0		9		0		core
+		10		0		10		0		core
+		11		0		11		0		core
+		12		0		12		0		core
+		13		0		13		0		core
+		14		0		14		0		core
+		15		0		15		0		core
+		16		0		16		0		core
+		17		0		17		0		core
+		18		0		18		0		core
+		19		0		19		0		core
+		20		0		20		0		core
+		21		0		21		0		core
+		22		0		22		0		core
+		23		0		23		0		core
+		24		0		24		0		core
+		25		0		25		0		core
+		26		0		26		0		core
+		27		0		27		0		core
+		28		0		28		0		core
+		29		0		29		0		core
+		30		0		30		0		core
+		31		0		31		0		core
+		32		0		32		0		core
+		33		0		33		0		core
+		34		0		34		0		core
+		35		0		35		0		core
+		36		0		36		0		core
+		37		0		37		0		core
+		38		0		38		0		core
+		39		0		39		0		core
+		40		0		40		0		core
+		41		0		41		0		core
+		42		0		42		0		core
+		43		0		43		0		core
+		44		0		44		0		core
+		45		0		45		0		core
+		46		0		46		0		core
+		47		0		47		0		core
+		48		0		48		0		core
+		49		0		49		0		core
+		50		0		50		0		core
+		51		0		51		0		core
+		52		0		52		0		core
+		53		0		53		0		core
+		54		0		54		0		core
+		55		0		55		0		core
+		56		1		0		0		core
+		57		1		1		0		core
+		58		1		2		0		core
+		59		1		3		0		core
+		60		1		4		0		core
+		61		1		5		0		core
+		62		1		6		0		core
+		63		1		7		0		core
+		64		1		8		0		core
+		65		1		9		0		core
+		66		1		10		0		core
+		67		1		11		0		core
+		68		1		12		0		core
+		69		1		13		0		core
+		70		1		14		0		core
+		71		1		15		0		core
+		72		1		16		0		core
+		73		1		17		0		core
+		74		1		18		0		core
+		75		1		19		0		core
+		76		1		20		0		core
+		77		1		21		0		core
+		78		1		22		0		core
+		79		1		23		0		core
+		80		1		24		0		core
+		81		1		25		0		core
+		82		1		26		0		core
+		83		1		27		0		core
+		84		1		28		0		core
+		85		1		29		0		core
+		86		1		30		0		core
+		87		1		31		0		core
+		88		1		32		0		core
+		89		1		33		0		core
+		90		1		34		0		core
+		91		1		35		0		core
+		92		1		36		0		core
+		93		1		37		0		core
+		94		1		38		0		core
+		95		1		39		0		core
+		96		1		40		0		core
+		97		1		41		0		core
+		98		1		42		0		core
+		99		1		43		0		core
+		100		1		44		0		core
+		101		1		45		0		core
+		102		1		46		0		core
+		103		1		47		0		core
+		104		1		48		0		core
+		105		1		49		0		core
+		106		1		50		0		core
+		107		1		51		0		core
+		108		1		52		0		core
+		109		1		53		0		core
+		110		1		54		0		core
+		111		1		55		0		core
+		112		0		0		1		core
+		113		0		1		1		core
+		114		0		2		1		core
+		115		0		3		1		core
+		116		0		4		1		core
+		117		0		5		1		core
+		118		0		6		1		core
+		119		0		7		1		core
+		120		0		8		1		core
+		121		0		9		1		core
+		122		0		10		1		core
+		123		0		11		1		core
+		124		0		12		1		core
+		125		0		13		1		core
+		126		0		14		1		core
+		127		0		15		1		core
+		128		0		16		1		core
+		129		0		17		1		core
+		130		0		18		1		core
+		131		0		19		1		core
+		132		0		20		1		core
+		133		0		21		1		core
+		134		0		22		1		core
+		135		0		23		1		core
+		136		0		24		1		core
+		137		0		25		1		core
+		138		0		26		1		core
+		139		0		27		1		core
+		140		0		28		1		core
+		141		0		29		1		core
+		142		0		30		1		core
+		143		0		31		1		core
+		144		0		32		1		core
+		145		0		33		1		core
+		146		0		34		1		core
+		147		0		35		1		core
+		148		0		36		1		core
+		149		0		37		1		core
+		150		0		38		1		core
+		151		0		39		1		core
+		152		0		40		1		core
+		153		0		41		1		core
+		154		0		42		1		core
+		155		0		43		1		core
+		156		0		44		1		core
+		157		0		45		1		core
+		158		0		46		1		core
+		159		0		47		1		core
+		160		0		48		1		core
+		161		0		49		1		core
+		162		0		50		1		core
+		163		0		51		1		core
+		164		0		52		1		core
+		165		0		53		1		core
+		166		0		54		1		core
+		167		0		55		1		core
+		168		1		0		1		core
+		169		1		1		1		core
+		170		1		2		1		core
+		171		1		3		1		core
+		172		1		4		1		core
+		173		1		5		1		core
+		174		1		6		1		core
+		175		1		7		1		core
+		176		1		8		1		core
+		177		1		9		1		core
+		178		1		10		1		core
+		179		1		11		1		core
+		180		1		12		1		core
+		181		1		13		1		core
+		182		1		14		1		core
+		183		1		15		1		core
+		184		1		16		1		core
+		185		1		17		1		core
+		186		1		18		1		core
+		187		1		19		1		core
+		188		1		20		1		core
+		189		1		21		1		core
+		190		1		22		1		core
+		191		1		23		1		core
+		192		1		24		1		core
+		193		1		25		1		core
+		194		1		26		1		core
+		195		1		27		1		core
+		196		1		28		1		core
+		197		1		29		1		core
+		198		1		30		1		core
+		199		1		31		1		core
+		200		1		32		1		core
+		201		1		33		1		core
+		202		1		34		1		core
+		203		1		35		1		core
+		204		1		36		1		core
+		205		1		37		1		core
+		206		1		38		1		core
+		207		1		39		1		core
+		208		1		40		1		core
+		209		1		41		1		core
+		210		1		42		1		core
+		211		1		43		1		core
+		212		1		44		1		core
+		213		1		45		1		core
+		214		1		46		1		core
+		215		1		47		1		core
+		216		1		48		1		core
+		217		1		49		1		core
+		218		1		50		1		core
+		219		1		51		1		core
+		220		1		52		1		core
+		221		1		53		1		core
+		222		1		54		1		core
+		223		1		55		1		core
+		   -----------------------------------------

@@ -1,0 +1,162 @@
+#!/bin/sh
+
+# write max, min, avg of client and server in summary log
+summary_log() {
+ x=1
+}
+
+if [ $# != 3 ]; then
+    echo "Usage: ./runMultipleClient.sh <#ofServers> <#ofClients> <Experiment Combined Filename>"
+    echo "Note that <#ofClients> should be a multiple of <#ofServers>."
+    exit 1
+fi
+
+# clean up logs from previous runs
+rm -f Server_*
+rm -f Client_*
+rm -f Search_result_*
+rm -f Summary_*
+rm -f Combined_*
+
+# from args
+noOfClients=$2
+noOfServers=$1
+expCombinedFileName=$3
+
+if ((noOfClients % noOfServers == 0)); then
+    clientPerServer=$((noOfClients / noOfServers))
+else
+    echo "<#ofClients> should be a multiple of <#ofServers>."
+fi
+
+# server args
+noOfThreads=1
+run_time=1
+topk=5
+serverBasePort=47000
+serverIp="172.17.0.1"
+
+# run server:
+# ./server #ofThreads #run_time(min) topk test_name(t, c, tc, tpc)
+# index_file_dir portnuber #ofclients
+#./server $noOfThreads $run_time $topk t ./index_original_compressed/ &
+serverPort=$serverBasePort
+for (( serverId = 1; serverId <= $noOfServers; serverId++))
+do
+    ./serverSingleThread $noOfThreads $run_time $topk c $serverIp $serverId $serverPort $clientPerServer &
+    serverPort=$((serverPort + 1))
+done
+
+# run clients:
+server=1
+serverPort=$serverBasePort
+for (( client = 1; client <= $noOfClients; client++ ))
+do
+    #./client hostname portnumber(server) clientId
+    cp phrase_query_file phrase_query_file_$client
+    cp term_query_file term_query_file_$client
+    ./client $serverIp $serverPort $client &
+    echo "Client$client will request to Server#$server on port $serverPort"
+    if ! (( $client % $clientPerServer )); then
+        server=$((server+1))
+        serverPort=$((serverPort+1))
+    fi
+done
+
+wait # wait till the program finishes
+echo "Experiments finished. Processing log now."
+
+# Combined Experiment log
+rttAvgTotal=0
+serverLatAvgTotal=0
+
+# Summary log
+summary_log=Summary_C_${noOfClients}_S_${noOfServers}_NT_${noOfThreads}_RT_${run_time}_TOPK_${topk}.log
+echo "Summary: " > $summary_log
+
+# Combine result from Server_1.. and Client_1_.. and write to Combined_1_... 
+server=1
+queryCtAllClients=0
+for (( client = 1; client <= $noOfClients; client++ ))
+do
+    #clean up phrase and query files for each client
+    rm -f phrase_query_file_$client
+    rm -f term_query_file_$client
+    
+    # get the server and client log file name
+    serverLogFile=$(ls -t | grep Server_${server}_log | head -1)
+    clientLogFile=$(ls -t | grep Client_${client}_log | head -1)
+
+    # create the output file which will have server latency and RTT for each query
+    combinedLogFile=Combined_${client}_C_${noOfClients}_S_${noOfServers}_NT_${noOfThreads}_RT_${run_time}_TOPK_${topk}.log
+    # get the information about each client from serverlogfile and put it in a temp file 
+    grep Client_${client} $serverLogFile > ${combinedLogFile}_temp.log
+
+    # start writing in combinedLogFile
+    echo "Query, RTT, Server_Latency" > $combinedLogFile
+    # paste the two files together and then only get the following columns: query id, RTT, Server latency 
+    paste -d' ' $clientLogFile ${combinedLogFile}_temp.log | cut -d' ' -f1,3,7 --output-delimiter=", " >> $combinedLogFile
+   
+    # summary log
+    echo "----------------" >> $summary_log
+    echo "Client_${client}" >> $summary_log
+    echo "RTT(us):" >> $summary_log
+    tail -n +2 $combinedLogFile | cut -d"," -f2 | awk '{if(min==""){min=max=$1}; if($1>max) {max= $1}; if($1<min) {min=$1}; total+=$1; count+=1} END {printf "Ave= %f\tMax= %f\tMin=%f\n", total/count, max, min}' >> $summary_log
+    echo "Server_Latency(us):" >> $summary_log
+    tail -n +2 $combinedLogFile | cut -d"," -f3 | awk '{if(min==""){min=max=$1}; if($1>max) {max= $1}; if($1<min) {min=$1}; total+=$1; count+=1} END {printf "Ave= %f\tMax= %f\tMin=%f\n", total/count, max, min}' >> $summary_log
+   
+    # experiment combined result
+    rttCliAvg=$(tail -n +2 $combinedLogFile | cut -d"," -f2 | awk '{total+=$1; count+=1} END {print total/count}')  
+    serverLatAvg=$(tail -n +2 $combinedLogFile | cut -d"," -f3 | awk '{total+=$1; count+=1} END {print total/count}')
+    
+    #rttAvgTotal=$(rttCliAvg+rttAvgTotal)
+    rttAvgTotal=$(awk -v total="$rttAvgTotal" -v avg="$rttCliAvg" 'BEGIN {print total+avg}')
+    #serverLatAvgTotal=$((serverLatAvgTotal+serverLatAvg))
+    serverLatAvgTotal=$(awk -v total="$serverLatAvgTotal" -v avg="$serverLatAvg" 'BEGIN {print toal+avg}')
+
+    # update queryCtAllClients by counting line number of clientLogFile
+    queryCtAllClients=$((queryCtAllClients + $(wc -l ${clientLogFile} | cut -d' ' -f1)))
+
+    # remove the temp log file 
+    rm -f ${combinedLogFile}_temp.log
+
+    # which server is for which client, update server according to that
+    if ! (( $client % $clientPerServer )); then
+       server=$((server+1))
+    fi   
+done
+
+echo "Done combining the client and server log."
+
+# Write average Query counts of all Clients to summary log
+#avgQueryCtClients=$((queryCtAllClients/noOfClients))
+avgQueryCtClients=$(awk -v quryCt="$queryCtAllClients" -v nCli="$noOfClients" 'BEGIN {print quryCt/nCli}')
+#avgQueryQPSClient=$((avgQueryCtClients/(run_time * 60)))
+avgQueryQPSClient=$(awk -v avgQCt="$avgQueryCtClients" -v rt="$run_time" 'BEGIN {print avgQCt/(rt*60)}')
+echo "" # print empty line
+echo "Average QPS of ${noOfClients} clients: ${avgQueryQPSClient}" >> $summary_log
+
+# Write average Query counts of all servers to summary log
+queryCtAllServers=0
+for (( server = 1; server <= $noOfServers; server++))
+do
+    serverLogFile=$(ls -t | grep Server_${server}_log | head -1)
+    queryCtAllServers=$((queryCtAllServers + $(wc -l ${serverLogFile} | cut -d' ' -f1)))
+done
+#avgQueryCtServers=$((queryCtAllServers/noOfServers))
+avgQueryCtServers=$(awk -v quryCt="$queryCtAllServers" -v nSer="$noOfServers" 'BEGIN {print quryCt/nSer}')
+#avgQPSServer=$((avgQueryCtServers/(run_time * 60)))
+avgQPSServer=$(awk -v avgQCt="$avgQueryCtServers" -v rt="$run_time" 'BEGIN {print avgQCt/(rt*60)}')
+echo "Average QPS of ${noOfServers} servers: ${avgQPSServer}" >> $summary_log
+
+# Client RTT AVG
+#rttCliAvg=$((rttAvgTotal/noOfClients))
+rttCliAvg=$(awk -v avgTotal="$rttAvgTotal" -v nCli="$noOfClients" 'BEGIN {print avgTotal/nCli}')
+
+# Server Latency AVG
+#serverCliAvg=$((serverLatAvgTotal/noOfClients))
+serverCliAvg=$(awk -v avgTotal="$serverLatAvgTotal" -v nServ="$noOfServers" 'BEGIN {print avgTotal/nServ}')
+
+# experiment combined result
+echo "${noOfClients}, ${avgQueryQPSClient}, ${avgQPSServer}, ${rttCliAvg}, ${serverCliAvg}" >> $expCombinedFileName 
+echo "Finished processing log."

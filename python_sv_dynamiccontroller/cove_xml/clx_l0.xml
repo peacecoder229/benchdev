@@ -1,0 +1,1597 @@
+<?xml version="1.0" ?>
+<GepettoCfg version="0.9">
+	
+  
+	<Processor name="CLX-EP" numOfSockets="4" numberOfCores="28" numberOfGT="0" numberOfThreadsPerCore="2">
+		  
+  
+		<numberOfCores default="28" max="28" min="1"/>
+		
+  
+		<numberOfThreadsPerCore default="2" max="2" min="1"/>
+		
+  
+		<numberOfGT default="0" max="0" min="0"/>
+		
+  
+		<numOfSockets default="4" max="0x10" min="1"/>
+		
+  
+		<Core>
+			<ProcessorArea name="Core">
+				<RegisterSet i="0" name="rob1_emon_fixed_ctr0" type="Fixed">
+					<Counter address="0x180" name="rob1_emon_fixed_ctr0" size="64"/>
+					<Configuration address="0x734" name="rob1_emon_fixed_ctr_ctrl" size="64"/>
+				</RegisterSet>
+				<RegisterSet i="1" name="rob1_emon_fixed_ctr1" type="Fixed">
+					<Counter address="0x182" name="rob1_emon_fixed_ctr1" size="64"/>
+					<Configuration address="0x734" name="rob1_emon_fixed_ctr_ctrl" size="64"/>
+				</RegisterSet>
+				<RegisterSet i="2" name="rob1_emon_fixed_ctr2" type="Fixed">
+					<Counter address="0x184" name="rob1_emon_fixed_ctr2" size="64"/>
+					<Configuration address="0x734" name="rob1_emon_fixed_ctr_ctrl" size="64"/>
+				</RegisterSet>
+				<RegisterSet i="0" name="rob1_emon_gen_ctr0" type="PMON">
+					<Counter address="0x186" name="rob1_emon_gen_ctr0" size="64"/>
+					<Configuration address="0x71e" name="core_permon_evntsel_cntr0" size="64"/>
+				</RegisterSet>
+				<RegisterSet i="1" name="rob1_emon_gen_ctr1" type="PMON">
+					<Counter address="0x188" name="rob1_emon_gen_ctr1" size="64"/>
+					<Configuration address="0x720" name="core_permon_evntsel_cntr1" size="64"/>
+				</RegisterSet>
+				<RegisterSet i="2" name="rob1_emon_gen_ctr2" type="PMON">
+					<Counter address="0x18a" name="rob1_emon_gen_ctr2" size="64"/>
+					<Configuration address="0x722" name="core_permon_evntsel_cntr2" size="64"/>
+				</RegisterSet>
+				<RegisterSet i="3" name="rob1_emon_gen_ctr3" type="PMON">
+					<Counter address="0x18c" name="rob1_emon_gen_ctr3" size="64"/>
+					<Configuration address="0x724" name="core_permon_evntsel_cntr3" size="64"/>
+				</RegisterSet>
+			</ProcessorArea>
+		</Core>
+		
+  
+		<Uncore>
+			<ProcessorArea name="M2PCIe">
+				<RegisterSet i="0" type="Global">
+					<RegisterSet a="0" b="0" i="0" slice="rputlctrlconfig0" type="Global">
+						<UnitControl address="0x700a90f4" name="rputlctrlconfig0_pmonunitctrl0" size="32"/>
+						<Status address="0x700a90f8" name="rputlctrlconfig0_pmonctrstatus0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="1" slice="rputlctrlconfig1" type="Global">
+						<UnitControl address="0x700b10f4" name="rputlctrlconfig1_pmonunitctrl0" size="32"/>
+						<Status address="0x700b10f8" name="rputlctrlconfig1_pmonctrstatus0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="2" b="0" i="2" slice="rputlctrlconfig2" type="Global">
+						<UnitControl address="0x700b90f4" name="rputlctrlconfig2_pmonunitctrl0" size="32"/>
+						<Status address="0x700b90f8" name="rputlctrlconfig2_pmonctrstatus0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="4" b="0" i="4" slice="rputlctrlconfig4" type="Global">
+						<UnitControl address="0x700b50f4" name="rputlctrlconfig4_pmonunitctrl0" size="32"/>
+						<Status address="0x700b50f8" name="rputlctrlconfig4_pmonctrstatus0" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="rputlctrlconfig0_pmoncntrlower0" type="PMON">
+						<Counter address="0x700a90a0" lower_bit="0" name="rputlctrlconfig0_pmoncntrlower0_0" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700a90a4" lower_bit="0" name="rputlctrlconfig0_pmoncntrupper0_0" size="32" upper_bit="15"/>
+						<Configuration address="0x700a90d8" name="rputlctrlconfig0_pmoncntrcfg0_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="1" slice="rputlctrlconfig1_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b10a0" lower_bit="0" name="rputlctrlconfig1_pmoncntrlower0_0" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b10a4" lower_bit="0" name="rputlctrlconfig1_pmoncntrupper0_0" size="32" upper_bit="15"/>
+						<Configuration address="0x700b10d8" name="rputlctrlconfig1_pmoncntrcfg0_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="2" b="0" i="2" slice="rputlctrlconfig2_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b90a0" lower_bit="0" name="rputlctrlconfig2_pmoncntrlower0_0" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b90a4" lower_bit="0" name="rputlctrlconfig2_pmoncntrupper0_0" size="32" upper_bit="15"/>
+						<Configuration address="0x700b90d8" name="rputlctrlconfig2_pmoncntrcfg0_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="4" b="0" i="4" slice="rputlctrlconfig4_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b50a0" lower_bit="0" name="rputlctrlconfig4_pmoncntrlower0_0" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b50a4" lower_bit="0" name="rputlctrlconfig4_pmoncntrupper0_0" size="32" upper_bit="15"/>
+						<Configuration address="0x700b50d8" name="rputlctrlconfig4_pmoncntrcfg0_0" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="rputlctrlconfig0_pmoncntrlower0" type="PMON">
+						<Counter address="0x700a90a8" lower_bit="0" name="rputlctrlconfig0_pmoncntrlower0_1" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700a90ac" lower_bit="0" name="rputlctrlconfig0_pmoncntrupper0_1" size="32" upper_bit="15"/>
+						<Configuration address="0x700a90dc" name="rputlctrlconfig0_pmoncntrcfg0_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="1" slice="rputlctrlconfig1_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b10a8" lower_bit="0" name="rputlctrlconfig1_pmoncntrlower0_1" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b10ac" lower_bit="0" name="rputlctrlconfig1_pmoncntrupper0_1" size="32" upper_bit="15"/>
+						<Configuration address="0x700b10dc" name="rputlctrlconfig1_pmoncntrcfg0_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="2" b="0" i="2" slice="rputlctrlconfig2_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b90a8" lower_bit="0" name="rputlctrlconfig2_pmoncntrlower0_1" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b90ac" lower_bit="0" name="rputlctrlconfig2_pmoncntrupper0_1" size="32" upper_bit="15"/>
+						<Configuration address="0x700b90dc" name="rputlctrlconfig2_pmoncntrcfg0_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="4" b="0" i="4" slice="rputlctrlconfig4_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b50a8" lower_bit="0" name="rputlctrlconfig4_pmoncntrlower0_1" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b50ac" lower_bit="0" name="rputlctrlconfig4_pmoncntrupper0_1" size="32" upper_bit="15"/>
+						<Configuration address="0x700b50dc" name="rputlctrlconfig4_pmoncntrcfg0_1" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="rputlctrlconfig0_pmoncntrlower0" type="PMON">
+						<Counter address="0x700a90b0" lower_bit="0" name="rputlctrlconfig0_pmoncntrlower0_2" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700a90b4" lower_bit="0" name="rputlctrlconfig0_pmoncntrupper0_2" size="32" upper_bit="15"/>
+						<Configuration address="0x700a90e0" name="rputlctrlconfig0_pmoncntrcfg0_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="1" slice="rputlctrlconfig1_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b10b0" lower_bit="0" name="rputlctrlconfig1_pmoncntrlower0_2" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b10b4" lower_bit="0" name="rputlctrlconfig1_pmoncntrupper0_2" size="32" upper_bit="15"/>
+						<Configuration address="0x700b10e0" name="rputlctrlconfig1_pmoncntrcfg0_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="2" b="0" i="2" slice="rputlctrlconfig2_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b90b0" lower_bit="0" name="rputlctrlconfig2_pmoncntrlower0_2" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b90b4" lower_bit="0" name="rputlctrlconfig2_pmoncntrupper0_2" size="32" upper_bit="15"/>
+						<Configuration address="0x700b90e0" name="rputlctrlconfig2_pmoncntrcfg0_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="4" b="0" i="4" slice="rputlctrlconfig4_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b50b0" lower_bit="0" name="rputlctrlconfig4_pmoncntrlower0_2" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b50b4" lower_bit="0" name="rputlctrlconfig4_pmoncntrupper0_2" size="32" upper_bit="15"/>
+						<Configuration address="0x700b50e0" name="rputlctrlconfig4_pmoncntrcfg0_2" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="3" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="rputlctrlconfig0_pmoncntrlower0" type="PMON">
+						<Counter address="0x700a90b8" lower_bit="0" name="rputlctrlconfig0_pmoncntrlower0_3" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700a90bc" lower_bit="0" name="rputlctrlconfig0_pmoncntrupper0_3" size="32" upper_bit="15"/>
+						<Configuration address="0x700a90e4" name="rputlctrlconfig0_pmoncntrcfg0_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="1" slice="rputlctrlconfig1_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b10b8" lower_bit="0" name="rputlctrlconfig1_pmoncntrlower0_3" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b10bc" lower_bit="0" name="rputlctrlconfig1_pmoncntrupper0_3" size="32" upper_bit="15"/>
+						<Configuration address="0x700b10e4" name="rputlctrlconfig1_pmoncntrcfg0_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="2" b="0" i="2" slice="rputlctrlconfig2_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b90b8" lower_bit="0" name="rputlctrlconfig2_pmoncntrlower0_3" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b90bc" lower_bit="0" name="rputlctrlconfig2_pmoncntrupper0_3" size="32" upper_bit="15"/>
+						<Configuration address="0x700b90e4" name="rputlctrlconfig2_pmoncntrcfg0_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="4" b="0" i="4" slice="rputlctrlconfig4_pmoncntrlower0" type="PMON">
+						<Counter address="0x700b50b8" lower_bit="0" name="rputlctrlconfig4_pmoncntrlower0_3" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700b50bc" lower_bit="0" name="rputlctrlconfig4_pmoncntrupper0_3" size="32" upper_bit="15"/>
+						<Configuration address="0x700b50e4" name="rputlctrlconfig4_pmoncntrcfg0_3" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+			</ProcessorArea>
+            
+			<ProcessorArea name="UBOX">
+				<RegisterSet i="0" name="pmon_event_ncdec_mask_ctl0" type="Muxed">
+					<RegisterSet i="0" name="pmon_event_ncdec_mask_ctl0" slice="ubox" type="Muxed">
+						<Configuration address="0x40005898" lower_bit="0" name="ubox_pmon_event_ncdec_mask_ctl0" size="32" upper_bit="24"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" name="pmon_event_ncdec_mask_ctl1" type="Muxed">
+					<RegisterSet i="0" name="pmon_event_ncdec_mask_ctl1" slice="ubox" type="Muxed">
+						<Configuration address="0x4000589c" name="ubox_pmon_event_ncdec_mask_ctl1" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet i="0" slice="gdxc" type="PMON">
+						<Configuration address="0x400058d4" name="gdxc_pmon_ncupmonctctl1" size="32"/>
+						<Counter address="0x400058e0" lower_bit="0" name="gdxc_pmon_ncupmonct1" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="PMON">
+					<RegisterSet i="0" slice="gdxc" type="PMON">
+						<Configuration address="0x400058dc" name="gdxc_pmon_ncupmonctctl2" size="32"/>
+						<Counter address="0x400058e8" lower_bit="0" name="gdxc_pmon_ncupmonct2" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="Global">
+					<ThreadidFilter address="0x400058d0" lower_bit="0" name="gdxc_pmon_ncupmonctrlglctr" size="32" upper_bit="6"/>
+					<Status address="0x400058d8" name="gdxc_pmon_ncupmonctsts" size="32"/>
+				</RegisterSet>
+				<RegisterSet i="0" type="Fixed">
+					<Configuration address="0x4000510c" name="ncevents_ncupmonctlfix" size="32"/>
+					<Counter address="0x400051e8" lower_bit="0" name="ncevents_ncupmonctrfx" size="64" upper_bit="47"/>
+				</RegisterSet>
+			</ProcessorArea>
+            
+			<ProcessorArea name="IIO">
+				<RegisterSet i="0" type="Global">
+					<RegisterSet i="0" slice="iio" type="Global">
+						<UnitControl address="0x4a0000e0" name="imi_pmonunitctrl" size="32"/>
+						<Status address="0x4a0000e4" lower_bit="0" name="imi_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="Global">
+					<RegisterSet i="1" slice="iio" type="Global">
+						<UnitControl address="0x4a4000e0" name="iio_pstack0_imi_pmonunitctrl" size="32"/>
+						<Status address="0x4a4000e4" lower_bit="0" name="iio_pstack0_imi_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="Global">
+					<RegisterSet i="2" slice="iio" type="Global">
+						<UnitControl address="0x4a8000e0" name="iio_pstack1_imi_pmonunitctrl" size="32"/>
+						<Status address="0x4a8000e4" lower_bit="0" name="iio_pstack1_imi_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="3" type="Global">
+					<RegisterSet i="3" slice="iio" type="Global">
+						<UnitControl address="0x4ac000e0" name="iio_pstack2_imi_pmonunitctrl" size="32"/>
+						<Status address="0x4ac000e4" lower_bit="0" name="iio_pstack2_imi_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="4" type="Global">
+					<RegisterSet i="4" slice="iio" type="Global">
+						<UnitControl address="0x4b0000e0" name="iio_pstack3_imi_pmonunitctrl" size="32"/>
+						<Status address="0x4b0000e4" lower_bit="0" name="iio_pstack3_imi_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="PMON">
+					<RegisterSet a="0" i="0" slice="iio_cstack" type="PMON">
+						<Counter address="0x4a0000e8" lower_bit="0" name="imi_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x4a000108" name="imi_pmoncntrcfg_0" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="iio_pstack0" type="PMON">
+						<Counter address="0x4a4000e8" lower_bit="0" name="iio_pstack0_imi_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x4a400108" name="iio_pstack0_imi_pmoncntrcfg_0" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="iio_pstack1" type="PMON">
+						<Counter address="0x4a8000e8" lower_bit="0" name="iio_pstack1_imi_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x4a800108" name="iio_pstack1_imi_pmoncntrcfg_0" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="iio_pstack2" type="PMON">
+						<Counter address="0x4ac000e8" lower_bit="0" name="iio_pstack2_imi_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x4ac00108" name="iio_pstack2_imi_pmoncntrcfg_0" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="iio_pstack3" type="PMON">
+						<Counter address="0x4b0000e8" lower_bit="0" name="iio_pstack3_imi_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x4b000108" name="iio_pstack3_imi_pmoncntrcfg_0" size="64"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet a="0" i="0" slice="iio_cstack" type="PMON">
+						<Counter address="0x4a0000f0" lower_bit="0" name="imi_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x4a000110" name="imi_pmoncntrcfg_1" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="iio_pstack0" type="PMON">
+						<Counter address="0x4a4000f0" lower_bit="0" name="iio_pstack0_imi_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x4a400110" name="iio_pstack0_imi_pmoncntrcfg_1" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="iio_pstack1" type="PMON">
+						<Counter address="0x4a8000f0" lower_bit="0" name="iio_pstack1_imi_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x4a800110" name="iio_pstack1_imi_pmoncntrcfg_1" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="iio_pstack2" type="PMON">
+						<Counter address="0x4ac000f0" lower_bit="0" name="iio_pstack2_imi_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x4ac00110" name="iio_pstack2_imi_pmoncntrcfg_1" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="iio_pstack3" type="PMON">
+						<Counter address="0x4b0000f0" lower_bit="0" name="iio_pstack3_imi_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x4b000110" name="iio_pstack3_imi_pmoncntrcfg_1" size="64"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="PMON">
+					<RegisterSet a="0" i="0" slice="iio_cstack" type="PMON">
+						<Counter address="0x4a0000f8" lower_bit="0" name="imi_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x4a000118" name="imi_pmoncntrcfg_2" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="iio_pstack0" type="PMON">
+						<Counter address="0x4a4000f8" lower_bit="0" name="iio_pstack0_imi_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x4a400118" name="iio_pstack0_imi_pmoncntrcfg_2" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="iio_pstack1" type="PMON">
+						<Counter address="0x4a8000f8" lower_bit="0" name="iio_pstack1_imi_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x4a800118" name="iio_pstack1_imi_pmoncntrcfg_2" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="iio_pstack2" type="PMON">
+						<Counter address="0x4ac000f8" lower_bit="0" name="iio_pstack2_imi_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x4ac00118" name="iio_pstack2_imi_pmoncntrcfg_2" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="iio_pstack3" type="PMON">
+						<Counter address="0x4b0000f8" lower_bit="0" name="iio_pstack3_imi_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x4b000118" name="iio_pstack3_imi_pmoncntrcfg_2" size="64"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="3" type="PMON">
+					<RegisterSet a="0" i="0" slice="iio_cstack" type="PMON">
+						<Counter address="0x4a000100" lower_bit="0" name="imi_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x4a000120" name="imi_pmoncntrcfg_3" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="iio_pstack0" type="PMON">
+						<Counter address="0x4a400100" lower_bit="0" name="iio_pstack0_imi_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x4a400120" name="iio_pstack0_imi_pmoncntrcfg_3" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="iio_pstack1" type="PMON">
+						<Counter address="0x4a800100" lower_bit="0" name="iio_pstack1_imi_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x4a800120" name="iio_pstack1_imi_pmoncntrcfg_3" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="iio_pstack2" type="PMON">
+						<Counter address="0x4ac00100" lower_bit="0" name="iio_pstack2_imi_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x4ac00120" name="iio_pstack2_imi_pmoncntrcfg_3" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="iio_pstack3" type="PMON">
+						<Counter address="0x4b000100" lower_bit="0" name="iio_pstack3_imi_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x4b000120" name="iio_pstack3_imi_pmoncntrcfg_3" size="64"/>
+					</RegisterSet>
+				</RegisterSet>
+			</ProcessorArea>
+
+			<ProcessorArea name="CBO">
+				<RegisterSet i="0" type="Global">
+					<RegisterSet a="0" i="0" slice="cbo0" type="Global">
+						<Filter0 address="0x4c001438" name="cbo0_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c00143c" name="cbo0_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c001440" name="cbo0_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c001444" name="cbo0_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="cbo1" type="Global">
+						<Filter0 address="0x4c101438" name="cbo1_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c10143c" name="cbo1_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c101440" name="cbo1_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c101444" name="cbo1_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="cbo2" type="Global">
+						<Filter0 address="0x4c201438" name="cbo2_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c20143c" name="cbo2_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c201440" name="cbo2_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c201444" name="cbo2_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="cbo3" type="Global">
+						<Filter0 address="0x4c301438" name="cbo3_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c30143c" name="cbo3_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c301440" name="cbo3_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c301444" name="cbo3_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="cbo4" type="Global">
+						<Filter0 address="0x4c401438" name="cbo4_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c40143c" name="cbo4_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c401440" name="cbo4_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c401444" name="cbo4_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="5" i="5" slice="cbo5" type="Global">
+						<Filter0 address="0x4c501438" name="cbo5_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c50143c" name="cbo5_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c501440" name="cbo5_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c501444" name="cbo5_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="6" i="6" slice="cbo6" type="Global">
+						<Filter0 address="0x4c601438" name="cbo6_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c60143c" name="cbo6_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c601440" name="cbo6_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c601444" name="cbo6_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="7" i="7" slice="cbo7" type="Global">
+						<Filter0 address="0x4c701438" name="cbo7_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c70143c" name="cbo7_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c701440" name="cbo7_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c701444" name="cbo7_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="8" i="8" slice="cbo8" type="Global">
+						<Filter0 address="0x4c801438" name="cbo8_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c80143c" name="cbo8_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c801440" name="cbo8_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c801444" name="cbo8_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="9" i="9" slice="cbo9" type="Global">
+						<Filter0 address="0x4c901438" name="cbo9_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4c90143c" name="cbo9_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4c901440" name="cbo9_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4c901444" name="cbo9_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="10" i="10" slice="cbo10" type="Global">
+						<Filter0 address="0x4ca01438" name="cbo10_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4ca0143c" name="cbo10_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4ca01440" name="cbo10_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4ca01444" name="cbo10_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="11" i="11" slice="cbo11" type="Global">
+						<Filter0 address="0x4cb01438" name="cbo11_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4cb0143c" name="cbo11_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4cb01440" name="cbo11_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4cb01444" name="cbo11_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="12" i="12" slice="cbo12" type="Global">
+						<Filter0 address="0x4cc01438" name="cbo12_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4cc0143c" name="cbo12_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4cc01440" name="cbo12_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4cc01444" name="cbo12_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="13" i="13" slice="cbo13" type="Global">
+						<Filter0 address="0x4cd01438" name="cbo13_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4cd0143c" name="cbo13_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4cd01440" name="cbo13_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4cd01444" name="cbo13_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="14" i="14" slice="cbo14" type="Global">
+						<Filter0 address="0x4ce01438" name="cbo14_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4ce0143c" name="cbo14_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4ce01440" name="cbo14_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4ce01444" name="cbo14_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="15" i="15" slice="cbo15" type="Global">
+						<Filter0 address="0x4cf01438" name="cbo15_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4cf0143c" name="cbo15_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4cf01440" name="cbo15_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4cf01444" name="cbo15_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="16" i="16" slice="cbo16" type="Global">
+						<Filter0 address="0x4d001438" name="cbo16_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d00143c" name="cbo16_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d001440" name="cbo16_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d001444" name="cbo16_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="17" i="17" slice="cbo17" type="Global">
+						<Filter0 address="0x4d101438" name="cbo17_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d10143c" name="cbo17_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d101440" name="cbo17_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d101444" name="cbo17_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="18" i="18" slice="cbo18" type="Global">
+						<Filter0 address="0x4d201438" name="cbo18_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d20143c" name="cbo18_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d201440" name="cbo18_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d201444" name="cbo18_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="19" i="19" slice="cbo19" type="Global">
+						<Filter0 address="0x4d301438" name="cbo19_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d30143c" name="cbo19_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d301440" name="cbo19_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d301444" name="cbo19_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="20" i="20" slice="cbo20" type="Global">
+						<Filter0 address="0x4d401438" name="cbo20_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d40143c" name="cbo20_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d401440" name="cbo20_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d401444" name="cbo20_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="21" i="21" slice="cbo21" type="Global">
+						<Filter0 address="0x4d501438" name="cbo21_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d50143c" name="cbo21_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d501440" name="cbo21_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d501444" name="cbo21_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="22" i="22" slice="cbo22" type="Global">
+						<Filter0 address="0x4d601438" name="cbo22_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d60143c" name="cbo22_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d601440" name="cbo22_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d601444" name="cbo22_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="23" i="23" slice="cbo23" type="Global">
+						<Filter0 address="0x4d701438" name="cbo23_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d70143c" name="cbo23_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d701440" name="cbo23_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d701444" name="cbo23_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="24" i="24" slice="cbo24" type="Global">
+						<Filter0 address="0x4d801438" name="cbo24_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d80143c" name="cbo24_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d801440" name="cbo24_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d801444" name="cbo24_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="25" i="25" slice="cbo25" type="Global">
+						<Filter0 address="0x4d901438" name="cbo25_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4d90143c" name="cbo25_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4d901440" name="cbo25_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4d901444" name="cbo25_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="26" i="26" slice="cbo26" type="Global">
+						<Filter0 address="0x4da01438" name="cbo26_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4da0143c" name="cbo26_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4da01440" name="cbo26_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4da01444" name="cbo26_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="27" i="27" slice="cbo27" type="Global">
+						<Filter0 address="0x4db01438" name="cbo27_cbopmonctrlglctr" size="32"/>
+						<Status address="0x4db0143c" name="cbo27_cbopmonctrstatus" size="32"/>
+						<UnitControl address="0x4db01440" name="cbo27_pmonunitctrl" size="32"/>
+						<OpcodeFilter address="0x4db01444" name="cbo27_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="Global">
+					<RegisterSet a="0" i="0" slice="cbo0" type="Global">
+						<Filter0 address="0x4c001444" name="cbo0_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="cbo1" type="Global">
+						<Filter0 address="0x4c101444" name="cbo1_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="cbo2" type="Global">
+						<Filter0 address="0x4c201444" name="cbo2_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="cbo3" type="Global">
+						<Filter0 address="0x4c301444" name="cbo3_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="cbo4" type="Global">
+						<Filter0 address="0x4c401444" name="cbo4_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="5" i="5" slice="cbo5" type="Global">
+						<Filter0 address="0x4c501444" name="cbo5_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="6" i="6" slice="cbo6" type="Global">
+						<Filter0 address="0x4c601444" name="cbo6_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="7" i="7" slice="cbo7" type="Global">
+						<Filter0 address="0x4c701444" name="cbo7_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="8" i="8" slice="cbo8" type="Global">
+						<Filter0 address="0x4c801444" name="cbo8_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="9" i="9" slice="cbo9" type="Global">
+						<Filter0 address="0x4c901444" name="cbo9_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="10" i="10" slice="cbo10" type="Global">
+						<Filter0 address="0x4ca01444" name="cbo10_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="11" i="11" slice="cbo11" type="Global">
+						<Filter0 address="0x4cb01444" name="cbo11_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="12" i="12" slice="cbo12" type="Global">
+						<Filter0 address="0x4cc01444" name="cbo12_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="13" i="13" slice="cbo13" type="Global">
+						<Filter0 address="0x4cd01444" name="cbo13_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="14" i="14" slice="cbo14" type="Global">
+						<Filter0 address="0x4ce01444" name="cbo14_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="15" i="15" slice="cbo15" type="Global">
+						<Filter0 address="0x4cf01444" name="cbo15_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="16" i="16" slice="cbo16" type="Global">
+						<Filter0 address="0x4d001444" name="cbo16_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="17" i="17" slice="cbo17" type="Global">
+						<Filter0 address="0x4d101444" name="cbo17_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="18" i="18" slice="cbo18" type="Global">
+						<Filter0 address="0x4d201444" name="cbo18_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="19" i="19" slice="cbo19" type="Global">
+						<Filter0 address="0x4d301444" name="cbo19_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="20" i="20" slice="cbo20" type="Global">
+						<Filter0 address="0x4d401444" name="cbo20_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="21" i="21" slice="cbo21" type="Global">
+						<Filter0 address="0x4d501444" name="cbo21_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="22" i="22" slice="cbo22" type="Global">
+						<Filter0 address="0x4d601444" name="cbo22_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="23" i="23" slice="cbo23" type="Global">
+						<Filter0 address="0x4d701444" name="cbo23_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="24" i="24" slice="cbo24" type="Global">
+						<Filter0 address="0x4d801444" name="cbo24_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="25" i="25" slice="cbo25" type="Global">
+						<Filter0 address="0x4d901444" name="cbo25_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="26" i="26" slice="cbo26" type="Global">
+						<Filter0 address="0x4da01444" name="cbo26_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="27" i="27" slice="cbo27" type="Global">
+						<Filter0 address="0x4db01444" name="cbo27_cbopmonctrlglctr_1" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="PMON">
+					<RegisterSet a="0" i="0" slice="cbo0" type="PMON">
+						<Configuration address="0x4c001428" name="cbo0_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c001448" lower_bit="0" name="cbo0_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="cbo1" type="PMON">
+						<Configuration address="0x4c101428" name="cbo1_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c101448" lower_bit="0" name="cbo1_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="cbo2" type="PMON">
+						<Configuration address="0x4c201428" name="cbo2_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c201448" lower_bit="0" name="cbo2_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="cbo3" type="PMON">
+						<Configuration address="0x4c301428" name="cbo3_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c301448" lower_bit="0" name="cbo3_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="cbo4" type="PMON">
+						<Configuration address="0x4c401428" name="cbo4_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c401448" lower_bit="0" name="cbo4_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="5" i="5" slice="cbo5" type="PMON">
+						<Configuration address="0x4c501428" name="cbo5_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c501448" lower_bit="0" name="cbo5_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="6" i="6" slice="cbo6" type="PMON">
+						<Configuration address="0x4c601428" name="cbo6_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c601448" lower_bit="0" name="cbo6_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="7" i="7" slice="cbo7" type="PMON">
+						<Configuration address="0x4c701428" name="cbo7_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c701448" lower_bit="0" name="cbo7_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="8" i="8" slice="cbo8" type="PMON">
+						<Configuration address="0x4c801428" name="cbo8_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c801448" lower_bit="0" name="cbo8_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="9" i="9" slice="cbo9" type="PMON">
+						<Configuration address="0x4c901428" name="cbo9_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4c901448" lower_bit="0" name="cbo9_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="10" i="10" slice="cbo10" type="PMON">
+						<Configuration address="0x4ca01428" name="cbo10_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4ca01448" lower_bit="0" name="cbo10_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="11" i="11" slice="cbo11" type="PMON">
+						<Configuration address="0x4cb01428" name="cbo11_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4cb01448" lower_bit="0" name="cbo11_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="12" i="12" slice="cbo12" type="PMON">
+						<Configuration address="0x4cc01428" name="cbo12_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4cc01448" lower_bit="0" name="cbo12_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="13" i="13" slice="cbo13" type="PMON">
+						<Configuration address="0x4cd01428" name="cbo13_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4cd01448" lower_bit="0" name="cbo13_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="14" i="14" slice="cbo14" type="PMON">
+						<Configuration address="0x4ce01428" name="cbo14_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4ce01448" lower_bit="0" name="cbo14_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="15" i="15" slice="cbo15" type="PMON">
+						<Configuration address="0x4cf01428" name="cbo15_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4cf01448" lower_bit="0" name="cbo15_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="16" i="16" slice="cbo16" type="PMON">
+						<Configuration address="0x4d001428" name="cbo16_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d001448" lower_bit="0" name="cbo16_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="17" i="17" slice="cbo17" type="PMON">
+						<Configuration address="0x4d101428" name="cbo17_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d101448" lower_bit="0" name="cbo17_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="18" i="18" slice="cbo18" type="PMON">
+						<Configuration address="0x4d201428" name="cbo18_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d201448" lower_bit="0" name="cbo18_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="19" i="19" slice="cbo19" type="PMON">
+						<Configuration address="0x4d301428" name="cbo19_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d301448" lower_bit="0" name="cbo19_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="20" i="20" slice="cbo20" type="PMON">
+						<Configuration address="0x4d401428" name="cbo20_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d401448" lower_bit="0" name="cbo20_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="21" i="21" slice="cbo21" type="PMON">
+						<Configuration address="0x4d501428" name="cbo21_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d501448" lower_bit="0" name="cbo21_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="22" i="22" slice="cbo22" type="PMON">
+						<Configuration address="0x4d601428" name="cbo22_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d601448" lower_bit="0" name="cbo22_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="23" i="23" slice="cbo23" type="PMON">
+						<Configuration address="0x4d701428" name="cbo23_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d701448" lower_bit="0" name="cbo23_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="24" i="24" slice="cbo24" type="PMON">
+						<Configuration address="0x4d801428" name="cbo24_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d801448" lower_bit="0" name="cbo24_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="25" i="25" slice="cbo25" type="PMON">
+						<Configuration address="0x4d901428" name="cbo25_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4d901448" lower_bit="0" name="cbo25_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="26" i="26" slice="cbo26" type="PMON">
+						<Configuration address="0x4da01428" name="cbo26_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4da01448" lower_bit="0" name="cbo26_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="27" i="27" slice="cbo27" type="PMON">
+						<Configuration address="0x4db01428" name="cbo27_cbopmonctrctrl_0" size="32"/>
+						<Counter address="0x4db01448" lower_bit="0" name="cbo27_cbopmonct_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet a="0" i="0" slice="cbo0" type="PMON">
+						<Configuration address="0x4c00142c" name="cbo0_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c001450" lower_bit="0" name="cbo0_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="cbo1" type="PMON">
+						<Configuration address="0x4c10142c" name="cbo1_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c101450" lower_bit="0" name="cbo1_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="cbo2" type="PMON">
+						<Configuration address="0x4c20142c" name="cbo2_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c201450" lower_bit="0" name="cbo2_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="cbo3" type="PMON">
+						<Configuration address="0x4c30142c" name="cbo3_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c301450" lower_bit="0" name="cbo3_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="cbo4" type="PMON">
+						<Configuration address="0x4c40142c" name="cbo4_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c401450" lower_bit="0" name="cbo4_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="5" i="5" slice="cbo5" type="PMON">
+						<Configuration address="0x4c50142c" name="cbo5_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c501450" lower_bit="0" name="cbo5_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="6" i="6" slice="cbo6" type="PMON">
+						<Configuration address="0x4c60142c" name="cbo6_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c601450" lower_bit="0" name="cbo6_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="7" i="7" slice="cbo7" type="PMON">
+						<Configuration address="0x4c70142c" name="cbo7_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c701450" lower_bit="0" name="cbo7_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="8" i="8" slice="cbo8" type="PMON">
+						<Configuration address="0x4c80142c" name="cbo8_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c801450" lower_bit="0" name="cbo8_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="9" i="9" slice="cbo9" type="PMON">
+						<Configuration address="0x4c90142c" name="cbo9_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4c901450" lower_bit="0" name="cbo9_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="10" i="10" slice="cbo10" type="PMON">
+						<Configuration address="0x4ca0142c" name="cbo10_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4ca01450" lower_bit="0" name="cbo10_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="11" i="11" slice="cbo11" type="PMON">
+						<Configuration address="0x4cb0142c" name="cbo11_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4cb01450" lower_bit="0" name="cbo11_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="12" i="12" slice="cbo12" type="PMON">
+						<Configuration address="0x4cc0142c" name="cbo12_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4cc01450" lower_bit="0" name="cbo12_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="13" i="13" slice="cbo13" type="PMON">
+						<Configuration address="0x4cd0142c" name="cbo13_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4cd01450" lower_bit="0" name="cbo13_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="14" i="14" slice="cbo14" type="PMON">
+						<Configuration address="0x4ce0142c" name="cbo14_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4ce01450" lower_bit="0" name="cbo14_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="15" i="15" slice="cbo15" type="PMON">
+						<Configuration address="0x4cf0142c" name="cbo15_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4cf01450" lower_bit="0" name="cbo15_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="16" i="16" slice="cbo16" type="PMON">
+						<Configuration address="0x4d00142c" name="cbo16_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d001450" lower_bit="0" name="cbo16_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="17" i="17" slice="cbo17" type="PMON">
+						<Configuration address="0x4d10142c" name="cbo17_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d101450" lower_bit="0" name="cbo17_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="18" i="18" slice="cbo18" type="PMON">
+						<Configuration address="0x4d20142c" name="cbo18_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d201450" lower_bit="0" name="cbo18_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="19" i="19" slice="cbo19" type="PMON">
+						<Configuration address="0x4d30142c" name="cbo19_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d301450" lower_bit="0" name="cbo19_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="20" i="20" slice="cbo20" type="PMON">
+						<Configuration address="0x4d40142c" name="cbo20_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d401450" lower_bit="0" name="cbo20_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="21" i="21" slice="cbo21" type="PMON">
+						<Configuration address="0x4d50142c" name="cbo21_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d501450" lower_bit="0" name="cbo21_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="22" i="22" slice="cbo22" type="PMON">
+						<Configuration address="0x4d60142c" name="cbo22_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d601450" lower_bit="0" name="cbo22_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="23" i="23" slice="cbo23" type="PMON">
+						<Configuration address="0x4d70142c" name="cbo23_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d701450" lower_bit="0" name="cbo23_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="24" i="24" slice="cbo24" type="PMON">
+						<Configuration address="0x4d80142c" name="cbo24_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d801450" lower_bit="0" name="cbo24_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="25" i="25" slice="cbo25" type="PMON">
+						<Configuration address="0x4d90142c" name="cbo25_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4d901450" lower_bit="0" name="cbo25_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="26" i="26" slice="cbo26" type="PMON">
+						<Configuration address="0x4da0142c" name="cbo26_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4da01450" lower_bit="0" name="cbo26_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="27" i="27" slice="cbo27" type="PMON">
+						<Configuration address="0x4db0142c" name="cbo27_cbopmonctrctrl_1" size="32"/>
+						<Counter address="0x4db01450" lower_bit="0" name="cbo27_cbopmonct_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="PMON">
+					<RegisterSet a="0" i="0" slice="cbo0" type="PMON">
+						<Configuration address="0x4c001430" name="cbo0_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c001458" lower_bit="0" name="cbo0_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="cbo1" type="PMON">
+						<Configuration address="0x4c101430" name="cbo1_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c101458" lower_bit="0" name="cbo1_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="cbo2" type="PMON">
+						<Configuration address="0x4c201430" name="cbo2_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c201458" lower_bit="0" name="cbo2_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="cbo3" type="PMON">
+						<Configuration address="0x4c301430" name="cbo3_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c301458" lower_bit="0" name="cbo3_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="cbo4" type="PMON">
+						<Configuration address="0x4c401430" name="cbo4_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c401458" lower_bit="0" name="cbo4_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="5" i="5" slice="cbo5" type="PMON">
+						<Configuration address="0x4c501430" name="cbo5_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c501458" lower_bit="0" name="cbo5_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="6" i="6" slice="cbo6" type="PMON">
+						<Configuration address="0x4c601430" name="cbo6_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c601458" lower_bit="0" name="cbo6_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="7" i="7" slice="cbo7" type="PMON">
+						<Configuration address="0x4c701430" name="cbo7_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c701458" lower_bit="0" name="cbo7_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="8" i="8" slice="cbo8" type="PMON">
+						<Configuration address="0x4c801430" name="cbo8_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c801458" lower_bit="0" name="cbo8_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="9" i="9" slice="cbo9" type="PMON">
+						<Configuration address="0x4c901430" name="cbo9_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4c901458" lower_bit="0" name="cbo9_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="10" i="10" slice="cbo10" type="PMON">
+						<Configuration address="0x4ca01430" name="cbo10_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4ca01458" lower_bit="0" name="cbo10_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="11" i="11" slice="cbo11" type="PMON">
+						<Configuration address="0x4cb01430" name="cbo11_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4cb01458" lower_bit="0" name="cbo11_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="12" i="12" slice="cbo12" type="PMON">
+						<Configuration address="0x4cc01430" name="cbo12_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4cc01458" lower_bit="0" name="cbo12_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="13" i="13" slice="cbo13" type="PMON">
+						<Configuration address="0x4cd01430" name="cbo13_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4cd01458" lower_bit="0" name="cbo13_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="14" i="14" slice="cbo14" type="PMON">
+						<Configuration address="0x4ce01430" name="cbo14_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4ce01458" lower_bit="0" name="cbo14_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="15" i="15" slice="cbo15" type="PMON">
+						<Configuration address="0x4cf01430" name="cbo15_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4cf01458" lower_bit="0" name="cbo15_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="16" i="16" slice="cbo16" type="PMON">
+						<Configuration address="0x4d001430" name="cbo16_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d001458" lower_bit="0" name="cbo16_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="17" i="17" slice="cbo17" type="PMON">
+						<Configuration address="0x4d101430" name="cbo17_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d101458" lower_bit="0" name="cbo17_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="18" i="18" slice="cbo18" type="PMON">
+						<Configuration address="0x4d201430" name="cbo18_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d201458" lower_bit="0" name="cbo18_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="19" i="19" slice="cbo19" type="PMON">
+						<Configuration address="0x4d301430" name="cbo19_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d301458" lower_bit="0" name="cbo19_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="20" i="20" slice="cbo20" type="PMON">
+						<Configuration address="0x4d401430" name="cbo20_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d401458" lower_bit="0" name="cbo20_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="21" i="21" slice="cbo21" type="PMON">
+						<Configuration address="0x4d501430" name="cbo21_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d501458" lower_bit="0" name="cbo21_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="22" i="22" slice="cbo22" type="PMON">
+						<Configuration address="0x4d601430" name="cbo22_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d601458" lower_bit="0" name="cbo22_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="23" i="23" slice="cbo23" type="PMON">
+						<Configuration address="0x4d701430" name="cbo23_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d701458" lower_bit="0" name="cbo23_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="24" i="24" slice="cbo24" type="PMON">
+						<Configuration address="0x4d801430" name="cbo24_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d801458" lower_bit="0" name="cbo24_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="25" i="25" slice="cbo25" type="PMON">
+						<Configuration address="0x4d901430" name="cbo25_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4d901458" lower_bit="0" name="cbo25_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="26" i="26" slice="cbo26" type="PMON">
+						<Configuration address="0x4da01430" name="cbo26_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4da01458" lower_bit="0" name="cbo26_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="27" i="27" slice="cbo27" type="PMON">
+						<Configuration address="0x4db01430" name="cbo27_cbopmonctrctrl_2" size="32"/>
+						<Counter address="0x4db01458" lower_bit="0" name="cbo27_cbopmonct_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="3" type="PMON">
+					<RegisterSet a="0" i="0" slice="cbo0" type="PMON">
+						<Configuration address="0x4c001434" name="cbo0_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c001460" lower_bit="0" name="cbo0_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="cbo1" type="PMON">
+						<Configuration address="0x4c101434" name="cbo1_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c101460" lower_bit="0" name="cbo1_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="cbo2" type="PMON">
+						<Configuration address="0x4c201434" name="cbo2_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c201460" lower_bit="0" name="cbo2_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="cbo3" type="PMON">
+						<Configuration address="0x4c301434" name="cbo3_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c301460" lower_bit="0" name="cbo3_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="4" i="4" slice="cbo4" type="PMON">
+						<Configuration address="0x4c401434" name="cbo4_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c401460" lower_bit="0" name="cbo4_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="5" i="5" slice="cbo5" type="PMON">
+						<Configuration address="0x4c501434" name="cbo5_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c501460" lower_bit="0" name="cbo5_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="6" i="6" slice="cbo6" type="PMON">
+						<Configuration address="0x4c601434" name="cbo6_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c601460" lower_bit="0" name="cbo6_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="7" i="7" slice="cbo7" type="PMON">
+						<Configuration address="0x4c701434" name="cbo7_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c701460" lower_bit="0" name="cbo7_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="8" i="8" slice="cbo8" type="PMON">
+						<Configuration address="0x4c801434" name="cbo8_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c801460" lower_bit="0" name="cbo8_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="9" i="9" slice="cbo9" type="PMON">
+						<Configuration address="0x4c901434" name="cbo9_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4c901460" lower_bit="0" name="cbo9_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="10" i="10" slice="cbo10" type="PMON">
+						<Configuration address="0x4ca01434" name="cbo10_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4ca01460" lower_bit="0" name="cbo10_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="11" i="11" slice="cbo11" type="PMON">
+						<Configuration address="0x4cb01434" name="cbo11_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4cb01460" lower_bit="0" name="cbo11_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="12" i="12" slice="cbo12" type="PMON">
+						<Configuration address="0x4cc01434" name="cbo12_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4cc01460" lower_bit="0" name="cbo12_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="13" i="13" slice="cbo13" type="PMON">
+						<Configuration address="0x4cd01434" name="cbo13_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4cd01460" lower_bit="0" name="cbo13_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="14" i="14" slice="cbo14" type="PMON">
+						<Configuration address="0x4ce01434" name="cbo14_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4ce01460" lower_bit="0" name="cbo14_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="15" i="15" slice="cbo15" type="PMON">
+						<Configuration address="0x4cf01434" name="cbo15_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4cf01460" lower_bit="0" name="cbo15_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="16" i="16" slice="cbo16" type="PMON">
+						<Configuration address="0x4d001434" name="cbo16_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d001460" lower_bit="0" name="cbo16_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="17" i="17" slice="cbo17" type="PMON">
+						<Configuration address="0x4d101434" name="cbo17_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d101460" lower_bit="0" name="cbo17_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="18" i="18" slice="cbo18" type="PMON">
+						<Configuration address="0x4d201434" name="cbo18_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d201460" lower_bit="0" name="cbo18_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="19" i="19" slice="cbo19" type="PMON">
+						<Configuration address="0x4d301434" name="cbo19_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d301460" lower_bit="0" name="cbo19_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="20" i="20" slice="cbo20" type="PMON">
+						<Configuration address="0x4d401434" name="cbo20_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d401460" lower_bit="0" name="cbo20_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="21" i="21" slice="cbo21" type="PMON">
+						<Configuration address="0x4d501434" name="cbo21_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d501460" lower_bit="0" name="cbo21_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="22" i="22" slice="cbo22" type="PMON">
+						<Configuration address="0x4d601434" name="cbo22_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d601460" lower_bit="0" name="cbo22_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="23" i="23" slice="cbo23" type="PMON">
+						<Configuration address="0x4d701434" name="cbo23_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d701460" lower_bit="0" name="cbo23_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="24" i="24" slice="cbo24" type="PMON">
+						<Configuration address="0x4d801434" name="cbo24_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d801460" lower_bit="0" name="cbo24_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="25" i="25" slice="cbo25" type="PMON">
+						<Configuration address="0x4d901434" name="cbo25_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4d901460" lower_bit="0" name="cbo25_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="26" i="26" slice="cbo26" type="PMON">
+						<Configuration address="0x4da01434" name="cbo26_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4da01460" lower_bit="0" name="cbo26_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+					<RegisterSet a="27" i="27" slice="cbo27" type="PMON">
+						<Configuration address="0x4db01434" name="cbo27_cbopmonctrctrl_3" size="32"/>
+						<Counter address="0x4db01460" lower_bit="0" name="cbo27_cbopmonct_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+			</ProcessorArea>
+
+			<ProcessorArea name="iMC">
+				<RegisterSet i="0" type="Fixed">
+					<RegisterSet a="0" b="0" i="0" slice="imc0_c0" type="Fixed">
+						<Counter address="0x700520d0" lower_bit="0" name="imc0_c0_pmoncntr_fixed" size="64" upper_bit="47"/>
+						<Configuration address="0x700520f0" name="imc0_c0_pmoncntrcfgfixed" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="imc0_c1" type="Fixed">
+						<Counter address="0x700560d0" lower_bit="0" name="imc0_c1_pmoncntr_fixed" size="64" upper_bit="47"/>
+						<Configuration address="0x700560f0" name="imc0_c1_pmoncntrcfgfixed" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="2" i="2" slice="imc0_c2" type="Fixed">
+						<Counter address="0x7005a0d0" lower_bit="0" name="imc0_c2_pmoncntr_fixed" size="64" upper_bit="47"/>
+						<Configuration address="0x7005a0f0" name="imc0_c2_pmoncntrcfgfixed" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="3" slice="imc1_c0" type="Fixed">
+						<Counter address="0x700620d0" lower_bit="0" name="imc1_c0_pmoncntr_fixed" size="64" upper_bit="47"/>
+						<Configuration address="0x700620f0" name="imc1_c0_pmoncntrcfgfixed" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="4" slice="imc1_c1" type="Fixed">
+						<Counter address="0x700660d0" lower_bit="0" name="imc1_c1_pmoncntr_fixed" size="64" upper_bit="47"/>
+						<Configuration address="0x700660f0" name="imc1_c1_pmoncntrcfgfixed" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="2" i="5" slice="imc1_c2" type="Fixed">
+						<Counter address="0x7006a0d0" lower_bit="0" name="imc1_c2_pmoncntr_fixed" size="64" upper_bit="47"/>
+						<Configuration address="0x7006a0f0" name="imc1_c2_pmoncntrcfgfixed" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="Global">
+					<RegisterSet a="0" b="0" i="0" slice="imc0_c0" type="Global">
+						<Status address="0x700520f8" lower_bit="0" name="imc0_c0_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="imc0_c1" type="Global">
+						<Status address="0x700560f8" lower_bit="0" name="imc0_c1_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="2" i="2" slice="imc0_c2" type="Global">
+						<Status address="0x7005a0f8" lower_bit="0" name="imc0_c2_pmonunitstatus" size="32" upper_bit="6"/>
+						<UnitControl address="0x700520f4" name="imc0_c0_pmonunitctrl" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="3" slice="imc1" type="Global">
+						<UnitControl address="0x700620f4" name="imc1_c0_pmonunitctrl" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="4" slice="imc1_c0" type="Global">
+						<Status address="0x700620f8" lower_bit="0" name="imc1_c0_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="5" slice="imc1_c1" type="Global">
+						<Status address="0x700660f8" lower_bit="0" name="imc1_c1_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="2" i="6" slice="imc1_c2" type="Global">
+						<Status address="0x7006a0f8" lower_bit="0" name="imc1_c2_pmonunitstatus" size="32" upper_bit="6"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="Global">
+					<RegisterSet a="0" i="0" slice="imc0" type="Global">
+						<UnitControl address="0x700560f4" name="imc0_c1_pmonunitctrl" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="imc1" type="Global">
+						<UnitControl address="0x700660f4" name="imc1_c1_pmonunitctrl" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="Global">
+					<RegisterSet a="0" i="0" slice="imc0" type="Global">
+						<UnitControl address="0x7005a0f4" name="imc0_c2_pmonunitctrl" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="imc1" type="Global">
+						<UnitControl address="0x7006a0f4" name="imc1_c2_pmonunitctrl" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="imc0_c0" type="PMON">
+						<Counter address="0x700520a0" lower_bit="0" name="imc0_c0_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x700520d8" name="imc0_c0_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="imc0_c1" type="PMON">
+						<Counter address="0x700560a0" lower_bit="0" name="imc0_c1_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x700560d8" name="imc0_c1_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="2" i="2" slice="imc0_c2" type="PMON">
+						<Counter address="0x7005a0a0" lower_bit="0" name="imc0_c2_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x7005a0d8" name="imc0_c2_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="3" slice="imc1_c0" type="PMON">
+						<Counter address="0x700620a0" lower_bit="0" name="imc1_c0_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x700620d8" name="imc1_c0_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="4" slice="imc1_c1" type="PMON">
+						<Counter address="0x700660a0" lower_bit="0" name="imc1_c1_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x700660d8" name="imc1_c1_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="2" i="5" slice="imc1_c2" type="PMON">
+						<Counter address="0x7006a0a0" lower_bit="0" name="imc1_c2_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x7006a0d8" name="imc1_c2_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="imc0_c0" type="PMON">
+						<Counter address="0x700520a8" lower_bit="0" name="imc0_c0_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x700520dc" name="imc0_c0_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="imc0_c1" type="PMON">
+						<Counter address="0x700560a8" lower_bit="0" name="imc0_c1_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x700560dc" name="imc0_c1_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="2" i="2" slice="imc0_c2" type="PMON">
+						<Counter address="0x7005a0a8" lower_bit="0" name="imc0_c2_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x7005a0dc" name="imc0_c2_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="3" slice="imc1_c0" type="PMON">
+						<Counter address="0x700620a8" lower_bit="0" name="imc1_c0_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x700620dc" name="imc1_c0_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="4" slice="imc1_c1" type="PMON">
+						<Counter address="0x700660a8" lower_bit="0" name="imc1_c1_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x700660dc" name="imc1_c1_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="2" i="5" slice="imc1_c2" type="PMON">
+						<Counter address="0x7006a0a8" lower_bit="0" name="imc1_c2_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x7006a0dc" name="imc1_c2_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="imc0_c0" type="PMON">
+						<Counter address="0x700520b0" lower_bit="0" name="imc0_c0_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x700520e0" name="imc0_c0_pmoncntrcfg_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="imc0_c1" type="PMON">
+						<Counter address="0x700560b0" lower_bit="0" name="imc0_c1_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x700560e0" name="imc0_c1_pmoncntrcfg_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="2" i="2" slice="imc0_c2" type="PMON">
+						<Counter address="0x7005a0b0" lower_bit="0" name="imc0_c2_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x7005a0e0" name="imc0_c2_pmoncntrcfg_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="3" slice="imc1_c0" type="PMON">
+						<Counter address="0x700620b0" lower_bit="0" name="imc1_c0_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x700620e0" name="imc1_c0_pmoncntrcfg_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="4" slice="imc1_c1" type="PMON">
+						<Counter address="0x700660b0" lower_bit="0" name="imc1_c1_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x700660e0" name="imc1_c1_pmoncntrcfg_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="2" i="5" slice="imc1_c2" type="PMON">
+						<Counter address="0x7006a0b0" lower_bit="0" name="imc1_c2_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x7006a0e0" name="imc1_c2_pmoncntrcfg_2" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="3" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="imc0_c0" type="PMON">
+						<Counter address="0x700520b8" lower_bit="0" name="imc0_c0_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x700520e4" name="imc0_c0_pmoncntrcfg_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="imc0_c1" type="PMON">
+						<Counter address="0x700560b8" lower_bit="0" name="imc0_c1_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x700560e4" name="imc0_c1_pmoncntrcfg_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="2" i="2" slice="imc0_c2" type="PMON">
+						<Counter address="0x7005a0b8" lower_bit="0" name="imc0_c2_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x7005a0e4" name="imc0_c2_pmoncntrcfg_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="3" slice="imc1_c0" type="PMON">
+						<Counter address="0x700620b8" lower_bit="0" name="imc1_c0_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x700620e4" name="imc1_c0_pmoncntrcfg_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="4" slice="imc1_c1" type="PMON">
+						<Counter address="0x700660b8" lower_bit="0" name="imc1_c1_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x700660e4" name="imc1_c1_pmoncntrcfg_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="2" i="5" slice="imc1_c2" type="PMON">
+						<Counter address="0x7006a0b8" lower_bit="0" name="imc1_c2_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x7006a0e4" name="imc1_c2_pmoncntrcfg_3" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="4" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="imc0_c0" type="PMON">
+						<Counter address="0x700520c0" lower_bit="0" name="imc0_c0_pmoncntr_4" size="64" upper_bit="47"/>
+						<Configuration address="0x700520e8" name="imc0_c0_pmoncntrcfg_4" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="imc0_c1" type="PMON">
+						<Counter address="0x700560c0" lower_bit="0" name="imc0_c1_pmoncntr_4" size="64" upper_bit="47"/>
+						<Configuration address="0x700560e8" name="imc0_c1_pmoncntrcfg_4" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="2" i="2" slice="imc0_c2" type="PMON">
+						<Counter address="0x7005a0c0" lower_bit="0" name="imc0_c2_pmoncntr_4" size="64" upper_bit="47"/>
+						<Configuration address="0x7005a0e8" name="imc0_c2_pmoncntrcfg_4" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="3" slice="imc1_c0" type="PMON">
+						<Counter address="0x700620c0" lower_bit="0" name="imc1_c0_pmoncntr_4" size="64" upper_bit="47"/>
+						<Configuration address="0x700620e8" name="imc1_c0_pmoncntrcfg_4" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="4" slice="imc1_c1" type="PMON">
+						<Counter address="0x700660c0" lower_bit="0" name="imc1_c1_pmoncntr_4" size="64" upper_bit="47"/>
+						<Configuration address="0x700660e8" name="imc1_c1_pmoncntrcfg_4" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="2" i="5" slice="imc1_c2" type="PMON">
+						<Counter address="0x7006a0c0" lower_bit="0" name="imc1_c2_pmoncntr_4" size="64" upper_bit="47"/>
+						<Configuration address="0x7006a0e8" name="imc1_c2_pmoncntrcfg_4" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+			</ProcessorArea>
+            
+			<ProcessorArea name="KTI LL">
+				<RegisterSet i="0" type="Global">
+					<RegisterSet i="0" slice="kti0" type="Global">
+						<UnitControl address="0x70070378" name="kti0_pmonunitctrl" size="32"/>
+						<Status address="0x7007037c" lower_bit="0" name="kti0_pmonunitstatus" size="32" upper_bit="4"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="Global">
+					<RegisterSet i="0" slice="kti1" type="Global">
+						<UnitControl address="0x70078378" name="kti1_pmonunitctrl" size="32"/>
+						<Status address="0x7007837c" lower_bit="0" name="kti1_pmonunitstatus" size="32" upper_bit="4"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="Global">
+					<RegisterSet i="0" slice="kti2" type="Global">
+						<UnitControl address="0x70080378" name="kti2_pmonunitctrl" size="32"/>
+						<Status address="0x7008037c" lower_bit="0" name="kti2_pmonunitstatus" size="32" upper_bit="4"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="PMON">
+					<RegisterSet a="0" i="0" slice="kti0" type="PMON">
+						<Counter address="0x70070318" lower_bit="0" name="kti0_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x70070350" name="kti0_pmoncntrcfg_0" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="kti1" type="PMON">
+						<Counter address="0x70078318" lower_bit="0" name="kti1_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x70078350" name="kti1_pmoncntrcfg_0" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="kti2" type="PMON">
+						<Counter address="0x70080318" lower_bit="0" name="kti2_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x70080350" name="kti2_pmoncntrcfg_0" size="64"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet a="0" i="0" slice="kti0" type="PMON">
+						<Counter address="0x70070320" lower_bit="0" name="kti0_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x70070358" name="kti0_pmoncntrcfg_1" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="kti1" type="PMON">
+						<Counter address="0x70078320" lower_bit="0" name="kti1_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x70078358" name="kti1_pmoncntrcfg_1" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="kti2" type="PMON">
+						<Counter address="0x70080320" lower_bit="0" name="kti2_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x70080358" name="kti2_pmoncntrcfg_1" size="64"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="PMON">
+					<RegisterSet a="0" i="0" slice="kti0" type="PMON">
+						<Counter address="0x70070328" lower_bit="0" name="kti0_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x70070360" name="kti0_pmoncntrcfg_2" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="kti1" type="PMON">
+						<Counter address="0x70078328" lower_bit="0" name="kti1_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x70078360" name="kti1_pmoncntrcfg_2" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="kti2" type="PMON">
+						<Counter address="0x70080328" lower_bit="0" name="kti2_pmoncntr_2" size="64" upper_bit="47"/>
+						<Configuration address="0x70080360" name="kti2_pmoncntrcfg_2" size="64"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="3" type="PMON">
+					<RegisterSet a="0" i="0" slice="kti0" type="PMON">
+						<Counter address="0x70070330" lower_bit="0" name="kti0_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x70070368" name="kti0_pmoncntrcfg_3" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="kti1" type="PMON">
+						<Counter address="0x70078330" lower_bit="0" name="kti1_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x70078368" name="kti1_pmoncntrcfg_3" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="kti2" type="PMON">
+						<Counter address="0x70080330" lower_bit="0" name="kti2_pmoncntr_3" size="64" upper_bit="47"/>
+						<Configuration address="0x70080368" name="kti2_pmoncntrcfg_3" size="64"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="4" type="PMON">
+					<RegisterSet a="0" i="0" slice="kti0" type="PMON">
+						<Counter address="0x70070338" lower_bit="0" name="kti0_pmoncntr_4" size="64" upper_bit="47"/>
+						<Configuration address="0x70070370" name="kti0_pmoncntrcfg_4" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="kti1" type="PMON">
+						<Counter address="0x70078338" lower_bit="0" name="kti1_pmoncntr_4" size="64" upper_bit="47"/>
+						<Configuration address="0x70078370" name="kti1_pmoncntrcfg_4" size="64"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="kti2" type="PMON">
+						<Counter address="0x70080338" lower_bit="0" name="kti2_pmoncntr_4" size="64" upper_bit="47"/>
+						<Configuration address="0x70080370" name="kti2_pmoncntrcfg_4" size="64"/>
+					</RegisterSet>
+				</RegisterSet>
+			</ProcessorArea>
+            
+			<ProcessorArea name="M2M">
+				<RegisterSet i="0" type="Global">
+					<RegisterSet i="0" slice="imc0" type="Global">
+						<UnitControl address="0x70040250" name="imc0_m2mem_pmonunitctrl" size="32"/>
+						<Status address="0x70040260" lower_bit="0" name="imc0_m2mem_pmonunitstatus" size="32" upper_bit="4"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="Global">
+					<RegisterSet i="0" slice="imc1" type="Global">
+						<UnitControl address="0x70048250" name="imc1_m2mem_pmonunitctrl" size="32"/>
+						<Status address="0x70048260" lower_bit="0" name="imc1_m2mem_pmonunitstatus" size="32" upper_bit="4"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="PMON">
+					<RegisterSet a="0" i="0" slice="imc0" type="PMON">
+						<Counter address="0x70040200" lower_bit="0" name="imc0_m2mem_pmoncntr0" size="64" upper_bit="47"/>
+						<Configuration address="0x70040228" name="imc0_m2mem_pmoncntrcfg0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="imc1" type="PMON">
+						<Counter address="0x70048200" lower_bit="0" name="imc1_m2mem_pmoncntr0" size="64" upper_bit="47"/>
+						<Configuration address="0x70048228" name="imc1_m2mem_pmoncntrcfg0" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet a="0" i="0" slice="imc0" type="PMON">
+						<Counter address="0x70040208" lower_bit="0" name="imc0_m2mem_pmoncntr1" size="64" upper_bit="47"/>
+						<Configuration address="0x70040230" name="imc0_m2mem_pmoncntrcfg1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="imc1" type="PMON">
+						<Counter address="0x70048208" lower_bit="0" name="imc1_m2mem_pmoncntr1" size="64" upper_bit="47"/>
+						<Configuration address="0x70048230" name="imc1_m2mem_pmoncntrcfg1" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="PMON">
+					<RegisterSet a="0" i="0" slice="imc0" type="PMON">
+						<Counter address="0x70040210" lower_bit="0" name="imc0_m2mem_pmoncntr2" size="64" upper_bit="47"/>
+						<Configuration address="0x70040238" name="imc0_m2mem_pmoncntrcfg2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="imc1" type="PMON">
+						<Counter address="0x70048210" lower_bit="0" name="imc1_m2mem_pmoncntr2" size="64" upper_bit="47"/>
+						<Configuration address="0x70048238" name="imc1_m2mem_pmoncntrcfg2" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="3" type="PMON">
+					<RegisterSet a="0" i="0" slice="imc0" type="PMON">
+						<Counter address="0x70040218" lower_bit="0" name="imc0_m2mem_pmoncntr3" size="64" upper_bit="47"/>
+						<Configuration address="0x70040240" name="imc0_m2mem_pmoncntrcfg3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="imc1" type="PMON">
+						<Counter address="0x70048218" lower_bit="0" name="imc1_m2mem_pmoncntr3" size="64" upper_bit="47"/>
+						<Configuration address="0x70048240" name="imc1_m2mem_pmoncntrcfg3" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="4" type="PMON">
+					<RegisterSet a="0" i="0" slice="imc0" type="PMON">
+						<Counter address="0x70040220" lower_bit="0" name="imc0_m2mem_pmoncntr4" size="64" upper_bit="47"/>
+						<Configuration address="0x70040248" name="imc0_m2mem_pmoncntrcfg4" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="imc1" type="PMON">
+						<Counter address="0x70048220" lower_bit="0" name="imc1_m2mem_pmoncntr4" size="64" upper_bit="47"/>
+						<Configuration address="0x70048248" name="imc1_m2mem_pmoncntrcfg4" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+			</ProcessorArea>
+            
+			<ProcessorArea name="IRP">
+				<RegisterSet i="0" type="PMON">
+					<RegisterSet a="0" i="0" slice="irp0" type="PMON">
+						<Counter address="0x4a000158" lower_bit="0" name="irp0_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x4a000168" name="irp0_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="irp1" type="PMON">
+						<Counter address="0x4a400158" lower_bit="0" name="iio_pstack0_irp0_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x4a400168" name="iio_pstack0_irp0_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="irp2" type="PMON">
+						<Counter address="0x4a800158" lower_bit="0" name="iio_pstack1_irp0_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x4a800168" name="iio_pstack1_irp0_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="irp3" type="PMON">
+						<Counter address="0x4ac00158" lower_bit="0" name="iio_pstack2_irp0_pmoncntr_0" size="64" upper_bit="47"/>
+						<Configuration address="0x4ac00168" name="iio_pstack2_irp0_pmoncntrcfg_0" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet a="0" i="0" slice="irp0" type="PMON">
+						<Counter address="0x4a000160" lower_bit="0" name="irp0_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x4a00016c" name="irp0_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" i="1" slice="irp1" type="PMON">
+						<Counter address="0x4a400160" lower_bit="0" name="iio_pstack0_irp0_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x4a40016c" name="iio_pstack0_irp0_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="2" i="2" slice="irp2" type="PMON">
+						<Counter address="0x4a800160" lower_bit="0" name="iio_pstack1_irp0_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x4a80016c" name="iio_pstack1_irp0_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="3" i="3" slice="irp3" type="PMON">
+						<Counter address="0x4ac00160" lower_bit="0" name="iio_pstack2_irp0_pmoncntr_1" size="64" upper_bit="47"/>
+						<Configuration address="0x4ac0016c" name="iio_pstack2_irp0_pmoncntrcfg_1" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="Global">
+					<RegisterSet i="0" slice="irp0" type="Global">
+						<Status address="0x4a000174" lower_bit="0" name="irp0_pmonunitstatus" size="32" upper_bit="6"/>
+						<UnitControl address="0x4a000170" name="irp_pmonunitctrl" size="32"/>
+					</RegisterSet>
+					<RegisterSet i="1" slice="irp1" type="Global">
+						<Status address="0x4a400174" lower_bit="0" name="iio_pstack0_irp0_pmonunitstatus" size="32" upper_bit="6"/>
+						<UnitControl address="0x4a400170" name="iio_pstack0_irp_pmonunitctrl" size="32"/>
+					</RegisterSet>
+					<RegisterSet i="2" slice="irp2" type="Global">
+						<Status address="0x4a800174" lower_bit="0" name="iio_pstack1_irp0_pmonunitstatus" size="32" upper_bit="6"/>
+						<UnitControl address="0x4a800170" name="iio_pstack1_irp_pmonunitctrl" size="32"/>
+					</RegisterSet>
+					<RegisterSet i="3" slice="irp3" type="Global">
+						<Status address="0x4ac00174" lower_bit="0" name="iio_pstack2_irp0_pmonunitstatus" size="32" upper_bit="6"/>
+						<UnitControl address="0x4ac00170" name="iio_pstack2_irp_pmonunitctrl" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+			</ProcessorArea>
+            
+			<ProcessorArea name="M3KTI">
+				<RegisterSet i="0" type="Global">
+					<RegisterSet a="0" b="0" i="0" slice="rcutlctrlconfig0" type="Global">
+						<UnitControl address="0x700910f4" name="rcutlctrlconfig0_pmonunitctrl0" size="32"/>
+						<Status address="0x700910f8" name="rcutlctrlconfig0_pmonctrstatus0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="rcutlctrlconfig0" type="Global">
+						<UnitControl address="0x700920f4" name="rcutlctrlconfig0_pmonunitctrl1" size="32"/>
+						<Status address="0x700920f8" name="rcutlctrlconfig0_pmonctrstatus1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="2" slice="rcutlctrlconfig1" type="Global">
+						<UnitControl address="0x700950f4" name="rcutlctrlconfig1_pmonunitctrl0" size="32"/>
+						<Status address="0x700950f8" name="rcutlctrlconfig1_pmonctrstatus0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="3" slice="rcutlctrlconfig1" type="Global">
+						<UnitControl address="0x700960f4" name="rcutlctrlconfig1_pmonunitctrl1" size="32"/>
+						<Status address="0x700960f8" name="rcutlctrlconfig1_pmonctrstatus1" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="rcutlctrlconfig0_pmoncntrlower0" type="PMON">
+						<Counter address="0x700910a0" lower_bit="0" name="rcutlctrlconfig0_pmoncntrlower0_0" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700910a4" lower_bit="0" name="rcutlctrlconfig0_pmoncntrupper0_0" size="32" upper_bit="15"/>
+						<Configuration address="0x700910d8" name="rcutlctrlconfig0_pmoncntrcfg0_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="rcutlctrlconfig0_pmoncntrlower1" type="PMON">
+						<Counter address="0x700920a0" lower_bit="0" name="rcutlctrlconfig0_pmoncntrlower1_0" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700920a4" lower_bit="0" name="rcutlctrlconfig0_pmoncntrupper1_0" size="32" upper_bit="15"/>
+						<Configuration address="0x700920d8" name="rcutlctrlconfig0_pmoncntrcfg1_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="2" slice="rcutlctrlconfig1_pmoncntrlower0" type="PMON">
+						<Counter address="0x700950a0" lower_bit="0" name="rcutlctrlconfig1_pmoncntrlower0_0" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700950a4" lower_bit="0" name="rcutlctrlconfig1_pmoncntrupper0_0" size="32" upper_bit="15"/>
+						<Configuration address="0x700950d8" name="rcutlctrlconfig1_pmoncntrcfg0_0" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="3" slice="rcutlctrlconfig1_pmoncntrlower1" type="PMON">
+						<Counter address="0x700960a0" lower_bit="0" name="rcutlctrlconfig1_pmoncntrlower1_0" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700960a4" lower_bit="0" name="rcutlctrlconfig1_pmoncntrupper1_0" size="32" upper_bit="15"/>
+						<Configuration address="0x700960d8" name="rcutlctrlconfig1_pmoncntrcfg1_0" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="rcutlctrlconfig0_pmoncntrlower0" type="PMON">
+						<Counter address="0x700910a8" lower_bit="0" name="rcutlctrlconfig0_pmoncntrlower0_1" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700910ac" lower_bit="0" name="rcutlctrlconfig0_pmoncntrupper0_1" size="32" upper_bit="15"/>
+						<Configuration address="0x700910dc" name="rcutlctrlconfig0_pmoncntrcfg0_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="rcutlctrlconfig0_pmoncntrlower1" type="PMON">
+						<Counter address="0x700920a8" lower_bit="0" name="rcutlctrlconfig0_pmoncntrlower1_1" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700920ac" lower_bit="0" name="rcutlctrlconfig0_pmoncntrupper1_1" size="32" upper_bit="15"/>
+						<Configuration address="0x700920dc" name="rcutlctrlconfig0_pmoncntrcfg1_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="2" slice="rcutlctrlconfig1_pmoncntrlower0" type="PMON">
+						<Counter address="0x700950a8" lower_bit="0" name="rcutlctrlconfig1_pmoncntrlower0_1" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700950ac" lower_bit="0" name="rcutlctrlconfig1_pmoncntrupper0_1" size="32" upper_bit="15"/>
+						<Configuration address="0x700950dc" name="rcutlctrlconfig1_pmoncntrcfg0_1" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="3" slice="rcutlctrlconfig1_pmoncntrlower1" type="PMON">
+						<Counter address="0x700960a8" lower_bit="0" name="rcutlctrlconfig1_pmoncntrlower1_1" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700960ac" lower_bit="0" name="rcutlctrlconfig1_pmoncntrupper1_1" size="32" upper_bit="15"/>
+						<Configuration address="0x700960dc" name="rcutlctrlconfig1_pmoncntrcfg1_1" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="rcutlctrlconfig0_pmoncntrlower0" type="PMON">
+						<Counter address="0x700910b0" lower_bit="0" name="rcutlctrlconfig0_pmoncntrlower0_2" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700910b4" lower_bit="0" name="rcutlctrlconfig0_pmoncntrupper0_2" size="32" upper_bit="15"/>
+						<Configuration address="0x700910e0" name="rcutlctrlconfig0_pmoncntrcfg0_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="rcutlctrlconfig0_pmoncntrlower1" type="PMON">
+						<Counter address="0x700920b0" lower_bit="0" name="rcutlctrlconfig0_pmoncntrlower1_2" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700920b4" lower_bit="0" name="rcutlctrlconfig0_pmoncntrupper1_2" size="32" upper_bit="15"/>
+						<Configuration address="0x700920e0" name="rcutlctrlconfig0_pmoncntrcfg1_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="2" slice="rcutlctrlconfig1_pmoncntrlower0" type="PMON">
+						<Counter address="0x700950b0" lower_bit="0" name="rcutlctrlconfig1_pmoncntrlower0_2" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700950b4" lower_bit="0" name="rcutlctrlconfig1_pmoncntrupper0_2" size="32" upper_bit="15"/>
+						<Configuration address="0x700950e0" name="rcutlctrlconfig1_pmoncntrcfg0_2" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="3" slice="rcutlctrlconfig1_pmoncntrlower1" type="PMON">
+						<Counter address="0x700960b0" lower_bit="0" name="rcutlctrlconfig1_pmoncntrlower1_2" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700960b4" lower_bit="0" name="rcutlctrlconfig1_pmoncntrupper1_2" size="32" upper_bit="15"/>
+						<Configuration address="0x700960e0" name="rcutlctrlconfig1_pmoncntrcfg1_2" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="3" type="PMON">
+					<RegisterSet a="0" b="0" i="0" slice="rcutlctrlconfig0_pmoncntrlower0" type="PMON">
+						<Counter address="0x700910b8" lower_bit="0" name="rcutlctrlconfig0_pmoncntrlower0_3" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700910bc" lower_bit="0" name="rcutlctrlconfig0_pmoncntrupper0_3" size="32" upper_bit="15"/>
+						<Configuration address="0x700910e4" name="rcutlctrlconfig0_pmoncntrcfg0_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="0" b="1" i="1" slice="rcutlctrlconfig0_pmoncntrlower1" type="PMON">
+						<Counter address="0x700920b8" lower_bit="0" name="rcutlctrlconfig0_pmoncntrlower1_3" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700920bc" lower_bit="0" name="rcutlctrlconfig0_pmoncntrupper1_3" size="32" upper_bit="15"/>
+						<Configuration address="0x700920e4" name="rcutlctrlconfig0_pmoncntrcfg1_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="0" i="2" slice="rcutlctrlconfig1_pmoncntrlower0" type="PMON">
+						<Counter address="0x700950b8" lower_bit="0" name="rcutlctrlconfig1_pmoncntrlower0_3" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700950bc" lower_bit="0" name="rcutlctrlconfig1_pmoncntrupper0_3" size="32" upper_bit="15"/>
+						<Configuration address="0x700950e4" name="rcutlctrlconfig1_pmoncntrcfg0_3" size="32"/>
+					</RegisterSet>
+					<RegisterSet a="1" b="1" i="3" slice="rcutlctrlconfig1_pmoncntrlower1" type="PMON">
+						<Counter address="0x700960b8" lower_bit="0" name="rcutlctrlconfig1_pmoncntrlower1_3" size="32" upper_bit="31"/>
+						<CounterUpper address="0x700960bc" lower_bit="0" name="rcutlctrlconfig1_pmoncntrupper1_3" size="32" upper_bit="15"/>
+						<Configuration address="0x700960e4" name="rcutlctrlconfig1_pmoncntrcfg1_3" size="32"/>
+					</RegisterSet>
+				</RegisterSet>
+			</ProcessorArea>
+            
+			<ProcessorArea name="PCU">
+				<RegisterSet i="0" type="PMON">
+					<RegisterSet i="0" slice="pcu" type="PMON">
+						<Configuration address="0x40004f28" name="pcu_cr_pmoncntrcfg_0" size="32"/>
+						<Counter address="0x40004f48" lower_bit="0" name="pcu_cr_pmoncntr_0" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="1" type="PMON">
+					<RegisterSet i="0" slice="pcu" type="PMON">
+						<Configuration address="0x40004f2c" name="pcu_cr_pmoncntrcfg_1" size="32"/>
+						<Counter address="0x40004f50" lower_bit="0" name="pcu_cr_pmoncntr_1" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="2" type="PMON">
+					<RegisterSet i="0" slice="pcu" type="PMON">
+						<Configuration address="0x40004f30" name="pcu_cr_pmoncntrcfg_2" size="32"/>
+						<Counter address="0x40004f58" lower_bit="0" name="pcu_cr_pmoncntr_2" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="3" type="PMON">
+					<RegisterSet i="0" slice="pcu" type="PMON">
+						<Configuration address="0x40004f34" name="pcu_cr_pmoncntrcfg_3" size="32"/>
+						<Counter address="0x40004f60" lower_bit="0" name="pcu_cr_pmoncntr_3" size="64" upper_bit="47"/>
+					</RegisterSet>
+				</RegisterSet>
+				<RegisterSet i="0" type="Global">
+					<Filter0 address="0x40004f20" lower_bit="0" name="pcu_cr_pmonpcufilter" size="32" upper_bit="31"/>
+					<Status address="0x40004f3c" lower_bit="0" name="pcu_cr_pmonunitstatus" size="32" upper_bit="6"/>
+					<UnitControl address="0x40004f40" name="pcu_cr_pmonunitctrl" size="32"/>
+				</RegisterSet>
+			</ProcessorArea>
+            
+			<ProcessorArea name="Global">
+				<RegisterSet i="0" type="Global">
+					<Status address="0x40005110" name="ncevents_ncupmonglsts" size="64"/>
+					<UnitControl address="0x40005118" name="ncevents_ncupmonglctrl" size="64"/>
+					<Misc address="0x400051e0" lower_bit="0" name="ncevents_ncupmonconfig" size="32" upper_bit="5"/>
+				</RegisterSet>
+			</ProcessorArea>
+		</Uncore>
+	</Processor>
+	
+
+</GepettoCfg>

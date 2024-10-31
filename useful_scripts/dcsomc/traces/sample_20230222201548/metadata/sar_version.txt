@@ -1,0 +1,2 @@
+sysstat version 12.5.6
+(C) Sebastien Godard (sysstat <at> orange.fr)

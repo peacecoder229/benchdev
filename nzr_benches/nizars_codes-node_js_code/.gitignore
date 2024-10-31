@@ -1,0 +1,11 @@
+node_modules
+results_node_DC_EIS
+results
+npm-debug.log
+*.pyc
+*.swp
+*.js~
+*.js#
+results_node_DC
+Node-DC-EIS-cluster/mongodb.template/*
+package-lock.json
